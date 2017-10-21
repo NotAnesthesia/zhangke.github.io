@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ssm1]]></title>
+    <url>%2Fssm1%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[深度学习]]></title>
     <url>%2Fdeeplearning%2F</url>
     <content type="text"><![CDATA[随便翻一翻在wikipedia搜索时发现这个顿时慌张起来，截图留念。这DeepLearning要学的真不是一点两点，数学没学好真的伤。]]></content>
