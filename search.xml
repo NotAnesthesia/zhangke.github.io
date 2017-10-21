@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[ssm1]]></title>
+    <title><![CDATA[学习ssm框架——Mybatis版本问题解决方案（一）]]></title>
     <url>%2Fssm1%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt; select * from user where username = #&#123;username&#125; and password = #&#123;password&#125; &lt;/select&gt; Mybatis参数问题 然后经过一番折腾在网上找到解决方案，将变量改成参数形式0，1或者加上jdbcType，代码如下 123&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt; select * from user where username = #&#123;0&#125; and password = #&#123;1&#125; &lt;/select&gt; And 123&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt; select * from user where username = #&#123;username, jdbcType=VARCHAR&#125; and password = #&#123;password, jdbcType=VARCHAR&#125; &lt;/select&gt; 报错同上。 此时就很难受了，看源码debug。。。偶然间查到了可能是版本问题，然后尝试了以下解决方案搞定 123&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt; select * from user where username = #&#123;arg0&#125; and password = #&#123;arg1&#125; &lt;/select&gt; 最后贴上码云项目地址]]></content>
+      <categories>
+        <category>ssm</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[深度学习]]></title>

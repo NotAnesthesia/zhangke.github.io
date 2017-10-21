@@ -5,14 +5,19 @@
     
   <url>
     <loc>http://zhangk.top/ssm1/</loc>
-    <lastmod>2017-10-21T03:30:15.000Z</lastmod>
+    <lastmod>2017-10-21T03:32:51.000Z</lastmod>
     <data>
         <display>
-        <title>ssm1</title>
-        <pubTime>2017-10-21T03:30:15.000Z</pubTime>
+        <title>学习ssm框架——Mybatis版本问题解决方案（一）</title>
+        <pubTime>2017-10-21T03:30:40.000Z</pubTime>
         
+        <tag>ssm</tag>
+         
          
            
+             
+              <breadCrumb title="ssm" url="http://zhangk.top/categories/ssm/"/>
+          
         </display>
     </data>
     </url>
