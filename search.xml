@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[MySQL之order]]></title>
     <url>%2Fmysql-question-1%2F</url>
-    <content type="text"><![CDATA[刚测试查询订单controller时候遇到这个问题，sql语句莫名其妙的出错了 命令行实验一下操作Mysql的时候尴尬地遇到了一个问题，试了试其他表都好的，就是怎么都查询不了order表。 后来试了试改成orders表就好了，看来order是MySQL的一个关键字啊~]]></content>
+    <content type="text"><![CDATA[刚测试查询订单controller时候遇到这个问题，sql语句莫名其妙的出错了 命令行实验一下操作Mysql的时候尴尬地遇到了一个问题，试了试其他表都好的，就是怎么都查询不了order表。 后来试了试改成orders表就好了，后来一想order是MySQL的一个关键字啊~ order by]]></content>
       <categories>
         <category>mysql</category>
       </categories>
