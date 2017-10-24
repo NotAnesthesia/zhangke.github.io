@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux," />
 
 
 
@@ -93,17 +93,18 @@
 
 
 
-<meta name="description" content="以下是看有土鳖psychology相关内容记下的笔记(纯手打)   人会在无意识的情况下模仿自己喜欢的人的动作，因为这会让她更有安全感。 多巴胺即“想要”，是生存发展的动力。 人的脑子一次只能专注于一件事情。 一个人如果开心，会更想尝试新事物；反之，希望做熟悉的事。 女生左右脑连接比男生紧密的多，左脑控制语言，右脑控制情绪，女生善用语言来表达情绪，且女生在小时候分泌雌性激素大约两年，而男生小时候大">
+<meta name="description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="psychology">
-<meta property="og:url" content="http://zhangk.top/psychology/index.html">
+<meta property="og:title" content="Linux系统下安装jdk详细步骤（共两种方法）">
+<meta property="og:url" content="http://zhangk.top/aliyun-jdk/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="以下是看有土鳖psychology相关内容记下的笔记(纯手打)   人会在无意识的情况下模仿自己喜欢的人的动作，因为这会让她更有安全感。 多巴胺即“想要”，是生存发展的动力。 人的脑子一次只能专注于一件事情。 一个人如果开心，会更想尝试新事物；反之，希望做熟悉的事。 女生左右脑连接比男生紧密的多，左脑控制语言，右脑控制情绪，女生善用语言来表达情绪，且女生在小时候分泌雌性激素大约两年，而男生小时候大">
+<meta property="og:description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-30T21:44:01.000Z">
+<meta property="og:updated_time" content="2017-10-24T03:14:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="psychology">
-<meta name="twitter:description" content="以下是看有土鳖psychology相关内容记下的笔记(纯手打)   人会在无意识的情况下模仿自己喜欢的人的动作，因为这会让她更有安全感。 多巴胺即“想要”，是生存发展的动力。 人的脑子一次只能专注于一件事情。 一个人如果开心，会更想尝试新事物；反之，希望做熟悉的事。 女生左右脑连接比男生紧密的多，左脑控制语言，右脑控制情绪，女生善用语言来表达情绪，且女生在小时候分泌雌性激素大约两年，而男生小时候大">
+<meta name="twitter:title" content="Linux系统下安装jdk详细步骤（共两种方法）">
+<meta name="twitter:description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需">
 
 
 
@@ -131,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/psychology/"/>
+  <link rel="canonical" href="http://zhangk.top/aliyun-jdk/"/>
 
 
 
 
 
-  <title>psychology | Zhangke's blog</title>
+  <title>Linux系统下安装jdk详细步骤（共两种方法） | Zhangke's blog</title>
   
 
 
@@ -310,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/psychology/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/aliyun-jdk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -327,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">psychology</h1>
+          <h1 class="post-title" itemprop="name headline">Linux系统下安装jdk详细步骤（共两种方法）</h1>
         
 
         <div class="post-meta">
@@ -339,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-31T00:28:06+08:00">
-                2017-07-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T11:10:48+08:00">
+                2017-10-24
               </time>
             
 
@@ -362,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/心理学/" itemprop="url" rel="index">
-                    <span itemprop="name">心理学</span>
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
                   </a>
                 </span>
 
@@ -380,9 +381,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/psychology/#comments" itemprop="discussionUrl">
+                <a href="/aliyun-jdk/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="psychology/" itemprop="commentCount"></span>
+                        data-disqus-identifier="aliyun-jdk/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -390,7 +391,7 @@
 
           
           
-             <span id="/psychology/" class="leancloud_visitors" data-flag-title="psychology">
+             <span id="/aliyun-jdk/" class="leancloud_visitors" data-flag-title="Linux系统下安装jdk详细步骤（共两种方法）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -418,20 +419,27 @@
       
 
       
-        <p>以下是看有土鳖psychology相关内容记下的笔记(纯手打)</p>
-<blockquote>
-<ul>
-<li>人会在无意识的情况下模仿自己喜欢的人的动作，因为这会让她更有安全感。</li>
-<li>多巴胺即“想要”，是生存发展的动力。</li>
-<li>人的脑子一次只能专注于一件事情。</li>
-<li>一个人如果开心，会更想尝试新事物；反之，希望做熟悉的事。</li>
-<li>女生左右脑连接比男生紧密的多，左脑控制语言，右脑控制情绪，女生善用语言来表达情绪，且女生在小时候分泌雌性激素大约两年，而男生小时候大约分泌雄性激素只有八个月，所以初中之前女生语言表达理解能力会比男生强得多。</li>
-<li>人的大脑有N1到N5的区域，男生大脑N5区域更发达，与距离、方向相关，女生N4区域更发达，与颜色、地标相关，这就能解释男女对路线描述的差异性，同时解释了为什么女生的方向感较弱。</li>
-<li>男生的血清素分泌比女生快52%，血清素是能让人心情愉悦的物质，这就是为什么夫妻吵架，妻子气的半死而丈夫却呼呼大睡了。</li>
-<li>男生平均一天讲七千个字，而女生一天讲两万个字。</li>
-<li>女生比男生对表情的变化的辨识度快千分之二十秒，女生更能够发现别人表情的变化。</li>
-</ul>
-</blockquote>
+        <p>配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。</p>
+<h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a><strong>第一种方法</strong></h3><p>只需要一条命令就可以安装jdk：  </p>
+<p><code>yum install java-1.8.0-openjdk* -y</code></p>
+<p>执行过这条命令无需配置，直接可以使用。</p>
+<h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a><strong>第二种方法</strong></h3><h4 id="1-登录Linux，切换到root用户"><a href="#1-登录Linux，切换到root用户" class="headerlink" title="1.  登录Linux，切换到root用户"></a>1.  登录Linux，切换到root用户</h4><p><code>su root</code> 获取root用户权限，当前工作目录不变(需要root密码)<br>或<br><code>sudo -i</code> 不需要root密码直接切换成root（需要当前用户密码）</p>
+<h4 id="2-在usr目录下建立java安装目录"><a href="#2-在usr目录下建立java安装目录" class="headerlink" title="2. 在usr目录下建立java安装目录"></a>2. 在usr目录下建立java安装目录</h4><p><code>cd /usr</code> //进入usr目录</p>
+<p><code>mkdir java</code>   //创建java目录</p>
+<h4 id="3-将jdk-8u60-linux-x64-tar-gz拷贝到java目录下"><a href="#3-将jdk-8u60-linux-x64-tar-gz拷贝到java目录下" class="headerlink" title="3. 将jdk-8u60-linux-x64.tar.gz拷贝到java目录下"></a>3. 将jdk-8u60-linux-x64.tar.gz拷贝到java目录下</h4><p><code>cp /mnt/hgfs/linux/jdk-8u60-linux-x64.tar.gz /usr/java/</code></p>
+<h4 id="4-解压jdk到当前目录"><a href="#4-解压jdk到当前目录" class="headerlink" title="4. 解压jdk到当前目录"></a>4. 解压jdk到当前目录</h4><p><code>tar -zxvf jdk-8u60-linux-x64.tar.gz</code></p>
+<p>得到文件夹 jdk1.8.0_60</p>
+<h4 id="5-安装完毕为他建立一个链接以节省目录长度"><a href="#5-安装完毕为他建立一个链接以节省目录长度" class="headerlink" title="5. 安装完毕为他建立一个链接以节省目录长度"></a>5. 安装完毕为他建立一个链接以节省目录长度</h4><p><code>ln -s /usr/java/jdk1.8.0_60/ /usr/jdk</code></p>
+<h4 id="6-编辑配置文件，配置环境变量"><a href="#6-编辑配置文件，配置环境变量" class="headerlink" title="6. 编辑配置文件，配置环境变量"></a>6. 编辑配置文件，配置环境变量</h4><p><code>vim /etc/profile</code>  </p>
+<p>添加如下内容：<strong>JAVA_HOME</strong>根据实际目录来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=/usr/java/jdk1.8.0_60</div><div class="line">export CLASSPATH=JAVAHOME/lib/exportPATH=PATH:$JAVA_HOME/bin</div><div class="line">export PATH JAVA_HOME CLASSPATH</div></pre></td></tr></table></figure>
+<h4 id="7-重启机器或执行命令-：source-etc-profile"><a href="#7-重启机器或执行命令-：source-etc-profile" class="headerlink" title="7. 重启机器或执行命令 ：source /etc/profile"></a>7. 重启机器或执行命令 ：source /etc/profile</h4><p>sudo shutdown -r now</p>
+<h4 id="8-查看安装情况"><a href="#8-查看安装情况" class="headerlink" title="8. 查看安装情况"></a>8. 查看安装情况</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# java -version</div><div class="line">openjdk version “1.8.0_141”</div><div class="line">OpenJDK Runtime Environment (build 1.8.0_141-b16)</div><div class="line">OpenJDK 64-Bit Server VM (build 25.141-b16, mixed mode)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# javac -version</div><div class="line">javac 1.8.0_141</div></pre></td></tr></table></figure>
+<h4 id="可能出现的错误信息："><a href="#可能出现的错误信息：" class="headerlink" title="可能出现的错误信息："></a>可能出现的错误信息：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash: ./java: cannot execute binary file</div></pre></td></tr></table></figure>
+<p>出现这个错误的原因可能是在32位的操作系统上安装了64位的jdk，<br>查看jdk版本和Linux版本位数是否一致。<br>查看你安装的Ubuntu是32位还是64位系统：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo uname –m</div></pre></td></tr></table></figure>
+<p>i686 //表示是32位<br>x86_64 // 表示是64位  </p>
 
       
     </div>
@@ -459,6 +467,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
 
       
       
@@ -468,8 +482,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/always/" rel="next" title="I'll always love you">
-                <i class="fa fa-chevron-left"></i> I'll always love you
+              <a href="/mysql-question-3/" rel="next" title="阿里云服务器同步MySQL数据库">
+                <i class="fa fa-chevron-left"></i> 阿里云服务器同步MySQL数据库
               </a>
             
           </div>
@@ -477,10 +491,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/vpn/" rel="prev" title="利用shadowsocks和阿里云服务器搭建从国外到国内的vpn">
-                利用shadowsocks和阿里云服务器搭建从国外到国内的vpn <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -541,8 +551,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -633,6 +652,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一种方法"><span class="nav-number">1.</span> <span class="nav-text">第一种方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种方法"><span class="nav-number">2.</span> <span class="nav-text">第二种方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-登录Linux，切换到root用户"><span class="nav-number">2.1.</span> <span class="nav-text">1.  登录Linux，切换到root用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-在usr目录下建立java安装目录"><span class="nav-number">2.2.</span> <span class="nav-text">2. 在usr目录下建立java安装目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-将jdk-8u60-linux-x64-tar-gz拷贝到java目录下"><span class="nav-number">2.3.</span> <span class="nav-text">3. 将jdk-8u60-linux-x64.tar.gz拷贝到java目录下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-解压jdk到当前目录"><span class="nav-number">2.4.</span> <span class="nav-text">4. 解压jdk到当前目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-安装完毕为他建立一个链接以节省目录长度"><span class="nav-number">2.5.</span> <span class="nav-text">5. 安装完毕为他建立一个链接以节省目录长度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-编辑配置文件，配置环境变量"><span class="nav-number">2.6.</span> <span class="nav-text">6. 编辑配置文件，配置环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-重启机器或执行命令-：source-etc-profile"><span class="nav-number">2.7.</span> <span class="nav-text">7. 重启机器或执行命令 ：source /etc/profile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-查看安装情况"><span class="nav-number">2.8.</span> <span class="nav-text">8. 查看安装情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可能出现的错误信息："><span class="nav-number">2.9.</span> <span class="nav-text">可能出现的错误信息：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -775,9 +810,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://zhangk.top/psychology/';
-          this.page.identifier = 'psychology/';
-          this.page.title = 'psychology';
+          this.page.url = 'http://zhangk.top/aliyun-jdk/';
+          this.page.identifier = 'aliyun-jdk/';
+          this.page.title = 'Linux系统下安装jdk详细步骤（共两种方法）';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://zhangk.disqus.com/embed.js';
