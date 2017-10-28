@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[123]]></title>
-    <url>%2F123%2F</url>
-    <content type="text"><![CDATA[小爽子]]></content>
-      <categories>
-        <category>mysql</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Linux系统下安装jdk详细步骤（共两种方法）]]></title>
     <url>%2Faliyun-jdk%2F</url>
     <content type="text"><![CDATA[配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk： yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1. 登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需要root密码直接切换成root（需要当前用户密码） 2. 在usr目录下建立java安装目录cd /usr //进入usr目录 mkdir java //创建java目录 3. 将jdk-8u60-linux-x64.tar.gz拷贝到java目录下cp /mnt/hgfs/linux/jdk-8u60-linux-x64.tar.gz /usr/java/ 4. 解压jdk到当前目录tar -zxvf jdk-8u60-linux-x64.tar.gz 得到文件夹 jdk1.8.0_60 5. 安装完毕为他建立一个链接以节省目录长度ln -s /usr/java/jdk1.8.0_60/ /usr/jdk 6. 编辑配置文件，配置环境变量vim /etc/profile 添加如下内容：JAVA_HOME根据实际目录来 123export JAVA_HOME=/usr/java/jdk1.8.0_60export CLASSPATH=JAVAHOME/lib/exportPATH=PATH:$JAVA_HOME/binexport PATH JAVA_HOME CLASSPATH 7. 重启机器或执行命令 ：source /etc/profilesudo shutdown -r now 8. 查看安装情况1234[root@bogon jdk]# java -versionopenjdk version “1.8.0_141”OpenJDK Runtime Environment (build 1.8.0_141-b16)OpenJDK 64-Bit Server VM (build 25.141-b16, mixed mode) 12[root@bogon jdk]# javac -versionjavac 1.8.0_141 可能出现的错误信息：1bash: ./java: cannot execute binary file 出现这个错误的原因可能是在32位的操作系统上安装了64位的jdk，查看jdk版本和Linux版本位数是否一致。查看你安装的Ubuntu是32位还是64位系统： 1sudo uname –m i686 //表示是32位x86_64 // 表示是64位]]></content>
