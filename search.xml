@@ -2,13 +2,11 @@
 <search>
   <entry>
     <title><![CDATA[123]]></title>
-    <url>%2F123-1%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[123]]></title>
     <url>%2F123%2F</url>
     <content type="text"><![CDATA[小爽子]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
       <tags>
         <tag>mysql</tag>
       </tags>
