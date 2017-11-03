@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="muti-thread," />
 
 
 
@@ -93,16 +93,18 @@
 
 
 
-<meta name="description" content="少点抱怨，多点改变">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhangke&#39;s blog">
-<meta property="og:url" content="http://zhangk.top/categories/love/index.html">
+<meta name="description" content="多线程使用的主要目的在于：  吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。 伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯定没办法通过增加CPU核数来提升性能。  鉴于做WEB的第1点可能几乎不涉及。那这里就讲第二点吧。">
+<meta name="keywords" content="muti-thread">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多线程之使用目的">
+<meta property="og:url" content="http://zhangk.top/thread-1/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="少点抱怨，多点改变">
+<meta property="og:description" content="多线程使用的主要目的在于：  吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。 伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯定没办法通过增加CPU核数来提升性能。  鉴于做WEB的第1点可能几乎不涉及。那这里就讲第二点吧。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-03T12:23:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhangke&#39;s blog">
-<meta name="twitter:description" content="少点抱怨，多点改变">
+<meta name="twitter:title" content="多线程之使用目的">
+<meta name="twitter:description" content="多线程使用的主要目的在于：  吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。 伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯定没办法通过增加CPU核数来提升性能。  鉴于做WEB的第1点可能几乎不涉及。那这里就讲第二点吧。">
 
 
 
@@ -130,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/categories/love/"/>
+  <link rel="canonical" href="http://zhangk.top/thread-1/"/>
 
 
 
 
 
-  <title>分类: love | Zhangke's blog</title>
+  <title>多线程之使用目的 | Zhangke's blog</title>
   
 
 
@@ -161,7 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -299,73 +301,216 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>love<small>分类</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/hunying/" itemprop="url">
-              
-                <span itemprop="name">这才是爱情最好的样子（转载）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-06T19:45:10+08:00"
-              content="2017-08-06" >
-          08-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/always/" itemprop="url">
-              
-                <span itemprop="name">I'll always love you</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-30T01:35:43+08:00"
-              content="2017-07-30" >
-          07-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/thread-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangke">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangke's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">多线程之使用目的</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-03T20:20:49+08:00">
+                2017-11-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/muti-thread/" itemprop="url" rel="index">
+                    <span itemprop="name">muti-thread</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/thread-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="thread-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/thread-1/" class="leancloud_visitors" data-flag-title="多线程之使用目的">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>多线程</strong>使用的主要目的在于：</p>
+<ol>
+<li>吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。</li>
+<li>伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯定没办法通过增加CPU核数来提升性能。</li>
+</ol>
+<p>鉴于做WEB的第1点可能几乎不涉及。那这里就讲第二点吧。</p>
+<p>–举个简单的例子：<br>假设有个请求，这个请求服务端的处理需要执行3个很缓慢的IO操作（比如数据库查询或文件查询），那么正常的顺序可能是（括号里面代表执行时间）：<br>a、读取文件1  （10ms）<br>b、处理1的数据（1ms）<br>c、读取文件2  （10ms）<br>d、处理2的数据（1ms）<br>e、读取文件3  （10ms）<br>f、处理3的数据（1ms）<br>g、整合1、2、3的数据结果 （1ms）<br>单线程总共就需要34ms。<br>那如果你在这个请求内，把ab、cd、ef分别分给3个线程去做，就只需要12ms了。</p>
+<p>所以多线程不是没怎么用，而是，你平常要善于发现一些可优化的点。然后评估方案是否应该使用。<br>假设还是上面那个相同的问题：但是每个步骤的执行时间不一样了。<br>a、读取文件1  （1ms）<br>b、处理1的数据（1ms）<br>c、读取文件2  （1ms）<br>d、处理2的数据（1ms）<br>e、读取文件3  （28ms）<br>f、处理3的数据（1ms）<br>g、整合1、2、3的数据结果 （1ms）<br>单线程总共就需要34ms。<br>如果还是按上面的划分方案（上面方案和木桶原理一样，耗时取决于最慢的那个线程的执行速度），在这个例子中是第三个线程，执行29ms。那么最后这个请求耗时是30ms。比起不用单线程，就节省了4ms。但是有可能线程调度切换也要花费个1、2ms。因此，这个方案显得优势就不明显了，还带来程序复杂度提升。不太值得。</p>
+<p>那么现在优化的点，就不是第一个例子那样的任务分割多线程完成。而是优化文件3的读取速度。<br>可能是采用缓存和减少一些重复读取。<br>首先，假设有一种情况，所有用户都请求这个请求，那其实相当于所有用户都需要读取文件3。那你想想，100个人进行了这个请求，相当于你花在读取这个文件上的时间就是28×100=2800ms了。那么，如果你把文件缓存起来，那只要第一个用户的请求读取了，第二个用户不需要读取了，从内存取是很快速的，可能1ms都不到。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public class MyServlet extends Servlet&#123;</div><div class="line">	private static Map&lt;String, String&gt; fileName2Data = new HashMap&lt;String, String&gt;();</div><div class="line">  	private void processFile3(String fName)&#123;</div><div class="line">    	String data = fileName2Data.get(fName);</div><div class="line">      	if(data==null)&#123;</div><div class="line">          	data = readFromFile(fName);    //耗时28ms</div><div class="line">          	fileName2Data.put(fName, data);</div><div class="line">      	&#125;</div><div class="line">      	//process with data</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>看起来好像还不错，建立一个文件名和文件数据的映射。如果读取一个map中已经存在的数据，那么就不不用读取文件了。<br>可是问题在于，Servlet是并发，上面会导致一个很严重的问题，死循环。因为，HashMap在并发修改的时候，可能是导致循环链表的构成！！！（具体你可以自行阅读HashMap源码）如果你没接触过多线程，可能到时候发现服务器没请求也巨卡，也不知道什么情况！<br>好的，那就用ConcurrentHashMap，正如他的名字一样，他是一个线程安全的HashMap，这样能轻松解决问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public class MyServlet extends Servlet&#123;</div><div class="line">    private static ConcurrentHashMap&lt;String, String&gt; fileName2Data = new ConcurrentHashMap&lt;String, String&gt;();</div><div class="line">    private void processFile3(String fName)&#123;</div><div class="line">        String data = fileName2Data.get(fName);</div><div class="line">        if(data==null)&#123;</div><div class="line">            data = readFromFile(fName);    //耗时28ms</div><div class="line">            fileName2Data.put(fName, data);</div><div class="line">        &#125;</div><div class="line">        //process with data</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这样真的解决问题了吗，这样虽然只要有用户访问过文件a，那另一个用户想访问文件a，也会从fileName2Data中拿数据，然后也不会引起死循环。</p>
+<p>可是，如果你觉得这样就已经完了，那你把多线程也想的太简单了，骚年！<br>你会发现，1000个用户首次访问同一个文件的时候，居然读取了1000次文件（这是最极端的，可能只有几百）。What the fuckin hell!!!</p>
+<p>难道代码错了吗，难道我就这样过我的一生！</p>
+<p>好好分析下。Servlet是多线程的，那么</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">public class MyServlet extends Servlet&#123;</div><div class="line">    private static ConcurrentHashMap&lt;String, String&gt; fileName2Data = new ConcurrentHashMap&lt;String, String&gt;();</div><div class="line">    private void processFile3(String fName)&#123;</div><div class="line">        String data = fileName2Data.get(fName);</div><div class="line">        //“偶然”-- 1000个线程同时到这里，同时发现data为null</div><div class="line">        if(data==null)&#123;</div><div class="line">            data = readFromFile(fName);    //耗时28ms</div><div class="line">            fileName2Data.put(fName, data);</div><div class="line">        &#125;</div><div class="line">        //process with data</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面注释的“偶然”，这是完全有可能的，因此，这样做还是有问题。</p>
+<p>因此，可以自己简单的封装一个任务来处理。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">public class MyServlet extends Servlet&#123;</div><div class="line">	private static ConcurrentHashMap&lt;String, FutureTask&gt; fileName2Data = new ConcurrentHashMap&lt;String, FutureTask&gt;();</div><div class="line">    private static ExecutorService exec = Executors.newCacheThreadPool();</div><div class="line">    private void processFile3(String fName)&#123;</div><div class="line">        FutureTask data = fileName2Data.get(fName);</div><div class="line">        //“偶然”-- 1000个线程同时到这里，同时发现data为null</div><div class="line">        if(data==null)&#123;</div><div class="line">            data = newFutureTask(fName);</div><div class="line">            FutureTask old = fileName2Data.putIfAbsent(fName, data);</div><div class="line">            if(old==null)&#123;</div><div class="line">                data = old;</div><div class="line">            &#125;else&#123;</div><div class="line">                exec.execute(data);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        String d = data.get();</div><div class="line">        //process with data</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    private FutureTask newFutureTask(final String file)&#123;</div><div class="line">        return  new FutureTask(new Callable&lt;String&gt;()&#123;</div><div class="line">            public String call()&#123;</div><div class="line">                return readFromFile(file);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            private String readFromFile(String file)&#123;return &quot;&quot;;&#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/muti-thread/" rel="tag"># muti-thread</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/aliyun-jdk/" rel="next" title="Linux系统下安装jdk详细步骤（共两种方法）">
+                <i class="fa fa-chevron-left"></i> Linux系统下安装jdk详细步骤（共两种方法）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -373,6 +518,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -603,10 +759,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -624,6 +780,18 @@
       <script id="dsq-count-scr" src="https://zhangk.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://zhangk.top/thread-1/';
+          this.page.identifier = 'thread-1/';
+          this.page.title = '多线程之使用目的';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://zhangk.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
