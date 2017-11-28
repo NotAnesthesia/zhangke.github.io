@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://zhangk.top/duotai-1/</loc>
+    <lastmod>2017-11-28T07:36:08.288Z</lastmod>
+    <data>
+        <display>
+        <title>Java运行时多态性：继承和接口的实现</title>
+        <pubTime>2017-11-04T01:50:44.000Z</pubTime>
+        
+        <tag>多态</tag>
+         
+         
+           
+             
+              <breadCrumb title="多态" url="http://zhangk.top/categories/%E5%A4%9A%E6%80%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zhangk.top/design-pattern-1/</loc>
     <lastmod>2017-11-24T15:14:32.716Z</lastmod>
     <data>
@@ -37,26 +57,6 @@
            
              
               <breadCrumb title="spring" url="http://zhangk.top/categories/spring/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/duotai-1/</loc>
-    <lastmod>2017-11-04T01:54:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>Java运行时多态性：继承和接口的实现</title>
-        <pubTime>2017-11-04T01:50:44.000Z</pubTime>
-        
-        <tag>多态</tag>
-         
-         
-           
-             
-              <breadCrumb title="多态" url="http://zhangk.top/categories/%E5%A4%9A%E6%80%81/"/>
           
         </display>
     </data>

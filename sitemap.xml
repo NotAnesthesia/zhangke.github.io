@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangk.top/duotai-1/</loc>
+    
+    <lastmod>2017-11-28T07:36:08.288Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhangk.top/design-pattern-1/</loc>
     
     <lastmod>2017-11-24T15:14:32.716Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://zhangk.top/spring-1/</loc>
     
     <lastmod>2017-11-06T06:16:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhangk.top/duotai-1/</loc>
-    
-    <lastmod>2017-11-04T01:54:36.000Z</lastmod>
     
   </url>
   
