@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://zhangk.top/java-reflect/</loc>
+    <lastmod>2017-12-07T06:36:42.164Z</lastmod>
+    <data>
+        <display>
+        <title>关于Java反射的理解</title>
+        <pubTime>2017-12-07T06:34:21.000Z</pubTime>
+        
+        <tag>反射</tag>
+         
+         
+           
+             
+              <breadCrumb title="反射" url="http://zhangk.top/categories/%E5%8F%8D%E5%B0%84/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/spring-1/</loc>
+    <lastmod>2017-11-29T04:56:43.181Z</lastmod>
+    <data>
+        <display>
+        <title>spring四种依赖注入方式</title>
+        <pubTime>2017-11-06T06:15:22.000Z</pubTime>
+        
+        <tag>spring</tag>
+         
+         
+           
+             
+              <breadCrumb title="spring" url="http://zhangk.top/categories/spring/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zhangk.top/java-reference-1/</loc>
     <lastmod>2017-11-28T12:16:32.508Z</lastmod>
     <data>
@@ -57,26 +97,6 @@
            
              
               <breadCrumb title="设计模式" url="http://zhangk.top/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/spring-1/</loc>
-    <lastmod>2017-11-06T06:16:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>spring四种依赖注入方式</title>
-        <pubTime>2017-11-06T06:15:22.000Z</pubTime>
-        
-        <tag>spring</tag>
-         
-         
-           
-             
-              <breadCrumb title="spring" url="http://zhangk.top/categories/spring/"/>
           
         </display>
     </data>

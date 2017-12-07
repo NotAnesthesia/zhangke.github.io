@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangk.top/java-reflect/</loc>
+    
+    <lastmod>2017-12-07T06:36:42.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhangk.top/spring-1/</loc>
+    
+    <lastmod>2017-11-29T04:56:43.181Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhangk.top/java-reference-1/</loc>
     
     <lastmod>2017-11-28T12:16:32.508Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://zhangk.top/design-pattern-1/</loc>
     
     <lastmod>2017-11-24T15:14:32.716Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhangk.top/spring-1/</loc>
-    
-    <lastmod>2017-11-06T06:16:40.000Z</lastmod>
     
   </url>
   
