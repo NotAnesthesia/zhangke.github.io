@@ -2095,6 +2095,30 @@ yum install java-1.8.0-openjdk* -y
 
 
   
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           function ShowGitment(){
+               document.getElementById("gitment-display-button").style.display = "none";
+               document.getElementById("gitment-container").style.display = "block";
+               var gitment = new Gitment({
+                   id: document.location.href, 
+                   owner: 'giantke',
+                   repo: 'giantke.github.io',
+                   oauth: {
+                       client_id: '0a5e996db07ba96d78f7',
+                       client_secret: '5fccd85c551cd933b98455600dbaf395b9cccf5c',
+                   }});
+               gitment.render('gitment-container');
+           }
+       </script>
+   
+
 
 
 
