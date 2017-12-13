@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="jvm," />
 
 
 
@@ -93,19 +93,18 @@
 
 
 
-<meta name="description" content="和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。 其中一个问：“怎么你的黑眼圈看着又大了一点啊？” 答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。” “噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊不禁。 “你不知道，我老公只要一感冒了，就会连带着他的鼻炎更严重，半夜呼噜声特别大，那个声音就是在隔">
+<meta name="description" content="垃圾收集器与内存分配策略垃圾回收算法引用计数算法：给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。 可达性分析算法：通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对象不可达，即为可回收的对象。  GC-Roots包括：  虚拟机栈（栈帧中本地变量表）中引用的对象">
+<meta name="keywords" content="jvm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这才是爱情最好的样子（转载）">
-<meta property="og:url" content="http://zhangk.top/hunying/index.html">
+<meta property="og:title" content="jvm垃圾收集器与内存分配策略">
+<meta property="og:url" content="http://zhangk.top/jvm-GC/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。 其中一个问：“怎么你的黑眼圈看着又大了一点啊？” 答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。” “噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊不禁。 “你不知道，我老公只要一感冒了，就会连带着他的鼻炎更严重，半夜呼噜声特别大，那个声音就是在隔">
+<meta property="og:description" content="垃圾收集器与内存分配策略垃圾回收算法引用计数算法：给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。 可达性分析算法：通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对象不可达，即为可回收的对象。  GC-Roots包括：  虚拟机栈（栈帧中本地变量表）中引用的对象">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/giantke/giantke.github.io/master/images/flower.png">
-<meta property="og:updated_time" content="2017-08-06T17:18:43.000Z">
+<meta property="og:updated_time" content="2017-12-13T15:58:04.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="这才是爱情最好的样子（转载）">
-<meta name="twitter:description" content="和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。 其中一个问：“怎么你的黑眼圈看着又大了一点啊？” 答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。” “噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊不禁。 “你不知道，我老公只要一感冒了，就会连带着他的鼻炎更严重，半夜呼噜声特别大，那个声音就是在隔">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/giantke/giantke.github.io/master/images/flower.png">
+<meta name="twitter:title" content="jvm垃圾收集器与内存分配策略">
+<meta name="twitter:description" content="垃圾收集器与内存分配策略垃圾回收算法引用计数算法：给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。 可达性分析算法：通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对象不可达，即为可回收的对象。  GC-Roots包括：  虚拟机栈（栈帧中本地变量表）中引用的对象">
 
 
 
@@ -133,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/hunying/"/>
+  <link rel="canonical" href="http://zhangk.top/jvm-GC/"/>
 
 
 
 
 
-  <title>这才是爱情最好的样子（转载） | Zhangke's blog</title>
+  <title>jvm垃圾收集器与内存分配策略 | Zhangke's blog</title>
   
 
 
@@ -312,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/hunying/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/jvm-GC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -329,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">这才是爱情最好的样子（转载）</h1>
+          <h1 class="post-title" itemprop="name headline">jvm垃圾收集器与内存分配策略</h1>
         
 
         <div class="post-meta">
@@ -341,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-06T19:45:10+08:00">
-                2017-08-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-13T23:56:27+08:00">
+                2017-12-13
               </time>
             
 
@@ -364,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/love/" itemprop="url" rel="index">
-                    <span itemprop="name">love</span>
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
                   </a>
                 </span>
 
@@ -381,7 +380,7 @@
 
           
           
-             <span id="/hunying/" class="leancloud_visitors" data-flag-title="这才是爱情最好的样子（转载）">
+             <span id="/jvm-GC/" class="leancloud_visitors" data-flag-title="jvm垃圾收集器与内存分配策略">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -409,57 +408,83 @@
       
 
       
-        <p><img src="https://raw.githubusercontent.com/giantke/giantke.github.io/master/images/flower.png" alt=""></p>
-<p>和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。</p>
-<p>其中一个问：“怎么你的黑眼圈看着又大了一点啊？”</p>
-<p>答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。”</p>
-<p>“噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊不禁。</p>
-<p>“你不知道，我老公只要一感冒了，就会连带着他的鼻炎更严重，半夜呼噜声特别大，那个声音就是在隔壁房里睡都清晰得不得了。</p>
-<p>但是他的呼噜声有点吓人，一声大的“呼……”上去，半天你没听到接下来的那声响动，你的心思就会随着他的声音七上八下的，担心他是不是睡厥过去了。”</p>
-<p>这个说话的女人越说越大声：“哎呀，你都不知道，他还有呼吸骤停的毛病，医生说了最好要侧卧，不能仰卧，他那呼噜声一停，往往就是仰面朝上的睡势，我得赶紧把他推醒，叫他侧着睡。”</p>
-<p>“那这样你肯定睡不好的呀，难怪你的黑眼圈天天都那么大。”</p>
-<p>“是啊，但结婚这么多年了，你说怪不怪，他要出差不在家的时候，听不到他的呼噜声我反而更睡不着了。”</p>
-<p><strong>在感情的世界里兜兜转转的人大概都知道的一个定理是，这世上最牢固的感情不是“我爱你”，而是“我习惯了有你”。</strong></p>
-<p>世间的夫妻都大同小异，一口锅里吃饭，一张床上睡觉，周而复始的生活让原本毫不相干的人亲密地生活在一起。时间久了，居然连原本恼人的呼噜声都成了婚姻里必不可少让人心定的安全感。</p>
-<p><strong>我想，在生活的烟熏火燎里仍然不离不弃的两个人应该就是爱情最好的样子。</strong></p>
-<p>这个世上并没有什么教科书似的完美爱情，有这么一对夫妻：</p>
-<p>他向她求婚时，只说了三个字：相信我；</p>
-<p>她为他生下第一个女儿的时候，他对她说：辛苦了；</p>
-<p>女儿出嫁异地那天，他搂着她的肩说：还有我；</p>
-<p>他收到她病危通知的那天，重复地对她说：我在这；</p>
-<p>她要走的那一刻，他亲吻她的额头轻声说：你等我。</p>
-<p>这一生，他没对她说过一次“我爱你”，但爱，从未离开过。</p>
-<p>从没有多余的言语，也不是甜言蜜语制造的恩爱假象。只是平凡的生活中每个细节和眼神里透露出的体贴、关心。 </p>
-<p><strong>我想，平淡而踏实地携手走完一生的两个人应该就是好的爱情该有的样子。</strong></p>
-<p>他是个搞设计的工程师，她是中学毕业班的班任老师，两人都错过了恋爱的最佳季节，后来经人介绍而相识。</p>
-<p>没有惊天动地的过程，平平淡淡地相处，自自然然地结婚。</p>
-<p>婚后第三天，他就跑到单位加班，为了赶设计，他甚至可以彻夜拼命，连续几天几夜不回家。她忙于毕业班的管理，经常晚归。</p>
-<p>为了各自的事业，他们就像两个陀螺，在各自的轨道上高速旋转着。</p>
-<p>送走了毕业班，清闲了的她开始重新审视自己的生活，审视自己的婚姻，她开始迷茫，不知道自己在他心里有多重，她似乎不记得他说过爱她。</p>
-<p>一天，她问他是不是爱她，他说当然爱，不然怎么会结婚，她问他怎么不说爱，他说不知道怎么说。</p>
-<p>她拿出写好的离婚协议，他愣了，说，那我们去旅游吧，结婚的蜜月我都没陪你，我亏欠你太多。</p>
-<p>他们去了奇峰异石的张家界。飘雨的天气和他们阴郁的心情一样，走在盘旋的山道上，她发现他总是走在外侧，她问他为什么，他说路太滑，他怕外侧的栅栏不牢，怕她万一不小心跌倒。</p>
-<p>她的心忽然感到了温暖，回家就把那份离婚协议撕掉了。</p>
-<p>很多时候，爱是埋在心底的，尤其是婚姻进行中的爱，平平淡淡，说不出来，但是真实存在。</p>
-<p><strong>最好的爱情是陪伴，最靠谱的感觉是温暖，我想，这应该也是爱情最好的样子。</strong></p>
-<p>1942年底，杨绛创作了话剧《称心如意》。在金都大戏院上演后，一鸣惊人，迅速走红。杨绛的蹿红，使大才子钱钟书坐不住了。</p>
-<p>一天，他对杨绛说：“我想写一部长篇小说，你支持吗？”杨绛大为高兴，催他赶紧写。</p>
-<p>杨绛让他减少授课时间，为了节省开支，她还把家里的女佣辞退了，自己包揽了所有的家务活，劈材生火做饭样样都来，经常被烟火熏得满眼是泪，也会不小心切破手指。</p>
-<p>可是杨绛并未抱怨过，她心甘情愿地做灶下婢，只盼着钟书的大作早日问世。</p>
-<p>看着昔日娇生惯养的富家小姐，如今修炼成任劳任怨的贤内助，钱钟书心里虽有惭愧，但更多的是对爱妻的感激与珍爱。</p>
-<p>两年后，《围城》成功问世。钱钟书在《围城》序中说：“这本书整整写了两年。两年里忧世伤生，屡想中止。由于杨绛女士不断的督促，替我挡了许多事，省出时间来，得以锱铢积累地写完。照例这本书该献给她。”</p>
-<p><strong>最深的爱无需诺言，总是相依相伴中把体贴展现；最纯的情无需语言，总是默默无声里守候身边。人生的路上风雨兼程，劳碌的生活嘘寒问暖。</strong></p>
-<p>婚后有一回，当杨绛在看英国传记作家描述最理想的婚姻：“在见到她之前，我从来没有想过要结婚，娶了她几十年，从来没有后悔娶她，也没有想过要娶别的女人。”</p>
-<p>当杨绛读到这里，觉得甚好，于是把它念给在一旁的钱钟书听，钱钟书听完说：“我和他一样。”</p>
-<p>杨绛随即回答：“我也是。”</p>
-<p>好的爱情，最重要的不是甜言蜜语，不是容貌金钱，而是你和他对于这个世界的看法，对人生的态度是否一致。</p>
-<p><strong>我想，三观一致的两个人应该就是爱情里最好的样子。</strong></p>
-<p>张小娴说，爱情的样子就是每天跟自己喜欢的人一起，通电话，旅行，重复一个承诺和梦想，听他第二十八次提起童年往事，每年的同一天和他庆祝生日，每年的情人节、圣诞节、除夕，也和他共度。甚至连吵架也是重复的，为了一些琐事吵架，然后冷战，疯狂思念对方，最后和好。</p>
-<p>作家十二说，爱情中最让人愉悦的样子就是“你高兴，我随意”。</p>
-<p><strong>那到底什么才是爱情最好的样子？</strong></p>
-<p><strong>“先睡吧，明天再吵。”</strong></p>
-<hr>
-<p>听说转载要注明<a href="http://mp.weixin.qq.com/s/A3bK4X_PhytNT3CuxlcAgQ" target="_blank" rel="external">出处</a>，所以</p>
+        <h2 id="垃圾收集器与内存分配策略"><a href="#垃圾收集器与内存分配策略" class="headerlink" title="垃圾收集器与内存分配策略"></a>垃圾收集器与内存分配策略</h2><h3 id="垃圾回收算法"><a href="#垃圾回收算法" class="headerlink" title="垃圾回收算法"></a>垃圾回收算法</h3><h4 id="引用计数算法："><a href="#引用计数算法：" class="headerlink" title="引用计数算法："></a>引用计数算法：</h4><p>给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。</p>
+<h4 id="可达性分析算法："><a href="#可达性分析算法：" class="headerlink" title="可达性分析算法："></a>可达性分析算法：</h4><p>通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对象不可达，即为可回收的对象。</p>
+<blockquote>
+<p>GC-Roots包括：</p>
+<ul>
+<li>虚拟机栈（栈帧中本地变量表）中引用的对象</li>
+<li>方法区中类静态属性引用的对象</li>
+<li>方法区中常量引用的对象</li>
+<li>本地方法栈中JNI（一般为Native方法）引用的对象</li>
+</ul>
+</blockquote>
+<h4 id="标记-清除算法："><a href="#标记-清除算法：" class="headerlink" title="标记-清除算法："></a>标记-清除算法：</h4><p>首先标记所有需要回收的对象，在标记完成后统一回收所有被标记的对象</p>
+<blockquote>
+<p>不足之处：</p>
+<ol>
+<li>标记和清除两个过程效率都不高</li>
+<li>结束后会产生大量碎片</li>
+</ol>
+</blockquote>
+<h4 id="复制算法："><a href="#复制算法：" class="headerlink" title="复制算法："></a>复制算法：</h4><p>把内存划分为大小相等的两块，每次使用其中一块，使用的那块发生GC时将存活的对象复制到另一块，每次只对一个半区进行回收。</p>
+<blockquote>
+<p>不足：将内存缩小为原来的一半，浪费空间</p>
+</blockquote>
+<h4 id="标记-整理算法："><a href="#标记-整理算法：" class="headerlink" title="标记-整理算法："></a>标记-整理算法：</h4><p>标记过程与“标记-清除算法”相同，然后将对象碎片都向一边移动，合成一个整体</p>
+<h3 id="再谈引用"><a href="#再谈引用" class="headerlink" title="再谈引用"></a>再谈引用</h3><h4 id="强引用："><a href="#强引用：" class="headerlink" title="强引用："></a>强引用：</h4><p>普遍存在，即Object obj = new Object(); 只要强引用还在对象就不会被回收</p>
+<h4 id="软引用："><a href="#软引用：" class="headerlink" title="软引用："></a>软引用：</h4><p>描述一些有用但却非必需的对象，在<strong>发生内存溢出异常之前</strong>会被回收。</p>
+<h4 id="弱引用："><a href="#弱引用：" class="headerlink" title="弱引用："></a>弱引用：</h4><p>描述非必需对象，比软引用弱一些，在<strong>发生GC之前</strong>会被回收。</p>
+<h4 id="虚引用："><a href="#虚引用：" class="headerlink" title="虚引用："></a>虚引用：</h4><p>最弱的引用，对于对象的生存周期无影响，也无法通过虚引用来获得对象实例。只是在对象被回收时会收到通知。</p>
+<h3 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h3><h4 id="Serial收集器"><a href="#Serial收集器" class="headerlink" title="Serial收集器"></a>Serial收集器</h4><p>单线程收集器，在GC时需要STW，即“Stop The World”暂停其他所有工作线程。缺点显而易见，停顿长体验差。唯一的优点是没有多余的线程开销，最高的单线程收集效率，对于分配内存较小的桌面应用（Client）停顿一般控制在几十毫秒，这是一个很好的选择。</p>
+<h4 id="ParNew收集器"><a href="#ParNew收集器" class="headerlink" title="ParNew收集器"></a>ParNew收集器</h4><p>Serial的多线程版本，是许多运行在server模式下jvm首选的新生代收集器，而且除了Serial只有ParNew能与CMS收集器配合工作</p>
+<blockquote>
+<p>并行：多个处理器上多个任务</p>
+<p>并发：一个处理器上多个任务</p>
+</blockquote>
+<h4 id="Parallel-Scavenge收集器"><a href="#Parallel-Scavenge收集器" class="headerlink" title="Parallel Scavenge收集器"></a>Parallel Scavenge收集器</h4><p>多线程使用复制算法的新生代收集器，关注点与CMS等收集器尽可能缩短停顿时间不同，其目标是达到一个可控制的吞吐量（吞吐量=运行用户代码时间 / （运行用户代码时间 + 垃圾收集时间）），称为吞吐量优先收集器。</p>
+<h4 id="Serial-Old收集器"><a href="#Serial-Old收集器" class="headerlink" title="Serial Old收集器"></a>Serial Old收集器</h4><p>Serial老年代版本，单线程收集器，使用“标记-整理算法”。 </p>
+<h4 id="Parallel-Old收集器"><a href="#Parallel-Old收集器" class="headerlink" title="Parallel Old收集器"></a>Parallel Old收集器</h4><p>Parallel Scavenge的老年代版本，使用多线程和“标记-整理”算法。<br>Parallel Scavenge + Parallel Old真正的吞吐量优先收集器。</p>
+<h4 id="CMS收集器"><a href="#CMS收集器" class="headerlink" title="CMS收集器"></a>CMS收集器</h4><p>基于“标记-清除”算法，过程分为四步：</p>
+<ul>
+<li>初始标记</li>
+<li>并发标记</li>
+<li>重新标记</li>
+<li>并发清除</li>
+</ul>
+<p>其中初始标记和重新标记需要STW</p>
+<blockquote>
+<p>缺点有三：</p>
+<ol>
+<li>对CPU资源敏感，并发标记时用户线程没有暂停，收集器占用部分CPU资源，可能会使用户程序反应变慢</li>
+<li>无法处理浮动垃圾，由于GC时用户线程还在进行，不停地会有新的垃圾产生，只能在下一次GC时处理，这部分垃圾叫做浮动垃圾</li>
+<li>基于“标记-清除”算法，会产生大量空间碎片，导致无法找到足够大的连续空间分配而提前GC</li>
+</ol>
+</blockquote>
+<h4 id="G1收集器"><a href="#G1收集器" class="headerlink" title="G1收集器"></a>G1收集器</h4><p>运作步骤：</p>
+<ul>
+<li>初始标记</li>
+<li>并发标记</li>
+<li>最终标记</li>
+<li>筛选回收</li>
+</ul>
+<blockquote>
+<p>特点：</p>
+<ol>
+<li>并行与并发</li>
+<li>分代收集（仍然保留了分代的概念）</li>
+<li>空间整合（整体上属于“标记-整理”算法，不会导致空间碎片）</li>
+<li>可预测的停顿（比CMS更先进的地方在于能让使用者明确指定时间片段内，消耗在垃圾收集上的时间）</li>
+</ol>
+</blockquote>
+<h3 id="内存分配策略"><a href="#内存分配策略" class="headerlink" title="内存分配策略"></a>内存分配策略</h3><h4 id="对象优先在Eden（年轻代）分配"><a href="#对象优先在Eden（年轻代）分配" class="headerlink" title="对象优先在Eden（年轻代）分配"></a>对象优先在Eden（年轻代）分配</h4><blockquote>
+<p>新生代GC（Mirror GC）：Java对象大部分都具备朝生夕灭的特性，Mirror GC非常频繁</p>
+<p>老年代GC（Full GC）：出现Full GC常伴随着Mirror GC，比Mirror GC慢十倍以上</p>
+</blockquote>
+<h4 id="大对象直接进入老年代"><a href="#大对象直接进入老年代" class="headerlink" title="大对象直接进入老年代"></a>大对象直接进入老年代</h4><p>超过参数的对象直接在老年代分配</p>
+<h4 id="长期存活的对象将进入老年代"><a href="#长期存活的对象将进入老年代" class="headerlink" title="长期存活的对象将进入老年代"></a>长期存活的对象将进入老年代</h4><p>虚拟机给每个对象定义一个对象年龄计数器，当对象在Eden出生并且熬过第一次GC进入Survivor空间，那么它的年龄即设为1，每熬过一次GC年龄就加1，达到阈值就会晋升到老年代中</p>
+<h4 id="对象年龄判断"><a href="#对象年龄判断" class="headerlink" title="对象年龄判断"></a>对象年龄判断</h4><p>然而也并不是一定要到达阈值才能晋升，如果在Survivor空间相同年龄的对象的总和大于Survivor空间的一半，大于等于该年龄的对象即可直接进入老年代</p>
+<h4 id="空间分配担保"><a href="#空间分配担保" class="headerlink" title="空间分配担保"></a>空间分配担保</h4><p>Mirror GC之前虚拟机会检查老年代可用空间是否大于新生代所有对象大小总和，如果是，那么可以确保Mirror GC安全。如果不是的话，看是否允许担保失败（允许冒险），如果允许那么将检查老年代可用空间是否大于历次晋升对象大小的平均值，如果是的话将进行一次Mirror GC，尽管有风险会失败；如果小于那么将进行Full GC</p>
 
       
     </div>
@@ -487,6 +512,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/jvm/" rel="tag"># jvm</a>
+          
+        </div>
+      
 
       
       
@@ -496,8 +527,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/jiaofu/" rel="next" title="Bible of a man —— 《教父》">
-                <i class="fa fa-chevron-left"></i> Bible of a man —— 《教父》
+              <a href="/jvm-neicun/" rel="next" title="jvm之内存区域">
+                <i class="fa fa-chevron-left"></i> jvm之内存区域
               </a>
             
           </div>
@@ -505,10 +536,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/deeplearning/" rel="prev" title="深度学习">
-                深度学习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -560,8 +587,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -652,6 +688,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾收集器与内存分配策略"><span class="nav-number">1.</span> <span class="nav-text">垃圾收集器与内存分配策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收算法"><span class="nav-number">1.1.</span> <span class="nav-text">垃圾回收算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#引用计数算法："><span class="nav-number">1.1.1.</span> <span class="nav-text">引用计数算法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可达性分析算法："><span class="nav-number">1.1.2.</span> <span class="nav-text">可达性分析算法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标记-清除算法："><span class="nav-number">1.1.3.</span> <span class="nav-text">标记-清除算法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制算法："><span class="nav-number">1.1.4.</span> <span class="nav-text">复制算法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标记-整理算法："><span class="nav-number">1.1.5.</span> <span class="nav-text">标记-整理算法：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再谈引用"><span class="nav-number">1.2.</span> <span class="nav-text">再谈引用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#强引用："><span class="nav-number">1.2.1.</span> <span class="nav-text">强引用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#软引用："><span class="nav-number">1.2.2.</span> <span class="nav-text">软引用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#弱引用："><span class="nav-number">1.2.3.</span> <span class="nav-text">弱引用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#虚引用："><span class="nav-number">1.2.4.</span> <span class="nav-text">虚引用：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾收集器"><span class="nav-number">1.3.</span> <span class="nav-text">垃圾收集器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Serial收集器"><span class="nav-number">1.3.1.</span> <span class="nav-text">Serial收集器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ParNew收集器"><span class="nav-number">1.3.2.</span> <span class="nav-text">ParNew收集器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Parallel-Scavenge收集器"><span class="nav-number">1.3.3.</span> <span class="nav-text">Parallel Scavenge收集器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Serial-Old收集器"><span class="nav-number">1.3.4.</span> <span class="nav-text">Serial Old收集器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Parallel-Old收集器"><span class="nav-number">1.3.5.</span> <span class="nav-text">Parallel Old收集器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CMS收集器"><span class="nav-number">1.3.6.</span> <span class="nav-text">CMS收集器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#G1收集器"><span class="nav-number">1.3.7.</span> <span class="nav-text">G1收集器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存分配策略"><span class="nav-number">1.4.</span> <span class="nav-text">内存分配策略</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对象优先在Eden（年轻代）分配"><span class="nav-number">1.4.1.</span> <span class="nav-text">对象优先在Eden（年轻代）分配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大对象直接进入老年代"><span class="nav-number">1.4.2.</span> <span class="nav-text">大对象直接进入老年代</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#长期存活的对象将进入老年代"><span class="nav-number">1.4.3.</span> <span class="nav-text">长期存活的对象将进入老年代</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象年龄判断"><span class="nav-number">1.4.4.</span> <span class="nav-text">对象年龄判断</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#空间分配担保"><span class="nav-number">1.4.5.</span> <span class="nav-text">空间分配担保</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

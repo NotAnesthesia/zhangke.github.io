@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangk.top/jvm-GC/</loc>
+    
+    <lastmod>2017-12-13T15:58:04.092Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhangk.top/jvm-neicun/</loc>
     
     <lastmod>2017-12-08T16:20:42.705Z</lastmod>
