@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javaSE," />
 
 
 
@@ -93,16 +93,21 @@
 
 
 
-<meta name="description" content="少点抱怨，多点改变">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhangke&#39;s blog">
-<meta property="og:url" content="http://zhangk.top/tags/mysql/index.html">
+<meta name="description" content="深入理解Java中的组合和继承前言由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。 面向对象的复用技术复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。 作为一门面向对象开发的语言，代码复用是Java引人注意的功能之一。Java代码的复用有继承，组合以及代理三种具体的表现形式">
+<meta name="keywords" content="javaSE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入理解Java中的组合和继承">
+<meta property="og:url" content="http://zhangk.top/jicheng-and-zuhe/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="少点抱怨，多点改变">
+<meta property="og:description" content="深入理解Java中的组合和继承前言由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。 面向对象的复用技术复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。 作为一门面向对象开发的语言，代码复用是Java引人注意的功能之一。Java代码的复用有继承，组合以及代理三种具体的表现形式">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.hollischuang.com/wp-content/uploads/2016/03/Generalization.jpg">
+<meta property="og:image" content="http://www.hollischuang.com/wp-content/uploads/2016/03/Composition.jpg">
+<meta property="og:updated_time" content="2017-12-15T11:46:52.933Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhangke&#39;s blog">
-<meta name="twitter:description" content="少点抱怨，多点改变">
+<meta name="twitter:title" content="深入理解Java中的组合和继承">
+<meta name="twitter:description" content="深入理解Java中的组合和继承前言由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。 面向对象的复用技术复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。 作为一门面向对象开发的语言，代码复用是Java引人注意的功能之一。Java代码的复用有继承，组合以及代理三种具体的表现形式">
+<meta name="twitter:image" content="http://www.hollischuang.com/wp-content/uploads/2016/03/Generalization.jpg">
 
 
 
@@ -130,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/tags/mysql/"/>
+  <link rel="canonical" href="http://zhangk.top/jicheng-and-zuhe/"/>
 
 
 
 
 
-  <title>标签: mysql | Zhangke's blog</title>
+  <title>深入理解Java中的组合和继承 | Zhangke's blog</title>
   
 
 
@@ -161,7 +166,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -299,100 +304,235 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>mysql<small>标签</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/mysql-question-3/" itemprop="url">
-              
-                <span itemprop="name">阿里云服务器同步MySQL数据库</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-23T11:11:31+08:00"
-              content="2017-10-23" >
-          10-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/mysql-question-2/" itemprop="url">
-              
-                <span itemprop="name">改善Mac系统MySQL配置环境变量</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-23T11:11:27+08:00"
-              content="2017-10-23" >
-          10-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/mysql-question-1/" itemprop="url">
-              
-                <span itemprop="name">MySQL之order</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-21T16:58:03+08:00"
-              content="2017-10-21" >
-          10-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/jicheng-and-zuhe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangke">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangke's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">深入理解Java中的组合和继承</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-15T19:39:48+08:00">
+                2017-12-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">javaSE</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/jicheng-and-zuhe/" class="leancloud_visitors" data-flag-title="深入理解Java中的组合和继承">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="深入理解Java中的组合和继承"><a href="#深入理解Java中的组合和继承" class="headerlink" title="深入理解Java中的组合和继承"></a>深入理解Java中的组合和继承</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。</p>
+<h3 id="面向对象的复用技术"><a href="#面向对象的复用技术" class="headerlink" title="面向对象的复用技术"></a>面向对象的复用技术</h3><p>复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。</p>
+<p>作为一门面向对象开发的语言，代码复用是Java引人注意的功能之一。Java代码的复用有继承，组合以及代理三种具体的表现形式。本文将重点介绍继承复用和组合复用。</p>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>继承（Inheritance）是一种联结类与类的层次模型。指的是一个类（称为子类、子接口）继承另外的一个类（称为父类、父接口）的功能，并可以增加它自己的新功能的能力，继承是类与类或者接口与接口之间最常见的关系；继承是一种<a href="https://zh.wikipedia.org/wiki/Is-a" target="_blank" rel="external"><code>is-a</code></a>关系。（图片来自网络，侵删。）</p>
+<p><img src="http://www.hollischuang.com/wp-content/uploads/2016/03/Generalization.jpg" alt="Inheritance"></p>
+<h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><p>组合(Composition)体现的是整体与部分、拥有的关系，即<a href="https://en.wikipedia.org/wiki/Has-a" target="_blank" rel="external"><code>has-a</code></a>的关系。</p>
+<p><img src="http://www.hollischuang.com/wp-content/uploads/2016/03/Composition.jpg" alt="Composition"></p>
+<h3 id="组合与继承的区别和联系"><a href="#组合与继承的区别和联系" class="headerlink" title="组合与继承的区别和联系"></a>组合与继承的区别和联系</h3><blockquote>
+<p>在<code>继承</code>结构中，父类的内部细节对于子类是可见的。所以我们通常也可以说通过继承的代码复用是一种<code>白盒式代码复用</code>。（如果基类的实现发生改变，那么派生类的实现也将随之改变。这样就导致了子类行为的不可预知性；）</p>
+<p><code>组合</code>是通过对现有的对象进行拼装（组合）产生新的、更复杂的功能。因为在对象之间，各自的内部细节是不可见的，所以我们也说这种方式的代码复用是<code>黑盒式代码复用</code>。（因为组合中一般都定义一个类型，所以在编译期根本不知道具体会调用哪个实现类的方法）</p>
+<p><code>继承</code>，在写代码的时候就要指名具体继承哪个类，所以，在<code>编译期</code>就确定了关系。（从基类继承来的实现是无法在运行期动态改变的，因此降低了应用的灵活性。）</p>
+<p><code>组合</code>，在写代码的时候可以采用面向接口编程。所以，类的组合关系一般在<code>运行期</code>确定。</p>
+</blockquote>
+<h3 id="优缺点对比"><a href="#优缺点对比" class="headerlink" title="优缺点对比"></a>优缺点对比</h3><table>
+<thead>
+<tr>
+<th>组 合 关 系</th>
+<th>继 承 关 系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>优点：不破坏封装，整体类与局部类之间松耦合，彼此相对独立</td>
+<td>缺点：破坏封装，子类与父类之间紧密耦合，子类依赖于父类的实现，子类缺乏独立性</td>
+</tr>
+<tr>
+<td>优点：具有较好的可扩展性</td>
+<td>缺点：支持扩展，但是往往以增加系统结构的复杂度为代价</td>
+</tr>
+<tr>
+<td>优点：支持动态组合。在运行时，整体对象可以选择不同类型的局部对象</td>
+<td>缺点：不支持动态继承。在运行时，子类无法选择不同的父类</td>
+</tr>
+<tr>
+<td>优点：整体类可以对局部类进行包装，封装局部类的接口，提供新的接口</td>
+<td>缺点：子类不能改变父类的接口</td>
+</tr>
+<tr>
+<td>缺点：整体类不能自动获得和局部类同样的接口</td>
+<td>优点：子类能自动继承父类的接口</td>
+</tr>
+<tr>
+<td>缺点：创建整体类的对象时，需要创建所有局部类的对象</td>
+<td>优点：创建子类的对象时，无须创建父类的对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="如何选择"><a href="#如何选择" class="headerlink" title="如何选择"></a>如何选择</h3><p>相信很多人都知道面向对象中有一个比较重要的原则『多用组合、少用继承』或者说『组合优于继承』。从前面的介绍已经优缺点对比中也可以看出，组合确实比继承更加灵活，也更有助于代码维护。</p>
+<p>所以，</p>
+<blockquote>
+<p><strong>建议在同样可行的情况下，优先使用组合而不是继承。</strong></p>
+<p><strong>因为组合更安全，更简单，更灵活，更高效。</strong></p>
+</blockquote>
+<p>注意，并不是说继承就一点用都没有了，前面说的是【在同样可行的情况下】。有一些场景还是需要使用继承的，或者是更适合使用继承。</p>
+<p>转载自<a href="http://www.hollischuang.com/archives/1319" target="_blank" rel="external">http://www.hollischuang.com/archives/1319</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javaSE/" rel="tag"># javaSE</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jvm-GC/" rel="next" title="jvm垃圾收集器与内存分配策略">
+                <i class="fa fa-chevron-left"></i> jvm垃圾收集器与内存分配策略
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -400,6 +540,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+     
+       <div id="gitment-container"></div>
+     
+    
+  </div>
+
 
         </div>
         
@@ -420,8 +568,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -512,6 +669,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#深入理解Java中的组合和继承"><span class="nav-number">1.</span> <span class="nav-text">深入理解Java中的组合和继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.0.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象的复用技术"><span class="nav-number">1.0.2.</span> <span class="nav-text">面向对象的复用技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承"><span class="nav-number">1.0.3.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合"><span class="nav-number">1.0.4.</span> <span class="nav-text">组合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合与继承的区别和联系"><span class="nav-number">1.0.5.</span> <span class="nav-text">组合与继承的区别和联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优缺点对比"><span class="nav-number">1.0.6.</span> <span class="nav-text">优缺点对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何选择"><span class="nav-number">1.0.7.</span> <span class="nav-text">如何选择</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -630,10 +803,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
