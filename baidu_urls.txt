@@ -1,3 +1,5 @@
+http://zhangk.top/jvm-leijiazai/
+http://zhangk.top/jvm-classFileConstructor/
 http://zhangk.top/jicheng-and-zuhe/
 http://zhangk.top/jvm-GC/
 http://zhangk.top/jvm-neicun/

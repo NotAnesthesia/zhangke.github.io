@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="jvm," />
 
 
 
@@ -93,16 +93,18 @@
 
 
 
-<meta name="description" content="少点抱怨，多点改变">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhangke&#39;s blog">
-<meta property="og:url" content="http://zhangk.top/archives/2017/page/3/index.html">
+<meta name="description" content="Class类文件结构无关的基石Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件格式所关联, Class 文件包含了 Java 虚拟机指令和符号表以及若干其他辅助信息.虚拟机不关心">
+<meta name="keywords" content="jvm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Class类文件结构">
+<meta property="og:url" content="http://zhangk.top/jvm-classFileConstructor/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="少点抱怨，多点改变">
+<meta property="og:description" content="Class类文件结构无关的基石Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件格式所关联, Class 文件包含了 Java 虚拟机指令和符号表以及若干其他辅助信息.虚拟机不关心">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-15T16:12:34.540Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhangke&#39;s blog">
-<meta name="twitter:description" content="少点抱怨，多点改变">
+<meta name="twitter:title" content="Class类文件结构">
+<meta name="twitter:description" content="Class类文件结构无关的基石Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件格式所关联, Class 文件包含了 Java 虚拟机指令和符号表以及若干其他辅助信息.虚拟机不关心">
 
 
 
@@ -130,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/archives/2017/page/3/"/>
+  <link rel="canonical" href="http://zhangk.top/jvm-classFileConstructor/"/>
 
 
 
 
 
-  <title>归档 | Zhangke's blog</title>
+  <title>Class类文件结构 | Zhangke's blog</title>
   
 
 
@@ -161,7 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -299,181 +301,245 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 24 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/jvm-classFileConstructor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangke">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangke's blog">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Class类文件结构</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T00:06:52+08:00">
+                2017-12-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/jvm-classFileConstructor/" class="leancloud_visitors" data-flag-title="Class类文件结构">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <h2 id="Class类文件结构"><a href="#Class类文件结构" class="headerlink" title="Class类文件结构"></a>Class类文件结构</h2><h3 id="无关的基石"><a href="#无关的基石" class="headerlink" title="无关的基石"></a>无关的基石</h3><p>Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件格式所关联, Class 文件包含了 Java 虚拟机指令和符号表以及若干其他辅助信息.虚拟机不关心 Class 的来源是何种语言.</p>
+<h3 id="Class-文件结构"><a href="#Class-文件结构" class="headerlink" title="Class 文件结构"></a>Class 文件结构</h3><p>Class 文件采用类似 C 语言结构体的伪结构体来存储数据,这种伪结构只有两种数据类型,无符号数和表.<br>无符号数可以描述数字,索引引用,数量值或者按照 UTF-8编码构成的字符串值.<br>表是由无符号数或者其他表作为数据项构成的复合数据类型</p>
+<h4 id="魔数与-Class-文件版本"><a href="#魔数与-Class-文件版本" class="headerlink" title="魔数与 Class 文件版本"></a>魔数与 Class 文件版本</h4><p>每个 Class 文件的头4个字节是魔数,它的唯一作用是确定当前文件能否被虚拟机进行加载.很多文件存储格式否使用魔数来进行身份识别,使用魔数而不使用扩展名是因为扩展名随意更改.<br>紧接着魔数后的4个字节是版本号,高版本的虚拟机能够向下兼容以前版本的 Class 文件,但不能运行以后版本的 Class 文件.</p>
+<h4 id="常量池"><a href="#常量池" class="headerlink" title="常量池"></a>常量池</h4><p>常量池中有14种常量类型,每种类型都有自己的结构.<br>由于这些常量的个数是不固定的,所以在常量池的入口放置一项 u2类型的数据,代表常量池容量计数值.<br>虚拟机的常量池主要存放两大类常量:字面量和符号引用.<br>字面量接近于 Java 语言层面的常量概念,如字符串,声明为 final 的常量值等.<br>符号引用则数据编译原理方面的概念,包括:类和结构的全限定名,字段和名称的描述符,方法的名称和描述符.</p>
+<h4 id="访问标识"><a href="#访问标识" class="headerlink" title="访问标识"></a>访问标识</h4><p>在常量池结束后的两个字节代表访问标识,用于识别类或者接口的访问信息,包括:这个 Class 是类还是接口,是否定义为 public 类型,是否定义为 abstract 类型等.</p>
+<h4 id="类索引-父类索引与接口索引集合"><a href="#类索引-父类索引与接口索引集合" class="headerlink" title="类索引,父类索引与接口索引集合"></a>类索引,父类索引与接口索引集合</h4><p>Class 文件由这三项来确定类的继承关系,类索引确定这个类的全限定名,父类索引确定这个类父类的全限定名,接口索引集合用来描述这个类实现了那些接口.</p>
+<h4 id="字段表集合"><a href="#字段表集合" class="headerlink" title="字段表集合"></a>字段表集合</h4><p>字段表用来描述类或接口中声明的变量,包括类级变量以及实例级变量,但不包括方法内部声明的局部变量.</p>
+<h4 id="方法表集合"><a href="#方法表集合" class="headerlink" title="方法表集合"></a>方法表集合</h4><p>方法表的结构如字段一样,包含了访问标识,名称索引,描述符索引几项.</p>
+<h4 id="属性表集合"><a href="#属性表集合" class="headerlink" title="属性表集合"></a>属性表集合</h4><ul>
+<li>Code 属性</li>
+</ul>
+<p>当代码经过编译之后,最终字节码指令存储在 Code 属性内.</p>
+<ul>
+<li>Exceptions 属性</li>
+</ul>
+<p>列举出方法可能抛出的受查异常</p>
+<ul>
+<li>LineNumberTable 属性</li>
+</ul>
+<p>描述 Java 源代码行号与字节码行号之间的关系.</p>
+<ul>
+<li>LocalVarableTable 属性</li>
+</ul>
+<p>描述栈帧中局部变量表中的变量与 Java 源代码中定义的变量之间的关系.</p>
+<ul>
+<li>SourceFile 属性</li>
+</ul>
+<p>记录生成这个 Class 文件的源码文件名称.</p>
+<ul>
+<li>ConstantValue 属性</li>
+</ul>
+<p>通知虚拟机自动为静态变量赋值.</p>
+<ul>
+<li>InnerClasses 属性</li>
+</ul>
+<p>记录内部类与宿主类之间的关联.</p>
+<ul>
+<li>Deprecated 及 Synthetic 属性</li>
+</ul>
+<p>这两个属性都数据标志类型的布尔属性.<br>Deprecated 用于表示某个类,字段或者方法被程序作者定位不再推荐使用.<br>Synthetic 代表此字段或者方法并不是由 Java 源码产生的,而是由编辑器自行添加.</p>
+<ul>
+<li>StackMapTable 属性</li>
+</ul>
+<p>一个复杂的变长属性,位于 Code 属性的属性表中.这个属性会在虚拟机类加载的字节码验证阶段被新类型检查验证器使用,目的是代替以前比较消耗新能的基于数据流分析的类型推导验证器.</p>
+<ul>
+<li>Signature 属性</li>
+</ul>
+<p>可以出现于类,属性表和方法表结构的属性表中,在 JDK1.5之后,任何类,接口,方法的泛型签名如果包含了类型变量或参数化类型,则 Signature 属性会记录泛型签名信息.<br>因为 Java 语言的泛型采用擦除方法实现,在字节码中,泛型信息编译之后统统被擦除掉.<br>使用擦除的原因是实现简单,运行期也能节省一些类型所占的内存空间,坏处是运行期无法像 C# 等有真泛型支持的语言那样,将泛型类型与用户定义的类型信息同等对待, Signature 就是为了弥补这个缺陷,如 Java 的反射 API 能够获取泛型类型,就是来源这个属性.</p>
+<h3 id="字节码指令简介"><a href="#字节码指令简介" class="headerlink" title="字节码指令简介"></a>字节码指令简介</h3><p>由一个字节长度的,代表某种特定操作含义的数据以及后面的零到多个代表此操作所所需参数构成.<br>由于Java 虚拟机面向操作数栈而不是寄存器及架构,所以大多数的指令都不包含操作数.</p>
+<h4 id="字节码与数据类型"><a href="#字节码与数据类型" class="headerlink" title="字节码与数据类型"></a>字节码与数据类型</h4><p>在 Java 虚拟机的指令集中,大多数的指令都包含了其操作所对应的数据类型信息.如: iload 指令用于从局部变量表中加载 int 类型的数据到操作数栈中.</p>
+<h4 id="加载与存储指令"><a href="#加载与存储指令" class="headerlink" title="加载与存储指令"></a>加载与存储指令</h4><p>加载和存储指令用于将数据在栈帧中的局部变量表和操作数栈之间来回传输.<br>如:将一个局部变量加载到操作栈: iload<br>将一个数值从操作数栈存储到局部变量表: istore</p>
+<h4 id="运算指令"><a href="#运算指令" class="headerlink" title="运算指令"></a>运算指令</h4><p>将两个操作数栈上的数据进行某种特定操作,并将结构重新存入操作栈顶.</p>
+<h4 id="类型转化指令"><a href="#类型转化指令" class="headerlink" title="类型转化指令"></a>类型转化指令</h4><p>对两个数值类型进行相互转换,一般用于实现用户代码中的显式类型转换操作.</p>
+<h4 id="操作数栈管理指令"><a href="#操作数栈管理指令" class="headerlink" title="操作数栈管理指令"></a>操作数栈管理指令</h4><p>操作一个普通操作数据结构中的堆栈一样, Java 虚拟机提供了一些用于直接操作操作数栈的指令,包括:</p>
+<ul>
+<li>将操作数栈的栈顶一个或者两个元素出栈: pop,pop2</li>
+<li>将栈最顶端的两个数值互换: swap.</li>
+</ul>
+<h4 id="控制转移指令"><a href="#控制转移指令" class="headerlink" title="控制转移指令"></a>控制转移指令</h4><p>可以让 Java 虚拟机有条件或无条件地从指定位置指令而不是控制转移指令的下一条指令继续执行程序.</p>
+<h3 id="公有设计和私有设计"><a href="#公有设计和私有设计" class="headerlink" title="公有设计和私有设计"></a>公有设计和私有设计</h3><p>Java 虚拟机的实现运行在满足虚拟机规范的约束下对具体实现做出修改和优化.只要优化后的 Class 文件依然可以被正确读取,实现者可以选择任何方式去实现这些语义.</p>
+<h3 id="Class-文件结构的发展"><a href="#Class-文件结构的发展" class="headerlink" title="Class 文件结构的发展"></a>Class 文件结构的发展</h3><p>自 Class 文件发布十多年以来, Class 文件的主体结构,字节码指令的语义和数量几乎没有改动,所有的改动都集中在 访问标识,属性表这些在设计上可扩展的数据结构中添加内容.<br>Class 文件格式锁具备的平台中立,紧凑,稳定和可扩展的特点,是 Java 技术体系实现平台无关,语言无关两项特性的重要支柱.</p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/jvm/" rel="tag"># jvm</a>
+          
         </div>
       
+
+      
+      
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jicheng-and-zuhe/" rel="next" title="深入理解Java中的组合和继承">
+                <i class="fa fa-chevron-left"></i> 深入理解Java中的组合和继承
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/vpn/" itemprop="url">
-              
-                <span itemprop="name">利用shadowsocks和阿里云服务器搭建从国外到国内的vpn</span>
-              
-            </a>
-        
-      </h2>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/jvm-leijiazai/" rel="prev" title="Class类加载机制">
+                Class类加载机制 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-02T23:03:19+08:00"
-              content="2017-08-02" >
-          08-02
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/psychology/" itemprop="url">
-              
-                <span itemprop="name">psychology</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-31T00:28:06+08:00"
-              content="2017-07-31" >
-          07-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/always/" itemprop="url">
-              
-                <span itemprop="name">I'll always love you</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-30T01:35:43+08:00"
-              content="2017-07-30" >
-          07-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/postName/" itemprop="url">
-              
-                <span itemprop="name">create</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-29T23:28:08+08:00"
-              content="2017-07-29" >
-          07-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2017/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2017/">1</a><a class="page-number" href="/archives/2017/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -481,6 +547,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+     
+       <div id="gitment-container"></div>
+     
+    
+  </div>
+
 
         </div>
         
@@ -501,8 +575,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -593,6 +676,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Class类文件结构"><span class="nav-number">1.</span> <span class="nav-text">Class类文件结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无关的基石"><span class="nav-number">1.1.</span> <span class="nav-text">无关的基石</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class-文件结构"><span class="nav-number">1.2.</span> <span class="nav-text">Class 文件结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#魔数与-Class-文件版本"><span class="nav-number">1.2.1.</span> <span class="nav-text">魔数与 Class 文件版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常量池"><span class="nav-number">1.2.2.</span> <span class="nav-text">常量池</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问标识"><span class="nav-number">1.2.3.</span> <span class="nav-text">访问标识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类索引-父类索引与接口索引集合"><span class="nav-number">1.2.4.</span> <span class="nav-text">类索引,父类索引与接口索引集合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字段表集合"><span class="nav-number">1.2.5.</span> <span class="nav-text">字段表集合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法表集合"><span class="nav-number">1.2.6.</span> <span class="nav-text">方法表集合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性表集合"><span class="nav-number">1.2.7.</span> <span class="nav-text">属性表集合</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字节码指令简介"><span class="nav-number">1.3.</span> <span class="nav-text">字节码指令简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字节码与数据类型"><span class="nav-number">1.3.1.</span> <span class="nav-text">字节码与数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加载与存储指令"><span class="nav-number">1.3.2.</span> <span class="nav-text">加载与存储指令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运算指令"><span class="nav-number">1.3.3.</span> <span class="nav-text">运算指令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类型转化指令"><span class="nav-number">1.3.4.</span> <span class="nav-text">类型转化指令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作数栈管理指令"><span class="nav-number">1.3.5.</span> <span class="nav-text">操作数栈管理指令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#控制转移指令"><span class="nav-number">1.3.6.</span> <span class="nav-text">控制转移指令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公有设计和私有设计"><span class="nav-number">1.4.</span> <span class="nav-text">公有设计和私有设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class-文件结构的发展"><span class="nav-number">1.5.</span> <span class="nav-text">Class 文件结构的发展</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -711,11 +810,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   

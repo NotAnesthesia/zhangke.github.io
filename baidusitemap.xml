@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://zhangk.top/jvm-leijiazai/</loc>
+    <lastmod>2017-12-15T16:39:02.370Z</lastmod>
+    <data>
+        <display>
+        <title>Class类加载机制</title>
+        <pubTime>2017-12-16T09:01:19.000Z</pubTime>
+        
+        <tag>jvm</tag>
+         
+         
+           
+             
+              <breadCrumb title="jvm" url="http://zhangk.top/categories/jvm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/jvm-classFileConstructor/</loc>
+    <lastmod>2017-12-15T16:12:34.540Z</lastmod>
+    <data>
+        <display>
+        <title>Class类文件结构</title>
+        <pubTime>2017-12-15T16:06:52.000Z</pubTime>
+        
+        <tag>jvm</tag>
+         
+         
+           
+             
+              <breadCrumb title="jvm" url="http://zhangk.top/categories/jvm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zhangk.top/java-reflect/</loc>
     <lastmod>2017-12-15T11:55:29.091Z</lastmod>
     <data>
