@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://zhangk.top/java-reflect/</loc>
+    <lastmod>2017-12-15T11:55:29.091Z</lastmod>
+    <data>
+        <display>
+        <title>关于Java反射的理解</title>
+        <pubTime>2017-12-07T06:34:21.000Z</pubTime>
+        
+        <tag>javaSE</tag>
+         
+         
+           
+             
+              <breadCrumb title="javaSE" url="http://zhangk.top/categories/javaSE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zhangk.top/duotai-1/</loc>
     <lastmod>2017-12-15T11:52:15.006Z</lastmod>
     <data>
@@ -137,26 +157,6 @@
            
              
               <breadCrumb title="jvm" url="http://zhangk.top/categories/jvm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/java-reflect/</loc>
-    <lastmod>2017-12-07T06:36:42.164Z</lastmod>
-    <data>
-        <display>
-        <title>关于Java反射的理解</title>
-        <pubTime>2017-12-07T06:34:21.000Z</pubTime>
-        
-        <tag>反射</tag>
-         
-         
-           
-             
-              <breadCrumb title="反射" url="http://zhangk.top/categories/%E5%8F%8D%E5%B0%84/"/>
           
         </display>
     </data>

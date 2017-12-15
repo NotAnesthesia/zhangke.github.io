@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangk.top/java-reflect/</loc>
+    
+    <lastmod>2017-12-15T11:55:29.091Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhangk.top/duotai-1/</loc>
     
     <lastmod>2017-12-15T11:52:15.006Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://zhangk.top/jvm-neicun/</loc>
     
     <lastmod>2017-12-08T16:20:42.705Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhangk.top/java-reflect/</loc>
-    
-    <lastmod>2017-12-07T06:36:42.164Z</lastmod>
     
   </url>
   
