@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://zhangk.top/hexo-openPostQuick/</loc>
+    <lastmod>2018-01-07T05:59:30.035Z</lastmod>
+    <data>
+        <display>
+        <title>在hexo new之后立即打开Markdown文稿</title>
+        <pubTime>2018-01-07T05:47:03.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://zhangk.top/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/jvm-neicun/</loc>
+    <lastmod>2017-12-16T02:50:20.369Z</lastmod>
+    <data>
+        <display>
+        <title>jvm之内存区域</title>
+        <pubTime>2017-12-08T16:01:43.000Z</pubTime>
+        
+        <tag>jvm</tag>
+         
+         
+           
+             
+              <breadCrumb title="jvm" url="http://zhangk.top/categories/jvm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zhangk.top/jvm-leijiazai/</loc>
     <lastmod>2017-12-15T16:39:02.370Z</lastmod>
     <data>
@@ -170,26 +210,6 @@
         <display>
         <title>jvm垃圾收集器与内存分配策略</title>
         <pubTime>2017-12-13T15:56:27.000Z</pubTime>
-        
-        <tag>jvm</tag>
-         
-         
-           
-             
-              <breadCrumb title="jvm" url="http://zhangk.top/categories/jvm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/jvm-neicun/</loc>
-    <lastmod>2017-12-08T16:20:42.705Z</lastmod>
-    <data>
-        <display>
-        <title>jvm之内存区域</title>
-        <pubTime>2017-12-08T16:01:43.000Z</pubTime>
         
         <tag>jvm</tag>
          

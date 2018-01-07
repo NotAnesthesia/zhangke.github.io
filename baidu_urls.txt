@@ -1,3 +1,4 @@
+http://zhangk.top/hexo-openPostQuick/
 http://zhangk.top/jvm-leijiazai/
 http://zhangk.top/jvm-classFileConstructor/
 http://zhangk.top/jicheng-and-zuhe/
