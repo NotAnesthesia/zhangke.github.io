@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需">
+<meta name="description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   1yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux系统下安装jdk详细步骤（共两种方法）">
 <meta property="og:url" content="http://zhangk.top/aliyun-jdk/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需">
+<meta property="og:description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   1yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-24T03:14:44.000Z">
+<meta property="og:updated_time" content="2018-01-26T08:40:11.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux系统下安装jdk详细步骤（共两种方法）">
-<meta name="twitter:description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不需">
+<meta name="twitter:description" content="配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。 第一种方法只需要一条命令就可以安装jdk：   1yum install java-1.8.0-openjdk* -y 执行过这条命令无需配置，直接可以使用。 第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不">
 
 
 
@@ -410,7 +410,7 @@
       
         <p>配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。</p>
 <h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a><strong>第一种方法</strong></h3><p>只需要一条命令就可以安装jdk：  </p>
-<p><code>yum install java-1.8.0-openjdk* -y</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install java-1.8.0-openjdk* -y</div></pre></td></tr></table></figure>
 <p>执行过这条命令无需配置，直接可以使用。</p>
 <h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a><strong>第二种方法</strong></h3><h4 id="1-登录Linux，切换到root用户"><a href="#1-登录Linux，切换到root用户" class="headerlink" title="1.  登录Linux，切换到root用户"></a>1.  登录Linux，切换到root用户</h4><p><code>su root</code> 获取root用户权限，当前工作目录不变(需要root密码)<br>或<br><code>sudo -i</code> 不需要root密码直接切换成root（需要当前用户密码）</p>
 <h4 id="2-在usr目录下建立java安装目录"><a href="#2-在usr目录下建立java安装目录" class="headerlink" title="2. 在usr目录下建立java安装目录"></a>2. 在usr目录下建立java安装目录</h4><p><code>cd /usr</code> //进入usr目录</p>
@@ -421,13 +421,13 @@
 <h4 id="5-安装完毕为他建立一个链接以节省目录长度"><a href="#5-安装完毕为他建立一个链接以节省目录长度" class="headerlink" title="5. 安装完毕为他建立一个链接以节省目录长度"></a>5. 安装完毕为他建立一个链接以节省目录长度</h4><p><code>ln -s /usr/java/jdk1.8.0_60/ /usr/jdk</code></p>
 <h4 id="6-编辑配置文件，配置环境变量"><a href="#6-编辑配置文件，配置环境变量" class="headerlink" title="6. 编辑配置文件，配置环境变量"></a>6. 编辑配置文件，配置环境变量</h4><p><code>vim /etc/profile</code>  </p>
 <p>添加如下内容：<strong>JAVA_HOME</strong>根据实际目录来</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=/usr/java/jdk1.8.0_60</div><div class="line">export CLASSPATH=JAVAHOME/lib/exportPATH=PATH:$JAVA_HOME/bin</div><div class="line">export PATH JAVA_HOME CLASSPATH</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=/usr/java/jdk1.8.0_60</div><div class="line">export CLASSPATH=JAVAHOME/lib/exportPATH=PATH:$JAVA_HOME/bin</div><div class="line">export PATH JAVA_HOME CLASSPATH</div></pre></td></tr></table></figure>
 <h4 id="7-重启机器或执行命令-：source-etc-profile"><a href="#7-重启机器或执行命令-：source-etc-profile" class="headerlink" title="7. 重启机器或执行命令 ：source /etc/profile"></a>7. 重启机器或执行命令 ：source /etc/profile</h4><p>sudo shutdown -r now</p>
-<h4 id="8-查看安装情况"><a href="#8-查看安装情况" class="headerlink" title="8. 查看安装情况"></a>8. 查看安装情况</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# java -version</div><div class="line">openjdk version “1.8.0_141”</div><div class="line">OpenJDK Runtime Environment (build 1.8.0_141-b16)</div><div class="line">OpenJDK 64-Bit Server VM (build 25.141-b16, mixed mode)</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# javac -version</div><div class="line">javac 1.8.0_141</div></pre></td></tr></table></figure>
-<h4 id="可能出现的错误信息："><a href="#可能出现的错误信息：" class="headerlink" title="可能出现的错误信息："></a>可能出现的错误信息：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash: ./java: cannot execute binary file</div></pre></td></tr></table></figure>
+<h4 id="8-查看安装情况"><a href="#8-查看安装情况" class="headerlink" title="8. 查看安装情况"></a>8. 查看安装情况</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# java -version</div><div class="line">openjdk version “1.8.0_141”</div><div class="line">OpenJDK Runtime Environment (build 1.8.0_141-b16)</div><div class="line">OpenJDK 64-Bit Server VM (build 25.141-b16, mixed mode)</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# javac -version</div><div class="line">javac 1.8.0_141</div></pre></td></tr></table></figure>
+<h4 id="可能出现的错误信息："><a href="#可能出现的错误信息：" class="headerlink" title="可能出现的错误信息："></a>可能出现的错误信息：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash: ./java: cannot execute binary file</div></pre></td></tr></table></figure>
 <p>出现这个错误的原因可能是在32位的操作系统上安装了64位的jdk，<br>查看jdk版本和Linux版本位数是否一致。<br>查看你安装的Ubuntu是32位还是64位系统：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo uname –m</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo uname –m</div></pre></td></tr></table></figure>
 <p>i686 //表示是32位<br>x86_64 // 表示是64位  </p>
 
       
@@ -560,7 +560,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -582,7 +582,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

@@ -93,19 +93,19 @@
 
 
 
-<meta name="description" content="前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&amp;lt;select id=&amp;quot;selectUserByNameAndPassword&amp;quot; parameterType=&amp;quot;String&amp;quot; result">
+<meta name="description" content="前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&amp;lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&amp;gt;">
 <meta name="keywords" content="Mybatis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习ssm框架——Mybatis版本问题解决方案（一）">
 <meta property="og:url" content="http://zhangk.top/ssm1/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&amp;lt;select id=&amp;quot;selectUserByNameAndPassword&amp;quot; parameterType=&amp;quot;String&amp;quot; result">
+<meta property="og:description" content="前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&amp;lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20171021110727118?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-12-15T11:50:45.407Z">
+<meta property="og:updated_time" content="2018-01-26T08:36:22.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习ssm框架——Mybatis版本问题解决方案（一）">
-<meta name="twitter:description" content="前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&amp;lt;select id=&amp;quot;selectUserByNameAndPassword&amp;quot; parameterType=&amp;quot;String&amp;quot; result">
+<meta name="twitter:description" content="前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&amp;lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&amp;gt;">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20171021110727118?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -410,17 +410,17 @@
       
 
       
-        <p>前几天搭建了<strong>ssm</strong>框架准备开发后端，今天写<strong>mapper</strong>时遇到个棘手的问题-写<strong>select</strong>语句时发现入参报错总是提示找不到<strong>username</strong>，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt;     </div><div class="line">	select * from user where username = #&#123;username&#125; and password = #&#123;password&#125;  </div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure></p>
+        <p>前几天搭建了<strong>ssm</strong>框架准备开发后端，今天写<strong>mapper</strong>时遇到个棘手的问题-写<strong>select</strong>语句时发现入参报错总是提示找不到<strong>username</strong>，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;username&#125; and password = #&#123;password&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>Mybatis参数问题<br><img src="http://img.blog.csdn.net/20171021110727118?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="报错信息"></p>
 <hr>
 <p>然后经过一番折腾在网上找到解决方案，将变量改成参数形式<strong>0，1</strong>或者加上<strong>jdbcType</strong>，代码如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt;     </div><div class="line">	select * from user where username = #&#123;0&#125; and password = #&#123;1&#125;  </div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;0&#125; and password = #&#123;1&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>And</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt;     </div><div class="line">	select * from user where username = #&#123;username, jdbcType=VARCHAR&#125; and password = #&#123;password, jdbcType=VARCHAR&#125;  </div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;username, jdbcType=VARCHAR&#125; and password = #&#123;password, jdbcType=VARCHAR&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>报错同上。</p>
 <hr>
 <p>此时就很难受了，看源码<strong>debug</strong>。。。<br>偶然间查到了可能是版本问题，然后尝试了以下解决方案搞定</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;selectUserByNameAndPassword&quot; parameterType=&quot;String&quot; resultType=&quot;po.User&quot;&gt;     </div><div class="line">	select * from user where username = #&#123;arg0&#125; and password = #&#123;arg1&#125;  </div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;arg0&#125; and password = #&#123;arg1&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>最后贴上<a href="https://gitee.com/zkzk96871/TW-SYSTEM" target="_blank" rel="external">码云项目地址</a></p>
 
       
@@ -544,7 +544,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -566,7 +566,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

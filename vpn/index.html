@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题  建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。  因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。暂时告一段落，">
+<meta name="description" content="刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题​        建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。  因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用shadowsocks和阿里云服务器搭建从国外到国内的vpn">
 <meta property="og:url" content="http://zhangk.top/vpn/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题  建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。  因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。暂时告一段落，">
+<meta property="og:description" content="刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题​        建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。  因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-02T20:28:04.000Z">
+<meta property="og:updated_time" content="2018-01-26T08:37:36.301Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用shadowsocks和阿里云服务器搭建从国外到国内的vpn">
-<meta name="twitter:description" content="刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题  建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。  因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。暂时告一段落，">
+<meta name="twitter:description" content="刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题​        建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。  因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。">
 
 
 
@@ -407,15 +407,12 @@
       
 
       
-        <p>刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题</p>
+        <p>刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题<br>​      </p>
 <blockquote>
 <p>建议把 SS 的配置文件放置在当前用户主目录下的 <strong>ss</strong> 文件夹内，对于 <strong>root</strong> 用户而言，则是：<strong>/root/ss</strong> 目录。其余用户一般则是：<strong>/home/用户名</strong> 目录。</p>
 </blockquote>
 <p>因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。暂时告一段落，择明日再战。</p>
-<p>之后换了个思路，先往下看呗，忽然发现这一步</p>
-<blockquote>
-<p>nohup ssserver -c /root/ss/ssserver.json -d start &amp;</p>
-</blockquote>
+<p>之后换了个思路，先往下看呗，忽然发现这一步<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nohup ssserver -c /root/ss/ssserver.json -d start &amp;</div></pre></td></tr></table></figure></p>
 <p>惊觉路径没关系，之后换一个就好。随后就解决了。</p>
 <hr>
 <p>感谢大佬<a href="https://www.loyalsoldier.me/fuck-the-gfw-with-my-own-shadowsocks-server/" target="_blank" rel="external">教程</a>的帮助</p>
@@ -535,7 +532,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -557,7 +554,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

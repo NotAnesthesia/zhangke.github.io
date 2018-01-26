@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Zhangke&#39;s blog">
 <meta property="og:description" content="pat第一题终于编译通过了，必须要class Main才行啊 1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T04:36:22.885Z">
+<meta property="og:updated_time" content="2018-01-26T08:27:52.483Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pat_1001">
 <meta name="twitter:description" content="pat第一题终于编译通过了，必须要class Main才行啊 1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less">
@@ -418,7 +418,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-1000000 9</div></pre></td></tr></table></figure>
 <p>Sample Output</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-999,991</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import java.util.Scanner;</div><div class="line"></div><div class="line"></div><div class="line">class Main &#123;</div><div class="line"></div><div class="line">  public static void main(String[] args) &#123;</div><div class="line">    // TODO Auto-generated method stub</div><div class="line">    Scanner scanner = new Scanner(System.in);</div><div class="line">    int a = scanner.nextInt();</div><div class="line">    int b = scanner.nextInt();</div><div class="line">    String sum = String.valueOf(a+b);</div><div class="line"></div><div class="line">    for (int i = 0; i &lt; sum.length(); i++) &#123;</div><div class="line">      System.out.print(sum.charAt(i));</div><div class="line">      if (sum.charAt(i)==&apos;-&apos;) &#123;</div><div class="line">        continue;</div><div class="line">      &#125;</div><div class="line">      if ((i+1)%3==sum.length()%3 &amp;&amp; i!=(sum.length()-1)) &#123;</div><div class="line">        System.out.print(&apos;,&apos;);</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    <span class="comment">// TODO Auto-generated method stub</span></div><div class="line">    Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">    <span class="keyword">int</span> a = scanner.nextInt();</div><div class="line">    <span class="keyword">int</span> b = scanner.nextInt();</div><div class="line">    String sum = String.valueOf(a+b);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sum.length(); i++) &#123;</div><div class="line">      System.out.print(sum.charAt(i));</div><div class="line">      <span class="keyword">if</span> (sum.charAt(i)==<span class="string">'-'</span>) &#123;</div><div class="line">        <span class="keyword">continue</span>;</div><div class="line">      &#125;</div><div class="line">      <span class="keyword">if</span> ((i+<span class="number">1</span>)%<span class="number">3</span>==sum.length()%<span class="number">3</span> &amp;&amp; i!=(sum.length()-<span class="number">1</span>)) &#123;</div><div class="line">        System.out.print(<span class="string">','</span>);</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -550,7 +550,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -572,7 +572,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

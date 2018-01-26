@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Zhangke&#39;s blog">
 <meta property="og:description" content="由于每次使用hexo new新建之后都要到文件夹里自己去找出文件再打开，当文件多起来更是件麻烦事。基于此，在网上发现有直接能在新建完后自动打开markdown文档的js脚本，怀着试一试的心态按着步骤走，最后成功了。  首先安装 shelljs模块，实现自动部署加载JS脚本，键入以下命令：  1npm install --save shelljs  在 Hexo 根目录的 scripts文件夹下新建">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-07T05:59:30.035Z">
+<meta property="og:updated_time" content="2018-01-26T08:29:54.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在hexo new之后立即打开Markdown文稿">
 <meta name="twitter:description" content="由于每次使用hexo new新建之后都要到文件夹里自己去找出文件再打开，当文件多起来更是件麻烦事。基于此，在网上发现有直接能在新建完后自动打开markdown文档的js脚本，怀着试一试的心态按着步骤走，最后成功了。  首先安装 shelljs模块，实现自动部署加载JS脚本，键入以下命令：  1npm install --save shelljs  在 Hexo 根目录的 scripts文件夹下新建">
@@ -412,12 +412,12 @@
 <ol>
 <li>首先安装 <strong>shelljs</strong>模块，实现自动部署加载JS脚本，键入以下命令：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save shelljs</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save shelljs</div></pre></td></tr></table></figure>
 <ol>
 <li>在 Hexo 根目录的 <code>scripts文件夹</code>下新建一个 <code>js文件</code>。此处js脚本根据hexo版本而定。我的是hexo-cli:1.0.3</li>
 </ol>
 <p>稍微修改后用这个脚本成功：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var exec = require(&apos;child_process&apos;).exec;</div><div class="line"> </div><div class="line">hexo.on(&apos;new&apos;, function(data)&#123;</div><div class="line">    exec(&apos;open -a &quot;/Applications/Typora.app&quot;  &apos; + [data.path]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</div><div class="line"> </div><div class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">    exec(<span class="string">'open -a "/Applications/Typora.app"  '</span> + [data.path]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>最后一行里面执行的是系统命令open -a “/Applications/Typora.app”  path,直接就可以在终端用命令打开，是 OS X 下的open。换到Windows中,可能需要改为start。</p>
 
       
@@ -541,7 +541,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -563,7 +563,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
