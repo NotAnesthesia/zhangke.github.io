@@ -5,15 +5,11 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
 
 
 
@@ -40,7 +36,36 @@
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -49,58 +74,23 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.0.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: 'ZY6JY6ZPM9',
-      apiKey: '5d7498bc5ed50652590b1467b96af99c',
-      indexName: 'test_zhangke',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  
   <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
 
 
 <meta name="description" content="少点抱怨，多点改变">
@@ -116,10 +106,34 @@
 
 
 
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'ZY6JY6ZPM9',
+      apiKey: '5d7498bc5ed50652590b1467b96af99c',
+      indexName: 'test_zhangke',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
 
 
   <link rel="canonical" href="http://zhangk.top/page/3/"/>
+
+
+
 
 
   <title>Zhangke's blog</title>
@@ -133,32 +147,10 @@
 
 
 
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
+
+
 
 </head>
 
@@ -170,11 +162,12 @@
   
 
   <div class="container sidebar-position-left 
-  page-home">
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -208,33 +201,99 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
         </li>
       
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
   
-</nav>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
 
 
+
+    </div>
   
+</nav>
 
 
 
  </div>
     </header>
-
-    
-
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -251,13 +310,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/aliyun-jdk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -287,12 +340,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-24T11:10:48+08:00">2017-10-24</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T11:10:48+08:00">
+                2017-10-24
+              </time>
             
 
-            
             
 
             
@@ -307,10 +361,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
 
                 
                 
@@ -324,6 +382,17 @@
 
           
           
+             <span id="/aliyun-jdk/" class="leancloud_visitors" data-flag-title="Linux系统下安装jdk详细步骤（共两种方法）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -335,9 +404,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -346,41 +412,34 @@
       
         
           
-            <p>配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。</p>
-<h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a><strong>第一种方法</strong></h3><p>只需要一条命令就可以安装jdk：  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install java-1.8.0-openjdk* -y</div></pre></td></tr></table></figure>
-<p>执行过这条命令无需配置，直接可以使用。</p>
-<h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a><strong>第二种方法</strong></h3><h4 id="1-登录Linux，切换到root用户"><a href="#1-登录Linux，切换到root用户" class="headerlink" title="1.  登录Linux，切换到root用户"></a>1.  登录Linux，切换到root用户</h4><p><code>su root</code> 获取root用户权限，当前工作目录不变(需要root密码)<br>或<br><code>sudo -i</code> 不需要root密码直接切换成root（需要当前用户密码）</p>
-<h4 id="2-在usr目录下建立java安装目录"><a href="#2-在usr目录下建立java安装目录" class="headerlink" title="2. 在usr目录下建立java安装目录"></a>2. 在usr目录下建立java安装目录</h4><p><code>cd /usr</code> //进入usr目录</p>
-<p><code>mkdir java</code>   //创建java目录</p>
-<h4 id="3-将jdk-8u60-linux-x64-tar-gz拷贝到java目录下"><a href="#3-将jdk-8u60-linux-x64-tar-gz拷贝到java目录下" class="headerlink" title="3. 将jdk-8u60-linux-x64.tar.gz拷贝到java目录下"></a>3. 将jdk-8u60-linux-x64.tar.gz拷贝到java目录下</h4><p><code>cp /mnt/hgfs/linux/jdk-8u60-linux-x64.tar.gz /usr/java/</code></p>
-<h4 id="4-解压jdk到当前目录"><a href="#4-解压jdk到当前目录" class="headerlink" title="4. 解压jdk到当前目录"></a>4. 解压jdk到当前目录</h4><p><code>tar -zxvf jdk-8u60-linux-x64.tar.gz</code></p>
-<p>得到文件夹 jdk1.8.0_60</p>
-<h4 id="5-安装完毕为他建立一个链接以节省目录长度"><a href="#5-安装完毕为他建立一个链接以节省目录长度" class="headerlink" title="5. 安装完毕为他建立一个链接以节省目录长度"></a>5. 安装完毕为他建立一个链接以节省目录长度</h4><p><code>ln -s /usr/java/jdk1.8.0_60/ /usr/jdk</code></p>
-<h4 id="6-编辑配置文件，配置环境变量"><a href="#6-编辑配置文件，配置环境变量" class="headerlink" title="6. 编辑配置文件，配置环境变量"></a>6. 编辑配置文件，配置环境变量</h4><p><code>vim /etc/profile</code>  </p>
-<p>添加如下内容：<strong>JAVA_HOME</strong>根据实际目录来</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=/usr/java/jdk1.8.0_60</div><div class="line">export CLASSPATH=JAVAHOME/lib/exportPATH=PATH:$JAVA_HOME/bin</div><div class="line">export PATH JAVA_HOME CLASSPATH</div></pre></td></tr></table></figure>
-<h4 id="7-重启机器或执行命令-：source-etc-profile"><a href="#7-重启机器或执行命令-：source-etc-profile" class="headerlink" title="7. 重启机器或执行命令 ：source /etc/profile"></a>7. 重启机器或执行命令 ：source /etc/profile</h4><p>sudo shutdown -r now</p>
-<h4 id="8-查看安装情况"><a href="#8-查看安装情况" class="headerlink" title="8. 查看安装情况"></a>8. 查看安装情况</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# java -version</div><div class="line">openjdk version “1.8.0_141”</div><div class="line">OpenJDK Runtime Environment (build 1.8.0_141-b16)</div><div class="line">OpenJDK 64-Bit Server VM (build 25.141-b16, mixed mode)</div></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@bogon jdk]# javac -version</div><div class="line">javac 1.8.0_141</div></pre></td></tr></table></figure>
-<h4 id="可能出现的错误信息："><a href="#可能出现的错误信息：" class="headerlink" title="可能出现的错误信息："></a>可能出现的错误信息：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash: ./java: cannot execute binary file</div></pre></td></tr></table></figure>
-<p>出现这个错误的原因可能是在32位的操作系统上安装了64位的jdk，<br>查看jdk版本和Linux版本位数是否一致。<br>查看你安装的Ubuntu是32位还是64位系统：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo uname –m</div></pre></td></tr></table></figure>
-<p>i686 //表示是32位<br>x86_64 // 表示是64位  </p>
-
-          
+          配置阿里云服务器时遇到一些版本问题，需要重装jdk，以下是从网上搜索的方案，我用的是第一种。
+第一种方法只需要一条命令就可以安装jdk：  
+1yum install java-1.8.0-openjdk* -y
+执行过这条命令无需配置，直接可以使用。
+第二种方法1.  登录Linux，切换到roo
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/aliyun-jdk/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -394,10 +453,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -410,13 +465,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/mysql-question-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -446,12 +495,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-23T11:11:31+08:00">2017-10-23</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T11:11:31+08:00">
+                2017-10-23
+              </time>
             
 
-            
             
 
             
@@ -466,10 +516,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mysql/" itemprop="url" rel="index"><span itemprop="name">mysql</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
 
                 
                 
@@ -483,6 +537,17 @@
 
           
           
+             <span id="/mysql-question-3/" class="leancloud_visitors" data-flag-title="阿里云服务器同步MySQL数据库">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -494,9 +559,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -505,39 +567,33 @@
       
         
           
-            <h2 id="将本地文件拷贝到远程服务上的指定目录"><a href="#将本地文件拷贝到远程服务上的指定目录" class="headerlink" title="将本地文件拷贝到远程服务上的指定目录"></a>将本地文件拷贝到远程服务上的指定目录</h2><p>命令scp基于SSH协议，可以<strong>将本地文件拷贝到远程服务上的指定目录</strong>，格式如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scp filename username@remotehost:remotedirectory</div></pre></td></tr></table></figure>
-<hr>
-<h2 id="数据库创建时，无法使用“-”等特殊字符"><a href="#数据库创建时，无法使用“-”等特殊字符" class="headerlink" title="数据库创建时，无法使用“-”等特殊字符"></a>数据库创建时，无法使用“-”等特殊字符</h2><p>在使用mysql命令进行数据库创建时，发现“-”等特殊字符无法使用，提示sql语句语法错误。  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">mysql&gt;</span><span class="bash">create database tw-travel;</span></div></pre></td></tr></table></figure>
-<p>解决方案：数据库名加上 ``</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">mysql&gt;</span><span class="bash">create database `tw-travel`;</span></div></pre></td></tr></table></figure>
-<hr>
-<h2 id="Linux系统下通过命令行对mysql数据库进行备份和还原"><a href="#Linux系统下通过命令行对mysql数据库进行备份和还原" class="headerlink" title="Linux系统下通过命令行对mysql数据库进行备份和还原"></a>Linux系统下通过命令行对mysql数据库进行备份和还原</h2><h3 id="备份："><a href="#备份：" class="headerlink" title="备份："></a>备份：</h3><ol>
-<li>进入MySQL目录  </li>
-<li>备份</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysqldump -u root -p密码 数据库名  数据表名 &gt;  mysql.sql</div></pre></td></tr></table></figure>
-<h3 id="还原："><a href="#还原：" class="headerlink" title="还原："></a>还原：</h3><ol>
-<li>建立你要还原的数据库并<code>use database</code></li>
-<li>导入sql文件</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source mysql.sql</div></pre></td></tr></table></figure>
-<hr>
+          将本地文件拷贝到远程服务上的指定目录命令scp基于SSH协议，可以将本地文件拷贝到远程服务上的指定目录，格式如下：
+1scp filename username@remotehost:remotedirectory
 
-          
+数据库创建时，无法使用“-”等特殊字符在使用mysql命令进行数据库创建时，发现“
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/mysql-question-3/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -551,10 +607,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -567,13 +619,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/mysql-question-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -603,12 +649,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-23T11:11:27+08:00">2017-10-23</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T11:11:27+08:00">
+                2017-10-23
+              </time>
             
 
-            
             
 
             
@@ -623,10 +670,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mysql/" itemprop="url" rel="index"><span itemprop="name">mysql</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
 
                 
                 
@@ -640,6 +691,17 @@
 
           
           
+             <span id="/mysql-question-2/" class="leancloud_visitors" data-flag-title="改善Mac系统MySQL配置环境变量">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -651,9 +713,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -662,27 +721,31 @@
       
         
           
-            <h2 id="本地MySQL：改善Mac系统MySQL配置环境变量"><a href="#本地MySQL：改善Mac系统MySQL配置环境变量" class="headerlink" title="本地MySQL：改善Mac系统MySQL配置环境变量"></a>本地MySQL：改善Mac系统MySQL配置环境变量</h2><p>1.首先修改<code>.bash_profile</code> 文件<br><code>sudo vim .bash_profile</code> </p>
-<p>2.加上一行配置<strong>PATH</strong>，并保存<br><code>export PATH=${PATH}:/usr/local/mysql/bin</code><br>3.终端输入此命令使<strong>PATH</strong>生效<br><code>source .bash_profile</code><br>4.此时即可用<code>mysql -u root -p</code> 进入MySQL，但是有一个问题就是当你重启终端时会发现又无法用该命令了，原因是当你重启时此时PATH下没有mysql，难道每次关掉终端在打开都需要重新<code>source .bash_profile</code></p>
-<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>1.终端编辑<code>~/.zshc</code> 文件<br><code>vim ~/.zshrc</code></p>
-<p>2.添加并保存<br><code>export PATH=${PATH}:/usr/local/mysql/bin</code></p>
-<p>3.终端<br><code>source ~/.zshc</code> </p>
-<p>4.一劳永逸~  </p>
-<p>附：有的文章中提到修改~/.bashrc，如果系统是zsh的修改bashrc是无效的</p>
-
-          
+          本地MySQL：改善Mac系统MySQL配置环境变量1.首先修改.bash_profile 文件sudo vim .bash_profile 
+2.加上一行配置PATH，并保存export PATH=${PATH}:/usr/local/mysql/bin3.终端输入此命令使PATH生效source
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/mysql-question-2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -696,10 +759,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -712,13 +771,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/WebEncoding/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -748,12 +801,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-21T23:49:22+08:00">2017-10-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T23:49:22+08:00">
+                2017-10-21
+              </time>
             
 
-            
             
 
             
@@ -768,10 +822,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mysql/" itemprop="url" rel="index"><span itemprop="name">mysql</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
 
                 
                 
@@ -785,6 +843,17 @@
 
           
           
+             <span id="/WebEncoding/" class="leancloud_visitors" data-flag-title="MySQL解决中文乱码之全套方案">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -796,9 +865,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -807,45 +873,35 @@
       
         
           
-            <p>今天遇到一堆MySQL <strong>中文</strong>乱码的问题 ，总体来说分为<strong>数据库</strong>层面，<strong>Tomcat</strong>层面，<strong>web表示</strong>层面。</p>
-<h2 id="数据库层面"><a href="#数据库层面" class="headerlink" title="数据库层面"></a>数据库层面</h2><p>先是MySQL数据库中文乱码问题，大概样子如下：  </p>
-<p><img src="http://img.blog.csdn.net/20171022002712080?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="问号">  </p>
-<p>然后自我感觉这件事情不就是改下字段的编码吗，那就改一下呗<br>如图，我更改了Encoding  </p>
-<p><img src="http://img.blog.csdn.net/20171022003238367?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="字段编码">    </p>
-<p>然后发现事情并没有那简单，于是开始上网查解决方案，网上说需要修改<code>/etc/my.cnf</code>(此配置文件对于mac后缀是<code>.cnf</code>，对于Windows是<code>.ini</code>)。所以漫漫找寻之路开始了，最后连Linux查询find语句也试了就是找不到，终于在几篇文章里查到Mac上的MySQL没有<code>my.cnf</code>配置文件，好吧，继续寻找解决方案，有人说MySQL下的support-file中找一个<code>.cnf</code>复制一下再改；里面的东西，然而我连<code>.cnf</code>文件都没有找到。最后采用一位网友的办法，直接在<code>/etc</code>目录下  <code>vim my.cnf</code>新建一个文件，在此附上我修改过的文件里面内容，在<code>[mysqld]</code> 之后增加了一行 <code>collation-server = utf8_general_ci</code>  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="meta">#</span> Example MySQL config file for medium systems.</div><div class="line"><span class="meta">  #</span></div><div class="line"><span class="meta">  #</span> This is for a system with little memory (32M - 64M) where MySQL plays</div><div class="line"><span class="meta">  #</span> an important part, or systems up to 128M where MySQL is used together with</div><div class="line"><span class="meta">  #</span> other programs (such as a web server)</div><div class="line"><span class="meta">  #</span></div><div class="line"><span class="meta">  #</span> MySQL programs look for option files in a set of</div><div class="line"><span class="meta">  #</span> locations which depend on the deployment platform.</div><div class="line"><span class="meta">  #</span> You can copy this option file to one of those</div><div class="line"><span class="meta">  #</span> locations. For information about these locations, see:</div><div class="line"><span class="meta">  #</span> http://dev.mysql.com/doc/mysql/en/option-files.html</div><div class="line"><span class="meta">  #</span></div><div class="line"><span class="meta">  #</span> In this file, you can use all long options that a program supports.</div><div class="line"><span class="meta">  #</span> If you want to know which options a program supports, run the program</div><div class="line"><span class="meta">  #</span> with the "--help" option.</div><div class="line"><span class="meta">  #</span> The following options will be passed to all MySQL clients</div><div class="line">  [client]</div><div class="line">  default-character-set=utf8</div><div class="line"><span class="meta">  #</span>password   = your_password</div><div class="line">  port        = 3306</div><div class="line">  socket      = /tmp/mysql.sock</div><div class="line"><span class="meta">  #</span> Here follows entries for some specific programs</div><div class="line"><span class="meta">  #</span> The MySQL server</div><div class="line">  [mysqld]</div><div class="line">  character-set-server=utf8</div><div class="line">  default-storage-engine = INNODB</div><div class="line">  collation-server = utf8_general_ci</div><div class="line">  init_connect='SET NAMES utf8'</div><div class="line">  port        = 3306</div><div class="line">  socket      = /tmp/mysql.sock</div><div class="line">  skip-external-locking</div><div class="line">  key_buffer_size = 16M</div><div class="line">  max_allowed_packet = 1M</div><div class="line">  table_open_cache = 64</div><div class="line">  sort_buffer_size = 512K</div><div class="line">  net_buffer_length = 8K</div><div class="line">  read_buffer_size = 256K</div><div class="line">  read_rnd_buffer_size = 512K</div><div class="line">  myisam_sort_buffer_size = 8M</div><div class="line">  character-set-server=utf8</div><div class="line">  init_connect='SET NAMES utf8'</div><div class="line"><span class="meta">#</span> Don't listen on a TCP/IP port at all. This can be a security enhancement,</div><div class="line"><span class="meta">#</span> if all processes that need to connect to mysqld run on the same host.</div><div class="line"><span class="meta">#</span> All interaction with mysqld must be made via Unix sockets or named pipes.</div><div class="line"><span class="meta">#</span> Note that using this option without enabling named pipes on Windows</div><div class="line"><span class="meta">#</span> (via the "enable-named-pipe" option) will render mysqld useless!</div><div class="line"><span class="meta">#</span></div><div class="line"><span class="meta">#</span>skip-networking</div><div class="line"></div><div class="line"><span class="meta">  #</span> Replication Master Server (default)</div><div class="line"><span class="meta">  #</span> binary logging is required for replication</div><div class="line">  log-bin=mysql-bin</div><div class="line"></div><div class="line">    # binary logging format - mixed recommended</div><div class="line">    binlog_format=mixed</div><div class="line"></div><div class="line">      # required unique id between 1 and 2^32 - 1</div><div class="line">      # defaults to 1 if master-host is not set</div><div class="line">      # but will not function as a master if omitted</div><div class="line">      server-id   = 1</div><div class="line"></div><div class="line">    # Replication Slave (comment out master section to use this)</div><div class="line">    #</div><div class="line">    # To configure this host as a replication slave, you can choose between</div><div class="line">    # two methods :</div><div class="line">    #</div><div class="line">    # 1) Use the CHANGE MASTER TO command (fully described in our manual) -</div><div class="line">    #    the syntax is:</div><div class="line">    #</div><div class="line">    #    CHANGE MASTER TO MASTER_HOST=&lt;host&gt;, MASTER_PORT=&lt;port&gt;,</div><div class="line">    #    MASTER_USER=&lt;user&gt;, MASTER_PASSWORD=&lt;password&gt; ;</div><div class="line">    #</div><div class="line">    #    where you replace &lt;host&gt;, &lt;user&gt;, &lt;password&gt; by quoted strings and</div><div class="line">    #    &lt;port&gt; by the master's port number (3306 by default).</div><div class="line">    #</div><div class="line">    #    Example:</div><div class="line">    #</div><div class="line">    #    CHANGE MASTER TO MASTER_HOST='125.564.12.1', MASTER_PORT=3306,</div><div class="line">    #    MASTER_USER='joe', MASTER_PASSWORD='secret';</div><div class="line">    #</div><div class="line">    # OR</div><div class="line">    #</div><div class="line">    # 2) Set the variables below. However, in case you choose this method, then</div><div class="line">    #    start replication for the first time (even unsuccessfully, for example</div><div class="line">    #    if you mistyped the password in master-password and the slave fails to</div><div class="line">    #    connect), the slave will create a master.info file, and any later</div><div class="line">    #    change in this file to the variables' values below will be ignored and</div><div class="line">    #    overridden by the content of the master.info file, unless you shutdown</div><div class="line">    #    the slave server, delete master.info and restart the slaver server.</div><div class="line">    #    For that reason, you may want to leave the lines below untouched</div><div class="line">    #    (commented) and instead use CHANGE MASTER TO (see above)</div><div class="line">    #</div><div class="line">    # required unique id between 2 and 2^32 - 1</div><div class="line">    # (and different from the master)</div><div class="line">    # defaults to 2 if master-host is set</div><div class="line">    # but will not function as a slave if omitted</div><div class="line">    #server-id       = 2</div><div class="line">    #</div><div class="line">    # The replication master for this slave - required</div><div class="line">    #master-host     =   &lt;hostname&gt;</div><div class="line">    #</div><div class="line">    # The username the slave will use for authentication when connecting</div><div class="line">    # to the master - required</div><div class="line">    #master-user     =   &lt;username&gt;</div><div class="line">    #</div><div class="line">    # The password the slave will authenticate with when connecting to</div><div class="line">    # the master - required</div><div class="line">    #master-password =   &lt;password&gt;</div><div class="line">    #</div><div class="line">    # The port the master is listening on.</div><div class="line">    # optional - defaults to 3306</div><div class="line">    #master-port     =  &lt;port&gt;</div><div class="line">    #</div><div class="line">    # binary logging - not required for slaves, but recommended</div><div class="line">    #log-bin=mysql-bin</div><div class="line"></div><div class="line">      # Uncomment the following if you are using InnoDB tables</div><div class="line">      #innodb_data_home_dir = /usr/local/mysql/data</div><div class="line">      #innodb_data_file_path = ibdata1:10M:autoextend</div><div class="line">      #innodb_log_group_home_dir = /usr/local/mysql/data</div><div class="line">      # You can set .._buffer_pool_size up to 50 - 80 %</div><div class="line">      # of RAM but beware of setting memory usage too high</div><div class="line">      #innodb_buffer_pool_size = 16M</div><div class="line">      #innodb_additional_mem_pool_size = 2M</div><div class="line">      # Set .._log_file_size to 25 % of buffer pool size</div><div class="line">      #innodb_log_file_size = 5M</div><div class="line">      #innodb_log_buffer_size = 8M</div><div class="line">      #innodb_flush_log_at_trx_commit = 1</div><div class="line">      #innodb_lock_wait_timeout = 50</div><div class="line"></div><div class="line">        [mysqldump]</div><div class="line">        quick</div><div class="line">        max_allowed_packet = 16M</div><div class="line"></div><div class="line">          [mysql]</div><div class="line">          no-auto-rehash</div><div class="line">          # Remove the next comment character if you are not familiar with SQL</div><div class="line">          #safe-updates</div><div class="line">          default-character-set=utf8</div><div class="line"></div><div class="line">        [myisamchk]</div><div class="line">        key_buffer_size = 20M</div><div class="line">        sort_buffer_size = 20M</div><div class="line">        read_buffer = 2M</div><div class="line">        write_buffer = 2M</div><div class="line"></div><div class="line">          [mysqlhotcopy]</div><div class="line">          interactive-timeout</div></pre></td></tr></table></figure>
-<p>此时保存文件，再修改文件读写权限，将权限修改为664  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod 664 /etc/my.cnf</div></pre></td></tr></table></figure>
-<p>之后再重启MySQL和配置文件就可以生效了。<br>然后完成之后，确实，如果你查一下MySQL的各种编码，确实都变成了UTF-8<br>通过以下命令  </p>
-<p><img src="http://img.blog.csdn.net/20171022010537041?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="查数据库编码">    </p>
-<p>然而~输入不了中文了，报错  </p>
-<p><img src="http://img.blog.csdn.net/20171022010832033?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>最后将当前数据库以及所有表所有字段都设置为UTF-8   </p>
-<p><img src="http://img.blog.csdn.net/20171022010927654?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述">   </p>
-<p>惊喜的发现可以愉快的输入中文了~~<br>至此，数据库层面告一段落</p>
-<h2 id="Tomcat层面"><a href="#Tomcat层面" class="headerlink" title="Tomcat层面"></a>Tomcat层面</h2><p>接下来我说的简略一些，如果URL请求采取GET方法，那么你的URL中可能会出现中文，所以需要在Tomcat配置文件里面设置编码方式。  </p>
-<p>修改Tomcat下的<code>conf/server.xml</code>文件，找到如下代码：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"8080"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span></span></div><div class="line"><span class="tag">              <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span></span></div><div class="line"><span class="tag">              <span class="attr">redirectPort</span>=<span class="string">"8443"</span> /&gt;</span></div></pre></td></tr></table></figure>
-<p>  这段代码规定了Tomcat监听HTTP请求的端口号等信息。可以在这里添加一个属性：URIEncoding，将该属性值设置为UTF-8，<br>即可让Tomcat（默认ISO-8859-1编码）以UTF-8的编码处理get请求。更改后的代码如下所示： </p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"8080"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span></span></div><div class="line"><span class="tag">		<span class="attr">connectionTimeout</span>=<span class="string">"20000"</span></span></div><div class="line"><span class="tag">		 <span class="attr">URIEncoding</span>=<span class="string">"UTF-8"</span></span></div><div class="line"><span class="tag">		  <span class="attr">redirectPort</span>=<span class="string">"8443"</span> /&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="Web显示层面"><a href="#Web显示层面" class="headerlink" title="Web显示层面"></a>Web显示层面</h2><p>这里主要针对请求为POST方法的时候，你需要设置<code>web.xml</code> 文件，设置字符串过滤器  </p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>characterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>forceEncoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>true<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>characterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>最后如果你要回显到页面上打印中文的话需要设置一下response<br>如果你使用springMVC可以设置  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@RequestMapping</span>(value = <span class="string">"/XX.do"</span>, produces=<span class="string">"text/html;charset=UTF-8"</span>)</div></pre></td></tr></table></figure>
-
-          
+          今天遇到一堆MySQL 中文乱码的问题 ，总体来说分为数据库层面，Tomcat层面，web表示层面。
+数据库层面先是MySQL数据库中文乱码问题，大概样子如下：  
+  
+然后自我感觉这件事情不就是改下字段的编码吗，那就改一下呗如图，我更改了Encoding  
+    
+然后发现事情并没有那简单，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/WebEncoding/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -859,10 +915,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -875,13 +927,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/mysql-question-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -911,12 +957,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-21T16:58:03+08:00">2017-10-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T16:58:03+08:00">
+                2017-10-21
+              </time>
             
 
-            
             
 
             
@@ -931,10 +978,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mysql/" itemprop="url" rel="index"><span itemprop="name">mysql</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
 
                 
                 
@@ -948,6 +999,17 @@
 
           
           
+             <span id="/mysql-question-1/" class="leancloud_visitors" data-flag-title="MySQL之order">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -959,9 +1021,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -970,27 +1029,36 @@
       
         
           
-            <p>刚测试查询订单controller时候遇到这个问题，sql语句莫名其妙的出错了<br><img src="http://img.blog.csdn.net/20171021165426594?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="idea控制台"></p>
-<hr>
-<p>命令行实验一下操作Mysql的时候尴尬地遇到了一个问题，试了试其他表都好的，就是怎么都查询不了<strong>order表</strong>。<br><img src="http://img.blog.csdn.net/20171021164906151?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="mysql控制台"></p>
-<p>后来试了试改成<strong>orders表</strong>就好了，后来一想<strong>order</strong>是MySQL的一个关键字啊~  </p>
-<blockquote>
-<p>order by</p>
-</blockquote>
+          刚测试查询订单controller时候遇到这个问题，sql语句莫名其妙的出错了
 
-          
+命令行实验一下操作Mysql的时候尴尬地遇到了一个问题，试了试其他表都好的，就是怎么都查询不了order表。
+后来试了试改成orders表就好了，后来一想order是MySQL的一个关键字啊~  
+
+order by
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/mysql-question-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1004,10 +1072,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1020,13 +1084,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/ssm1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1056,12 +1114,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-21T11:30:40+08:00">2017-10-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T11:30:40+08:00">
+                2017-10-21
+              </time>
             
 
-            
             
 
             
@@ -1076,10 +1135,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mybatis/" itemprop="url" rel="index">
+                    <span itemprop="name">Mybatis</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1093,6 +1156,17 @@
 
           
           
+             <span id="/ssm1/" class="leancloud_visitors" data-flag-title="学习ssm框架——Mybatis版本问题解决方案（一）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1104,9 +1178,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1115,32 +1186,30 @@
       
         
           
-            <p>前几天搭建了<strong>ssm</strong>框架准备开发后端，今天写<strong>mapper</strong>时遇到个棘手的问题-写<strong>select</strong>语句时发现入参报错总是提示找不到<strong>username</strong>，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;username&#125; and password = #&#123;password&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<p>Mybatis参数问题<br><img src="http://img.blog.csdn.net/20171021110727118?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="报错信息"></p>
-<hr>
-<p>然后经过一番折腾在网上找到解决方案，将变量改成参数形式<strong>0，1</strong>或者加上<strong>jdbcType</strong>，代码如下</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;0&#125; and password = #&#123;1&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>And</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;username, jdbcType=VARCHAR&#125; and password = #&#123;password, jdbcType=VARCHAR&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>报错同上。</p>
-<hr>
-<p>此时就很难受了，看源码<strong>debug</strong>。。。<br>偶然间查到了可能是版本问题，然后尝试了以下解决方案搞定</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"selectUserByNameAndPassword"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"po.User"</span>&gt;</span>     </div><div class="line">	select * from user where username = #&#123;arg0&#125; and password = #&#123;arg1&#125;  </div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>最后贴上<a href="https://gitee.com/zkzk96871/TW-SYSTEM" target="_blank" rel="external">码云项目地址</a></p>
-
-          
+          前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&lt;select id="selectUserByNameAndPassword"
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/ssm1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1154,10 +1223,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1170,13 +1235,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/deeplearning/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1206,12 +1265,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-08T23:51:22+08:00">2017-08-08</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T23:51:22+08:00">
+                2017-08-08
+              </time>
             
 
-            
             
 
             
@@ -1226,10 +1286,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DeepLearning/" itemprop="url" rel="index"><span itemprop="name">DeepLearning</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/DeepLearning/" itemprop="url" rel="index">
+                    <span itemprop="name">DeepLearning</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1243,6 +1307,17 @@
 
           
           
+             <span id="/deeplearning/" class="leancloud_visitors" data-flag-title="深度学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1254,9 +1329,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1265,22 +1337,32 @@
       
         
           
-            <p>随便翻一翻在<strong>wikipedia</strong>搜索时发现这个顿时慌张起来，截图留念。这DeepLearning要学的真不是一点两点，数学没学好真的伤。</p>
-<p><img src="http://oubh07f3j.bkt.clouddn.com/QQ20170808-0.png?imageView2/0/q/75|watermark/2/text/WmhhbmdrZSBJbWFnZQ==/font/Y2FtYnJpYQ==/fontsize/500/fill/IzI1MjQyNA==/dissolve/70/gravity/SouthEast/dx/10/dy/10" alt=""></p>
+          随便翻一翻在wikipedia搜索时发现这个顿时慌张起来，截图留念。这DeepLearning要学的真不是一点两点，数学没学好真的伤。
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/deeplearning/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1294,10 +1376,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1310,13 +1388,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/hunying/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1346,12 +1418,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-06T19:45:10+08:00">2017-08-06</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-06T19:45:10+08:00">
+                2017-08-06
+              </time>
             
 
-            
             
 
             
@@ -1366,10 +1439,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/love/" itemprop="url" rel="index"><span itemprop="name">love</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/love/" itemprop="url" rel="index">
+                    <span itemprop="name">love</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1383,6 +1460,17 @@
 
           
           
+             <span id="/hunying/" class="leancloud_visitors" data-flag-title="这才是爱情最好的样子（转载）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1394,9 +1482,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1405,71 +1490,34 @@
       
         
           
-            <p><img src="https://raw.githubusercontent.com/giantke/giantke.github.io/master/images/flower.png" alt=""></p>
-<p>和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。</p>
-<p>其中一个问：“怎么你的黑眼圈看着又大了一点啊？”</p>
-<p>答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。”</p>
-<p>“噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊不禁。</p>
-<p>“你不知道，我老公只要一感冒了，就会连带着他的鼻炎更严重，半夜呼噜声特别大，那个声音就是在隔壁房里睡都清晰得不得了。</p>
-<p>但是他的呼噜声有点吓人，一声大的“呼……”上去，半天你没听到接下来的那声响动，你的心思就会随着他的声音七上八下的，担心他是不是睡厥过去了。”</p>
-<p>这个说话的女人越说越大声：“哎呀，你都不知道，他还有呼吸骤停的毛病，医生说了最好要侧卧，不能仰卧，他那呼噜声一停，往往就是仰面朝上的睡势，我得赶紧把他推醒，叫他侧着睡。”</p>
-<p>“那这样你肯定睡不好的呀，难怪你的黑眼圈天天都那么大。”</p>
-<p>“是啊，但结婚这么多年了，你说怪不怪，他要出差不在家的时候，听不到他的呼噜声我反而更睡不着了。”</p>
-<p><strong>在感情的世界里兜兜转转的人大概都知道的一个定理是，这世上最牢固的感情不是“我爱你”，而是“我习惯了有你”。</strong></p>
-<p>世间的夫妻都大同小异，一口锅里吃饭，一张床上睡觉，周而复始的生活让原本毫不相干的人亲密地生活在一起。时间久了，居然连原本恼人的呼噜声都成了婚姻里必不可少让人心定的安全感。</p>
-<p><strong>我想，在生活的烟熏火燎里仍然不离不弃的两个人应该就是爱情最好的样子。</strong></p>
-<p>这个世上并没有什么教科书似的完美爱情，有这么一对夫妻：</p>
-<p>他向她求婚时，只说了三个字：相信我；</p>
-<p>她为他生下第一个女儿的时候，他对她说：辛苦了；</p>
-<p>女儿出嫁异地那天，他搂着她的肩说：还有我；</p>
-<p>他收到她病危通知的那天，重复地对她说：我在这；</p>
-<p>她要走的那一刻，他亲吻她的额头轻声说：你等我。</p>
-<p>这一生，他没对她说过一次“我爱你”，但爱，从未离开过。</p>
-<p>从没有多余的言语，也不是甜言蜜语制造的恩爱假象。只是平凡的生活中每个细节和眼神里透露出的体贴、关心。 </p>
-<p><strong>我想，平淡而踏实地携手走完一生的两个人应该就是好的爱情该有的样子。</strong></p>
-<p>他是个搞设计的工程师，她是中学毕业班的班任老师，两人都错过了恋爱的最佳季节，后来经人介绍而相识。</p>
-<p>没有惊天动地的过程，平平淡淡地相处，自自然然地结婚。</p>
-<p>婚后第三天，他就跑到单位加班，为了赶设计，他甚至可以彻夜拼命，连续几天几夜不回家。她忙于毕业班的管理，经常晚归。</p>
-<p>为了各自的事业，他们就像两个陀螺，在各自的轨道上高速旋转着。</p>
-<p>送走了毕业班，清闲了的她开始重新审视自己的生活，审视自己的婚姻，她开始迷茫，不知道自己在他心里有多重，她似乎不记得他说过爱她。</p>
-<p>一天，她问他是不是爱她，他说当然爱，不然怎么会结婚，她问他怎么不说爱，他说不知道怎么说。</p>
-<p>她拿出写好的离婚协议，他愣了，说，那我们去旅游吧，结婚的蜜月我都没陪你，我亏欠你太多。</p>
-<p>他们去了奇峰异石的张家界。飘雨的天气和他们阴郁的心情一样，走在盘旋的山道上，她发现他总是走在外侧，她问他为什么，他说路太滑，他怕外侧的栅栏不牢，怕她万一不小心跌倒。</p>
-<p>她的心忽然感到了温暖，回家就把那份离婚协议撕掉了。</p>
-<p>很多时候，爱是埋在心底的，尤其是婚姻进行中的爱，平平淡淡，说不出来，但是真实存在。</p>
-<p><strong>最好的爱情是陪伴，最靠谱的感觉是温暖，我想，这应该也是爱情最好的样子。</strong></p>
-<p>1942年底，杨绛创作了话剧《称心如意》。在金都大戏院上演后，一鸣惊人，迅速走红。杨绛的蹿红，使大才子钱钟书坐不住了。</p>
-<p>一天，他对杨绛说：“我想写一部长篇小说，你支持吗？”杨绛大为高兴，催他赶紧写。</p>
-<p>杨绛让他减少授课时间，为了节省开支，她还把家里的女佣辞退了，自己包揽了所有的家务活，劈材生火做饭样样都来，经常被烟火熏得满眼是泪，也会不小心切破手指。</p>
-<p>可是杨绛并未抱怨过，她心甘情愿地做灶下婢，只盼着钟书的大作早日问世。</p>
-<p>看着昔日娇生惯养的富家小姐，如今修炼成任劳任怨的贤内助，钱钟书心里虽有惭愧，但更多的是对爱妻的感激与珍爱。</p>
-<p>两年后，《围城》成功问世。钱钟书在《围城》序中说：“这本书整整写了两年。两年里忧世伤生，屡想中止。由于杨绛女士不断的督促，替我挡了许多事，省出时间来，得以锱铢积累地写完。照例这本书该献给她。”</p>
-<p><strong>最深的爱无需诺言，总是相依相伴中把体贴展现；最纯的情无需语言，总是默默无声里守候身边。人生的路上风雨兼程，劳碌的生活嘘寒问暖。</strong></p>
-<p>婚后有一回，当杨绛在看英国传记作家描述最理想的婚姻：“在见到她之前，我从来没有想过要结婚，娶了她几十年，从来没有后悔娶她，也没有想过要娶别的女人。”</p>
-<p>当杨绛读到这里，觉得甚好，于是把它念给在一旁的钱钟书听，钱钟书听完说：“我和他一样。”</p>
-<p>杨绛随即回答：“我也是。”</p>
-<p>好的爱情，最重要的不是甜言蜜语，不是容貌金钱，而是你和他对于这个世界的看法，对人生的态度是否一致。</p>
-<p><strong>我想，三观一致的两个人应该就是爱情里最好的样子。</strong></p>
-<p>张小娴说，爱情的样子就是每天跟自己喜欢的人一起，通电话，旅行，重复一个承诺和梦想，听他第二十八次提起童年往事，每年的同一天和他庆祝生日，每年的情人节、圣诞节、除夕，也和他共度。甚至连吵架也是重复的，为了一些琐事吵架，然后冷战，疯狂思念对方，最后和好。</p>
-<p>作家十二说，爱情中最让人愉悦的样子就是“你高兴，我随意”。</p>
-<p><strong>那到底什么才是爱情最好的样子？</strong></p>
-<p><strong>“先睡吧，明天再吵。”</strong></p>
-<hr>
-<p>听说转载要注明<a href="http://mp.weixin.qq.com/s/A3bK4X_PhytNT3CuxlcAgQ" target="_blank" rel="external">出处</a>，所以</p>
-
           
+和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。
+其中一个问：“怎么你的黑眼圈看着又大了一点啊？”
+答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。”
+“噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/hunying/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1483,10 +1531,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1499,13 +1543,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/jiaofu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1535,12 +1573,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-05T23:11:35+08:00">2017-08-05</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-05T23:11:35+08:00">
+                2017-08-05
+              </time>
             
 
-            
             
 
             
@@ -1555,10 +1594,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/电影/" itemprop="url" rel="index"><span itemprop="name">电影</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/电影/" itemprop="url" rel="index">
+                    <span itemprop="name">电影</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1572,6 +1615,17 @@
 
           
           
+             <span id="/jiaofu/" class="leancloud_visitors" data-flag-title="Bible of a man —— 《教父》">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1583,9 +1637,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1594,24 +1645,34 @@
       
         
           
-            <h2 id="Bible-of-a-man"><a href="#Bible-of-a-man" class="headerlink" title="Bible of a man"></a>Bible of a man</h2><blockquote>
-<p>一个真正的男人必须要花出时间和家人在一起，不照顾家人的男人，根本算不上是个男人。</p>
-<p>要学会小心，女人和小孩能够粗心大意，但男人不行</p>
-</blockquote>
+          Bible of a man
+一个真正的男人必须要花出时间和家人在一起，不照顾家人的男人，根本算不上是个男人。
+要学会小心，女人和小孩能够粗心大意，但男人不行
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/jiaofu/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1625,10 +1686,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1641,13 +1698,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/vpn/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1677,12 +1728,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-02T23:03:19+08:00">2017-08-02</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T23:03:19+08:00">
+                2017-08-02
+              </time>
             
 
-            
             
 
             
@@ -1697,10 +1749,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/vpn/" itemprop="url" rel="index"><span itemprop="name">vpn</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vpn/" itemprop="url" rel="index">
+                    <span itemprop="name">vpn</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1714,6 +1770,17 @@
 
           
           
+             <span id="/vpn/" class="leancloud_visitors" data-flag-title="利用shadowsocks和阿里云服务器搭建从国外到国内的vpn">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1725,9 +1792,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1736,29 +1800,34 @@
       
         
           
-            <p>刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题<br>​      </p>
-<blockquote>
-<p>建议把 SS 的配置文件放置在当前用户主目录下的 <strong>ss</strong> 文件夹内，对于 <strong>root</strong> 用户而言，则是：<strong>/root/ss</strong> 目录。其余用户一般则是：<strong>/home/用户名</strong> 目录。</p>
-</blockquote>
-<p>因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。暂时告一段落，择明日再战。</p>
-<p>之后换了个思路，先往下看呗，忽然发现这一步<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nohup ssserver -c /root/ss/ssserver.json -d start &amp;</div></pre></td></tr></table></figure></p>
-<p>惊觉路径没关系，之后换一个就好。随后就解决了。</p>
-<hr>
-<p>感谢大佬<a href="https://www.loyalsoldier.me/fuck-the-gfw-with-my-own-shadowsocks-server/" target="_blank" rel="external">教程</a>的帮助</p>
+          刚开始看完教程感觉，哇，好简单。然而配置服务端shadowsocks文件的时候出了点小问题​      
 
-          
+建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。
+
+因为服务器预装cent
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/vpn/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1772,10 +1841,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1790,6 +1855,9 @@
 
 
           </div>
+          
+
+
           
 
         </div>
@@ -1812,125 +1880,95 @@
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">zhangke</p>
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="zhangke" />
+          <p class="site-author-name" itemprop="name">zhangke</p>
+           
               <p class="site-description motion-element" itemprop="description">少点抱怨，多点改变</p>
-          </div>
+          
+        </div>
+        <nav class="site-state motion-element">
 
           
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">33</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">15</span>
-                    <span class="site-state-item-name">categories</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">12</span>
-                    <span class="site-state-item-name">tags</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-          
-
-          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
           
 
           
             
-          
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/giantke" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/zkzk96871" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5744544701?is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
         </div>
+
+        
+        
+
+        
+        
+
+        
+
+
       </section>
 
       
@@ -1947,40 +1985,30 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">zhangke</span>
-
-  
-
-  
 </div>
 
 
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
 
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
-
-
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         
-
-
-
-
-
-
 
         
       </div>
@@ -1991,8 +2019,6 @@
         <i class="fa fa-arrow-up"></i>
         
       </div>
-    
-
     
 
   </div>
@@ -2013,12 +2039,10 @@
 
 
 
+  
 
 
-
-
-
-
+  
 
 
 
@@ -2031,43 +2055,79 @@
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
-
-
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
 
 
 
   
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+               id: window.location.pathname, 
+               owner: 'giantke',
+               repo: 'giantke.github.io',
+               oauth: {
+                   client_id: '5c5e30fc9de28c3b1c19',
+                   client_secret: 'c42332ded6856cb0359efa668bc2b35f7e2d0fd6',
+               }});
+           gitment.render('gitment-container');
+       </script>
+   
+
+
+
+
+
+  
+
 
 
 
@@ -2090,13 +2150,435 @@
 
 
 
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
 
   
 
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("lf4c0Nyki0bS0rlbFrB6xCkL-gzGzoHsz", "60Izmo6LzUMvv9zI4ABpYWhx");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
 
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
 
 
 
@@ -2109,15 +2591,9 @@
   
 
   
-  
 
-  
-
-  
-
-  
-
-  
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
 
 </body>
 </html>

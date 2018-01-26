@@ -5,15 +5,11 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
 
 
 
@@ -40,7 +36,36 @@
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -49,58 +74,23 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.0.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: 'ZY6JY6ZPM9',
-      apiKey: '5d7498bc5ed50652590b1467b96af99c',
-      indexName: 'test_zhangke',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  
   <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
 
 
 <meta name="description" content="少点抱怨，多点改变">
@@ -116,10 +106,34 @@
 
 
 
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'ZY6JY6ZPM9',
+      apiKey: '5d7498bc5ed50652590b1467b96af99c',
+      indexName: 'test_zhangke',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
 
 
   <link rel="canonical" href="http://zhangk.top/page/2/"/>
+
+
+
 
 
   <title>Zhangke's blog</title>
@@ -133,32 +147,10 @@
 
 
 
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
+
+
 
 </head>
 
@@ -170,11 +162,12 @@
   
 
   <div class="container sidebar-position-left 
-  page-home">
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -208,33 +201,99 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
         </li>
       
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
   
-</nav>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
 
 
+
+    </div>
   
+</nav>
 
 
 
  </div>
     </header>
-
-    
-
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -251,13 +310,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/jvm-classFileConstructor/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -287,12 +340,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-16T00:06:52+08:00">2017-12-16</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T00:06:52+08:00">
+                2017-12-16
+              </time>
             
 
-            
             
 
             
@@ -307,10 +361,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jvm/" itemprop="url" rel="index"><span itemprop="name">jvm</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
+                  </a>
+                </span>
 
                 
                 
@@ -324,6 +382,17 @@
 
           
           
+             <span id="/jvm-classFileConstructor/" class="leancloud_visitors" data-flag-title="Class类文件结构">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -335,9 +404,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -346,81 +412,30 @@
       
         
           
-            <h2 id="Class类文件结构"><a href="#Class类文件结构" class="headerlink" title="Class类文件结构"></a>Class类文件结构</h2><h3 id="无关的基石"><a href="#无关的基石" class="headerlink" title="无关的基石"></a>无关的基石</h3><p>Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件格式所关联, Class 文件包含了 Java 虚拟机指令和符号表以及若干其他辅助信息.虚拟机不关心 Class 的来源是何种语言.</p>
-<h3 id="Class-文件结构"><a href="#Class-文件结构" class="headerlink" title="Class 文件结构"></a>Class 文件结构</h3><p>Class 文件采用类似 C 语言结构体的伪结构体来存储数据,这种伪结构只有两种数据类型,无符号数和表.<br>无符号数可以描述数字,索引引用,数量值或者按照 UTF-8编码构成的字符串值.<br>表是由无符号数或者其他表作为数据项构成的复合数据类型</p>
-<h4 id="魔数与-Class-文件版本"><a href="#魔数与-Class-文件版本" class="headerlink" title="魔数与 Class 文件版本"></a>魔数与 Class 文件版本</h4><p>每个 Class 文件的头4个字节是魔数,它的唯一作用是确定当前文件能否被虚拟机进行加载.很多文件存储格式否使用魔数来进行身份识别,使用魔数而不使用扩展名是因为扩展名随意更改.<br>紧接着魔数后的4个字节是版本号,高版本的虚拟机能够向下兼容以前版本的 Class 文件,但不能运行以后版本的 Class 文件.</p>
-<h4 id="常量池"><a href="#常量池" class="headerlink" title="常量池"></a>常量池</h4><p>常量池中有14种常量类型,每种类型都有自己的结构.<br>由于这些常量的个数是不固定的,所以在常量池的入口放置一项 u2类型的数据,代表常量池容量计数值.<br>虚拟机的常量池主要存放两大类常量:字面量和符号引用.<br>字面量接近于 Java 语言层面的常量概念,如字符串,声明为 final 的常量值等.<br>符号引用则数据编译原理方面的概念,包括:类和结构的全限定名,字段和名称的描述符,方法的名称和描述符.</p>
-<h4 id="访问标识"><a href="#访问标识" class="headerlink" title="访问标识"></a>访问标识</h4><p>在常量池结束后的两个字节代表访问标识,用于识别类或者接口的访问信息,包括:这个 Class 是类还是接口,是否定义为 public 类型,是否定义为 abstract 类型等.</p>
-<h4 id="类索引-父类索引与接口索引集合"><a href="#类索引-父类索引与接口索引集合" class="headerlink" title="类索引,父类索引与接口索引集合"></a>类索引,父类索引与接口索引集合</h4><p>Class 文件由这三项来确定类的继承关系,类索引确定这个类的全限定名,父类索引确定这个类父类的全限定名,接口索引集合用来描述这个类实现了那些接口.</p>
-<h4 id="字段表集合"><a href="#字段表集合" class="headerlink" title="字段表集合"></a>字段表集合</h4><p>字段表用来描述类或接口中声明的变量,包括类级变量以及实例级变量,但不包括方法内部声明的局部变量.</p>
-<h4 id="方法表集合"><a href="#方法表集合" class="headerlink" title="方法表集合"></a>方法表集合</h4><p>方法表的结构如字段一样,包含了访问标识,名称索引,描述符索引几项.</p>
-<h4 id="属性表集合"><a href="#属性表集合" class="headerlink" title="属性表集合"></a>属性表集合</h4><ul>
-<li>Code 属性</li>
-</ul>
-<p>当代码经过编译之后,最终字节码指令存储在 Code 属性内.</p>
-<ul>
-<li>Exceptions 属性</li>
-</ul>
-<p>列举出方法可能抛出的受查异常</p>
-<ul>
-<li>LineNumberTable 属性</li>
-</ul>
-<p>描述 Java 源代码行号与字节码行号之间的关系.</p>
-<ul>
-<li>LocalVarableTable 属性</li>
-</ul>
-<p>描述栈帧中局部变量表中的变量与 Java 源代码中定义的变量之间的关系.</p>
-<ul>
-<li>SourceFile 属性</li>
-</ul>
-<p>记录生成这个 Class 文件的源码文件名称.</p>
-<ul>
-<li>ConstantValue 属性</li>
-</ul>
-<p>通知虚拟机自动为静态变量赋值.</p>
-<ul>
-<li>InnerClasses 属性</li>
-</ul>
-<p>记录内部类与宿主类之间的关联.</p>
-<ul>
-<li>Deprecated 及 Synthetic 属性</li>
-</ul>
-<p>这两个属性都数据标志类型的布尔属性.<br>Deprecated 用于表示某个类,字段或者方法被程序作者定位不再推荐使用.<br>Synthetic 代表此字段或者方法并不是由 Java 源码产生的,而是由编辑器自行添加.</p>
-<ul>
-<li>StackMapTable 属性</li>
-</ul>
-<p>一个复杂的变长属性,位于 Code 属性的属性表中.这个属性会在虚拟机类加载的字节码验证阶段被新类型检查验证器使用,目的是代替以前比较消耗新能的基于数据流分析的类型推导验证器.</p>
-<ul>
-<li>Signature 属性</li>
-</ul>
-<p>可以出现于类,属性表和方法表结构的属性表中,在 JDK1.5之后,任何类,接口,方法的泛型签名如果包含了类型变量或参数化类型,则 Signature 属性会记录泛型签名信息.<br>因为 Java 语言的泛型采用擦除方法实现,在字节码中,泛型信息编译之后统统被擦除掉.<br>使用擦除的原因是实现简单,运行期也能节省一些类型所占的内存空间,坏处是运行期无法像 C# 等有真泛型支持的语言那样,将泛型类型与用户定义的类型信息同等对待, Signature 就是为了弥补这个缺陷,如 Java 的反射 API 能够获取泛型类型,就是来源这个属性.</p>
-<h3 id="字节码指令简介"><a href="#字节码指令简介" class="headerlink" title="字节码指令简介"></a>字节码指令简介</h3><p>由一个字节长度的,代表某种特定操作含义的数据以及后面的零到多个代表此操作所所需参数构成.<br>由于Java 虚拟机面向操作数栈而不是寄存器及架构,所以大多数的指令都不包含操作数.</p>
-<h4 id="字节码与数据类型"><a href="#字节码与数据类型" class="headerlink" title="字节码与数据类型"></a>字节码与数据类型</h4><p>在 Java 虚拟机的指令集中,大多数的指令都包含了其操作所对应的数据类型信息.如: iload 指令用于从局部变量表中加载 int 类型的数据到操作数栈中.</p>
-<h4 id="加载与存储指令"><a href="#加载与存储指令" class="headerlink" title="加载与存储指令"></a>加载与存储指令</h4><p>加载和存储指令用于将数据在栈帧中的局部变量表和操作数栈之间来回传输.<br>如:将一个局部变量加载到操作栈: iload<br>将一个数值从操作数栈存储到局部变量表: istore</p>
-<h4 id="运算指令"><a href="#运算指令" class="headerlink" title="运算指令"></a>运算指令</h4><p>将两个操作数栈上的数据进行某种特定操作,并将结构重新存入操作栈顶.</p>
-<h4 id="类型转化指令"><a href="#类型转化指令" class="headerlink" title="类型转化指令"></a>类型转化指令</h4><p>对两个数值类型进行相互转换,一般用于实现用户代码中的显式类型转换操作.</p>
-<h4 id="操作数栈管理指令"><a href="#操作数栈管理指令" class="headerlink" title="操作数栈管理指令"></a>操作数栈管理指令</h4><p>操作一个普通操作数据结构中的堆栈一样, Java 虚拟机提供了一些用于直接操作操作数栈的指令,包括:</p>
-<ul>
-<li>将操作数栈的栈顶一个或者两个元素出栈: pop,pop2</li>
-<li>将栈最顶端的两个数值互换: swap.</li>
-</ul>
-<h4 id="控制转移指令"><a href="#控制转移指令" class="headerlink" title="控制转移指令"></a>控制转移指令</h4><p>可以让 Java 虚拟机有条件或无条件地从指定位置指令而不是控制转移指令的下一条指令继续执行程序.</p>
-<h3 id="公有设计和私有设计"><a href="#公有设计和私有设计" class="headerlink" title="公有设计和私有设计"></a>公有设计和私有设计</h3><p>Java 虚拟机的实现运行在满足虚拟机规范的约束下对具体实现做出修改和优化.只要优化后的 Class 文件依然可以被正确读取,实现者可以选择任何方式去实现这些语义.</p>
-<h3 id="Class-文件结构的发展"><a href="#Class-文件结构的发展" class="headerlink" title="Class 文件结构的发展"></a>Class 文件结构的发展</h3><p>自 Class 文件发布十多年以来, Class 文件的主体结构,字节码指令的语义和数量几乎没有改动,所有的改动都集中在 访问标识,属性表这些在设计上可扩展的数据结构中添加内容.<br>Class 文件格式锁具备的平台中立,紧凑,稳定和可扩展的特点,是 Java 技术体系实现平台无关,语言无关两项特性的重要支柱.</p>
-
-          
+          Class类文件结构无关的基石Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/jvm-classFileConstructor/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -434,10 +449,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -450,13 +461,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/jicheng-and-zuhe/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -486,12 +491,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-15T19:39:48+08:00">2017-12-15</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-15T19:39:48+08:00">
+                2017-12-15
+              </time>
             
 
-            
             
 
             
@@ -506,10 +512,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javaSE/" itemprop="url" rel="index"><span itemprop="name">javaSE</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">javaSE</span>
+                  </a>
+                </span>
 
                 
                 
@@ -523,6 +533,17 @@
 
           
           
+             <span id="/jicheng-and-zuhe/" class="leancloud_visitors" data-flag-title="深入理解Java中的组合和继承">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -534,9 +555,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -545,75 +563,32 @@
       
         
           
-            <h1 id="深入理解Java中的组合和继承"><a href="#深入理解Java中的组合和继承" class="headerlink" title="深入理解Java中的组合和继承"></a>深入理解Java中的组合和继承</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。</p>
-<h3 id="面向对象的复用技术"><a href="#面向对象的复用技术" class="headerlink" title="面向对象的复用技术"></a>面向对象的复用技术</h3><p>复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。</p>
-<p>作为一门面向对象开发的语言，代码复用是Java引人注意的功能之一。Java代码的复用有继承，组合以及代理三种具体的表现形式。本文将重点介绍继承复用和组合复用。</p>
-<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>继承（Inheritance）是一种联结类与类的层次模型。指的是一个类（称为子类、子接口）继承另外的一个类（称为父类、父接口）的功能，并可以增加它自己的新功能的能力，继承是类与类或者接口与接口之间最常见的关系；继承是一种<a href="https://zh.wikipedia.org/wiki/Is-a" target="_blank" rel="external"><code>is-a</code></a>关系。（图片来自网络，侵删。）</p>
-<p><img src="http://www.hollischuang.com/wp-content/uploads/2016/03/Generalization.jpg" alt="Inheritance"></p>
-<h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><p>组合(Composition)体现的是整体与部分、拥有的关系，即<a href="https://en.wikipedia.org/wiki/Has-a" target="_blank" rel="external"><code>has-a</code></a>的关系。</p>
-<p><img src="http://www.hollischuang.com/wp-content/uploads/2016/03/Composition.jpg" alt="Composition"></p>
-<h3 id="组合与继承的区别和联系"><a href="#组合与继承的区别和联系" class="headerlink" title="组合与继承的区别和联系"></a>组合与继承的区别和联系</h3><blockquote>
-<p>在<code>继承</code>结构中，父类的内部细节对于子类是可见的。所以我们通常也可以说通过继承的代码复用是一种<code>白盒式代码复用</code>。（如果基类的实现发生改变，那么派生类的实现也将随之改变。这样就导致了子类行为的不可预知性；）</p>
-<p><code>组合</code>是通过对现有的对象进行拼装（组合）产生新的、更复杂的功能。因为在对象之间，各自的内部细节是不可见的，所以我们也说这种方式的代码复用是<code>黑盒式代码复用</code>。（因为组合中一般都定义一个类型，所以在编译期根本不知道具体会调用哪个实现类的方法）</p>
-<p><code>继承</code>，在写代码的时候就要指名具体继承哪个类，所以，在<code>编译期</code>就确定了关系。（从基类继承来的实现是无法在运行期动态改变的，因此降低了应用的灵活性。）</p>
-<p><code>组合</code>，在写代码的时候可以采用面向接口编程。所以，类的组合关系一般在<code>运行期</code>确定。</p>
-</blockquote>
-<h3 id="优缺点对比"><a href="#优缺点对比" class="headerlink" title="优缺点对比"></a>优缺点对比</h3><table>
-<thead>
-<tr>
-<th>组 合 关 系</th>
-<th>继 承 关 系</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>优点：不破坏封装，整体类与局部类之间松耦合，彼此相对独立</td>
-<td>缺点：破坏封装，子类与父类之间紧密耦合，子类依赖于父类的实现，子类缺乏独立性</td>
-</tr>
-<tr>
-<td>优点：具有较好的可扩展性</td>
-<td>缺点：支持扩展，但是往往以增加系统结构的复杂度为代价</td>
-</tr>
-<tr>
-<td>优点：支持动态组合。在运行时，整体对象可以选择不同类型的局部对象</td>
-<td>缺点：不支持动态继承。在运行时，子类无法选择不同的父类</td>
-</tr>
-<tr>
-<td>优点：整体类可以对局部类进行包装，封装局部类的接口，提供新的接口</td>
-<td>缺点：子类不能改变父类的接口</td>
-</tr>
-<tr>
-<td>缺点：整体类不能自动获得和局部类同样的接口</td>
-<td>优点：子类能自动继承父类的接口</td>
-</tr>
-<tr>
-<td>缺点：创建整体类的对象时，需要创建所有局部类的对象</td>
-<td>优点：创建子类的对象时，无须创建父类的对象</td>
-</tr>
-</tbody>
-</table>
-<h3 id="如何选择"><a href="#如何选择" class="headerlink" title="如何选择"></a>如何选择</h3><p>相信很多人都知道面向对象中有一个比较重要的原则『多用组合、少用继承』或者说『组合优于继承』。从前面的介绍已经优缺点对比中也可以看出，组合确实比继承更加灵活，也更有助于代码维护。</p>
-<p>所以，</p>
-<blockquote>
-<p><strong>建议在同样可行的情况下，优先使用组合而不是继承。</strong></p>
-<p><strong>因为组合更安全，更简单，更灵活，更高效。</strong></p>
-</blockquote>
-<p>注意，并不是说继承就一点用都没有了，前面说的是【在同样可行的情况下】。有一些场景还是需要使用继承的，或者是更适合使用继承。</p>
-<p>转载自<a href="http://www.hollischuang.com/archives/1319" target="_blank" rel="external">http://www.hollischuang.com/archives/1319</a></p>
-
-          
+          深入理解Java中的组合和继承前言由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。
+面向对象的复用技术复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。
+作为一门面向对象开发的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/jicheng-and-zuhe/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -627,10 +602,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -643,13 +614,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/jvm-GC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -679,12 +644,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-13T23:56:27+08:00">2017-12-13</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-13T23:56:27+08:00">
+                2017-12-13
+              </time>
             
 
-            
             
 
             
@@ -699,10 +665,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jvm/" itemprop="url" rel="index"><span itemprop="name">jvm</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
+                  </a>
+                </span>
 
                 
                 
@@ -716,6 +686,17 @@
 
           
           
+             <span id="/jvm-GC/" class="leancloud_visitors" data-flag-title="jvm垃圾收集器与内存分配策略">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -727,9 +708,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -738,97 +716,31 @@
       
         
           
-            <h2 id="垃圾收集器与内存分配策略"><a href="#垃圾收集器与内存分配策略" class="headerlink" title="垃圾收集器与内存分配策略"></a>垃圾收集器与内存分配策略</h2><h3 id="垃圾回收算法"><a href="#垃圾回收算法" class="headerlink" title="垃圾回收算法"></a>垃圾回收算法</h3><h4 id="引用计数算法："><a href="#引用计数算法：" class="headerlink" title="引用计数算法："></a>引用计数算法：</h4><p>给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。</p>
-<h4 id="可达性分析算法："><a href="#可达性分析算法：" class="headerlink" title="可达性分析算法："></a>可达性分析算法：</h4><p>通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对象不可达，即为可回收的对象。</p>
-<blockquote>
-<p>GC-Roots包括：</p>
-<ul>
-<li>虚拟机栈（栈帧中本地变量表）中引用的对象</li>
-<li>方法区中类静态属性引用的对象</li>
-<li>方法区中常量引用的对象</li>
-<li>本地方法栈中JNI（一般为Native方法）引用的对象</li>
-</ul>
-</blockquote>
-<h4 id="标记-清除算法："><a href="#标记-清除算法：" class="headerlink" title="标记-清除算法："></a>标记-清除算法：</h4><p>首先标记所有需要回收的对象，在标记完成后统一回收所有被标记的对象</p>
-<blockquote>
-<p>不足之处：</p>
-<ol>
-<li>标记和清除两个过程效率都不高</li>
-<li>结束后会产生大量碎片</li>
-</ol>
-</blockquote>
-<h4 id="复制算法："><a href="#复制算法：" class="headerlink" title="复制算法："></a>复制算法：</h4><p>把内存划分为大小相等的两块，每次使用其中一块，使用的那块发生GC时将存活的对象复制到另一块，每次只对一个半区进行回收。</p>
-<blockquote>
-<p>不足：将内存缩小为原来的一半，浪费空间</p>
-</blockquote>
-<h4 id="标记-整理算法："><a href="#标记-整理算法：" class="headerlink" title="标记-整理算法："></a>标记-整理算法：</h4><p>标记过程与“标记-清除算法”相同，然后将对象碎片都向一边移动，合成一个整体</p>
-<h3 id="再谈引用"><a href="#再谈引用" class="headerlink" title="再谈引用"></a>再谈引用</h3><h4 id="强引用："><a href="#强引用：" class="headerlink" title="强引用："></a>强引用：</h4><p>普遍存在，即Object obj = new Object(); 只要强引用还在对象就不会被回收</p>
-<h4 id="软引用："><a href="#软引用：" class="headerlink" title="软引用："></a>软引用：</h4><p>描述一些有用但却非必需的对象，在<strong>发生内存溢出异常之前</strong>会被回收。</p>
-<h4 id="弱引用："><a href="#弱引用：" class="headerlink" title="弱引用："></a>弱引用：</h4><p>描述非必需对象，比软引用弱一些，在<strong>发生GC之前</strong>会被回收。</p>
-<h4 id="虚引用："><a href="#虚引用：" class="headerlink" title="虚引用："></a>虚引用：</h4><p>最弱的引用，对于对象的生存周期无影响，也无法通过虚引用来获得对象实例。只是在对象被回收时会收到通知。</p>
-<h3 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h3><h4 id="Serial收集器"><a href="#Serial收集器" class="headerlink" title="Serial收集器"></a>Serial收集器</h4><p>单线程收集器，在GC时需要STW，即“Stop The World”暂停其他所有工作线程。缺点显而易见，停顿长体验差。唯一的优点是没有多余的线程开销，最高的单线程收集效率，对于分配内存较小的桌面应用（Client）停顿一般控制在几十毫秒，这是一个很好的选择。</p>
-<h4 id="ParNew收集器"><a href="#ParNew收集器" class="headerlink" title="ParNew收集器"></a>ParNew收集器</h4><p>Serial的多线程版本，是许多运行在server模式下jvm首选的新生代收集器，而且除了Serial只有ParNew能与CMS收集器配合工作</p>
-<blockquote>
-<p>并行：多个处理器上多个任务</p>
-<p>并发：一个处理器上多个任务</p>
-</blockquote>
-<h4 id="Parallel-Scavenge收集器"><a href="#Parallel-Scavenge收集器" class="headerlink" title="Parallel Scavenge收集器"></a>Parallel Scavenge收集器</h4><p>多线程使用复制算法的新生代收集器，关注点与CMS等收集器尽可能缩短停顿时间不同，其目标是达到一个可控制的吞吐量（吞吐量=运行用户代码时间 / （运行用户代码时间 + 垃圾收集时间）），称为吞吐量优先收集器。</p>
-<h4 id="Serial-Old收集器"><a href="#Serial-Old收集器" class="headerlink" title="Serial Old收集器"></a>Serial Old收集器</h4><p>Serial老年代版本，单线程收集器，使用“标记-整理算法”。 </p>
-<h4 id="Parallel-Old收集器"><a href="#Parallel-Old收集器" class="headerlink" title="Parallel Old收集器"></a>Parallel Old收集器</h4><p>Parallel Scavenge的老年代版本，使用多线程和“标记-整理”算法。<br>Parallel Scavenge + Parallel Old真正的吞吐量优先收集器。</p>
-<h4 id="CMS收集器"><a href="#CMS收集器" class="headerlink" title="CMS收集器"></a>CMS收集器</h4><p>基于“标记-清除”算法，过程分为四步：</p>
-<ul>
-<li>初始标记</li>
-<li>并发标记</li>
-<li>重新标记</li>
-<li>并发清除</li>
-</ul>
-<p>其中初始标记和重新标记需要STW</p>
-<blockquote>
-<p>缺点有三：</p>
-<ol>
-<li>对CPU资源敏感，并发标记时用户线程没有暂停，收集器占用部分CPU资源，可能会使用户程序反应变慢</li>
-<li>无法处理浮动垃圾，由于GC时用户线程还在进行，不停地会有新的垃圾产生，只能在下一次GC时处理，这部分垃圾叫做浮动垃圾</li>
-<li>基于“标记-清除”算法，会产生大量空间碎片，导致无法找到足够大的连续空间分配而提前GC</li>
-</ol>
-</blockquote>
-<h4 id="G1收集器"><a href="#G1收集器" class="headerlink" title="G1收集器"></a>G1收集器</h4><p>运作步骤：</p>
-<ul>
-<li>初始标记</li>
-<li>并发标记</li>
-<li>最终标记</li>
-<li>筛选回收</li>
-</ul>
-<blockquote>
-<p>特点：</p>
-<ol>
-<li>并行与并发</li>
-<li>分代收集（仍然保留了分代的概念）</li>
-<li>空间整合（整体上属于“标记-整理”算法，不会导致空间碎片）</li>
-<li>可预测的停顿（比CMS更先进的地方在于能让使用者明确指定时间片段内，消耗在垃圾收集上的时间）</li>
-</ol>
-</blockquote>
-<h3 id="内存分配策略"><a href="#内存分配策略" class="headerlink" title="内存分配策略"></a>内存分配策略</h3><h4 id="对象优先在Eden（年轻代）分配"><a href="#对象优先在Eden（年轻代）分配" class="headerlink" title="对象优先在Eden（年轻代）分配"></a>对象优先在Eden（年轻代）分配</h4><blockquote>
-<p>新生代GC（Mirror GC）：Java对象大部分都具备朝生夕灭的特性，Mirror GC非常频繁</p>
-<p>老年代GC（Full GC）：出现Full GC常伴随着Mirror GC，比Mirror GC慢十倍以上</p>
-</blockquote>
-<h4 id="大对象直接进入老年代"><a href="#大对象直接进入老年代" class="headerlink" title="大对象直接进入老年代"></a>大对象直接进入老年代</h4><p>超过参数的对象直接在老年代分配</p>
-<h4 id="长期存活的对象将进入老年代"><a href="#长期存活的对象将进入老年代" class="headerlink" title="长期存活的对象将进入老年代"></a>长期存活的对象将进入老年代</h4><p>虚拟机给每个对象定义一个对象年龄计数器，当对象在Eden出生并且熬过第一次GC进入Survivor空间，那么它的年龄即设为1，每熬过一次GC年龄就加1，达到阈值就会晋升到老年代中</p>
-<h4 id="对象年龄判断"><a href="#对象年龄判断" class="headerlink" title="对象年龄判断"></a>对象年龄判断</h4><p>然而也并不是一定要到达阈值才能晋升，如果在Survivor空间相同年龄的对象的总和大于Survivor空间的一半，大于等于该年龄的对象即可直接进入老年代</p>
-<h4 id="空间分配担保"><a href="#空间分配担保" class="headerlink" title="空间分配担保"></a>空间分配担保</h4><p>Mirror GC之前虚拟机会检查老年代可用空间是否大于新生代所有对象大小总和，如果是，那么可以确保Mirror GC安全。如果不是的话，看是否允许担保失败（允许冒险），如果允许那么将检查老年代可用空间是否大于历次晋升对象大小的平均值，如果是的话将进行一次Mirror GC，尽管有风险会失败；如果小于那么将进行Full GC</p>
-
-          
+          垃圾收集器与内存分配策略垃圾回收算法引用计数算法：给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。
+可达性分析算法：通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/jvm-GC/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -842,10 +754,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -858,13 +766,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/jvm-neicun/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -894,12 +796,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-09T00:01:43+08:00">2017-12-09</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-09T00:01:43+08:00">
+                2017-12-09
+              </time>
             
 
-            
             
 
             
@@ -914,10 +817,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jvm/" itemprop="url" rel="index"><span itemprop="name">jvm</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
+                  </a>
+                </span>
 
                 
                 
@@ -931,6 +838,17 @@
 
           
           
+             <span id="/jvm-neicun/" class="leancloud_visitors" data-flag-title="jvm之内存区域">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -942,9 +860,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -953,69 +868,35 @@
       
         
           
-            <h3 id="Java内存区域划分："><a href="#Java内存区域划分：" class="headerlink" title="Java内存区域划分："></a>Java内存区域划分：</h3><ol>
-<li><p>程序计数器：线程私有。当前所执行线程的行号指示器</p>
-</li>
-<li><p>虚拟机栈：线程私有。方法执行的同时创建一个栈帧，用于存储局部变量表（包括基本数据类型、对象引用）、操作数栈、动态链接、方法出口等。每一个方法从调用执行直到结束的过程就对应一个栈帧入栈到出栈的过程。</p>
-</li>
-<li><p>本地方法栈：线程私有。与虚拟机栈（为Java方法即字节码服务）类似，而本地方法栈为Native方法服务，即非Java方法（如C方法）。有些虚拟机（如HotSpot）会将虚拟机栈和本地方法栈合二为一。</p>
-</li>
-<li><p>堆区：所有线程共享。对象实例分配内存的地方</p>
-</li>
-<li><p>方法区（非堆）：所有线程共享。存储已被虚拟机加载的类信息，常量，静态变量，即时编译后的代码等数据</p>
-<blockquote>
-<p>运行时常量池：是方法区的一部分，用于存放编译期产生的各种字面量（类似于常量）和符号引用。</p>
-</blockquote>
-</li>
-</ol>
-<hr>
-<h3 id="内存泄漏与内存溢出"><a href="#内存泄漏与内存溢出" class="headerlink" title="内存泄漏与内存溢出"></a>内存泄漏与内存溢出</h3><ul>
-<li><p>内存泄露：指程序中一些对象不会被GC所回收，它始终占用内存，即被分配的对象引用链可达但已无用。（可用内存减少）</p>
-</li>
-<li><p>内存溢出：程序运行过程中无法申请到足够的内存而导致的一种错误。内存溢出通常发生于OLD段或Perm段垃圾回收后，仍然无内存空间容纳新的Java对象的情况。</p>
-<p>内存泄露是内存溢出的一种诱因，不是唯一因素。</p>
-</li>
-</ul>
-<hr>
-<h3 id="对象创建的堆内存分配方式"><a href="#对象创建的堆内存分配方式" class="headerlink" title="对象创建的堆内存分配方式"></a>对象创建的堆内存分配方式</h3><ol>
-<li>指针碰撞：内存规整无碎片时，直接划分堆尾部内存给对象。</li>
-<li>空闲列表：有碎片时，维护一个列表记录哪些内存可用，并分配足够大的内存给对象。</li>
-</ol>
-<hr>
-<h3 id="对象的内存布局"><a href="#对象的内存布局" class="headerlink" title="对象的内存布局"></a>对象的内存布局</h3><p>对象的内存布局包括：</p>
-<ol>
-<li>对象头：储存对象自身运行时数据，如哈希码、GC分代年龄、线程持有锁等</li>
-<li>实例数据：对象真正储存的有效信息</li>
-<li>对齐填充：由于对象大小必须是8的整数倍，对象头正好是8的整数倍，如果实例数据部分没有对齐，则需要对齐成8的倍数</li>
-</ol>
-<p><img src="http://img.blog.csdn.net/20171209000959770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="object"></p>
-<hr>
-<h3 id="对象的访问定位"><a href="#对象的访问定位" class="headerlink" title="对象的访问定位"></a>对象的访问定位</h3><ol>
-<li><p>通过<strong>句柄</strong>访问：使用句柄访问方式，java堆将会划分出来一部分内存去来作为句柄池，reference中存储的就是对象的句柄地址。而句柄中则包含对象实例数据的地址和对象类型数据（如对象的类型，实现的接口、方法、父类、field等）的具体地址信息。</p>
-<p><img src="http://img.blog.csdn.net/20171209000900765?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="句柄"></p>
-</li>
-<li><p>通过<strong>直接指针</strong>访问： 如果使用指针访问，那么java堆对象的布局中就必须考虑如何放置访问类型的相关信息（如对象的类型，实现的接口、方法、父类、field等），而reference中存储的就是对象的地址</p>
-<p><img src="http://img.blog.csdn.net/20171209000934240?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemt6azk2ODcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="直接指针"></p>
-</li>
-</ol>
-<blockquote>
-<p>这两种访问方式各有利弊，使用句柄访最大的好处是reference中存储着稳定的句柄地址，当对象移动之后（垃圾收集时移动对象是非常普遍的行为），只需要改变句柄中的对象实例地址即可，reference不用修改。 </p>
-<p>使用指针访问的好处是访问速度快，它减少了一次指针定位的时间开销，由于java是面向对象的语言，在开发中java对象的访问非常的频繁，因此这类开销积少成多也是非常可观的，反之则提升访问速度。<strong>对于HotSpot虚拟机来说，使用的就是直接指针访问的方式。</strong></p>
-</blockquote>
+          Java内存区域划分：
+程序计数器：线程私有。当前所执行线程的行号指示器
 
-          
+虚拟机栈：线程私有。方法执行的同时创建一个栈帧，用于存储局部变量表（包括基本数据类型、对象引用）、操作数栈、动态链接、方法出口等。每一个方法从调用执行直到结束的过程就对应一个栈帧入栈到出栈的过程。
+
+本地方法栈：线程私有。与
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/jvm-neicun/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1029,10 +910,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1045,13 +922,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/java-reflect/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1081,12 +952,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-07T14:34:21+08:00">2017-12-07</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T14:34:21+08:00">
+                2017-12-07
+              </time>
             
 
-            
             
 
             
@@ -1101,10 +973,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javaSE/" itemprop="url" rel="index"><span itemprop="name">javaSE</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">javaSE</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1118,6 +994,17 @@
 
           
           
+             <span id="/java-reflect/" class="leancloud_visitors" data-flag-title="关于Java反射的理解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1129,9 +1016,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1140,56 +1024,30 @@
       
         
           
-            <p>首先，从动态语言讲起。像Python、Ruby这种语言，只要修改了代码，修改的效果立即生效，因为这种语言是无需编译，直接执行代码的，我们称这类语言是“动态语言”。而C++、Java这种，在运行之前需要先编译，如果中途修改了代码不重新编译去执行的话就没有变化。但是，Java有一个非常突出的动态相关机制，即反射：我们可以于运行时（区别于编译时）加载、探知、使用编译期间完全未知的classes。换句话说，Java程序可以加载一个运行时才得知名称的class（在这之前修改这个类即时不编译都有效），获悉其完整构造（但不包括methods定义），并生成其对象实体、或对其fields设值、或唤起其methods。</p>
-<p>再通俗地说一下什么是反射？</p>
-<p>普通的Java对象是通过new关键字把对应类的字节码文件加载到内存，然后创建该对象的。</p>
-<p>反射是通过一个名为Class的特殊类，用Class.forName(“类名”);得到类的字节码对象，然后用newInstance()方法在虚拟机内部构造这个对象（针对无参构造函数）。</p>
-<p><strong>也就是说反射机制让我们可以在程序运行时动态地拿到Java类对应的字节码对象（而不是在编译的时候）</strong>，然后动态的进行任何可能的操作。反射的功能主要包括：</p>
-<ul>
-<li>在运行时判断任意一个对象所属的类</li>
-<li>在运行时构造任意一个类的对象</li>
-<li>在运行时判断任意一个类所具有的成员变量和方法</li>
-<li>在运行时调用任意一个对象的方法（这样就可以修改这个对象的属性）</li>
-<li>生成动态代理</li>
-</ul>
-<p><strong>使用反射的主要作用是方便程序的扩展</strong>，由于其运行时动态加载的特性。</p>
-<h2 id="Class类"><a href="#Class类" class="headerlink" title="Class类"></a>Class类</h2><p>Java中只有2种东西不是面向对象的，一个基本类型，一个静态成员（方法、变量、常量）。<strong>我们提供的每一个类也是对象，一个类的类类型是java.lang.Class类的实例对象</strong>。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 创建类Foo的实例对象</span></div><div class="line">Foo foo1 = <span class="keyword">new</span> Foo();</div><div class="line"></div><div class="line"><span class="comment">// Foo这个类也是一个实例对象，Class类的实例对象</span></div><div class="line"><span class="comment">// 任何一个类都是Class的实例对象，这个实例对象有三种表达方式</span></div><div class="line"></div><div class="line"><span class="comment">// 第一种表达方式。实际上表明任何一个类都有一个隐含的静态成员变量Class</span></div><div class="line">Class c1 = Foo.class;</div><div class="line"></div><div class="line"><span class="comment">// 第二种表达方式</span></div><div class="line">Class c2 = foo1.getClass();</div><div class="line"></div><div class="line"><span class="comment">// 根据官网说法，c1,c2表示了Foo类的类类型(class type)</span></div><div class="line"><span class="comment">// 类也是对象，是Class类的实例对象，这个对象我们成为该类的类类型</span></div><div class="line"></div><div class="line">System.out.println(c1==c2)   <span class="comment">// true</span></div><div class="line"> </div><div class="line"><span class="comment">// 第三种表达方式</span></div><div class="line">Class c3 = Class.forName(<span class="string">"Foo"</span>);</div><div class="line"> </div><div class="line">System.out.println(c1==c3)   <span class="comment">// true</span></div></pre></td></tr></table></figure>
-<p>Class类的构造器是私有的，只能JVM能创建Class类的实例对象。</p>
-<p>可以通过类类型 (上面的c1 c2 c3)创建Foo类的实例对象：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Foo foo = (Foo)c1.newInstance();</div></pre></td></tr></table></figure>
-<h2 id="动态加载类"><a href="#动态加载类" class="headerlink" title="动态加载类"></a>动态加载类</h2><p>什么是动态加载？什么是静态加载？</p>
-<p><strong>静态加载的类在编译的时候就要提供，而动态加载的类在源程序编译时可以缺席</strong>。区分编译时和运行时。</p>
-<p>Class.forName(“类名”) 这种方式，不仅表示了类的类类型，还代表了动态加载类。</p>
-<p>用new这种方式静态加载方式，编译的时候，如果new的对象的那个类不存在的话，编译不通过；但是用Class.forName这种动态加载方式，没有这个类编译的时候不会报任何错，但是运行的时候会因为找不到这个类而报错。动态加载有什么好处呢？配合接口编程，可以实现一个接口对多种实现，从而可以动态地去选择完成不同的功能。因此，<strong>类动态加载对扩展功能很有用</strong>。</p>
-<p><strong>其实，动态类加载主要就是通过反射机制将类对象注入进去。</strong></p>
-<p>静态加载：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Office_Static</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;  </div><div class="line">        <span class="comment">//new 创建对象，是静态加载类，在编译时刻就需要用到Word和Excel，并将其编译</span></div><div class="line">        <span class="keyword">if</span>(<span class="string">"Word"</span>.equals(args[<span class="number">0</span>]))&#123;  </div><div class="line">            Word w = <span class="keyword">new</span> Word();  </div><div class="line">            w.start();  </div><div class="line">        &#125;  </div><div class="line">        <span class="keyword">if</span>(<span class="string">"Excel"</span>.equals(args[<span class="number">0</span>]))&#123;  </div><div class="line">            Excel e = <span class="keyword">new</span> Excel();  </div><div class="line">            e.start();  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>动态加载：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">OfficeAble</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Word</span> <span class="keyword">implements</span> <span class="title">OfficeAble</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>&#123;  </div><div class="line">        System.out.println(<span class="string">"word start"</span>);  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Excel</span> <span class="keyword">implements</span> <span class="title">OfficeAble</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>&#123;  </div><div class="line">        System.out.println(<span class="string">"excel start"</span>);  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OfficeBetter</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;  </div><div class="line">        <span class="keyword">try</span> &#123;  </div><div class="line">            <span class="comment">//动态加载类，在运行时刻才要用这个类  </span></div><div class="line">            Class c = Class.forName(args[<span class="number">0</span>]);<span class="comment">//在运行配置里面输入com.imooc.加载类.Excel  </span></div><div class="line">            <span class="comment">//通过类类型，创建该类对象(先转换为Word和Excel的共同接口OfficeAble)  </span></div><div class="line">            OfficeAble oa = (OfficeAble)c.newInstance();  </div><div class="line">            oa.start();  </div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;  </div><div class="line">            e.printStackTrace();  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="通过反射动态获取对象的方法属性构造器信息"><a href="#通过反射动态获取对象的方法属性构造器信息" class="headerlink" title="通过反射动态获取对象的方法属性构造器信息"></a>通过反射动态获取对象的方法属性构造器信息</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.lang.reflect.Method;</div><div class="line"><span class="keyword">import</span> java.lang.reflect.Field;</div><div class="line"><span class="keyword">import</span> java.lang.reflect.Constructor;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassUtil</span> </span>&#123;</div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 打印类的信息，包括类的成员函数、成员变量(只获取成员函数)</span></div><div class="line"><span class="comment">     * </span></div><div class="line"><span class="comment">     * <span class="doctag">@param</span> obj</span></div><div class="line"><span class="comment">     *            该对象所属类的信息</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printClassMethodMessage</span><span class="params">(Object obj)</span> </span>&#123;</div><div class="line">        <span class="comment">// 要获取类的信息 首先要获取类的类类型</span></div><div class="line">        Class c = obj.getClass();<span class="comment">// 传递的是哪个子类的对象 c就是该子类的类类型</span></div><div class="line">        <span class="comment">// 获取类的名称</span></div><div class="line">        System.out.println(<span class="string">"类的名称是:"</span> + c.getName());</div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * Method类，方法对象 一个成员方法就是一个Method对象</span></div><div class="line"><span class="comment">         * getMethods()方法获取的是所有的public的函数，包括父类继承而来的</span></div><div class="line"><span class="comment">         * getDeclaredMethods()获取的是所有该类自己声明的方法，不问访问权限</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        Method[] ms = c.getMethods();<span class="comment">// c.getDeclaredMethods()</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ms.length; i++) &#123;</div><div class="line">            <span class="comment">// 得到方法的返回值类型的类类型</span></div><div class="line">            Class returnType = ms[i].getReturnType();</div><div class="line">            System.out.print(returnType.getName() + <span class="string">" "</span>);</div><div class="line">            <span class="comment">// 得到方法的名称</span></div><div class="line">            System.out.print(ms[i].getName() + <span class="string">"("</span>);</div><div class="line">            <span class="comment">// 获取参数类型---&gt;得到的是参数列表的类型的类类型</span></div><div class="line">            Class[] paramTypes = ms[i].getParameterTypes();</div><div class="line">            <span class="keyword">for</span> (Class class1 : paramTypes) &#123;</div><div class="line">                System.out.print(class1.getName() + <span class="string">","</span>);</div><div class="line">            &#125;</div><div class="line">            System.out.println(<span class="string">")"</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 获取成员变量的信息</span></div><div class="line"><span class="comment">     * </span></div><div class="line"><span class="comment">     * <span class="doctag">@param</span> obj</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printFieldMessage</span><span class="params">(Object obj)</span> </span>&#123;</div><div class="line">        Class c = obj.getClass();</div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * 成员变量也是对象 java.lang.reflect.Field Field类封装了关于成员变量的操作</span></div><div class="line"><span class="comment">         * getFields()方法获取的是所有的public的成员变量的信息</span></div><div class="line"><span class="comment">         * getDeclaredFields获取的是该类自己声明的成员变量的信息</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        <span class="comment">// Field[] fs = c.getFields();</span></div><div class="line">        Field[] fs = c.getDeclaredFields();</div><div class="line">        <span class="keyword">for</span> (Field field : fs) &#123;</div><div class="line">            <span class="comment">// 得到成员变量的类型的类类型</span></div><div class="line">            Class fieldType = field.getType();</div><div class="line">            String typeName = fieldType.getName();</div><div class="line">            <span class="comment">// 得到成员变量的名称</span></div><div class="line">            String fieldName = field.getName();</div><div class="line">            System.out.println(typeName + <span class="string">" "</span> + fieldName);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 打印对象的构造函数的信息</span></div><div class="line"><span class="comment">     * </span></div><div class="line"><span class="comment">     * <span class="doctag">@param</span> obj</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printConMessage</span><span class="params">(Object obj)</span> </span>&#123;</div><div class="line">        Class c = obj.getClass();</div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * 构造函数也是对象 java.lang. Constructor中封装了构造函数的信息</span></div><div class="line"><span class="comment">         * getConstructors获取所有的public的构造函数 getDeclaredConstructors得到所有的构造函数</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        <span class="comment">// Constructor[] cs = c.getConstructors();</span></div><div class="line">        Constructor[] cs = c.getDeclaredConstructors();</div><div class="line">        <span class="keyword">for</span> (Constructor constructor : cs) &#123;</div><div class="line">            System.out.print(constructor.getName() + <span class="string">"("</span>);</div><div class="line">            <span class="comment">// 获取构造函数的参数列表---&gt;得到的是参数列表的类类型</span></div><div class="line">            Class[] paramTypes = constructor.getParameterTypes();</div><div class="line">            <span class="keyword">for</span> (Class class1 : paramTypes) &#123;</div><div class="line">                System.out.print(class1.getName() + <span class="string">","</span>);</div><div class="line">            &#125;</div><div class="line">            System.out.println(<span class="string">")"</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="通过反射运行时动态调用对象的方法"><a href="#通过反射运行时动态调用对象的方法" class="headerlink" title="通过反射运行时动态调用对象的方法"></a>通过反射运行时动态调用对象的方法</h2><p>用<strong>方法对象</strong>进行反射操作，运行时动态调用一个对象的方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.lang.reflect.Method;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MethodDemo1</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        <span class="comment">// 要获取print(int ,int )方法 1.要获取一个方法就是获取类的信息，获取类的信息首先要获取类的类类型</span></div><div class="line">        A a1 = <span class="keyword">new</span> A();</div><div class="line">        Class c = a1.getClass();</div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * 2.获取方法 名称和参数列表来决定 getMethod获取的是public的方法 getDelcaredMethod自己声明的方法</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            <span class="comment">// Method m = c.getMethod("print", new</span></div><div class="line">            <span class="comment">// Class[]&#123;int.class,int.class&#125;);</span></div><div class="line">            Method m = c.getMethod(<span class="string">"print"</span>, <span class="keyword">int</span>.class, <span class="keyword">int</span>.class);</div><div class="line"></div><div class="line">            <span class="comment">// 方法的反射操作</span></div><div class="line">            <span class="comment">// a1.print(10, 20);方法的反射操作是用m对象来进行方法调用 和a1.print调用的效果完全相同</span></div><div class="line">            <span class="comment">// 方法如果没有返回值返回null,有返回值返回具体的返回值</span></div><div class="line">            <span class="comment">// Object o = m.invoke(a1,new Object[]&#123;10,20&#125;);</span></div><div class="line">            Object o = m.invoke(a1, <span class="number">10</span>, <span class="number">20</span>);</div><div class="line">            System.out.println(<span class="string">"=================="</span>);</div><div class="line">            <span class="comment">// 获取方法print(String,String)</span></div><div class="line">            Method m1 = c.getMethod(<span class="string">"print"</span>, String.class, String.class);</div><div class="line">            <span class="comment">// 用方法进行反射操作</span></div><div class="line">            <span class="comment">// a1.print("hello", "WORLD");</span></div><div class="line">            o = m1.invoke(a1, <span class="string">"hello"</span>, <span class="string">"WORLD"</span>);</div><div class="line">            System.out.println(<span class="string">"==================="</span>);</div><div class="line">            <span class="comment">// Method m2 = c.getMethod("print", new Class[]&#123;&#125;);</span></div><div class="line">            Method m2 = c.getMethod(<span class="string">"print"</span>);</div><div class="line">            <span class="comment">// m2.invoke(a1, new Object[]&#123;&#125;);</span></div><div class="line">            m2.invoke(a1);</div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">            <span class="comment">// TODO Auto-generated catch block</span></div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"helloworld"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</div><div class="line">        System.out.println(a + b);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(String a, String b)</span> </span>&#123;</div><div class="line">        System.out.println(a.toUpperCase() + <span class="string">","</span> + b.toLowerCase());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="通过反射了解Java泛型的本质"><a href="#通过反射了解Java泛型的本质" class="headerlink" title="通过反射了解Java泛型的本质"></a>通过反射了解Java泛型的本质</h2><p>反射的操作都是编译之后的操作，反射动态加载的类是在程序运行时编译并加载的。来看看下面这个例子。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.lang.reflect.Method;</div><div class="line"><span class="keyword">import</span> java.util.ArrayList;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MethodDemo2</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        ArrayList list = <span class="keyword">new</span> ArrayList();</div><div class="line">        </div><div class="line">        ArrayList&lt;String&gt; list1 = <span class="keyword">new</span> ArrayList&lt;String&gt;();</div><div class="line">        list1.add(<span class="string">"hello"</span>);</div><div class="line">        <span class="comment">//list1.add(20);错误的</span></div><div class="line">        Class c1 = list.getClass();</div><div class="line">        Class c2 = list1.getClass();</div><div class="line">        System.out.println(c1 == c2);<span class="comment">// 都是ArrayList的类类型，true</span></div><div class="line">        <span class="comment">//反射的操作都是编译之后的操作</span></div><div class="line">        </div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * c1==c2结果返回true说明编译之后集合的泛型是去泛型化的</span></div><div class="line"><span class="comment">         * Java中集合的泛型，是防止错误输入的，只在编译阶段有效，</span></div><div class="line"><span class="comment">         * 绕过编译就无效了</span></div><div class="line"><span class="comment">         * 验证：我们可以通过方法的反射来操作，绕过编译</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            Method m = c2.getMethod(<span class="string">"add"</span>, Object.class);</div><div class="line">            m.invoke(list1, <span class="number">20</span>);<span class="comment">//绕过编译操作就绕过了泛型</span></div><div class="line">            System.out.println(list1.size());</div><div class="line">            System.out.println(list1);</div><div class="line">            <span class="comment">/*for (String string : list1) &#123;</span></div><div class="line"><span class="comment">                System.out.println(string);</span></div><div class="line"><span class="comment">            &#125;*/</span><span class="comment">//现在不能这样遍历</span></div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">          e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>转载自：<a href="http://lioncruise.github.io/2016/11/29/java-reflection/" target="_blank" rel="external">http://lioncruise.github.io/2016/11/29/java-reflection/</a></p>
-
-          
+          首先，从动态语言讲起。像Python、Ruby这种语言，只要修改了代码，修改的效果立即生效，因为这种语言是无需编译，直接执行代码的，我们称这类语言是“动态语言”。而C++、Java这种，在运行之前需要先编译，如果中途修改了代码不重新编译去执行的话就没有变化。但是，Java有一个非常突出的动态相关机制
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/java-reflect/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1203,10 +1061,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1219,13 +1073,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/java-reference-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1255,12 +1103,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-28T20:12:46+08:00">2017-11-28</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-28T20:12:46+08:00">
+                2017-11-28
+              </time>
             
 
-            
             
 
             
@@ -1275,10 +1124,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javaSE/" itemprop="url" rel="index"><span itemprop="name">javaSE</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">javaSE</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1292,6 +1145,17 @@
 
           
           
+             <span id="/java-reference-1/" class="leancloud_visitors" data-flag-title="理解Java中的弱引用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1303,9 +1167,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1314,44 +1175,32 @@
       
         
           
-            <h2 id="强引用-Strong-Reference"><a href="#强引用-Strong-Reference" class="headerlink" title="强引用(Strong Reference)"></a>强引用(Strong Reference)</h2><p>强引用就是我们经常使用的引用，其写法如下</p>
-<p><code>StringBuffer buffer = new StringBuffer();</code></p>
-<p>上面创建了一个StringBuffer对象，并将这个对象的（强）引用存到变量buffer中。是的，就是这个小儿科的操作（请原谅我这样的说法）。强引用最重要的就是它能够让引用变得强（Strong），这就决定了它和垃圾回收器的交互。具体来说，如果一个对象通过一串强引用链接可到达(Strongly reachable)，它是不会被回收的。如果你不想让你正在使用的对象被回收，这就正是你所需要的。</p>
-<h3 id="但是强引用如此之强"><a href="#但是强引用如此之强" class="headerlink" title="但是强引用如此之强"></a>但是强引用如此之强</h3><p>在一个程序里，将一个类设置成不可被扩展是有点不太常见的，当然这个完全可以通过类标记成final实现。或者也可以更加复杂一些，就是通过内部包含了未知数量具体实现的工厂方法返回一个接口(Interface)。举个例子，我们想要使用一个叫做Widget的类，但是这个类不能被继承，所以无法增加新的功能。</p>
-<p>但是我们如果想追踪Widget对象的额外信息，我们该怎么办？ 假设我们需要记录每个对象的序列号，但是由于Widget类并不包含这个属性，而且也不能扩展导致我们也不能增加这个属性。其实一点问题也没有，HashMap完全可以解决上述的问题。</p>
-<p><code>serialNumberMap.put(widget, widgetSerialNumber);</code></p>
-<p>这表面看上去没有问题，但是widget对象的强引用很有可能会引发问题。我们可以确信当一个widget序列号不需要时，我们应该将这个条目从map中移除。如果我们没有移除的话，可能会导致内存泄露，亦或者我们手动移除时删除了我们正在使用的widgets，会导致有效数据的丢失。其实这些问题很类似，这就是没有垃圾回收机制的语言管理内存时常遇到的问题。但是我们不用去担心这个问题，因为我们使用的时具有垃圾回收机制的Java语言。</p>
-<p>另一个强引用可能带来的问题就是缓存,尤其是像图片这样的大文件的缓存。假设你有一个程序需要处理用户提供的图片，通常的做法就是做图片数据缓存，因为从磁盘加载图片代价很大，并且同时我们也想避免在内存中同时存在两份一样的图片数据。</p>
-<p>缓存被设计的目的就是避免我们去再次加载哪些不需要的文件。你会很快发现在缓存中会一直包含一个到已经指向内存中图片数据的引用。使用强引用会强制图片数据留在内存，这就需要你来决定什么时候图片数据不需要并且手动从缓存中移除，进而可以让垃圾回收器回收。因此你再一次被强制做垃圾回收器该做的工作，并且人为决定是该清理到哪一个对象。</p>
-<h2 id="弱引用-Weak-Reference"><a href="#弱引用-Weak-Reference" class="headerlink" title="弱引用(Weak Reference)"></a>弱引用(Weak Reference)</h2><p>弱引用简单来说就是将对象留在内存的能力不是那么强的引用。使用WeakReference，垃圾回收器会帮你来决定引用的对象何时回收并且将对象从内存移除。创建弱引用如下</p>
-<p><code>WeakReference&lt;Widget&gt; weakWidget = new WeakReference&lt;Widget&gt;(widget);</code></p>
-<p>使用weakWidget.get()就可以得到真实的Widget对象，因为弱引用不能阻挡垃圾回收器对其回收，你会发现（当没有任何强引用到widget对象时）使用get时突然返回null。</p>
-<p>解决上述的widget序列数记录的问题，最简单的办法就是使用Java内置的WeakHashMap类。WeakHashMap和HashMap几乎一样，唯一的区别就是它的键（不是值!!!）使用WeakReference引用。当WeakHashMap的键标记为垃圾的时候，这个键对应的条目就会自动被移除。这就避免了上面不需要的Widget对象手动删除的问题。使用WeakHashMap可以很便捷地转为HashMap或者Map。</p>
-<h3 id="引用队列-Reference-Queue"><a href="#引用队列-Reference-Queue" class="headerlink" title="引用队列(Reference Queue)"></a>引用队列(Reference Queue)</h3><p>一旦弱引用对象开始返回null，该弱引用指向的对象就被标记成了垃圾。而这个弱引用对象（非其指向的对象）就没有什么用了。通常这时候需要进行一些清理工作。比如WeakHashMap会在这时候移除没用的条目来避免保存无限制增长的没有意义的弱引用。</p>
-<p>引用队列可以很容易地实现跟踪不需要的引用。当你在构造WeakReference时传入一个ReferenceQueue对象，当该引用指向的对象被标记为垃圾的时候，这个引用对象会自动地加入到引用队列里面。接下来，你就可以在固定的周期，处理传入的引用队列，比如做一些清理工作来处理这些没有用的引用对象。</p>
-<h2 id="四种引用"><a href="#四种引用" class="headerlink" title="四种引用"></a>四种引用</h2><p>Java中实际上有四种强度不同的引用，从强到弱它们分别是，强引用，软引用，弱引用和虚引用。上面部分介绍了强引用和弱引用，下面介绍剩下的两个，软引用和虚引用。</p>
-<h2 id="软引用（Soft-Reference）"><a href="#软引用（Soft-Reference）" class="headerlink" title="软引用（Soft Reference）"></a>软引用（Soft Reference）</h2><p>软引用基本上和弱引用差不多，只是相比弱引用，它阻止垃圾回收期回收其指向的对象的能力强一些。如果一个对象是弱引用可到达，那么这个对象会被垃圾回收器接下来的回收周期销毁。但是如果是软引用可以到达，那么这个对象会停留在内存更时间上长一些。当内存不足时垃圾回收器才会回收这些软引用可到达的对象。</p>
-<p>由于软引用可到达的对象比弱引用可达到的对象滞留内存时间会长一些，我们可以利用这个特性来做缓存。这样的话，你就可以节省了很多事情，垃圾回收器会关心当前哪种可到达类型以及内存的消耗程度来进行处理。</p>
-<h2 id="虚引用-（Phantom-Reference）"><a href="#虚引用-（Phantom-Reference）" class="headerlink" title="虚引用 （Phantom Reference）"></a>虚引用 （Phantom Reference）</h2><p>与软引用，弱引用不同，虚引用指向的对象十分脆弱，我们不可以通过get方法来得到其指向的对象。它的唯一作用就是当其指向的对象被回收之后，自己被加入到引用队列，用作记录该引用指向的对象已被销毁。</p>
-<p>当弱引用的指向对象变得弱引用可到达，该弱引用就会加入到引用队列。这一操作发生在对象析构或者垃圾回收真正发生之前。理论上，这个即将被回收的对象是可以在一个不符合规范的析构方法里面重新复活。但是这个弱引用会销毁。虚引用只有在其指向的对象从内存中移除掉之后才会加入到引用队列中。其get方法一直返回null就是为了阻止其指向的几乎被销毁的对象重新复活。</p>
-<p>虚引用使用场景主要由两个。它允许你知道具体何时其引用的对象从内存中移除。而实际上这是Java中唯一的方式。这一点尤其表现在处理类似图片的大文件的情况。当你确定一个图片数据对象应该被回收，你可以利用虚引用来判断这个对象回收之后在继续加载下一张图片。这样可以尽可能地避免可怕的内存溢出错误。</p>
-<p>第二点，虚引用可以避免很多析构时的问题。finalize方法可以通过创建强引用指向快被销毁的对象来让这些对象重新复活。然而，一个重写了finalize方法的对象如果想要被回收掉，需要经历两个单独的垃圾收集周期。在第一个周期中，某个对象被标记为可回收，进而才能进行析构。但是因为在析构过程中仍有微弱的可能这个对象会重新复活。这种情况下，在这个对象真实销毁之前，垃圾回收器需要再次运行。因为析构可能并不是很及时，所以在调用对象的析构之前，需要经历数量不确定的垃圾收集周期。这就意味着在真正清理掉这个对象的时候可能发生很大的延迟。这就是为什么当大部分堆被标记成垃圾时还是会出现烦人的内存溢出错误。</p>
-<p>使用虚引用，上述情况将引刃而解，当一个虚引用加入到引用队列时，你绝对没有办法得到一个销毁了的对象。因为这时候，对象已经从内存中销毁了。因为虚引用不能被用作让其指向的对象重生，所以其对象会在垃圾回收的第一个周期就将被清理掉。</p>
-<p>显而易见，finalize方法不建议被重写。因为虚引用明显地安全高效，去掉finalize方法可以虚拟机变得明显简单。当然你也可以去重写这个方法来实现更多。这完全看个人选择。</p>
-
-          
+          强引用(Strong Reference)强引用就是我们经常使用的引用，其写法如下
+StringBuffer buffer = new StringBuffer();
+上面创建了一个StringBuffer对象，并将这个对象的（强）引用存到变量buffer中。是的，就是这个小儿科的操作（请原谅我这样
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/java-reference-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1365,10 +1214,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1381,13 +1226,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/design-pattern-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1417,12 +1256,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-24T23:11:23+08:00">2017-11-24</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-24T23:11:23+08:00">
+                2017-11-24
+              </time>
             
 
-            
             
 
             
@@ -1437,10 +1277,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/设计模式/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1454,6 +1298,17 @@
 
           
           
+             <span id="/design-pattern-1/" class="leancloud_visitors" data-flag-title="Java设计模式自我总结-1">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1465,9 +1320,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1476,27 +1328,33 @@
       
         
           
-            <p>看了一部分<strong>设计模式</strong>，自己都用一句话总结了下：</p>
-<ul>
-<li><strong>单例模式</strong>Singleton类内定义私有的构造方法，并实例化一个静态的Singleton对象（全局只有一个），于是外部只能调用你封装的getSingleton方法取得Singleton实例</li>
-<li><strong>工厂模式</strong>是设置一个过渡端（即工厂类）用以取得接口对应的子类类型并实例化，然后回传接口的引用到客户端（调用处，如主方法）</li>
-<li><strong>代理模式</strong>就是将真实类作为属性注入到代理类，然后先调用代理类的其他业务操作再调用真实类的业务</li>
-<li><strong>适配器模式</strong>主要用于子类只需要实现接口的一部分方法，此时设定一个适配器抽象类实现若干或者所有抽象方法（方法体为空即可）来过渡，然后子类有选择的实现一部分适配器类的方法即可</li>
-</ul>
+          看了一部分设计模式，自己都用一句话总结了下：
 
-          
+单例模式Singleton类内定义私有的构造方法，并实例化一个静态的Singleton对象（全局只有一个），于是外部只能调用你封装的getSingleton方法取得Singleton实例
+工厂模式是设置一个过渡端（即工厂类）用以取得接口对应的子类类型并
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/design-pattern-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1510,10 +1368,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1526,13 +1380,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/spring-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1562,12 +1410,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T14:15:22+08:00">2017-11-06</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-06T14:15:22+08:00">
+                2017-11-06
+              </time>
             
 
-            
             
 
             
@@ -1582,10 +1431,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/spring/" itemprop="url" rel="index"><span itemprop="name">spring</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/spring/" itemprop="url" rel="index">
+                    <span itemprop="name">spring</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1599,6 +1452,17 @@
 
           
           
+             <span id="/spring-1/" class="leancloud_visitors" data-flag-title="spring四种依赖注入方式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1610,9 +1474,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1621,51 +1482,31 @@
       
         
           
-            <h2 id="spring四种依赖注入方式"><a href="#spring四种依赖注入方式" class="headerlink" title="spring四种依赖注入方式"></a>spring四种依赖注入方式</h2><p>​    </p>
-<p>​    平常的java开发中，程序员在某个类中需要依赖其它类的方法，则通常是new一个依赖类再调用类实例的方法，这种开发存在的问题是new的类实例不好统一管理，spring提出了依赖注入的思想，即依赖类不由程序员实例化，而是通过spring容器帮我们new指定实例并且将实例注入到需要该对象的类中。依赖注入的另一种说法是“控制反转”，通俗的理解是：平常我们new一个实例，这个实例的控制权是我们程序员，而控制反转是指new实例工作不由我们程序员来做而是交给spring容器来做。</p>
-<p>​    spring有多种依赖注入的形式，下面仅介绍spring通过xml进行IOC配置的方式：</p>
-<h3 id="set方法注入"><a href="#set方法注入" class="headerlink" title="set方法注入"></a>set方法注入</h3><p>​    这是最简单的注入方式，假设有一个SpringAction，类中需要实例化一个SpringDao对象，那么就可以定义一个private的SpringDao成员变量，然后创建SpringDao的set方法（这是ioc的注入入口）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.bless.springdemo.action;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringAction</span> </span>&#123;</div><div class="line">        <span class="comment">//注入对象springDao</span></div><div class="line">	<span class="keyword">private</span> SpringDao springDao;</div><div class="line">        <span class="comment">//一定要写被注入对象的set方法</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSpringDao</span><span class="params">(SpringDao springDao)</span> </span>&#123;</div><div class="line">		<span class="keyword">this</span>.springDao = springDao;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ok</span><span class="params">()</span></span>&#123;</div><div class="line">		springDao.ok();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>​    随后编写spring的xml文件，<bean>中的name属性是class属性的一个别名，class属性指类的全名，因为在SpringAction中有一个公共属性Springdao，所以要在<bean>标签中创建一个<property>标签指定SpringDao。<property>标签中的name就是SpringAction类中的SpringDao属性名，ref指下面<bean name="springDao" ...="">，这样其实是spring将SpringDaoImpl对象实例化并且调用SpringAction的setSpringDao方法将SpringDao注入：</bean></property></property></bean></bean></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--配置bean,配置后该类由spring管理--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springAction"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.action.SpringAction"</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--(1)依赖注入,配置当前类中相应的属性--&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"springDao"</span> <span class="attr">ref</span>=<span class="string">"springDao"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springDao"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.dao.impl.SpringDaoImpl"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="构造器注入"><a href="#构造器注入" class="headerlink" title="构造器注入"></a>构造器注入</h3><p>​    这种方式的注入是指带有参数的构造函数注入，看下面的例子，我创建了两个成员变量SpringDao和User，但是并未设置对象的set方法，所以就不能支持第一种注入方式，这里的注入方式是在SpringAction的构造函数中注入，也就是说在创建SpringAction对象时要将SpringDao和User两个参数值传进来：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringAction</span> </span>&#123;</div><div class="line">	<span class="comment">//注入对象springDao</span></div><div class="line">	<span class="keyword">private</span> SpringDao springDao;</div><div class="line">	<span class="keyword">private</span> User user;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">SpringAction</span><span class="params">(SpringDao springDao,User user)</span></span>&#123;</div><div class="line">		<span class="keyword">this</span>.springDao = springDao;</div><div class="line">		<span class="keyword">this</span>.user = user;</div><div class="line">		System.out.println(<span class="string">"构造方法调用springDao和user"</span>);</div><div class="line">	&#125;</div><div class="line">        </div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</div><div class="line">		user.setName(<span class="string">"卡卡"</span>);</div><div class="line">		springDao.save(user);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>在XML文件中同样不用<property>的形式，而是使用<constructor-arg>标签，ref属性同样指向其它<bean>标签的name属性：</bean></constructor-arg></property></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--配置bean,配置后该类由spring管理--&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springAction"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.action.SpringAction"</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--(2)创建构造器注入,如果主类有带参的构造方法则需添加此配置--&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">ref</span>=<span class="string">"springDao"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">ref</span>=<span class="string">"user"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springDao"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.dao.impl.SpringDaoImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"user"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.vo.User"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>​    解决构造方法参数的不确定性，你可能会遇到构造方法传入的两参数都是同类型的，为了分清哪个该赋对应值，则需要进行一些小处理：</p>
-<p>​    下面是设置index，就是参数位置：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springAction"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.action.SpringAction"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">index</span>=<span class="string">"0"</span> <span class="attr">ref</span>=<span class="string">"springDao"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">index</span>=<span class="string">"1"</span> <span class="attr">ref</span>=<span class="string">"user"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>另一种是设置参数类型：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">type</span>=<span class="string">"java.lang.String"</span> <span class="attr">ref</span>=<span class="string">""</span>/&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="静态工厂构造"><a href="#静态工厂构造" class="headerlink" title="静态工厂构造"></a>静态工厂构造</h3><p>​    静态工厂顾名思义，就是通过调用静态工厂的方法来获取自己需要的对象，为了让spring管理所有对象，我们不能直接通过”工程类.静态方法()”来获取对象，而是依然通过spring注入的形式获取：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.bless.springdemo.factory;</div><div class="line"></div><div class="line"><span class="keyword">import</span> com.bless.springdemo.dao.FactoryDao;</div><div class="line"><span class="keyword">import</span> com.bless.springdemo.dao.impl.FactoryDaoImpl;</div><div class="line"><span class="keyword">import</span> com.bless.springdemo.dao.impl.StaticFacotryDaoImpl;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DaoFactory</span> </span>&#123;</div><div class="line">	<span class="comment">//静态工厂</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> FactoryDao <span class="title">getStaticFactoryDaoImpl</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">return</span> <span class="keyword">new</span> StaticFacotryDaoImpl();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>​    同样看关键类，这里我需要注入一个FactoryDao对象，这里看起来跟第一种注入一模一样，但是看随后的xml会发现有很大差别:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringAction</span> </span>&#123;</div><div class="line">        <span class="comment">//注入对象</span></div><div class="line">	<span class="keyword">private</span> FactoryDao staticFactoryDao;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">staticFactoryOk</span><span class="params">()</span></span>&#123;</div><div class="line">		staticFactoryDao.saveFactory();</div><div class="line">	&#125;</div><div class="line">	<span class="comment">//注入对象的set方法</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setStaticFactoryDao</span><span class="params">(FactoryDao staticFactoryDao)</span> </span>&#123;</div><div class="line">		<span class="keyword">this</span>.staticFactoryDao = staticFactoryDao;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>​    Spring的IOC配置文件，注意看<bean name="staticFactoryDao">指向的class并不是FactoryDao的实现类，而是指向静态工厂DaoFactory，并且配置 factory-method=”getStaticFactoryDaoImpl”指定调用哪个工厂方法：</bean></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--配置bean,配置后该类由spring管理--&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springAction"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.action.SpringAction"</span> &gt;</span></div><div class="line">		<span class="comment">&lt;!--(3)使用静态工厂的方法注入对象,对应下面的配置文件(3)--&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"staticFactoryDao"</span> <span class="attr">ref</span>=<span class="string">"staticFactoryDao"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!--(3)此处获取对象的方式是从工厂类中获取静态方法--&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"staticFactoryDao"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.factory.DaoFactory"</span> <span class="attr">factory-method</span>=<span class="string">"getStaticFactoryDaoImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="实例工厂构造"><a href="#实例工厂构造" class="headerlink" title="实例工厂构造"></a>实例工厂构造</h3><p>​    实例工厂的意思是获取对象实例的方法不是静态的，所以你需要首先new工厂类，再调用普通的实例方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DaoFactory</span> </span>&#123;</div><div class="line">	<span class="comment">//实例工厂</span></div><div class="line">	<span class="function"><span class="keyword">public</span> FactoryDao <span class="title">getFactoryDaoImpl</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">return</span> <span class="keyword">new</span> FactoryDaoImpl();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>​    那么下面这个类没什么说的，跟前面也很相似，但是我们需要通过实例工厂类创建FactoryDao对象：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringAction</span> </span>&#123;</div><div class="line">	<span class="comment">//注入对象</span></div><div class="line">	<span class="keyword">private</span> FactoryDao factoryDao;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">factoryOk</span><span class="params">()</span></span>&#123;</div><div class="line">		factoryDao.saveFactory();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setFactoryDao</span><span class="params">(FactoryDao factoryDao)</span> </span>&#123;</div><div class="line">		<span class="keyword">this</span>.factoryDao = factoryDao;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>最后看spring配置文件</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--配置bean,配置后该类由spring管理--&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"springAction"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.action.SpringAction"</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--(4)使用实例工厂的方法注入对象,对应下面的配置文件(4)--&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"factoryDao"</span> <span class="attr">ref</span>=<span class="string">"factoryDao"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="comment">&lt;!--(4)此处获取对象的方式是从工厂类中获取实例方法--&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"daoFactory"</span> <span class="attr">class</span>=<span class="string">"com.bless.springdemo.factory.DaoFactory"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"factoryDao"</span> <span class="attr">factory-bean</span>=<span class="string">"daoFactory"</span> <span class="attr">factory-method</span>=<span class="string">"getFactoryDaoImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>​    Spring IOC注入方式用得最多的是(1)(2)种，多写多练就会非常熟练。</p>
-<p>​        另外注意：通过Spring创建的对象默认是单例的，如果需要创建多实例对象可以在<bean>标签后面添加一个属性：</bean></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">name</span>=<span class="string">"..."</span> <span class="attr">class</span>=<span class="string">"..."</span> <span class="attr">scope</span>=<span class="string">"prototype"</span>&gt;</span></div></pre></td></tr></table></figure>
-
-          
+          spring四种依赖注入方式​    
+​    平常的java开发中，程序员在某个类中需要依赖其它类的方法，则通常是new一个依赖类再调用类实例的方法，这种开发存在的问题是new的类实例不好统一管理，spring提出了依赖注入的思想，即依赖类不由程序员实例化，而是通过spring容器帮我们new指
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/spring-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1679,10 +1520,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1695,13 +1532,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/duotai-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1731,12 +1562,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-04T09:50:44+08:00">2017-11-04</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-04T09:50:44+08:00">
+                2017-11-04
+              </time>
             
 
-            
             
 
             
@@ -1751,10 +1583,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javaSE/" itemprop="url" rel="index"><span itemprop="name">javaSE</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">javaSE</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1768,6 +1604,17 @@
 
           
           
+             <span id="/duotai-1/" class="leancloud_visitors" data-flag-title="Java运行时多态性：继承和接口的实现">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1779,9 +1626,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1790,57 +1634,34 @@
       
         
           
-            <p>先插一句题外话：</p>
-<h3 id="继承与多态的区别"><a href="#继承与多态的区别" class="headerlink" title="继承与多态的区别"></a>继承与多态的区别</h3><ul>
-<li><p>​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。</p>
-</li>
-<li><p>​    多态：就是父类引用可以持有子类对象。这时候只能调用父类中的方法，而子类中特有方法是无法访问的，因为这个时候（编译时）你把他看作父类对象的原因，但是到了运行的时候，编译器就会发现这个父类引用中原来是一个子类的对像，所以如果父类和子类中有相同的方法时，调用的会是子类中的方法，而不是父类的。可以这么说：编译时看父类，运行时看子类。</p>
-<hr>
-</li>
-</ul>
-<p>进入正题：</p>
-<h3 id="Java运行时多态性：继承和接口的实现"><a href="#Java运行时多态性：继承和接口的实现" class="headerlink" title="Java运行时多态性：继承和接口的实现"></a>Java运行时多态性：继承和接口的实现</h3><p>Java是面向对象的语言，而运行时多态性是面向对象程序设计代码重用的一个最强大机制，动态性的概念也可以被说成“一个接口，多个方法”。Java实现运行时多态性的基础是动态方法调度，它是一种在运行时而不是在编译期调用重载方法的机制，下面就继承和接口实现两方面谈谈java运行时多态性的实现。</p>
-<h4 id="一、通过继承中超类对象引用变量引用子类对象来实现"><a href="#一、通过继承中超类对象引用变量引用子类对象来实现" class="headerlink" title="一、通过继承中超类对象引用变量引用子类对象来实现"></a>一、通过继承中超类对象引用变量引用子类对象来实现</h4><p>举例说明：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义超类superA  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">superA</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> i = <span class="number">100</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(“This is superA”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//定义superA的子类subB  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">subB</span> <span class="keyword">extends</span> <span class="title">superA</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> m = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(“This is subB”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//定义superA的子类subC  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">subC</span> <span class="keyword">extends</span> <span class="title">superA</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> n = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(“This is subC”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        superA a;</div><div class="line">        subB b = <span class="keyword">new</span> subB();</div><div class="line">        subC c = <span class="keyword">new</span> subC();</div><div class="line">        a = b;</div><div class="line">        a.fun();</div><div class="line">        (<span class="number">1</span>)</div><div class="line">        a = c;</div><div class="line">        a.fun();</div><div class="line">        (<span class="number">2</span>)</div><div class="line">    &#125;</div><div class="line">&#125;    <span class="number">12345678910111213141516171819202122232425262728293031323334353637383940</span></div></pre></td></tr></table></figure>
-<p>运行结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">This is subB</div><div class="line"></div><div class="line">This is subC123</div></pre></td></tr></table></figure>
-<p>上述代码中subB和subC是超类superA的子类，我们在类Test中声明了3个引用变量a, b, c，通过将子类对象引用赋值给超类对象引用变量来实现动态方法调用。也许有人会问：“为什么(1)和(2)不输出：This is superA”。java 的这种机制遵循一个原则：当超类对象引用变量引用子类对象时，被引用对象的类型而不是引用变量的类型决定了调用谁的成员方法，但是这个被调用的方法必须是在超类中定义过的，也就是说被子类覆盖的方法。</p>
-<p>所以，不要被上例中(1)和(2)所迷惑，虽然写成a.fun()，但是由于(1)中的a被b赋值，指向了子类subB的一个实例，因而(1)所调用的fun()实际上是子类subB的成员方法fun()，它覆盖了超类superA的成员方法fun()；同样(2)调用的是子类subC的成员方法fun()。</p>
-<p>另外，如果子类继承的超类是一个抽象类，虽然抽象类不能通过new操作符实例化，但是可以创建抽象类的对象引用指向子类对象，以实现运行时多态性。具体的实现方法同上例。</p>
-<p>不过，抽象类的子类必须覆盖实现超类中的所有的抽象方法，否则子类必须被abstract修饰符修饰，当然也就不能被实例化了。</p>
-<h4 id="二、通过接口类型变量引用实现接口的类的对象来实现"><a href="#二、通过接口类型变量引用实现接口的类的对象来实现" class="headerlink" title="二、通过接口类型变量引用实现接口的类的对象来实现"></a>二、通过接口类型变量引用实现接口的类的对象来实现</h4><p>接口的灵活性就在于“规定一个类必须做什么，而不管你如何做”。我们可以定义一个接口类型的引用变量来引用实现接口的类的实例，当这个引用调用方法时，它会根据实际引用的类的实例来判断具体调用哪个方法，这和上述的超类对象引用访问子类对象的机制相似。</p>
-<p>举例说明：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义接口InterA  </span></div><div class="line"><span class="class"><span class="keyword">interface</span> <span class="title">InterA</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//实现接口InterA的类B  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">implements</span> <span class="title">InterA</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(“This is B”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//实现接口InterA的类C  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">C</span> <span class="keyword">implements</span> <span class="title">InterA</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(“This is C”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        InterA  a;</div><div class="line">        a= <span class="keyword">new</span> B();</div><div class="line">        a.fun();</div><div class="line">        a = <span class="keyword">new</span> C();</div><div class="line">        a.fun();</div><div class="line">    &#125;</div><div class="line">&#125; <span class="number">1234567891011121314151617181920212223242526272829303132</span></div></pre></td></tr></table></figure>
-<p>输出结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">This is B</div><div class="line"></div><div class="line">This is C123</div></pre></td></tr></table></figure>
-<p>上例中类B和类C是实现接口InterA的两个类，分别实现了接口的方法fun()，通过将类B和类C的实例赋给接口引用a而实现了方法在运行时的动态绑定，充分利用了“一个接口，多个方法”展示了Java的动态多态性。</p>
-<p>需要注意的一点是：Java在利用接口变量调用其实现类的对象的方法时，该方法必须已经在接口中被声明，而且在接口的实现类中该实现方法的类型和参数必须与接口中所定义的精确匹配。</p>
-<p><strong>结束语：以上就是java运行时多态性的实现方法，大家在编程过程中可以灵活运用，但是在性能要求较高的代码中不提倡运用运行时多态，毕竟Java的运行时动态方法调用较之普通的方法调用的系统开销是比较大的。</strong></p>
-<hr>
-<h3 id="Java静态方法不具有多态性详解"><a href="#Java静态方法不具有多态性详解" class="headerlink" title="Java静态方法不具有多态性详解"></a>Java静态方法不具有多态性详解</h3><p>动态绑定机制使得基类的引用能够指向正确的子类对象，从而使得面向基类编程成为可能。<br>然而动态绑定在以下两种情况会失效。</p>
-<p>1、基类方法是private或final修饰的</p>
-<p>这个很好理解，因为private说明该方法对子类是不可见的，子类再写一个同名的方法并不是对父类方法进行复写(Override)，而是重新生成一个新的方法，也就不存在多态的问题了。同理也可以解释final，因为方法同样是不可覆盖的。</p>
-<p>2、方法是static修饰的</p>
-<p>代码如下所示.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticMethod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Base staticMehtod"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dynamicMehtod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Base dynamicMehtod"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sub</span> <span class="keyword">extends</span> <span class="title">Base</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticMethod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Sub staticMehtod"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dynamicMehtod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Sub dynamicMehtod"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TJ4</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</div><div class="line">    Base c = <span class="keyword">new</span> Sub();</div><div class="line">    c.staticMethod();</div><div class="line">    c.dynamicMehtod();</div><div class="line">  &#125;</div><div class="line">&#125;<span class="number">123456789101112131415161718192021222324252627</span></div></pre></td></tr></table></figure>
-<p>输出结果如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> Base staticMehtod</div><div class="line"> Sub dynamicMehtod</div><div class="line">123</div></pre></td></tr></table></figure>
-<p>输出结果并不像设想的那样，输出 “Sub staticMehtod”。因为静态方法是与类而不是与某个对象相关联，c.staticMethod();等同于Car.staticMethod(); 所以尽量不要使用实例变量去调用静态方法，避免混淆。</p>
-<p>转载：<a href="http://blog.csdn.net/jdsjlzx/article/details/52518723" target="_blank" rel="external">http://blog.csdn.net/jdsjlzx/article/details/52518723</a></p>
+          先插一句题外话：
+继承与多态的区别
+​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。
 
-          
+​    多态：就是父类引用可以持有子类
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/duotai-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1854,10 +1675,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1870,13 +1687,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/thread-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1906,12 +1717,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-03T20:20:49+08:00">2017-11-03</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-03T20:20:49+08:00">
+                2017-11-03
+              </time>
             
 
-            
             
 
             
@@ -1926,10 +1738,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/muti-thread/" itemprop="url" rel="index"><span itemprop="name">muti-thread</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/muti-thread/" itemprop="url" rel="index">
+                    <span itemprop="name">muti-thread</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1943,6 +1759,17 @@
 
           
           
+             <span id="/thread-1/" class="leancloud_visitors" data-flag-title="多线程之使用目的">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1954,9 +1781,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1965,39 +1789,33 @@
       
         
           
-            <p><strong>多线程</strong>使用的主要目的在于：</p>
-<ol>
-<li>吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。</li>
-<li>伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯定没办法通过增加CPU核数来提升性能。</li>
-</ol>
-<p>鉴于做WEB的第1点可能几乎不涉及。那这里就讲第二点吧。</p>
-<p>–举个简单的例子：<br>假设有个请求，这个请求服务端的处理需要执行3个很缓慢的IO操作（比如数据库查询或文件查询），那么正常的顺序可能是（括号里面代表执行时间）：<br>a、读取文件1  （10ms）<br>b、处理1的数据（1ms）<br>c、读取文件2  （10ms）<br>d、处理2的数据（1ms）<br>e、读取文件3  （10ms）<br>f、处理3的数据（1ms）<br>g、整合1、2、3的数据结果 （1ms）<br>单线程总共就需要34ms。<br>那如果你在这个请求内，把ab、cd、ef分别分给3个线程去做，就只需要12ms了。</p>
-<p>所以多线程不是没怎么用，而是，你平常要善于发现一些可优化的点。然后评估方案是否应该使用。<br>假设还是上面那个相同的问题：但是每个步骤的执行时间不一样了。<br>a、读取文件1  （1ms）<br>b、处理1的数据（1ms）<br>c、读取文件2  （1ms）<br>d、处理2的数据（1ms）<br>e、读取文件3  （28ms）<br>f、处理3的数据（1ms）<br>g、整合1、2、3的数据结果 （1ms）<br>单线程总共就需要34ms。<br>如果还是按上面的划分方案（上面方案和木桶原理一样，耗时取决于最慢的那个线程的执行速度），在这个例子中是第三个线程，执行29ms。那么最后这个请求耗时是30ms。比起不用单线程，就节省了4ms。但是有可能线程调度切换也要花费个1、2ms。因此，这个方案显得优势就不明显了，还带来程序复杂度提升。不太值得。</p>
-<p>那么现在优化的点，就不是第一个例子那样的任务分割多线程完成。而是优化文件3的读取速度。<br>可能是采用缓存和减少一些重复读取。<br>首先，假设有一种情况，所有用户都请求这个请求，那其实相当于所有用户都需要读取文件3。那你想想，100个人进行了这个请求，相当于你花在读取这个文件上的时间就是28×100=2800ms了。那么，如果你把文件缓存起来，那只要第一个用户的请求读取了，第二个用户不需要读取了，从内存取是很快速的，可能1ms都不到。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyServlet</span> <span class="keyword">extends</span> <span class="title">Servlet</span></span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, String&gt; fileName2Data = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</div><div class="line">  	<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">processFile3</span><span class="params">(String fName)</span></span>&#123;</div><div class="line">    	String data = fileName2Data.get(fName);</div><div class="line">      	<span class="keyword">if</span>(data==<span class="keyword">null</span>)&#123;</div><div class="line">          	data = readFromFile(fName);    <span class="comment">//耗时28ms</span></div><div class="line">          	fileName2Data.put(fName, data);</div><div class="line">      	&#125;</div><div class="line">      	<span class="comment">//process with data</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>看起来好像还不错，建立一个文件名和文件数据的映射。如果读取一个map中已经存在的数据，那么就不不用读取文件了。<br>可是问题在于，Servlet是并发，上面会导致一个很严重的问题，死循环。因为，HashMap在并发修改的时候，可能是导致循环链表的构成！！！（具体你可以自行阅读HashMap源码）如果你没接触过多线程，可能到时候发现服务器没请求也巨卡，也不知道什么情况！<br>好的，那就用ConcurrentHashMap，正如他的名字一样，他是一个线程安全的HashMap，这样能轻松解决问题。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyServlet</span> <span class="keyword">extends</span> <span class="title">Servlet</span></span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ConcurrentHashMap&lt;String, String&gt; fileName2Data = <span class="keyword">new</span> ConcurrentHashMap&lt;String, String&gt;();</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">processFile3</span><span class="params">(String fName)</span></span>&#123;</div><div class="line">        String data = fileName2Data.get(fName);</div><div class="line">        <span class="keyword">if</span>(data==<span class="keyword">null</span>)&#123;</div><div class="line">            data = readFromFile(fName);    <span class="comment">//耗时28ms</span></div><div class="line">            fileName2Data.put(fName, data);</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//process with data</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>这样真的解决问题了吗，这样虽然只要有用户访问过文件a，那另一个用户想访问文件a，也会从fileName2Data中拿数据，然后也不会引起死循环。</p>
-<p>可是，如果你觉得这样就已经完了，那你把多线程也想的太简单了，骚年！<br>你会发现，1000个用户首次访问同一个文件的时候，居然读取了1000次文件（这是最极端的，可能只有几百）。What the fuckin hell!!!</p>
-<p>难道代码错了吗，难道我就这样过我的一生！</p>
-<p>好好分析下。Servlet是多线程的，那么</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyServlet</span> <span class="keyword">extends</span> <span class="title">Servlet</span></span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ConcurrentHashMap&lt;String, String&gt; fileName2Data = <span class="keyword">new</span> ConcurrentHashMap&lt;String, String&gt;();</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">processFile3</span><span class="params">(String fName)</span></span>&#123;</div><div class="line">        String data = fileName2Data.get(fName);</div><div class="line">        <span class="comment">//“偶然”-- 1000个线程同时到这里，同时发现data为null</span></div><div class="line">        <span class="keyword">if</span>(data==<span class="keyword">null</span>)&#123;</div><div class="line">            data = readFromFile(fName);    <span class="comment">//耗时28ms</span></div><div class="line">            fileName2Data.put(fName, data);</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//process with data</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面注释的“偶然”，这是完全有可能的，因此，这样做还是有问题。</p>
-<p>因此，可以自己简单的封装一个任务来处理。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyServlet</span> <span class="keyword">extends</span> <span class="title">Servlet</span></span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> ConcurrentHashMap&lt;String, FutureTask&gt; fileName2Data = <span class="keyword">new</span> ConcurrentHashMap&lt;String, FutureTask&gt;();</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ExecutorService exec = Executors.newCacheThreadPool();</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">processFile3</span><span class="params">(String fName)</span></span>&#123;</div><div class="line">        FutureTask data = fileName2Data.get(fName);</div><div class="line">        <span class="comment">//“偶然”-- 1000个线程同时到这里，同时发现data为null</span></div><div class="line">        <span class="keyword">if</span>(data==<span class="keyword">null</span>)&#123;</div><div class="line">            data = newFutureTask(fName);</div><div class="line">            FutureTask old = fileName2Data.putIfAbsent(fName, data);</div><div class="line">            <span class="keyword">if</span>(old==<span class="keyword">null</span>)&#123;</div><div class="line">                data = old;</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                exec.execute(data);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        String d = data.get();</div><div class="line">        <span class="comment">//process with data</span></div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">private</span> FutureTask <span class="title">newFutureTask</span><span class="params">(<span class="keyword">final</span> String file)</span></span>&#123;</div><div class="line">        <span class="keyword">return</span>  <span class="keyword">new</span> FutureTask(<span class="keyword">new</span> Callable&lt;String&gt;()&#123;</div><div class="line">            <span class="function"><span class="keyword">public</span> String <span class="title">call</span><span class="params">()</span></span>&#123;</div><div class="line">                <span class="keyword">return</span> readFromFile(file);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            <span class="function"><span class="keyword">private</span> String <span class="title">readFromFile</span><span class="params">(String file)</span></span>&#123;<span class="keyword">return</span> <span class="string">""</span>;&#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+          多线程使用的主要目的在于：
+
+吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。
+伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/thread-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -2011,10 +1829,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -2029,6 +1843,9 @@
 
 
           </div>
+          
+
+
           
 
         </div>
@@ -2051,125 +1868,95 @@
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">zhangke</p>
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="zhangke" />
+          <p class="site-author-name" itemprop="name">zhangke</p>
+           
               <p class="site-description motion-element" itemprop="description">少点抱怨，多点改变</p>
-          </div>
+          
+        </div>
+        <nav class="site-state motion-element">
 
           
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">33</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">15</span>
-                    <span class="site-state-item-name">categories</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">12</span>
-                    <span class="site-state-item-name">tags</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-          
-
-          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
           
 
           
             
-          
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/giantke" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/zkzk96871" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5744544701?is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
         </div>
+
+        
+        
+
+        
+        
+
+        
+
+
       </section>
 
       
@@ -2186,40 +1973,30 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">zhangke</span>
-
-  
-
-  
 </div>
 
 
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
 
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
-
-
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         
-
-
-
-
-
-
 
         
       </div>
@@ -2230,8 +2007,6 @@
         <i class="fa fa-arrow-up"></i>
         
       </div>
-    
-
     
 
   </div>
@@ -2252,12 +2027,10 @@
 
 
 
+  
 
 
-
-
-
-
+  
 
 
 
@@ -2270,43 +2043,79 @@
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
-
-
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
 
 
 
   
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+               id: window.location.pathname, 
+               owner: 'giantke',
+               repo: 'giantke.github.io',
+               oauth: {
+                   client_id: '5c5e30fc9de28c3b1c19',
+                   client_secret: 'c42332ded6856cb0359efa668bc2b35f7e2d0fd6',
+               }});
+           gitment.render('gitment-container');
+       </script>
+   
+
+
+
+
+
+  
+
 
 
 
@@ -2329,13 +2138,435 @@
 
 
 
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
 
   
 
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("lf4c0Nyki0bS0rlbFrB6xCkL-gzGzoHsz", "60Izmo6LzUMvv9zI4ABpYWhx");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
 
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
 
 
 
@@ -2348,15 +2579,9 @@
   
 
   
-  
 
-  
-
-  
-
-  
-
-  
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
 
 </body>
 </html>

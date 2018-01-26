@@ -5,15 +5,11 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
 
 
 
@@ -40,7 +36,36 @@
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -49,58 +74,23 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.0.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: 'ZY6JY6ZPM9',
-      apiKey: '5d7498bc5ed50652590b1467b96af99c',
-      indexName: 'test_zhangke',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  
   <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
 
 
 <meta name="description" content="少点抱怨，多点改变">
@@ -116,10 +106,34 @@
 
 
 
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'ZY6JY6ZPM9',
+      apiKey: '5d7498bc5ed50652590b1467b96af99c',
+      indexName: 'test_zhangke',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
 
 
   <link rel="canonical" href="http://zhangk.top/"/>
+
+
+
 
 
   <title>Zhangke's blog</title>
@@ -133,32 +147,10 @@
 
 
 
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
+
+
 
 </head>
 
@@ -170,11 +162,12 @@
   
 
   <div class="container sidebar-position-left 
-  page-home">
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -208,33 +201,99 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
         </li>
       
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
   
-</nav>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
 
 
+
+    </div>
   
+</nav>
 
 
 
  </div>
     </header>
-
-    
-
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -251,13 +310,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1007/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -287,12 +340,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-26T16:24:06+08:00">2018-01-26</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T16:24:06+08:00">
+                2018-01-26
+              </time>
             
 
-            
             
 
             
@@ -307,10 +361,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -324,6 +382,17 @@
 
           
           
+             <span id="/pat-1007/" class="leancloud_visitors" data-flag-title="pat_1007">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -335,9 +404,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -346,37 +412,30 @@
       
         
           
-            <h1 id="1007-Maximum-Subsequence-Sum-25"><a href="#1007-Maximum-Subsequence-Sum-25" class="headerlink" title="1007. Maximum Subsequence Sum (25)"></a>1007. Maximum Subsequence Sum (25)</h1><p>Given a sequence of K integers { N1, N2, …, NK }. A continuous subsequence is defined to be { Ni, Ni+1, …, Nj } where 1 &lt;= i &lt;= j &lt;= K. The <em>Maximum Subsequence</em> is the continuous subsequence which has the largest sum of its elements. For example, given sequence { -2, 11, -4, 13, -5, -2 }, its maximum subsequence is { 11, -4, 13 } with the largest sum being 20.</p>
-<p>Now you are supposed to find the largest sum, together with the first and the last numbers of the maximum subsequence.</p>
-<p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. Each case occupies two lines. The first line contains a positive integer K (&lt;= 10000). The second line contains K numbers, separated by a space.</p>
-<p><strong>Output Specification:</strong></p>
-<p>For each test case, output in one line the largest sum, together with the first and the last numbers of the maximum subsequence. The numbers must be separated by one space, but there must be no extra space at the end of a line. In case that the maximum subsequence is not unique, output the one with the smallest indices i and j (as shown by the sample case). If all the K numbers are negative, then its maximum sum is defined to be 0, and you are supposed to output the first and the last numbers of the whole sequence.</p>
-<p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">10</div><div class="line">-10 1 2 3 4 -5 -23 3 7 -21</div></pre></td></tr></table></figure>
-<p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">10 1 4</div></pre></td></tr></table></figure>
-<p>初始的暴力枚举法o(n^3)我感觉是可以的，但是只AC了一个答案，不知道为什么。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> maxsum=<span class="number">0</span>,from=<span class="number">0</span>,to=<span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> num,tempsum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="keyword">int</span> t;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;t;</div><div class="line">        v.push_back(t);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> mini1=<span class="number">0</span>,i1=<span class="number">0</span>,mink1=<span class="number">0</span>,k1=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++<span class="comment">/*从第i个开始*/</span>) &#123;</div><div class="line">        i1=i;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">1</span>; k&lt;=num-i; k++<span class="comment">/*有k个*/</span>) &#123;</div><div class="line">            k1=k;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;k; j++) &#123;</div><div class="line">                tempsum+=v[i+j];</div><div class="line">            &#125;</div><div class="line">        </div><div class="line">            <span class="keyword">if</span> (tempsum&gt;maxsum) &#123;</div><div class="line">                maxsum=tempsum;</div><div class="line">                from=i1;</div><div class="line">                to=i1+k1<span class="number">-1</span>;</div><div class="line">                mini1=i1;</div><div class="line">                mink1=k1;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (tempsum==maxsum) &#123;</div><div class="line">                <span class="keyword">if</span> (i1&lt;mini1) &#123;</div><div class="line">                    from=i1;</div><div class="line">                    to=i1+k1<span class="number">-1</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            tempsum=<span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (maxsum&lt;<span class="number">0</span>) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;num<span class="number">-1</span>;</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;maxsum&lt;&lt;<span class="string">" "</span>&lt;&lt;from&lt;&lt;<span class="string">" "</span>&lt;&lt;to;</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>终于找到了这傻逼的错误原因，题意看错了，要求输出一前一后俩数字而不是俩下标，也不知道是因为我看得太快还是英语太烂。。。</p>
-<p>修改如下，但还是有问题，那就是超时~：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> maxsum=<span class="number">0</span>,from=<span class="number">0</span>,to;</div><div class="line">    <span class="keyword">int</span> num,tempsum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    to=num<span class="number">-1</span>;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="keyword">int</span> t;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;t;</div><div class="line">        v.push_back(t);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> mini1=<span class="number">0</span>,i1=<span class="number">0</span>,mink1=<span class="number">0</span>,k1=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++<span class="comment">/*从第i个开始*/</span>) &#123;</div><div class="line">        i1=i;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">1</span>; k&lt;=num-i; k++<span class="comment">/*有k个*/</span>) &#123;</div><div class="line">            k1=k;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;k; j++) &#123;</div><div class="line">                tempsum+=v[i+j];</div><div class="line">            &#125;</div><div class="line">        </div><div class="line">            <span class="keyword">if</span> (tempsum&gt;maxsum) &#123;</div><div class="line">                maxsum=tempsum;</div><div class="line">                from=i1;</div><div class="line">                to=i1+k1<span class="number">-1</span>;</div><div class="line">                mini1=i1;</div><div class="line">                mink1=k1;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (tempsum==maxsum) &#123;</div><div class="line">                <span class="keyword">if</span> (i1&lt;mini1) &#123;</div><div class="line">                    from=i1;</div><div class="line">                    to=i1+k1<span class="number">-1</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            tempsum=<span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (maxsum&lt;<span class="number">0</span>) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;v[<span class="number">0</span>]&lt;&lt;<span class="string">" "</span>&lt;&lt;v[num<span class="number">-1</span>];</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;maxsum&lt;&lt;<span class="string">" "</span>&lt;&lt;v[from]&lt;&lt;<span class="string">" "</span>&lt;&lt;v[to];</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>然后从网上找到一种o(n)的方法，根据判断前面子列和是否小于零，如小于零则只会对后面的和起反作用，所以直接舍弃。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> maxsum=<span class="number">-1</span>,tempsum=<span class="number">0</span>,from=<span class="number">0</span>,to;</div><div class="line">    <span class="keyword">int</span> num,tempindex=<span class="number">0</span>;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    to=num<span class="number">-1</span>;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="keyword">int</span> t;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;t;</div><div class="line">        v.push_back(t);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        tempsum+=v[i];</div><div class="line">        <span class="keyword">if</span> (tempsum&lt;<span class="number">0</span>) &#123;</div><div class="line">            tempsum=<span class="number">0</span>;</div><div class="line">            tempindex=i+<span class="number">1</span>;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (tempsum&gt;maxsum) &#123;</div><div class="line">            maxsum=tempsum;</div><div class="line">            from=tempindex;</div><div class="line">            to=i;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">if</span> (maxsum&lt;<span class="number">0</span>) &#123;</div><div class="line">        maxsum=<span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;maxsum&lt;&lt;<span class="string">" "</span>&lt;&lt;v[from]&lt;&lt;<span class="string">" "</span>&lt;&lt;v[to];</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
+          1007. Maximum Subsequence Sum (25)Given a sequence of K integers { N1, N2, …, NK }. A continuous subsequence is defined to be { Ni, Ni+1, …, Nj } wher
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1007/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -390,10 +449,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -406,13 +461,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1006/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -442,12 +491,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-26T14:24:10+08:00">2018-01-26</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T14:24:10+08:00">
+                2018-01-26
+              </time>
             
 
-            
             
 
             
@@ -462,10 +512,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -479,6 +533,17 @@
 
           
           
+             <span id="/pat-1006/" class="leancloud_visitors" data-flag-title="pat_1006">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -490,9 +555,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -501,33 +563,30 @@
       
         
           
-            <h1 id="1006-Sign-In-and-Sign-Out-25"><a href="#1006-Sign-In-and-Sign-Out-25" class="headerlink" title="1006. Sign In and Sign Out (25)"></a>1006. Sign In and Sign Out (25)</h1><p>At the beginning of every day, the first person who signs in the computer room will unlock the door, and the last one who signs out will lock the door. Given the records of signing in’s and out’s, you are supposed to find the ones who have unlocked and locked the door on that day.</p>
-<p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. Each case contains the records for one day. The case starts with a positive integer M, which is the total number of records, followed by M lines, each in the format:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ID_number Sign_in_time Sign_out_time</div></pre></td></tr></table></figure>
-<p>where times are given in the format HH:MM:SS, and ID number is a string with no more than 15 characters.</p>
-<p><strong>Output Specification:</strong></p>
-<p>For each test case, output in one line the ID numbers of the persons who have unlocked and locked the door on that day. The two ID numbers must be separated by one space.</p>
-<p>Note: It is guaranteed that the records are consistent. That is, the sign in time must be earlier than the sign out time for each person, and there are no two persons sign in or out at the same moment.</p>
-<p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">3</div><div class="line">CS301111 15:30:28 17:00:10</div><div class="line">SC3021234 08:00:00 11:25:25</div><div class="line">CS301133 21:45:00 21:58:40</div></pre></td></tr></table></figure>
-<p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SC3021234 CS301133</div></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="keyword">int</span> num;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; id;   <span class="comment">//编号</span></div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; in;   <span class="comment">//进去时间</span></div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; out;  <span class="comment">//出去时间</span></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="built_in">string</span> temp;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;temp;</div><div class="line">        id.push_back(temp);</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;temp;</div><div class="line">        in.push_back(temp);</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;temp;</div><div class="line">        out.push_back(temp);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> signin_id=<span class="number">0</span>;  </div><div class="line">    <span class="keyword">int</span> signout_id=<span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> minhour=<span class="number">0</span>,minmin=<span class="number">0</span>,minsec=<span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> maxhour=<span class="number">0</span>,maxmin=<span class="number">0</span>,maxsec=<span class="number">0</span>;</div><div class="line"><span class="comment">//    int minsec=0;</span></div><div class="line"><span class="comment">//    int maxsec=0;</span></div><div class="line"><span class="comment">//    string maxtime="00:00:00";</span></div><div class="line">	<span class="comment">/* 先设定第一条数据为进门最早，否则初始化为零会出错 */</span></div><div class="line">    <span class="built_in">string</span> temp=in[<span class="number">0</span>];   </div><div class="line">    minhour=(temp[<span class="number">0</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">1</span>]-<span class="string">'0'</span>;</div><div class="line">    minmin=(temp[<span class="number">3</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">4</span>]-<span class="string">'0'</span>;</div><div class="line">    minsec=(temp[<span class="number">6</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">7</span>]-<span class="string">'0'</span>;</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;id.size(); i++) &#123;</div><div class="line">        <span class="built_in">string</span> temp=in[i];</div><div class="line">        <span class="keyword">int</span> hour=(temp[<span class="number">0</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">1</span>]-<span class="string">'0'</span>;</div><div class="line">        <span class="keyword">int</span> min=(temp[<span class="number">3</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">4</span>]-<span class="string">'0'</span>;</div><div class="line">        <span class="keyword">int</span> sec=(temp[<span class="number">6</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">7</span>]-<span class="string">'0'</span>;</div><div class="line"><span class="comment">//        int sumsec=hour*3600+min*60+sec;</span></div><div class="line">        <span class="keyword">if</span> (hour==minhour) &#123;</div><div class="line">            <span class="keyword">if</span> (min==minmin) &#123;</div><div class="line">                <span class="keyword">if</span> (sec&lt;minsec) &#123;</div><div class="line">                    minsec=sec;</div><div class="line">                    signin_id=i;</div><div class="line">                &#125;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (min&lt;minmin) &#123;</div><div class="line">                minmin=min;</div><div class="line">                signin_id=i;</div><div class="line">            &#125;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (hour&lt;minhour) &#123;</div><div class="line">            minhour=hour;</div><div class="line">            signin_id=i;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        temp=out[i];</div><div class="line">        hour=(temp[<span class="number">0</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">1</span>]-<span class="string">'0'</span>;</div><div class="line">        min=(temp[<span class="number">3</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">4</span>]-<span class="string">'0'</span>;</div><div class="line">        sec=(temp[<span class="number">6</span>]-<span class="string">'0'</span>)*<span class="number">10</span>+temp[<span class="number">7</span>]-<span class="string">'0'</span>;</div><div class="line">        <span class="keyword">if</span> (hour==maxhour) &#123;</div><div class="line">            <span class="keyword">if</span> (min==maxmin) &#123;</div><div class="line">                <span class="keyword">if</span> (sec&gt;maxsec) &#123;</div><div class="line">                    maxsec=sec;</div><div class="line">                    signout_id=i;</div><div class="line">                &#125;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (min&gt;maxmin) &#123;</div><div class="line">                maxmin=min;</div><div class="line">                signout_id=i;</div><div class="line">            &#125;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (hour&gt;maxhour) &#123;</div><div class="line">            maxhour=hour;</div><div class="line">            signout_id=i;</div><div class="line">        &#125;</div><div class="line"><span class="comment">//        if (sumsec&lt;minsec) &#123;</span></div><div class="line"><span class="comment">//            minsec=sumsec;</span></div><div class="line"><span class="comment">//            signin_id=i;</span></div><div class="line"><span class="comment">//        &#125;</span></div><div class="line"><span class="comment">//        if (sumsec&gt;maxsec) &#123;</span></div><div class="line"><span class="comment">//            maxsec=sumsec;</span></div><div class="line"><span class="comment">//            signout_id=i;</span></div><div class="line"><span class="comment">//        &#125;</span></div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="built_in">cout</span>&lt;&lt;id[signin_id]&lt;&lt;<span class="string">" "</span>&lt;&lt;id[signout_id];</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
+          1006. Sign In and Sign Out (25)At the beginning of every day, the first person who signs in the computer room will unlock the door, and the last one w
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1006/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -541,10 +600,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -557,13 +612,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1005/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -593,12 +642,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-26T14:18:34+08:00">2018-01-26</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T14:18:34+08:00">
+                2018-01-26
+              </time>
             
 
-            
             
 
             
@@ -613,10 +663,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -630,6 +684,17 @@
 
           
           
+             <span id="/pat-1005/" class="leancloud_visitors" data-flag-title="pat_1005">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -641,9 +706,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -652,31 +714,30 @@
       
         
           
-            <h1 id="1005-Spell-It-Right-20"><a href="#1005-Spell-It-Right-20" class="headerlink" title="1005. Spell It Right (20)"></a>1005. Spell It Right (20)</h1><p>Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in English.</p>
-<p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. Each case occupies one line which contains an N (&lt;= 10100).</p>
-<p><strong>Output Specification:</strong></p>
-<p>For each test case, output in one line the digits of the sum in English words. There must be one space between two consecutive words, but no extra space at the end of a line.</p>
-<p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">12345</div></pre></td></tr></table></figure>
-<p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">one five</div></pre></td></tr></table></figure>
-<p>简单题：字符串处理</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">string</span> a;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;a;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;a.length(); i++) &#123;</div><div class="line">    <span class="comment">/* 一个数字字符的ASCII码减去字符0的ASCII码等于该数字的数值 */</span></div><div class="line">        sum+=a[i]-<span class="string">'0'</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">string</span> s=to_string(sum);</div><div class="line">    <span class="built_in">string</span> chinese[<span class="number">10</span>]=&#123;<span class="string">"zero"</span>,<span class="string">"one"</span>,<span class="string">"two"</span>,<span class="string">"three"</span>,<span class="string">"four"</span>,<span class="string">"five"</span>,<span class="string">"six"</span>,<span class="string">"seven"</span>,<span class="string">"eight"</span>,<span class="string">"nine"</span>&#125;;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;s.length()<span class="number">-1</span>; j++) &#123;</div><div class="line">        <span class="keyword">int</span> temp=s[j]-<span class="string">'0'</span>;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;chinese[temp]&lt;&lt;<span class="string">" "</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;chinese[s[s.length()<span class="number">-1</span>]-<span class="string">'0'</span>];</div><div class="line">    </div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
+          1005. Spell It Right (20)Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1005/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -690,10 +751,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -706,13 +763,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1004/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -742,12 +793,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-25T16:22:05+08:00">2018-01-25</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-25T16:22:05+08:00">
+                2018-01-25
+              </time>
             
 
-            
             
 
             
@@ -762,10 +814,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -779,6 +835,17 @@
 
           
           
+             <span id="/pat-1004/" class="leancloud_visitors" data-flag-title="pat_1004">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -790,9 +857,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -801,34 +865,31 @@
       
         
           
-            <h1 id="1004-Counting-Leaves-30"><a href="#1004-Counting-Leaves-30" class="headerlink" title="1004. Counting Leaves (30)"></a>1004. Counting Leaves (30)</h1><p><strong>Input</strong></p>
-<p>Each input file contains one test case. Each case starts with a line containing 0 &lt; N &lt; 100, the number of nodes in a tree, and M (&lt; N), the number of non-leaf nodes. Then M lines follow, each in the format:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ID K ID[1] ID[2] ... ID[K]</div></pre></td></tr></table></figure>
-<p><strong>Output</strong></p>
-<p>For each test case, you are supposed to count those family members who have no child <strong>for every seniority level</strong> starting from the root. The numbers must be printed in a line, separated by a space, and there must be no extra space at the end of each line.</p>
-<p>The sample case represents a tree with only 2 nodes, where 01 is the root and 02 is its only child. Hence on the root 01 level, there is 0 leaf node; and on the next level, there is 1 leaf node. Then we should output “0 1” in a line.</p>
-<p>Sample Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">2 1</div><div class="line">01 1 02</div></pre></td></tr></table></figure>
-<p>Sample Output</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">0 1</div></pre></td></tr></table></figure>
-<p><strong>BFS:</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; node[<span class="number">100</span>]; <span class="comment">//二维数组存储所有节点</span></div><div class="line"><span class="keyword">int</span> level[<span class="number">100</span>]=&#123;<span class="number">0</span>&#125;;    <span class="comment">//节点对应的层次</span></div><div class="line"><span class="keyword">int</span> leafnum[<span class="number">100</span>]=&#123;<span class="number">0</span>&#125;;  <span class="comment">//存储对应深度的叶子节点个数</span></div><div class="line"><span class="keyword">int</span> maxlevel=<span class="number">0</span>;        <span class="comment">//最大层次</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</div><div class="line">    q.push(<span class="number">1</span>);</div><div class="line">    level[<span class="number">1</span>]=<span class="number">0</span>;</div><div class="line">    <span class="keyword">while</span> (!q.empty()) &#123;</div><div class="line">        </div><div class="line">        <span class="keyword">int</span> index=q.front();</div><div class="line">        q.pop();</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> (node[index].size()==<span class="number">0</span>) &#123;</div><div class="line">            <span class="comment">//没有叶子节点</span></div><div class="line">            leafnum[level[index]]++;</div><div class="line">            maxlevel=max(level[index], maxlevel);</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;node[index].size(); i++) &#123;</div><div class="line">            q.push(node[index][i]);</div><div class="line">            level[node[index][i]]=level[index]+<span class="number">1</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="keyword">int</span> n,m,index,num,c;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;m; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;index&gt;&gt;num;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;num; j++) &#123;</div><div class="line">            <span class="built_in">cin</span>&gt;&gt;c;</div><div class="line">            node[index].push_back(c);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    BFS();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;maxlevel; i++) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;leafnum[i]&lt;&lt;<span class="string">" "</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;leafnum[maxlevel];</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>DFS:</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; node[<span class="number">100</span>]; <span class="comment">//二维数组存储所有节点</span></div><div class="line"><span class="comment">//int level[100]=&#123;0&#125;;</span></div><div class="line"><span class="keyword">int</span> leafnum[<span class="number">100</span>]=&#123;<span class="number">0</span>&#125;;  <span class="comment">//存储对应深度的叶子节点个数</span></div><div class="line"><span class="comment">//int maxlevel=0;</span></div><div class="line"><span class="keyword">int</span> maxdepth=<span class="number">0</span>;        <span class="comment">//最大深度</span></div><div class="line"></div><div class="line"><span class="comment">//void BFS() &#123;</span></div><div class="line"><span class="comment">//    queue&lt;int&gt; q;</span></div><div class="line"><span class="comment">//    q.push(1);</span></div><div class="line"><span class="comment">//    level[1]=0;</span></div><div class="line"><span class="comment">//    while (!q.empty()) &#123;</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//        int index=q.front();</span></div><div class="line"><span class="comment">//        q.pop();</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//        if (node[index].size()==0) &#123;</span></div><div class="line"><span class="comment">//            //没有叶子节点</span></div><div class="line"><span class="comment">//            leafnum[level[index]]++;</span></div><div class="line"><span class="comment">//            maxlevel=max(level[index], maxlevel);</span></div><div class="line"><span class="comment">//        &#125;</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//        for (int i=0; i&lt;node[index].size(); i++) &#123;</span></div><div class="line"><span class="comment">//            q.push(node[index][i]);</span></div><div class="line"><span class="comment">//            level[node[index][i]]=level[index]+1;</span></div><div class="line"><span class="comment">//        &#125;</span></div><div class="line"><span class="comment">//    &#125;</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//&#125;</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> index, <span class="keyword">int</span> depth)</span> </span>&#123;</div><div class="line">    </div><div class="line">    maxdepth=max(depth, maxdepth);</div><div class="line">    <span class="keyword">if</span> (node[index].size()==<span class="number">0</span>) &#123;</div><div class="line">        leafnum[depth]++;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;node[index].size(); i++) &#123;</div><div class="line">        DFS(node[index][i], depth+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="keyword">int</span> n,m,index,num,c;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;m; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;index&gt;&gt;num;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;num; j++) &#123;</div><div class="line">            <span class="built_in">cin</span>&gt;&gt;c;</div><div class="line">            node[index].push_back(c);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    DFS(<span class="number">1</span>,<span class="number">0</span>);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;maxdepth; i++) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;leafnum[i]&lt;&lt;<span class="string">" "</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;leafnum[maxdepth];</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
+          1004. Counting Leaves (30)Input
+Each input file contains one test case. Each case starts with a line containing 0 &lt; N &lt; 100, the number of nodes
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1004/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -842,10 +903,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -858,13 +915,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1003/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -894,12 +945,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-21T23:34:44+08:00">2018-01-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T23:34:44+08:00">
+                2018-01-21
+              </time>
             
 
-            
             
 
             
@@ -914,10 +966,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -931,6 +987,17 @@
 
           
           
+             <span id="/pat-1003/" class="leancloud_visitors" data-flag-title="pat_1003">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -942,9 +1009,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -953,37 +1017,30 @@
       
         
           
-            <h1 id="1003-Emergency-25"><a href="#1003-Emergency-25" class="headerlink" title="1003. Emergency (25)"></a>1003. Emergency (25)</h1><p>As an emergency rescue team leader of a city, you are given a special map of your country. The map shows several scattered cities connected by some roads. Amount of rescue teams in each city and the length of each road between any pair of cities are marked on the map. When there is an emergency call to you from some other city, your job is to lead your men to the place as quickly as possible, and at the mean time, call up as many hands on the way as possible.</p>
-<p><strong>Input</strong></p>
-<p>Each input file contains one test case. For each test case, the first line contains 4 positive integers: N (&lt;= 500) - the number of cities (and the cities are numbered from 0 to N-1), M - the number of roads, C1 and C2 - the cities that you are currently in and that you must save, respectively. The next line contains N integers, where the i-th integer is the number of rescue teams in the i-th city. Then M lines follow, each describes a road with three integers c1, c2 and L, which are the pair of cities connected by a road and the length of that road, respectively. It is guaranteed that there exists at least one path from C1 to C2.</p>
-<p><strong>Output</strong></p>
-<p>For each test case, print in one line two numbers: the number of different shortest paths between C1 and C2, and the maximum amount of rescue teams you can possibly gather.<br>All the numbers in a line must be separated by exactly one space, and there is no extra space allowed at the end of a line.</p>
-<p>Sample Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">5 6 0 2</div><div class="line">1 2 1 5 3</div><div class="line">0 1 1</div><div class="line">0 2 2</div><div class="line">0 3 1</div><div class="line">1 2 1</div><div class="line">2 4 1</div><div class="line">3 4 1</div></pre></td></tr></table></figure>
-<p>Sample Output</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2 4</div></pre></td></tr></table></figure>
-<p>此题用dijastra算法搞定，搞了两天，先搞定dijastra算法，再整这个变种，参考了网上的博客写的，自己之前写的好多bug。</p>
-<p>此处记一个C++知识点，memset函数初始化一个集合。</p>
-<p>memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void<em> memset(void </em>_Dst, int  _Val, size_t _Size)</p>
-<p>_Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。</p>
-<p>例如代码中的 <code>memset(mux, MAX, sizeof(mux));</code></p>
-<hr>
-<p>不多说，贴代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="keyword">const</span> <span class="keyword">int</span> MAX=<span class="number">1000000</span>;</div><div class="line">    <span class="keyword">const</span> <span class="keyword">int</span> CITY=<span class="number">501</span>;</div><div class="line">    <span class="keyword">int</span> cityNum,roadNum,in,to;</div><div class="line">    <span class="keyword">int</span> rescue[CITY];</div><div class="line">    <span class="keyword">int</span> mux[CITY][CITY];</div><div class="line">    <span class="keyword">int</span> dis[CITY];</div><div class="line">    <span class="keyword">int</span> amount[CITY];</div><div class="line">    <span class="keyword">int</span> acount[CITY];</div><div class="line"></div><div class="line">    <span class="keyword">int</span> v[MAX];</div><div class="line">    </div><div class="line">    <span class="built_in">cin</span>&gt;&gt;cityNum&gt;&gt;roadNum&gt;&gt;in&gt;&gt;to;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;cityNum; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;rescue[i];</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="built_in">memset</span>(mux, MAX, <span class="keyword">sizeof</span>(mux));</div><div class="line">    <span class="built_in">memset</span>(dis, MAX, <span class="keyword">sizeof</span>(dis));</div><div class="line">    <span class="built_in">memset</span>(v, <span class="number">0</span>, <span class="keyword">sizeof</span>(v));</div><div class="line">    <span class="built_in">memset</span>(amount, <span class="number">0</span>, <span class="keyword">sizeof</span>(amount));</div><div class="line">    <span class="built_in">memset</span>(acount, <span class="number">0</span>, <span class="keyword">sizeof</span>(acount));</div><div class="line"><span class="comment">//    for (int i=0; i&lt;cityNum; i++) &#123;</span></div><div class="line"><span class="comment">//        dis[i]=MAX;</span></div><div class="line"><span class="comment">//        for (int j=0; j&lt;cityNum; j++) &#123;</span></div><div class="line"><span class="comment">//            mux[i][j]=&#123;MAX&#125;;</span></div><div class="line"><span class="comment">//            if (i==j) &#123;</span></div><div class="line"><span class="comment">//                mux[i][j]=0;</span></div><div class="line"><span class="comment">//            &#125;</span></div><div class="line"><span class="comment">//        &#125;</span></div><div class="line"><span class="comment">//    &#125;</span></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;roadNum; j++) &#123;</div><div class="line">        <span class="keyword">int</span> linka,linkb,dis;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;linka&gt;&gt;linkb&gt;&gt;dis;</div><div class="line">        mux[linka][linkb]=mux[linkb][linka]=dis;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//    for (int i=0; i&lt;cityNum; i++) &#123;</span></div><div class="line"><span class="comment">//        dis[i]=mux[in][i];</span></div><div class="line"><span class="comment">//        v[i]=0;</span></div><div class="line"><span class="comment">//    &#125;</span></div><div class="line">    </div><div class="line">    dis[in]=<span class="number">0</span>;</div><div class="line">    acount[in]=<span class="number">1</span>;</div><div class="line">    amount[in]=rescue[in];</div><div class="line">    v[in]=<span class="number">1</span>;</div><div class="line">    </div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;cityNum; i++) &#123;</div><div class="line">        <span class="keyword">int</span> u=in,min=MAX;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;cityNum; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (v[i]==<span class="number">0</span>&amp;&amp;dis[i]&lt;min) &#123;</div><div class="line">                min=dis[i];</div><div class="line">                u=i;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line"><span class="comment">//        if (min==MAX||u==to) &#123;</span></div><div class="line"><span class="comment">//            break;</span></div><div class="line"><span class="comment">//        &#125;</span></div><div class="line">        v[u]=<span class="number">1</span>;</div><div class="line">        </div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;cityNum; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (v[i]==<span class="number">0</span>) &#123;</div><div class="line">                <span class="keyword">if</span> (dis[i]&gt;dis[u]+mux[u][i]) &#123;</div><div class="line">                    dis[i]=dis[u]+mux[u][i];</div><div class="line">                    amount[i]=amount[u]+rescue[i];</div><div class="line">                    acount[i]=acount[u];</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (dis[i]==dis[u]+mux[u][i]) &#123;</div><div class="line">                    acount[i]+=acount[u];</div><div class="line">                    <span class="keyword">if</span> (amount[i]&lt;amount[u]+rescue[i]) &#123;</div><div class="line">                        amount[i]=amount[u]+rescue[i];</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;acount[to]&lt;&lt;<span class="string">" "</span>&lt;&lt;amount[to]&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
+          1003. Emergency (25)As an emergency rescue team leader of a city, you are given a special map of your country. The map shows several scattered cities 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1003/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -997,10 +1054,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1013,13 +1066,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1002/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1049,12 +1096,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-21T23:28:22+08:00">2018-01-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T23:28:22+08:00">
+                2018-01-21
+              </time>
             
 
-            
             
 
             
@@ -1069,10 +1117,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1086,6 +1138,17 @@
 
           
           
+             <span id="/pat-1002/" class="leancloud_visitors" data-flag-title="pat_1002">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1097,9 +1160,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1108,38 +1168,32 @@
       
         
           
-            <h1 id="1002-A-B-for-Polynomials-25"><a href="#1002-A-B-for-Polynomials-25" class="headerlink" title="1002. A+B for Polynomials (25)"></a>1002. A+B for Polynomials (25)</h1><p>This time, you are supposed to find A+B where A and B are two polynomials.</p>
-<p><strong>Input</strong></p>
-<p>Each input file contains one test case. Each case occupies 2 lines, and each line contains the information of a polynomial: K N1 aN1 N2 aN2 … NK aNK, where K is the number of nonzero terms in the polynomial, Ni and aNi (i=1, 2, …, K) are the exponents and coefficients, respectively. It is given that 1 &lt;= K &lt;= 10，0 &lt;= NK &lt; … &lt; N2 &lt; N1 &lt;=1000.</p>
-<p><strong>Output</strong></p>
-<p>For each test case you should output the sum of A and B in one line, with the same format as the input. Notice that there must be NO extra space at the end of each line. Please be accurate to 1 decimal place.</p>
-<p>Sample Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">2 1 2.4 0 3.2</div><div class="line">2 2 1.5 1 0.5</div></pre></td></tr></table></figure>
-<p>Sample Output</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">3 2 1.5 1 2.9 0 3.2</div></pre></td></tr></table></figure>
-<p>第二题还算是个简单题，关于多项式，是昨天AC的，今天来贴上代码。</p>
-<p>首先是用Java写的，代码有问题，后来改用C++了</p>
-<hr>
-<p>不多说，贴代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Collections;</div><div class="line"><span class="keyword">import</span> java.util.HashMap;</div><div class="line"><span class="keyword">import</span> java.util.Iterator;</div><div class="line"><span class="keyword">import</span> java.util.Map;</div><div class="line"><span class="keyword">import</span> java.util.Map.Entry;</div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"><span class="keyword">import</span> java.util.TreeMap;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sum1</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="comment">/**</span></div><div class="line"><span class="comment">	 * Sample Input</span></div><div class="line"><span class="comment">		2 1 2.4 0 3.2</span></div><div class="line"><span class="comment">		2 2 1.5 1 0.5</span></div><div class="line"><span class="comment">		Sample Output</span></div><div class="line"><span class="comment">		3 2 1.5 1 2.9 0 3.2</span></div><div class="line"><span class="comment">	 */</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="comment">// TODO Auto-generated method stub</span></div><div class="line">		Scanner scanner=<span class="keyword">new</span> Scanner(System.in);</div><div class="line">		<span class="keyword">int</span> num1=scanner.nextInt();</div><div class="line">		TreeMap&lt;Integer, Double&gt; map1 = <span class="keyword">new</span> TreeMap&lt;Integer, Double&gt;();</div><div class="line">		TreeMap&lt;Integer, Double&gt; map2 = <span class="keyword">new</span> TreeMap&lt;Integer, Double&gt;();</div><div class="line"><span class="comment">//		Map&lt;Integer, Double&gt; map1 = Collections.synchronizedMap(m1);</span></div><div class="line"><span class="comment">//		Map&lt;Integer, Double&gt; map2 = Collections.synchronizedMap(m2);</span></div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num1; i++) &#123;</div><div class="line">			<span class="keyword">int</span> key=scanner.nextInt();</div><div class="line">			<span class="keyword">double</span> value=scanner.nextDouble();</div><div class="line">			map1.put(key, value);</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">int</span> num2=scanner.nextInt();</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num2; i++) &#123;</div><div class="line">			<span class="keyword">int</span> key=scanner.nextInt();</div><div class="line">			<span class="keyword">double</span> value=scanner.nextDouble();</div><div class="line">			map2.put(key, value);</div><div class="line">		&#125;</div><div class="line">		scanner.close();</div><div class="line"><span class="comment">//		synchronized (map1) &#123;</span></div><div class="line"><span class="comment">//			synchronized (map2) &#123;</span></div><div class="line"><span class="comment">//				for (int key1 : map1.keySet()) &#123;</span></div><div class="line"><span class="comment">//					for (int key2 : map2.keySet()) &#123;</span></div><div class="line"><span class="comment">//						if (key1==key2) &#123;</span></div><div class="line"><span class="comment">//							map1.put(key1, map1.get(key1)+map2.get(key2));</span></div><div class="line"><span class="comment">//						&#125;</span></div><div class="line"><span class="comment">//					&#125;</span></div><div class="line"><span class="comment">//				&#125;</span></div><div class="line"><span class="comment">//			&#125;</span></div><div class="line"><span class="comment">//			</span></div><div class="line"><span class="comment">//		&#125;</span></div><div class="line">		</div><div class="line"><span class="comment">//		for (int k2 : map2.keySet()) &#123;</span></div><div class="line"><span class="comment">//			for (int k1 : map1.keySet()) &#123;</span></div><div class="line"><span class="comment">//				if (k1==k2) &#123;</span></div><div class="line"><span class="comment">//					break;</span></div><div class="line"><span class="comment">//				&#125;</span></div><div class="line"><span class="comment">//				double value=map2.get(k2);</span></div><div class="line"><span class="comment">//				map1.put(k2, value);</span></div><div class="line"><span class="comment">//			&#125;</span></div><div class="line"><span class="comment">//		&#125;</span></div><div class="line">		</div><div class="line">		</div><div class="line">		Iterator&lt;Map.Entry&lt;Integer, Double&gt;&gt; it1 = map1.entrySet().iterator();</div><div class="line">		Iterator&lt;Map.Entry&lt;Integer, Double&gt;&gt; it2 = map2.entrySet().iterator();</div><div class="line">		<span class="keyword">int</span> flag = <span class="number">0</span>;</div><div class="line">		<span class="keyword">while</span> (it2.hasNext()) &#123;</div><div class="line">			Map.Entry&lt;Integer, Double&gt; entry2 = it2.next();</div><div class="line">			<span class="keyword">while</span> (it1.hasNext()) &#123;</div><div class="line">				Map.Entry&lt;Integer, Double&gt; entry1 = it1.next();</div><div class="line">				<span class="comment">//System.out.println(entry2.getKey()+" "+entry1.getKey());</span></div><div class="line">				<span class="comment">//System.out.println(entry1.getKey().toString().equals(entry2.getKey().toString()));</span></div><div class="line">				<span class="keyword">if</span> (entry1.getKey().equals(entry2.getKey())) &#123;</div><div class="line">					map1.remove(entry1.getKey());</div><div class="line">					map1.put(entry1.getKey(), entry1.getValue().doubleValue()+entry2.getValue().doubleValue());</div><div class="line">					System.out.println(entry1.getValue().doubleValue()+entry2.getValue().doubleValue());</div><div class="line">					flag=<span class="number">1</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span> (flag==<span class="number">0</span>) &#123;</div><div class="line">				map1.put(entry2.getKey(), entry2.getValue());</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span> (flag==<span class="number">1</span>) &#123;</div><div class="line">				flag=<span class="number">0</span>;</div><div class="line">			&#125;</div><div class="line">		&#125; </div><div class="line">		</div><div class="line">		</div><div class="line">		Iterator&lt;Map.Entry&lt;Integer, Double&gt;&gt; entries1 = map1.entrySet().iterator();</div><div class="line">		<span class="keyword">while</span> (entries1.hasNext()) &#123;</div><div class="line">			Map.Entry&lt;Integer, Double&gt; entry = entries1.next();</div><div class="line">			System.out.print(entry.getKey()+<span class="string">" "</span>+entry.getValue()+<span class="string">" "</span>);</div><div class="line">		&#125;</div><div class="line">		System.out.println();</div><div class="line">		Iterator&lt;Map.Entry&lt;Integer, Double&gt;&gt; entries2 = map2.entrySet().iterator();</div><div class="line">		<span class="keyword">while</span> (entries2.hasNext()) &#123;</div><div class="line">			Map.Entry&lt;Integer, Double&gt; entry = entries2.next();</div><div class="line">			System.out.print(entry.getKey()+<span class="string">" "</span>+entry.getValue()+<span class="string">" "</span>);</div><div class="line">		&#125;</div><div class="line">		System.out.println();</div><div class="line"><span class="comment">//			for (int key1:map1.keySet()) &#123;</span></div><div class="line"><span class="comment">//				if (key1==key2) &#123;</span></div><div class="line"><span class="comment">//					map1.put(key1, map1.get(key1)+map2.get(key2));</span></div><div class="line"><span class="comment">//					break;</span></div><div class="line"><span class="comment">//				&#125;</span></div><div class="line"><span class="comment">//				map1.put(key2, map2.get(key2));</span></div><div class="line"><span class="comment">//			&#125;</span></div><div class="line">		</div><div class="line">			</div><div class="line">			</div><div class="line">		</div><div class="line">		Map&lt;Integer, Double&gt; map=<span class="keyword">new</span> TreeMap&lt;Integer, Double&gt;(Collections.reverseOrder());</div><div class="line">		map.putAll(map1);</div><div class="line">		System.out.print(map.size() + <span class="string">" "</span>);</div><div class="line">		Iterator&lt;Map.Entry&lt;Integer, Double&gt;&gt; entries = map.entrySet().iterator();</div><div class="line">		<span class="keyword">while</span> (entries.hasNext()) &#123;</div><div class="line">			Map.Entry&lt;Integer, Double&gt; entry = entries.next();</div><div class="line">			System.out.print(entry.getKey()+<span class="string">" "</span>+entry.getValue()+<span class="string">" "</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>这个我是用treemap来存储，使得其自动排序，后面用到了<code>Collections.reverseOrder()</code> 。</p>
-<p>以下是C++代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="comment">// insert code here...</span></div><div class="line">    <span class="keyword">float</span> line[<span class="number">1001</span>]=&#123;<span class="number">0</span>&#125;;</div><div class="line">    <span class="keyword">int</span> count1,count2,m;</div><div class="line">    <span class="keyword">int</span> count=<span class="number">0</span>;</div><div class="line">    <span class="keyword">float</span> n;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;count1;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>; i&lt;count1; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%f"</span>,&amp;m,&amp;n);</div><div class="line">        line[m]+=n;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;count2;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>; i&lt;count2; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%f"</span>,&amp;m,&amp;n);</div><div class="line">        line[m]+=n;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1000</span>; i&gt;=<span class="number">0</span>; i--) &#123;</div><div class="line">        <span class="keyword">if</span> (line[i]!=<span class="number">0</span>) &#123;</div><div class="line">            count++;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>,count);</div><div class="line">    </div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1000</span>; i&gt;=<span class="number">0</span>; i--) &#123;</div><div class="line">        <span class="keyword">if</span> (line[i]!=<span class="number">0</span>) &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">" %d %.1f"</span>,i,line[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>感觉用C++的数组实现简单得多啊。</p>
-
-          
+          1002. A+B for Polynomials (25)This time, you are supposed to find A+B where A and B are two polynomials.
+Input
+Each input file contains one test case.
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1002/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1153,10 +1207,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1169,13 +1219,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1001/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1205,12 +1249,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-19T12:33:14+08:00">2018-01-19</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-19T12:33:14+08:00">
+                2018-01-19
+              </time>
             
 
-            
             
 
             
@@ -1225,10 +1270,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pat/" itemprop="url" rel="index"><span itemprop="name">pat</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1242,6 +1291,17 @@
 
           
           
+             <span id="/pat-1001/" class="leancloud_visitors" data-flag-title="pat_1001">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1253,9 +1313,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1264,31 +1321,31 @@
       
         
           
-            <p>pat第一题终于编译通过了，必须要class Main才行啊</p>
-<h1 id="1001-A-B-Format-20"><a href="#1001-A-B-Format-20" class="headerlink" title="1001. A+B Format (20)"></a>1001. A+B Format (20)</h1><p>Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits).</p>
-<p><strong>Input</strong></p>
-<p>Each input file contains one test case. Each case contains a pair of integers a and b where -1000000 &lt;= a, b &lt;= 1000000. The numbers are separated by a space.</p>
-<p><strong>Output</strong></p>
-<p>For each test case, you should output the sum of a and b in one line. The sum must be written in the standard format.</p>
-<p>Sample Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-1000000 9</div></pre></td></tr></table></figure>
-<p>Sample Output</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-999,991</div></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    <span class="comment">// TODO Auto-generated method stub</span></div><div class="line">    Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">    <span class="keyword">int</span> a = scanner.nextInt();</div><div class="line">    <span class="keyword">int</span> b = scanner.nextInt();</div><div class="line">    String sum = String.valueOf(a+b);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sum.length(); i++) &#123;</div><div class="line">      System.out.print(sum.charAt(i));</div><div class="line">      <span class="keyword">if</span> (sum.charAt(i)==<span class="string">'-'</span>) &#123;</div><div class="line">        <span class="keyword">continue</span>;</div><div class="line">      &#125;</div><div class="line">      <span class="keyword">if</span> ((i+<span class="number">1</span>)%<span class="number">3</span>==sum.length()%<span class="number">3</span> &amp;&amp; i!=(sum.length()-<span class="number">1</span>)) &#123;</div><div class="line">        System.out.print(<span class="string">','</span>);</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
+          pat第一题终于编译通过了，必须要class Main才行啊
+1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/pat-1001/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1302,10 +1359,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1318,13 +1371,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/java-dynamicProxy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1354,12 +1401,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-07T15:58:42+08:00">2018-01-07</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T15:58:42+08:00">
+                2018-01-07
+              </time>
             
 
-            
             
 
             
@@ -1374,10 +1422,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javaSE/" itemprop="url" rel="index"><span itemprop="name">javaSE</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">javaSE</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1391,6 +1443,17 @@
 
           
           
+             <span id="/java-dynamicProxy/" class="leancloud_visitors" data-flag-title="java_dynamicProxy">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1402,9 +1465,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1413,46 +1473,31 @@
       
         
           
-            <p>Spring有两大思想，一个是Ioc,一个是AOP, AOP的原理就是java的动态代理机制，所以本篇文章就是对java的动态机制的解释。</p>
-<p>在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个类和接口是实现我们动态代理所必须用到的。</p>
-<p>每一个动态代理类都必须要实现InvocationHandler这个接口，并且每个代理类的实例都关联到了一个handler，当我们通过代理对象调用一个方法的时候，这个方法的调用就会被转发为由InvocationHandler这个接口的 invoke 方法来进行调用。我们来看看InvocationHandler这个接口的唯一一个方法 invoke 方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function">Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">proxy:　　指代我们所代理的那个真实对象</span></div><div class="line"><span class="function">method:　　指代的是我们所要调用真实对象的某个方法的Method对象</span></div><div class="line"><span class="function">args:　　指代的是调用真实对象某个方法时接受的参数</span></div></pre></td></tr></table></figure>
-<p>Proxy这个类的作用就是用来动态创建一个代理对象的类，它提供了许多的方法，但是我们用的最多的就是 newProxyInstance 这个方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title">newProxyInstance</span><span class="params">(ClassLoader loader, Class&lt;?&gt;[] interfaces, InvocationHandler h)</span> <span class="keyword">throws</span> IllegalArgumentException</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">loader:　　一个ClassLoader对象，定义了由哪个ClassLoader对象来对生成的代理对象进行加载</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">interfaces:　　一个Interface对象的数组，表示的是我将要给我需要代理的对象提供一组什么接口，如果我提供了一组接口给它，那么这个代理对象就宣称实现了该接口<span class="params">(多态)</span>，这样我就能调用这组接口中的方法了</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">h:　　一个InvocationHandler对象，表示的是当我这个动态代理对象在调用方法的时候，会关联到哪一个InvocationHandler对象上</span></div></pre></td></tr></table></figure>
-<p>我们来通过一个实例来看看我们的动态代理模式是什么样的：</p>
-<p>首先我们定义了一个Subject类型的接口，为其声明了两个方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Subject</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span></span>;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">(String str)</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>接着，定义了一个类来实现这个接口，这个类就是我们的真实对象，RealSubject类：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RealSubject</span> <span class="keyword">implements</span> <span class="title">Subject</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(<span class="string">"I want to rent my house"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">(String str)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(<span class="string">"hello: "</span> + str);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>下一步，我们就要定义一个动态代理类了，前面说个，每一个动态代理类都必须要实现 InvocationHandler 这个接口，因此我们这个动态代理类也不例外：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DynamicProxy</span> <span class="keyword">implements</span> <span class="title">InvocationHandler</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="comment">//　这个就是我们要代理的真实对象</span></div><div class="line">    <span class="keyword">private</span> Object subject;</div><div class="line">    </div><div class="line">    <span class="comment">//    构造方法，给我们要代理的真实对象赋初值</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DynamicProxy</span><span class="params">(Object subject)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">this</span>.subject = subject;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object object, Method method, Object[] args)</span></span></div><div class="line"><span class="function">            <span class="keyword">throws</span> Throwable</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//　　在代理真实对象前我们可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"before rent house"</span>);</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"Method:"</span> + method);</div><div class="line">        </div><div class="line">        <span class="comment">//    当代理对象调用真实对象的方法时，其会自动的跳转到代理对象关联的handler对象的invoke方法来进行调用</span></div><div class="line">        method.invoke(subject, args);</div><div class="line">        </div><div class="line">        <span class="comment">//　　在代理真实对象后我们也可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"after rent house"</span>);</div><div class="line">        </div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>最后，来看看我们的Client类：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//    我们要代理的真实对象</span></div><div class="line">        Subject realSubject = <span class="keyword">new</span> RealSubject();</div><div class="line"></div><div class="line">        <span class="comment">//    我们要代理哪个真实对象，就将该对象传进去，最后是通过该真实对象来调用其方法的</span></div><div class="line">        InvocationHandler handler = <span class="keyword">new</span> DynamicProxy(realSubject);</div><div class="line"></div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * 通过Proxy的newProxyInstance方法来创建我们的代理对象，我们来看看其三个参数</span></div><div class="line"><span class="comment">         * 第一个参数 handler.getClass().getClassLoader() ，我们这里使用handler这个类的ClassLoader对象来加载我们的代理对象</span></div><div class="line"><span class="comment">         * 第二个参数realSubject.getClass().getInterfaces()，我们这里为代理对象提供的接口是真实对象所实行的接口，表示我要代理的是该真实对象，这样我就能调用这组接口中的方法了</span></div><div class="line"><span class="comment">         * 第三个参数handler， 我们这里将这个代理对象关联到了上方的 InvocationHandler 这个对象上</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        Subject subject = (Subject)Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject.getClass().getInterfaces(), handler);</div><div class="line">        </div><div class="line">        System.out.println(subject.getClass().getName());</div><div class="line">        subject.rent();</div><div class="line">        subject.hello(<span class="string">"world"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>我们先来看看控制台的输出：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$Proxy0</div><div class="line"></div><div class="line">before rent house</div><div class="line">Method:<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.rent()</div><div class="line">I want to rent my house</div><div class="line">after rent house</div><div class="line"></div><div class="line">before rent house</div><div class="line">Method:<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.hello(java.lang.String)</div><div class="line">hello: world</div><div class="line">after rent house</div></pre></td></tr></table></figure>
-<p>我们首先来看看 $Proxy0 这东西，我们看到，这个东西是由 System.out.println(subject.getClass().getName()); 这条语句打印出来的，那么为什么我们返回的这个代理对象的类名是这样的呢？</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Subject subject = (Subject)Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject.getClass().getInterfaces(), handler);</div></pre></td></tr></table></figure>
-<p>可能我以为返回的这个代理对象会是Subject类型的对象，或者是InvocationHandler的对象，结果却不是，首先我们解释一下<strong>为什么我们这里可以将其转化为Subject类型的对象？</strong>原因就是在newProxyInstance这个方法的第二个参数上，我们给这个代理对象提供了一组什么接口，那么我这个代理对象就会实现了这组接口，这个时候我们当然可以将这个代理对象强制类型转化为这组接口中的任意一个，因为这里的接口是Subject类型，所以就可以将其转化为Subject类型了。</p>
-<p><strong>同时我们一定要记住，通过 Proxy.newProxyInstance 创建的代理对象是在jvm运行时动态生成的一个对象，它并不是我们的InvocationHandler类型，也不是我们定义的那组接口的类型，而是在运行是动态生成的一个对象，并且命名方式都是这样的形式，以$开头，proxy为中，最后一个数字表示对象的标号</strong>。</p>
-<p>这里是通过代理对象来调用实现的那种接口中的方法，这个时候程序就会跳转到由这个代理对象关联到的 handler 中的invoke方法去执行，而我们的这个 handler 对象又接受了一个 RealSubject类型的参数，表示我要代理的就是这个真实对象，所以此时就会调用 handler 中的invoke方法去执行：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object object, Method method, Object[] args)</span></span></div><div class="line"><span class="function">            <span class="keyword">throws</span> Throwable</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//　　在代理真实对象前我们可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"before rent house"</span>);</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"Method:"</span> + method);</div><div class="line">        </div><div class="line">        <span class="comment">//    当代理对象调用真实对象的方法时，其会自动的跳转到代理对象关联的handler对象的invoke方法来进行调用</span></div><div class="line">        method.invoke(subject, args);</div><div class="line">        </div><div class="line">        <span class="comment">//　　在代理真实对象后我们也可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"after rent house"</span>);</div><div class="line">        </div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>我们看到，在真正通过代理对象来调用真实对象的方法的时候，我们可以在该方法前后添加自己的一些操作，同时我们看到我们的这个 method 对象是这样的：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.rent()</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.hello(java.lang.String)</div></pre></td></tr></table></figure>
-<p>正好就是我们的Subject接口中的两个方法，这也就证明了当我通过代理对象来调用方法的时候，起实际就是委托由其关联到的 handler 对象的invoke方法中来调用，并不是自己来真实调用，而是通过代理的方式来调用的。</p>
-
-          
+          Spring有两大思想，一个是Ioc,一个是AOP, AOP的原理就是java的动态代理机制，所以本篇文章就是对java的动态机制的解释。
+在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/java-dynamicProxy/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1466,10 +1511,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1482,13 +1523,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/hexo-openPostQuick/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1518,12 +1553,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-07T13:47:03+08:00">2018-01-07</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T13:47:03+08:00">
+                2018-01-07
+              </time>
             
 
-            
             
 
             
@@ -1538,10 +1574,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1555,6 +1595,17 @@
 
           
           
+             <span id="/hexo-openPostQuick/" class="leancloud_visitors" data-flag-title="在hexo new之后立即打开Markdown文稿">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1566,9 +1617,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1577,31 +1625,34 @@
       
         
           
-            <p>由于每次使用<code>hexo new</code>新建之后都要到文件夹里自己去找出文件再打开，当文件多起来更是件麻烦事。基于此，在网上发现有直接能在新建完后自动打开markdown文档的js脚本，怀着试一试的心态按着步骤走，最后成功了。</p>
-<ol>
-<li>首先安装 <strong>shelljs</strong>模块，实现自动部署加载JS脚本，键入以下命令：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save shelljs</div></pre></td></tr></table></figure>
-<ol>
-<li>在 Hexo 根目录的 <code>scripts文件夹</code>下新建一个 <code>js文件</code>。此处js脚本根据hexo版本而定。我的是hexo-cli:1.0.3</li>
-</ol>
-<p>稍微修改后用这个脚本成功：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</div><div class="line"> </div><div class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">    exec(<span class="string">'open -a "/Applications/Typora.app"  '</span> + [data.path]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>最后一行里面执行的是系统命令open -a “/Applications/Typora.app”  path,直接就可以在终端用命令打开，是 OS X 下的open。换到Windows中,可能需要改为start。</p>
+          由于每次使用hexo new新建之后都要到文件夹里自己去找出文件再打开，当文件多起来更是件麻烦事。基于此，在网上发现有直接能在新建完后自动打开markdown文档的js脚本，怀着试一试的心态按着步骤走，最后成功了。
 
-          
+首先安装 shelljs模块，实现自动部署加载JS脚本，键入以下命令：
+
+1npm
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/hexo-openPostQuick/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1615,10 +1666,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1631,13 +1678,7 @@
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zhangk.top/jvm-leijiazai/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1667,12 +1708,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-16T17:01:19+08:00">2017-12-16</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T17:01:19+08:00">
+                2017-12-16
+              </time>
             
 
-            
             
 
             
@@ -1687,10 +1729,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jvm/" itemprop="url" rel="index"><span itemprop="name">jvm</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
+                  </a>
+                </span>
 
                 
                 
@@ -1704,6 +1750,17 @@
 
           
           
+             <span id="/jvm-leijiazai/" class="leancloud_visitors" data-flag-title="Class类加载机制">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -1715,9 +1772,6 @@
       </header>
     
 
-    
-    
-    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1726,122 +1780,32 @@
       
         
           
-            <h2 id="类加载过程"><a href="#类加载过程" class="headerlink" title="类加载过程"></a>类加载过程</h2><p>Java类从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期包括：加载、验证、准备、解析、初始化、使用和卸载七个阶段。它们开始的顺序如下图所示：</p>
-<p><img src="http://img.blog.csdn.net/20140317163048593" alt="img"></p>
-<p>其中类加载的过程包括了加载、验证、准备、解析、初始化五个阶段。在这五个阶段中，加载、验证、准备和初始化这四个阶段发生的顺序是确定的，而解析阶段则不一定，它在某些情况下可以在初始化阶段之后开始，这是为了支持Java语言的运行时绑定（也成为动态绑定或晚期绑定）。另外注意这里的几个阶段是按顺序<strong>开始</strong>，而不是按顺序<strong>进行</strong>或<strong>完成</strong>，因为这些阶段通常都是互相交叉地混合进行的，通常在一个阶段执行的过程中调用或激活另一个阶段。</p>
-<p>​    这里简要说明下Java中的绑定：绑定指的是把一个方法的调用与方法所在的类(方法主体)关联起来，对java来说，绑定分为静态绑定和动态绑定：</p>
-<ul>
-<li>静态绑定：即前期绑定。在程序执行前方法已经被绑定，此时由编译器或其它连接程序实现。针对java，简单的可以理解为程序编译期的绑定。java当中的方法只有final，static，private和构造方法是前期绑定的。</li>
-<li>动态绑定：即晚期绑定，也叫运行时绑定。在运行时根据具体对象的类型进行绑定。在java中，几乎所有的方法都是后期绑定的。</li>
-</ul>
-<p>​    下面详细讲述类加载过程中每个阶段所做的工作。</p>
-<h3 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h3><p>​    加载时类加载过程的第一个阶段，在加载阶段，虚拟机需要完成以下三件事情：</p>
-<p>​    1、通过一个类的全限定名来获取其定义的二进制字节流。</p>
-<p>​    2、将这个字节流所代表的静态存储结构转化为方法区的运行时数据结构。</p>
-<p>​    3、在Java堆中生成一个代表这个类的java.lang.Class对象，作为对方法区中这些数据的访问入口。</p>
-<p>​    注意，这里第1条中的二进制字节流并不只是单纯地从Class文件中获取，比如它还可以从Jar包中获取、从网络中获取（最典型的应用便是Applet）、由其他文件生成（JSP应用）等。</p>
-<p>​    相对于类加载的其他阶段而言，加载阶段（准确地说，是加载阶段获取类的二进制字节流的动作）是可控性最强的阶段，因为开发人员既可以使用系统提供的类加载器来完成加载，也可以自定义自己的类加载器来完成加载。</p>
-<p>​    加载阶段完成后，虚拟机外部的 二进制字节流就按照虚拟机所需的格式存储在方法区之中，而且在Java堆中也创建一个java.lang.Class类的对象，这样便可以通过该对象访问方法区中的这些数据。</p>
-<p>​    说到加载，不得不提到类加载器，下面就具体讲述下类加载器。</p>
-<p>​    类加载器虽然只用于实现类的加载动作，但它在Java程序中起到的作用却远远不限于类的加载阶段。对于任意一个类，都需要由它的类加载器和这个类本身一同确定其在就Java虚拟机中的唯一性，也就是说，即使两个类来源于同一个Class文件，只要加载它们的类加载器不同，那这两个类就必定不相等。这里的“相等”包括了代表类的Class对象的equals（）、isAssignableFrom（）、isInstance（）等方法的返回结果，也包括了使用instanceof关键字对对象所属关系的判定结果。</p>
-<p>​    站在Java虚拟机的角度来讲，只存在两种不同的类加载器：</p>
-<ul>
-<li>启动类加载器：它使用C++实现（这里仅限于Hotspot，也就是JDK1.5之后默认的虚拟机，有很多其他的虚拟机是用Java语言实现的）,是虚拟机自身的一部分。</li>
-<li>所有其他的类加载器：这些类加载器都由Java语言实现，独立于虚拟机之外，并且全部继承自抽象类java.lang.ClassLoader，这些类加载器需要由启动类加载器加载到内存中之后才能去加载其他的类。</li>
-</ul>
-<p>​    站在Java开发人员的角度来看，类加载器可以大致划分为以下三类：</p>
-<ul>
-<li>启动类加载器：Bootstrap ClassLoader，跟上面相同。它负责加载存放在JDK\jre\lib(JDK代表JDK的安装目录，下同)下，或被-Xbootclasspath参数指定的路径中的，并且能被虚拟机识别的类库（如rt.jar，所有的java.*开头的类均被Bootstrap ClassLoader加载）。启动类加载器是无法被Java程序直接引用的。</li>
-<li>扩展类加载器：Extension ClassLoader，该加载器由sun.misc.Launcher$ExtClassLoader实现，它负责加载JDK\jre\lib\ext目录中，或者由java.ext.dirs系统变量指定的路径中的所有类库（如javax.*开头的类）,开发者可以直接使用扩展类加载器。</li>
-<li>应用程序类加载器：Application ClassLoader，该类加载器由sun.misc.Launcher$AppClassLoader来实现，它负责加载用户类路径（ClassPath）所指定的类，开发者可以直接使用该类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是程序中默认的类加载器。</li>
-</ul>
-<p>​     应用程序都是由这三种类加载器互相配合进行加载的，如果有必要，我们还可以加入自定义的类加载器。因为JVM自带的ClassLoader只是懂得从本地文件系统加载标准的java class文件，因此如果编写了自己的ClassLoader，便可以做到如下几点：</p>
-<p> 1）在执行非置信代码之前，自动验证数字签名。</p>
-<p> 2）动态地创建符合用户特定需要的定制化构建类。</p>
-<p> 3）从特定的场所取得java class，例如数据库中和网络中。</p>
-<p>事实上当使用Applet的时候，就用到了特定的ClassLoader，因为这时需要从网络上加载java class，并且要检查相关的安全信息，应用服务器也大都使用了自定义的ClassLoader技术。</p>
-<p>​    这几种类加载器的层次关系如下图所示：</p>
-<p><img src="http://img.blog.csdn.net/20140105211242593" alt="img"></p>
-<p>​    这种层次关系称为类加载器的双亲委派模型。我们把每一层上面的类加载器叫做当前层类加载器的父加载器，当然，它们之间的父子关系并不是通过继承关系来实现的，而是使用组合关系来复用父加载器中的代码。该模型在JDK1.2期间被引入并广泛应用于之后几乎所有的Java程序中，但它并不是一个强制性的约束模型，而是Java设计者们推荐给开发者的一种类的加载器实现方式。</p>
-<p>​    双亲委派模型的工作流程是：如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把请求委托给父加载器去完成，依次向上，因此，所有的类加载请求最终都应该被传递到顶层的启动类加载器中，只有当父加载器在它的搜索范围中没有找到所需的类时，即无法完成该加载，子加载器才会尝试自己去加载该类。</p>
-<p>​    使用双亲委派模型来组织类加载器之间的关系，有一个很明显的好处，就是Java类随着它的类加载器（说白了，就是它所在的目录）一起具备了一种带有优先级的层次关系，这对于保证Java程序的稳定运作很重要。例如，类java.lang.Object类存放在JDK\jre\lib下的rt.jar之中，因此无论是哪个类加载器要加载此类，最终都会委派给启动类加载器进行加载，这边保证了Object类在程序中的各种类加载器中都是同一个类。</p>
-<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>​    验证的目的是为了确保Class文件中的字节流包含的信息符合当前虚拟机的要求，而且不会危害虚拟机自身的安全。不同的虚拟机对类验证的实现可能会有所不同，但大致都会完成以下四个阶段的验证：文件格式的验证、元数据的验证、字节码验证和符号引用验证。</p>
-<ul>
-<li>文件格式的验证：验证字节流是否符合Class文件格式的规范，并且能被当前版本的虚拟机处理，该验证的主要目的是保证输入的字节流能正确地解析并存储于方法区之内。经过该阶段的验证后，字节流才会进入内存的方法区中进行存储，后面的三个验证都是基于方法区的存储结构进行的。</li>
-<li>元数据验证：对类的元数据信息进行语义校验（其实就是对类中的各数据类型进行语法校验）,保证不存在不符合Java语法规范的元数据信息。</li>
-<li>字节码验证：该阶段验证的主要工作是进行数据流和控制流分析，对类的方法体进行校验分析，以保证被校验的类的方法在运行时不会做出危害虚拟机安全的行为。</li>
-<li>符号引用验证：这是最后一个阶段的验证，它发生在虚拟机将符号引用转化为直接引用的时候（解析阶段中发生该转化，后面会有讲解）,主要是对类自身以外的信息（常量池中的各种符号引用）进行匹配性的校验。</li>
-</ul>
-<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>​    准备阶段是正式为类变量分配内存并设置类变量初始值的阶段，这些内存都将在方法区中分配。对于该阶段有以下几点需要注意：</p>
-<p>​    1、这时候进行内存分配的仅包括类变量（static）,而不包括实例变量，实例变量会在对象实例化时随着对象一块分配在Java堆中。</p>
-<p>​    2、这里所设置的初始值通常情况下是数据类型默认的零值（如0、0L、null、false等）,而不是被在Java代码中被显式地赋予的值。</p>
-<p>   假设一个类变量的定义为：</p>
-<p>public static int value = 3；</p>
-<p>​    那么变量value在准备阶段过后的初始值为0，而不是3，因为这时候尚未开始执行任何Java方法，而把value赋值为3的putstatic指令是在程序编译后，存放于类构造器<clinit>()方法之中的，所以把value赋值为3的动作将在初始化阶段才会执行。</clinit></p>
-<p>​    下表列出了Java中所有基本数据类型以及reference类型的默认零值：</p>
-<p><img src="http://img.blog.csdn.net/20140105195119234" alt="img"></p>
-<p>   这里还需要注意如下几点：</p>
-<ul>
-<li>对基本数据类型来说，对于类变量（static）和全局变量，如果不显式地对其赋值而直接使用，则系统会为其赋予默认的零值，而对于局部变量来说，在使用前必须显式地为其赋值，否则编译时不通过。</li>
-<li>对于同时被static和final修饰的常量，必须在声明的时候就为其显式地赋值，否则编译时不通过；而只被final修饰的常量则既可以在声明时显式地为其赋值，也可以在类初始化时显式地为其赋值，总之，在使用前必须为其显式地赋值，系统不会为其赋予默认零值。</li>
-<li>对于引用数据类型reference来说，如数组引用、对象引用等，如果没有对其进行显式地赋值而直接使用，系统都会为其赋予默认的零值，即null。</li>
-<li>如果在数组初始化时没有对数组中的各元素赋值，那么其中的元素将根据对应的数据类型而被赋予默认的零值。</li>
-</ul>
-<p>​    3、如果类字段的字段属性表中存在ConstantValue属性，即同时被final和static修饰，那么在准备阶段变量value就会被初始化为ConstValue属性所指定的值。</p>
-<p>   假设上面的类变量value被定义为： </p>
-<p>public static final int value = 3；</p>
-<p>​    编译时Javac将会为value生成ConstantValue属性，在准备阶段虚拟机就会根据ConstantValue的设置将value赋值为3。回忆上一篇博文中对象被动引用的第2个例子，便是这种情况。我们可以理解为static final常量在编译期就将其结果放入了调用它的类的常量池中。</p>
-<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>   解析阶段是虚拟机将常量池中的符号引用转化为直接引用的过程。前面说解析阶段可能开始于初始化之前，也可能在初始化之后开始，虚拟机会根据需要来判断，到底是在类被加载器加载时就对常量池中的符号引用进行解析（初始化之前）,还是等到一个符号引用将要被使用前才去解析它（初始化之后）。</p>
-<p>​    对同一个符号引用进行多次解析请求时很常见的事情，虚拟机实现可能会对第一次解析的结果进行缓存（在运行时常量池中记录直接引用，并把常量标示为已解析状态）,从而避免解析动作重复进行。</p>
-<p>​    解析动作主要针对类或接口、字段、类方法、接口方法四类符号引用进行，分别对应于常量池中的CONSTANT_Class_info、CONSTANT_Fieldref_info、CONSTANT_Methodref_info、CONSTANT_InterfaceMethodref_info四种常量类型。</p>
-<p>​    <strong>1、类或接口的解析：</strong>判断所要转化成的直接引用是对数组类型，还是普通的对象类型的引用，从而进行不同的解析。</p>
-<p>​    <strong>2、字段解析：</strong>对字段进行解析时，会先在本类中查找是否包含有简单名称和字段描述符都与目标相匹配的字段，如果有，则查找结束；如果没有，则会按照继承关系从上往下递归搜索该类所实现的各个接口和它们的父接口，还没有，则按照继承关系从上往下递归搜索其父类，直至查找结束，查找流程如下图所示：</p>
-<p><img src="http://img.blog.csdn.net/20140105220608531" alt="img"></p>
-<p>   从下面一段代码的执行结果中很容易看出来字段解析的搜索顺序：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Super</span></span>&#123;</div><div class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> m = <span class="number">11</span>;</div><div class="line">	<span class="keyword">static</span>&#123;</div><div class="line">		System.out.println(<span class="string">"执行了super类静态语句块"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Father</span> <span class="keyword">extends</span> <span class="title">Super</span></span>&#123;</div><div class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> m = <span class="number">33</span>;</div><div class="line">	<span class="keyword">static</span>&#123;</div><div class="line">		System.out.println(<span class="string">"执行了父类静态语句块"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child</span> <span class="keyword">extends</span> <span class="title">Father</span></span>&#123;</div><div class="line">	<span class="keyword">static</span>&#123;</div><div class="line">		System.out.println(<span class="string">"执行了子类静态语句块"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StaticTest</span></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">		System.out.println(Child.m);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>​    执行了super类静态语句块<br>​    执行了父类静态语句块<br>​    33<br>​    如果注释掉Father类中对m定义的那一行，则输出结果如下：</p>
-<p>​    执行了super类静态语句块<br>​    11</p>
-<p>   分析如下：static变量发生在静态解析阶段，也即是初始化之前，此时已经将字段的符号引用转化为了内存引用，也便将它与对应的类关联在了一起，由于在子类中没有查找到与m相匹配的字段，那么m便不会与子类关联在一起，因此并不会触发子类的初始化。</p>
-<p>​    最后需要注意：理论上是按照上述顺序进行搜索解析，但在实际应用中，虚拟机的编译器实现可能要比上述规范要求的更严格一些。如果有一个同名字段同时出现在该类的接口和父类中，或同时在自己或父类的接口中出现，编译器可能会拒绝编译。如果对上面的代码做些修改，将Super改为接口，并将Child类继承Father类且实现Super接口，那么在编译时会报出如下错误：</p>
-<p>StaticTest.java:24: 对 m 的引用不明确，Father 中的 变量 m 和 Super 中的 变量 m<br>都匹配<br>​                System.out.println(Child.m);<br>​                                        ^<br>1 错误</p>
-<p>​    <strong>3、类方法解析：</strong>对类方法的解析与对字段解析的搜索步骤差不多，只是多了判断该方法所处的是类还是接口的步骤，而且对类方法的匹配搜索，是先搜索父类，再搜索接口。</p>
-<p>   <strong>4、接口方法解析：</strong>与类方法解析步骤类似，知识接口不会有父类，因此，只递归向上搜索父接口就行了。</p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>​    初始化是类加载过程的最后一步，到了此阶段，才真正开始执行类中定义的Java程序代码。在准备阶段，类变量已经被赋过一次系统要求的初始值，而在初始化阶段，则是根据程序员通过程序指定的主观计划去初始化类变量和其他资源，或者可以从另一个角度来表达：初始化阶段是执行类构造器<clinit>()方法的过程。</clinit></p>
-<p>   这里简单说明下<clinit>()方法的执行规则:</clinit></p>
-<ol>
-<li><p><clinit>()方法是由编译器自动收集类中的所有类变量的赋值动作和静态语句块中的语句合并产生的，编译器收集的顺序是由语句在源文件中出现的顺序所决定的，静态语句块中只能访问到定义在静态语句块之前的变量，定义在它之后的变量，在前面的静态语句中可以赋值，但是不能访问。</clinit></p>
-</li>
-<li><p><clinit>()方法与实例构造器<clinit>()方法（类的构造函数）不同，它不需要显式地调用父类构造器，虚拟机会保证在子类的<clinit>()方法执行之前，父类的<clinit>()方法已经执行完毕。因此，在虚拟机中第一个被执行的<clinit>()方法的类肯定是java.lang.Object。</clinit></clinit></clinit></clinit></clinit></p>
-</li>
-<li><p><clinit>()方法对于类或接口来说并不是必须的，如果一个类中没有静态语句块，也没有对类变量的赋值操作，那么编译器可以不为这个类生成<clinit>()方法。</clinit></clinit></p>
-</li>
-<li><p>接口中不能使用静态语句块，但仍然有类变量（final static）初始化的赋值操作，因此接口与类一样会生成<clinit>()方法。但是接口鱼类不同的是：执行接口的<clinit>()方法不需要先执行父接口的<clinit>()方法，只有当父接口中定义的变量被使用时，父接口才会被初始化。另外，接口的实现类在初始化时也一样不会执行接口的<clinit>()方法。</clinit></clinit></clinit></clinit></p>
-</li>
-<li><p>虚拟机会保证一个类的<clinit>()方法在多线程环境中被正确地加锁和同步，如果多个线程同时去初始化一个类，那么只会有一个线程去执行这个类的<clinit>()方法，其他线程都需要阻塞等待，直到活动线程执行<clinit>()方法完毕。如果在一个类的<clinit>()方法中有耗时很长的操作，那就可能造成多个线程阻塞，在实际应用中这种阻塞往往是很隐蔽的。</clinit></clinit></clinit></clinit></p>
-<p>​</p>
-<p>下面给出一个简单的例子，以便更清晰地说明如上规则：</p>
-</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Father</span></span>&#123;</div><div class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> a = <span class="number">1</span>;</div><div class="line">	<span class="keyword">static</span>&#123;</div><div class="line">		a = <span class="number">2</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child</span> <span class="keyword">extends</span> <span class="title">Father</span></span>&#123;</div><div class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> b = a;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClinitTest</span></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">		System.out.println(Child.b);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>  执行上面的代码，会打印出2，也就是说b的值被赋为了2。</p>
-<p>​    我们来看得到该结果的步骤。首先在准备阶段为类变量分配内存并设置类变量初始值，这样A和B均被赋值为默认值0，而后再在调用<clinit>()方法时给他们赋予程序中指定的值。当我们调用Child.b时，触发Child的<clinit>()方法，根据规则2，在此之前，要先执行完其父类Father的<clinit>()方法，又根据规则1，在执行<clinit>()方法时，需要按static语句或static变量赋值操作等在代码中出现的顺序来执行相关的static语句，因此当触发执行Father的<clinit>()方法时，会先将a赋值为1，再执行static语句块中语句，将a赋值为2，而后再执行Child类的<clinit>()方法，这样便会将b的赋值为2.</clinit></clinit></clinit></clinit></clinit></clinit></p>
-<p>​    如果我们颠倒一下Father类中“public static int a = 1;”语句和“static语句块”的顺序，程序执行后，则会打印出1。很明显是根据规则1，执行Father的<clinit>()方法时，根据顺序先执行了static语句块中的内容，后执行了“public static int a = 1;”语句。</clinit></p>
-<p>​    另外，在颠倒二者的顺序之后，如果在static语句块中对a进行访问（比如将a赋给某个变量）,在编译时将会报错，因为根据规则1，它只能对a进行赋值，而不能访问。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>​    整个类加载过程中，除了在加载阶段用户应用程序可以自定义类加载器参与之外，其余所有的动作完全由虚拟机主导和控制。到了初始化才开始执行类中定义的Java程序代码（亦及字节码）,但这里的执行代码只是个开端，它仅限于<clinit>()方法。类加载过程中主要是将Class文件（准确地讲，应该是类的二进制字节流）加载到虚拟机内存中，真正执行字节码的操作，在加载完成后才真正开始。</clinit></p>
+          类加载过程Java类从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期包括：加载、验证、准备、解析、初始化、使用和卸载七个阶段。它们开始的顺序如下图所示：
 
-          
+其中类加载的过程包括了加载、验证、准备、解析、初始化五个阶段。在这五个阶段中，加载、验证、准备和初始化这四个阶段发生的顺序是确定的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/jvm-leijiazai/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -1855,10 +1819,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -1873,6 +1833,9 @@
 
 
           </div>
+          
+
+
           
 
         </div>
@@ -1895,125 +1858,95 @@
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">zhangke</p>
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="zhangke" />
+          <p class="site-author-name" itemprop="name">zhangke</p>
+           
               <p class="site-description motion-element" itemprop="description">少点抱怨，多点改变</p>
-          </div>
+          
+        </div>
+        <nav class="site-state motion-element">
 
           
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">33</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">15</span>
-                    <span class="site-state-item-name">categories</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">12</span>
-                    <span class="site-state-item-name">tags</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-          
-
-          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
           
 
           
             
-          
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/giantke" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/zkzk96871" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5744544701?is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
         </div>
+
+        
+        
+
+        
+        
+
+        
+
+
       </section>
 
       
@@ -2030,40 +1963,30 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">zhangke</span>
-
-  
-
-  
 </div>
 
 
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
 
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
-
-
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         
-
-
-
-
-
-
 
         
       </div>
@@ -2074,8 +1997,6 @@
         <i class="fa fa-arrow-up"></i>
         
       </div>
-    
-
     
 
   </div>
@@ -2096,12 +2017,10 @@
 
 
 
+  
 
 
-
-
-
-
+  
 
 
 
@@ -2114,43 +2033,79 @@
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
-
-
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
 
 
 
   
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+               id: window.location.pathname, 
+               owner: 'giantke',
+               repo: 'giantke.github.io',
+               oauth: {
+                   client_id: '5c5e30fc9de28c3b1c19',
+                   client_secret: 'c42332ded6856cb0359efa668bc2b35f7e2d0fd6',
+               }});
+           gitment.render('gitment-container');
+       </script>
+   
+
+
+
+
+
+  
+
 
 
 
@@ -2173,13 +2128,435 @@
 
 
 
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
 
   
 
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("lf4c0Nyki0bS0rlbFrB6xCkL-gzGzoHsz", "60Izmo6LzUMvv9zI4ABpYWhx");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
 
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
 
 
 
@@ -2192,15 +2569,9 @@
   
 
   
-  
 
-  
-
-  
-
-  
-
-  
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
 
 </body>
 </html>
