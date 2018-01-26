@@ -1,3 +1,6 @@
+.post-more-link {
+  text-align: center;
+}
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
@@ -1784,7 +1787,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #38956f;
+  background: #d944ff;
 }
 .links-of-blogroll {
   font-size: 13px;
