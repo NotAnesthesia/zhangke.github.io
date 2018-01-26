@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,7 +110,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     motion: true,
@@ -412,7 +412,7 @@
       
         
           
-          Class类文件结构无关的基石Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件
+          Class类文件结构无关的基石Sun 公司发布了各种平台上不同的虚拟机版本,这些不同平台上的虚拟机只识别字节码文件,这种字节码文件就是构成平台无关性的基石.除了平台无关性,语言无关性也有很大的优势, Java 虚拟机不和包括 Java 在内的所有语言绑定,只与”Class 文件”这种特定的二进制文件格式所关联, Class 文件包含了 Java 虚拟机指令和符号表以及若干其他辅助信息.虚拟机不关心
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -565,7 +565,7 @@
           
           深入理解Java中的组合和继承前言由于感觉自己对Java基础知识有点遗忘，就找了一篇文章来巩固一下。
 面向对象的复用技术复用性是面向对象技术带来的很棒的潜在好处之一。如果运用的好的话可以帮助我们节省很多开发时间，提升开发效率。但是，如果被滥用那么就可能产生很多难以维护的代码。
-作为一门面向对象开发的
+作为一门面向对象开发的语言，代码复用是Java引人注意的功能之一。Java代码的复用有继承，组合以及代理三种具体的表现形式
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -717,7 +717,12 @@
         
           
           垃圾收集器与内存分配策略垃圾回收算法引用计数算法：给对象添加一个引用计数器，每当有一个地方引用时就加1，当引用失效就减1。当引用为0时会被回收。
-可达性分析算法：通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对
+可达性分析算法：通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路作为引用链，当一个对象没有任何引用链相联，则该对象不可达，即为可回收的对象。
+
+GC-Roots包括：
+
+虚拟机栈（栈帧中本地变量表）中引用的对象
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -873,7 +878,7 @@
 
 虚拟机栈：线程私有。方法执行的同时创建一个栈帧，用于存储局部变量表（包括基本数据类型、对象引用）、操作数栈、动态链接、方法出口等。每一个方法从调用执行直到结束的过程就对应一个栈帧入栈到出栈的过程。
 
-本地方法栈：线程私有。与
+本地方法栈：线程私有。与虚拟机栈（为Java方法即字节码服务）类似，而本地方法栈为Native方法服务，即非Java方法（如
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1024,7 +1029,7 @@
       
         
           
-          首先，从动态语言讲起。像Python、Ruby这种语言，只要修改了代码，修改的效果立即生效，因为这种语言是无需编译，直接执行代码的，我们称这类语言是“动态语言”。而C++、Java这种，在运行之前需要先编译，如果中途修改了代码不重新编译去执行的话就没有变化。但是，Java有一个非常突出的动态相关机制
+          首先，从动态语言讲起。像Python、Ruby这种语言，只要修改了代码，修改的效果立即生效，因为这种语言是无需编译，直接执行代码的，我们称这类语言是“动态语言”。而C++、Java这种，在运行之前需要先编译，如果中途修改了代码不重新编译去执行的话就没有变化。但是，Java有一个非常突出的动态相关机制，即反射：我们可以于运行时（区别于编译时）加载、探知、使用编译期间完全未知的classes。换句话说
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1177,7 +1182,7 @@
           
           强引用(Strong Reference)强引用就是我们经常使用的引用，其写法如下
 StringBuffer buffer = new StringBuffer();
-上面创建了一个StringBuffer对象，并将这个对象的（强）引用存到变量buffer中。是的，就是这个小儿科的操作（请原谅我这样
+上面创建了一个StringBuffer对象，并将这个对象的（强）引用存到变量buffer中。是的，就是这个小儿科的操作（请原谅我这样的说法）。强引用最重要的就是它能够让引用变得强（Strong），这就决定了它和垃圾回收器的交互。具体
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1331,7 +1336,8 @@ StringBuffer buffer = new StringBuffer();
           看了一部分设计模式，自己都用一句话总结了下：
 
 单例模式Singleton类内定义私有的构造方法，并实例化一个静态的Singleton对象（全局只有一个），于是外部只能调用你封装的getSingleton方法取得Singleton实例
-工厂模式是设置一个过渡端（即工厂类）用以取得接口对应的子类类型并
+工厂模式是设置一个过渡端（即工厂类）用以取得接口对应的子类类型并实例化，然后回传接口的引用到客户端（调用处，如主方法）
+代理模式就是将真实类作为属性注入到代理类，然
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1483,7 +1489,7 @@ StringBuffer buffer = new StringBuffer();
         
           
           spring四种依赖注入方式​    
-​    平常的java开发中，程序员在某个类中需要依赖其它类的方法，则通常是new一个依赖类再调用类实例的方法，这种开发存在的问题是new的类实例不好统一管理，spring提出了依赖注入的思想，即依赖类不由程序员实例化，而是通过spring容器帮我们new指
+​    平常的java开发中，程序员在某个类中需要依赖其它类的方法，则通常是new一个依赖类再调用类实例的方法，这种开发存在的问题是new的类实例不好统一管理，spring提出了依赖注入的思想，即依赖类不由程序员实例化，而是通过spring容器帮我们new指定实例并且将实例注入到需要该对象的类中。依赖注入的另一种说法是“控制反转”，通俗的理解是：平常我们n
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1638,7 +1644,7 @@ StringBuffer buffer = new StringBuffer();
 继承与多态的区别
 ​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。
 
-​    多态：就是父类引用可以持有子类
+​    多态：就是父类引用可以持有子类对象。这时候只能调用父类中的方法，而子类中特有方法是无法访问的，因为这个时候（编译时）你把他看作父类
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1792,7 +1798,10 @@ StringBuffer buffer = new StringBuffer();
           多线程使用的主要目的在于：
 
 吞吐量：你做WEB，容器帮你做了多线程，但是他只能帮你做请求层面的。简单的说，可能就是一个请求一个线程。或多个请求一个线程。如果是单线程，那同时只能处理一个用户的请求。
-伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯
+伸缩性：也就是说，你可以通过增加CPU核数来提升性能。如果是单线程，那程序执行到死也就利用了单核，肯定没办法通过增加CPU核数来提升性能。
+
+鉴于做WEB的第1点可能几乎不涉及。那这里就讲第二点吧。
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1975,7 +1984,7 @@ StringBuffer buffer = new StringBuffer();
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2015 - 
   <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -1991,7 +2000,7 @@ StringBuffer buffer = new StringBuffer();
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -2075,6 +2084,13 @@ StringBuffer buffer = new StringBuffer();
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
 
   
     <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>

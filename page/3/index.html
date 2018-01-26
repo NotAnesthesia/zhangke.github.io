@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,7 +110,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     motion: true,
@@ -416,7 +416,7 @@
 第一种方法只需要一条命令就可以安装jdk：  
 1yum install java-1.8.0-openjdk* -y
 执行过这条命令无需配置，直接可以使用。
-第二种方法1.  登录Linux，切换到roo
+第二种方法1.  登录Linux，切换到root用户su root 获取root用户权限，当前工作目录不变(需要root密码)或sudo -i 不
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -570,7 +570,8 @@
           将本地文件拷贝到远程服务上的指定目录命令scp基于SSH协议，可以将本地文件拷贝到远程服务上的指定目录，格式如下：
 1scp filename username@remotehost:remotedirectory
 
-数据库创建时，无法使用“-”等特殊字符在使用mysql命令进行数据库创建时，发现“
+数据库创建时，无法使用“-”等特殊字符在使用mysql命令进行数据库创建时，发现“-”等特殊字符无法使用，提示sql语句语法错误。  
+1mysql&gt;create databa
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -722,7 +723,7 @@
         
           
           本地MySQL：改善Mac系统MySQL配置环境变量1.首先修改.bash_profile 文件sudo vim .bash_profile 
-2.加上一行配置PATH，并保存export PATH=${PATH}:/usr/local/mysql/bin3.终端输入此命令使PATH生效source
+2.加上一行配置PATH，并保存export PATH=${PATH}:/usr/local/mysql/bin3.终端输入此命令使PATH生效source .bash_profile4.此时即可用mysql -u root -p 进入MySQL，但是有一
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -878,7 +879,7 @@
   
 然后自我感觉这件事情不就是改下字段的编码吗，那就改一下呗如图，我更改了Encoding  
     
-然后发现事情并没有那简单，
+然后发现事情并没有那简单，于是开始上网查解决方案，网上说需要修改/etc/my.cnf(此配置文件对于mac后缀是.cnf，对
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1036,7 +1037,8 @@
 
 order by
 
-          ...
+
+          
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/mysql-question-1/#more" rel="contents">
@@ -1186,7 +1188,7 @@ order by
       
         
           
-          前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&lt;select id="selectUserByNameAndPassword"
+          前几天搭建了ssm框架准备开发后端，今天写mapper时遇到个棘手的问题-写select语句时发现入参报错总是提示找不到username，而且错误信息里面有四个参数，而我的入参只有两个，贴出源代码和错误信息。123&lt;select id="selectUserByNameAndPassword" parameterType="String" resultType="po.User"&gt;  
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1494,7 +1496,8 @@ order by
 和女儿一起在书店打发时间，她看书看得入迷，我在边上的小咖啡吧写稿子。天气太热，咖啡吧里人不多，有两个女士在一旁闲聊。
 其中一个问：“怎么你的黑眼圈看着又大了一点啊？”
 答：“这有什么办法，我老公出差了，听不到他的呼噜声我反而睡不着了。”
-“噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊
+“噗呲……”边上的那个人忍不住乐了，在边上听着的我也有点忍俊不禁。
+“你不知道，我老公只要一感冒了，就会连带着他的鼻炎更严重，半夜呼噜声特别大，那个声音就是在隔
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1804,7 +1807,7 @@ order by
 
 建议把 SS 的配置文件放置在当前用户主目录下的 ss 文件夹内，对于 root 用户而言，则是：/root/ss 目录。其余用户一般则是：/home/用户名 目录。
 
-因为服务器预装cent
+因为服务器预装centOS 7,然后发现自己找不到root目录，更别说ss，于是，Google大法好，然而并没有找到正解。
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1987,7 +1990,7 @@ order by
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2015 - 
   <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -2003,7 +2006,7 @@ order by
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -2087,6 +2090,13 @@ order by
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
 
   
     <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
