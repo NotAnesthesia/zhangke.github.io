@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="pat第一题终于编译通过了，必须要class Main才行啊 1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less">
+<meta name="description" content="1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits). Input Each i">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pat_1001">
-<meta property="og:url" content="http://zhangk.top/pat-1001/index.html">
+<meta property="og:title" content="PAT-1001">
+<meta property="og:url" content="http://zhangk.top/PAT-1001/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="pat第一题终于编译通过了，必须要class Main才行啊 1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less">
+<meta property="og:description" content="1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits). Input Each i">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T08:27:52.483Z">
+<meta property="og:updated_time" content="2018-02-05T08:55:53.086Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pat_1001">
-<meta name="twitter:description" content="pat第一题终于编译通过了，必须要class Main才行啊 1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less">
+<meta name="twitter:title" content="PAT-1001">
+<meta name="twitter:description" content="1001. A+B Format (20)Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits). Input Each i">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/pat-1001/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1001/"/>
 
 
 
 
 
-  <title>pat_1001 | Zhangke's blog</title>
+  <title>PAT-1001 | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/pat-1001/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1001/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">pat_1001</h2>
+          <h2 class="post-title" itemprop="name headline">PAT-1001</h2>
         
 
         <div class="post-meta">
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/pat-1001/" class="leancloud_visitors" data-flag-title="pat_1001">
+             <span id="/PAT-1001/" class="leancloud_visitors" data-flag-title="PAT-1001">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,8 +408,7 @@
       
 
       
-        <p>pat第一题终于编译通过了，必须要class Main才行啊</p>
-<h1 id="1001-A-B-Format-20"><a href="#1001-A-B-Format-20" class="headerlink" title="1001. A+B Format (20)"></a>1001. A+B Format (20)</h1><p>Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits).</p>
+        <h1 id="1001-A-B-Format-20"><a href="#1001-A-B-Format-20" class="headerlink" title="1001. A+B Format (20)"></a>1001. A+B Format (20)</h1><p>Calculate a + b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits).</p>
 <p><strong>Input</strong></p>
 <p>Each input file contains one test case. Each case contains a pair of integers a and b where -1000000 &lt;= a, b &lt;= 1000000. The numbers are separated by a space.</p>
 <p><strong>Output</strong></p>
@@ -418,7 +417,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-1000000 9</div></pre></td></tr></table></figure>
 <p>Sample Output</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-999,991</div></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    <span class="comment">// TODO Auto-generated method stub</span></div><div class="line">    Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">    <span class="keyword">int</span> a = scanner.nextInt();</div><div class="line">    <span class="keyword">int</span> b = scanner.nextInt();</div><div class="line">    String sum = String.valueOf(a+b);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sum.length(); i++) &#123;</div><div class="line">      System.out.print(sum.charAt(i));</div><div class="line">      <span class="keyword">if</span> (sum.charAt(i)==<span class="string">'-'</span>) &#123;</div><div class="line">        <span class="keyword">continue</span>;</div><div class="line">      &#125;</div><div class="line">      <span class="keyword">if</span> ((i+<span class="number">1</span>)%<span class="number">3</span>==sum.length()%<span class="number">3</span> &amp;&amp; i!=(sum.length()-<span class="number">1</span>)) &#123;</div><div class="line">        System.out.print(<span class="string">','</span>);</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<p>pat第一题终于编译通过了，必须要class Main才行啊</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    <span class="comment">// TODO Auto-generated method stub</span></div><div class="line">    Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">    <span class="keyword">int</span> a = scanner.nextInt();</div><div class="line">    <span class="keyword">int</span> b = scanner.nextInt();</div><div class="line">    String sum = String.valueOf(a+b);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sum.length(); i++) &#123;</div><div class="line">      System.out.print(sum.charAt(i));</div><div class="line">      <span class="keyword">if</span> (sum.charAt(i)==<span class="string">'-'</span>) &#123;</div><div class="line">        <span class="keyword">continue</span>;</div><div class="line">      &#125;</div><div class="line">      <span class="keyword">if</span> ((i+<span class="number">1</span>)%<span class="number">3</span>==sum.length()%<span class="number">3</span> &amp;&amp; i!=(sum.length()-<span class="number">1</span>)) &#123;</div><div class="line">        System.out.print(<span class="string">','</span>);</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -471,8 +472,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/pat-1002/" rel="prev" title="pat_1002">
-                pat_1002 <i class="fa fa-chevron-right"></i>
+              <a href="/PAT-1002/" rel="prev" title="PAT-1002">
+                PAT-1002 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -550,7 +551,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">42</span>
+                <span class="site-state-item-count">43</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
