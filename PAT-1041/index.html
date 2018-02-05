@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="第一次运行超时 123456789101112131415161718192021222324252627282930313233#include &amp;lt;iostream&amp;gt;#include &amp;lt;vector&amp;gt;#include &amp;lt;algorithm&amp;gt;using namespace std;vector&amp;lt;int&amp;gt; u;int main() &amp;#123;">
+<meta name="description" content="1041. Be Unique (20)Being unique is so important to people on Mars that even their lottery is designed in a unique way. The rule of winning is simple: one bets on a number chosen from [1, 104]. The fi">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PAT-1041">
 <meta property="og:url" content="http://zhangk.top/PAT-1041/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="第一次运行超时 123456789101112131415161718192021222324252627282930313233#include &amp;lt;iostream&amp;gt;#include &amp;lt;vector&amp;gt;#include &amp;lt;algorithm&amp;gt;using namespace std;vector&amp;lt;int&amp;gt; u;int main() &amp;#123;">
+<meta property="og:description" content="1041. Be Unique (20)Being unique is so important to people on Mars that even their lottery is designed in a unique way. The rule of winning is simple: one bets on a number chosen from [1, 104]. The fi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-05T08:57:43.782Z">
+<meta property="og:updated_time" content="2018-02-05T12:04:21.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PAT-1041">
-<meta name="twitter:description" content="第一次运行超时 123456789101112131415161718192021222324252627282930313233#include &amp;lt;iostream&amp;gt;#include &amp;lt;vector&amp;gt;#include &amp;lt;algorithm&amp;gt;using namespace std;vector&amp;lt;int&amp;gt; u;int main() &amp;#123;">
+<meta name="twitter:description" content="1041. Be Unique (20)Being unique is so important to people on Mars that even their lottery is designed in a unique way. The rule of winning is simple: one bets on a number chosen from [1, 104]. The fi">
 
 
 
@@ -408,8 +408,24 @@
       
 
       
-        <p>第一次运行超时</p>
+        <h1 id="1041-Be-Unique-20"><a href="#1041-Be-Unique-20" class="headerlink" title="1041. Be Unique (20)"></a>1041. Be Unique (20)</h1><p>Being unique is so important to people on Mars that even their lottery is designed in a unique way. The rule of winning is simple: one bets on a number chosen from [1, 104]. The first one who bets on a unique number wins. For example, if there are 7 people betting on 5 31 5 88 67 88 17, then the second one who bets on 31 wins.</p>
+<p><strong>Input Specification:</strong></p>
+<p>Each input file contains one test case. Each case contains a line which begins with a positive integer N (&lt;=105) and then followed by N bets. The numbers are separated by a space.</p>
+<p><strong>Output Specification:</strong></p>
+<p>For each test case, print the winning number in a line. If there is no winner, print “None” instead.</p>
+<p>Sample Input 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">7 5 31 5 88 67 88 17</div></pre></td></tr></table></figure>
+<p>Sample Output 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">31</div></pre></td></tr></table></figure>
+<p>Sample Input 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">5 888 666 666 888 888</div></pre></td></tr></table></figure>
+<p>Sample Output 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">None</div></pre></td></tr></table></figure>
+<hr>
+<p>第一次运行超时</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; u;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> num;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    <span class="keyword">int</span> temp;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;temp;</div><div class="line">        u.push_back(temp);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> flag=<span class="number">0</span>,hasOutput=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;num; j++) &#123;</div><div class="line">            <span class="keyword">if</span> (u[i]==u[j]&amp;&amp;i!=j) &#123;</div><div class="line">                flag=<span class="number">1</span>;</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (flag==<span class="number">0</span>) &#123;</div><div class="line">            <span class="built_in">cout</span>&lt;&lt;u[i];</div><div class="line">            hasOutput=<span class="number">1</span>;</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        &#125;</div><div class="line">        flag=<span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (hasOutput==<span class="number">0</span>) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"None"</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>用空间换时间，从O(n^2)变成O(n)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> a[<span class="number">100001</span>],m[<span class="number">100001</span>];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> num;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;a[i];</div><div class="line">        m[a[i]]++;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (m[a[i]]==<span class="number">1</span>) &#123;</div><div class="line">            <span class="built_in">cout</span>&lt;&lt;a[i];</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"None"</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -512,8 +528,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -604,6 +629,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1041-Be-Unique-20"><span class="nav-number">1.</span> <span class="nav-text">1041. Be Unique (20)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
