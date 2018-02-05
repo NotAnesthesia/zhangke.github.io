@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javaSE," />
+  <meta name="keywords" content="pat," />
 
 
 
@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="Spring有两大思想，一个是Ioc,一个是AOP, AOP的原理就是java的动态代理机制，所以本篇文章就是对java的动态机制的解释。 在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个类和接口是实现我们动态代理所必须用到的。 每一个动态代理类都必须要实现InvocationHandl">
-<meta name="keywords" content="javaSE">
+<meta name="description" content="1010. Radix (25)Given a pair of positive integers, for example, 6 and 110, can this equation 6 = 110 be true? The answer is “yes”, if 6 is a decimal number and 110 is a binary number. Now for any pair">
+<meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java_dynamicProxy">
-<meta property="og:url" content="http://zhangk.top/java-dynamicProxy/index.html">
+<meta property="og:title" content="PAT-1010">
+<meta property="og:url" content="http://zhangk.top/PAT-1010/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="Spring有两大思想，一个是Ioc,一个是AOP, AOP的原理就是java的动态代理机制，所以本篇文章就是对java的动态机制的解释。 在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个类和接口是实现我们动态代理所必须用到的。 每一个动态代理类都必须要实现InvocationHandl">
+<meta property="og:description" content="1010. Radix (25)Given a pair of positive integers, for example, 6 and 110, can this equation 6 = 110 be true? The answer is “yes”, if 6 is a decimal number and 110 is a binary number. Now for any pair">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T08:31:13.688Z">
+<meta property="og:updated_time" content="2018-02-05T08:57:14.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java_dynamicProxy">
-<meta name="twitter:description" content="Spring有两大思想，一个是Ioc,一个是AOP, AOP的原理就是java的动态代理机制，所以本篇文章就是对java的动态机制的解释。 在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个类和接口是实现我们动态代理所必须用到的。 每一个动态代理类都必须要实现InvocationHandl">
+<meta name="twitter:title" content="PAT-1010">
+<meta name="twitter:description" content="1010. Radix (25)Given a pair of positive integers, for example, 6 and 110, can this equation 6 = 110 be true? The answer is “yes”, if 6 is a decimal number and 110 is a binary number. Now for any pair">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/java-dynamicProxy/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1010/"/>
 
 
 
 
 
-  <title>java_dynamicProxy | Zhangke's blog</title>
+  <title>PAT-1010 | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/java-dynamicProxy/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1010/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">java_dynamicProxy</h2>
+          <h2 class="post-title" itemprop="name headline">PAT-1010</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T15:58:42+08:00">
-                2018-01-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-29T16:40:33+08:00">
+                2018-01-29
               </time>
             
 
@@ -363,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javaSE/" itemprop="url" rel="index">
-                    <span itemprop="name">javaSE</span>
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
                   </a>
                 </span>
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/java-dynamicProxy/" class="leancloud_visitors" data-flag-title="java_dynamicProxy">
+             <span id="/PAT-1010/" class="leancloud_visitors" data-flag-title="PAT-1010">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,32 +408,23 @@
       
 
       
-        <p>Spring有两大思想，一个是Ioc,一个是AOP, AOP的原理就是java的动态代理机制，所以本篇文章就是对java的动态机制的解释。</p>
-<p>在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个类和接口是实现我们动态代理所必须用到的。</p>
-<p>每一个动态代理类都必须要实现InvocationHandler这个接口，并且每个代理类的实例都关联到了一个handler，当我们通过代理对象调用一个方法的时候，这个方法的调用就会被转发为由InvocationHandler这个接口的 invoke 方法来进行调用。我们来看看InvocationHandler这个接口的唯一一个方法 invoke 方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function">Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">proxy:　　指代我们所代理的那个真实对象</span></div><div class="line"><span class="function">method:　　指代的是我们所要调用真实对象的某个方法的Method对象</span></div><div class="line"><span class="function">args:　　指代的是调用真实对象某个方法时接受的参数</span></div></pre></td></tr></table></figure>
-<p>Proxy这个类的作用就是用来动态创建一个代理对象的类，它提供了许多的方法，但是我们用的最多的就是 newProxyInstance 这个方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title">newProxyInstance</span><span class="params">(ClassLoader loader, Class&lt;?&gt;[] interfaces, InvocationHandler h)</span> <span class="keyword">throws</span> IllegalArgumentException</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">loader:　　一个ClassLoader对象，定义了由哪个ClassLoader对象来对生成的代理对象进行加载</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">interfaces:　　一个Interface对象的数组，表示的是我将要给我需要代理的对象提供一组什么接口，如果我提供了一组接口给它，那么这个代理对象就宣称实现了该接口<span class="params">(多态)</span>，这样我就能调用这组接口中的方法了</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">h:　　一个InvocationHandler对象，表示的是当我这个动态代理对象在调用方法的时候，会关联到哪一个InvocationHandler对象上</span></div></pre></td></tr></table></figure>
-<p>我们来通过一个实例来看看我们的动态代理模式是什么样的：</p>
-<p>首先我们定义了一个Subject类型的接口，为其声明了两个方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Subject</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span></span>;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">(String str)</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>接着，定义了一个类来实现这个接口，这个类就是我们的真实对象，RealSubject类：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RealSubject</span> <span class="keyword">implements</span> <span class="title">Subject</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(<span class="string">"I want to rent my house"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">(String str)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(<span class="string">"hello: "</span> + str);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>下一步，我们就要定义一个动态代理类了，前面说个，每一个动态代理类都必须要实现 InvocationHandler 这个接口，因此我们这个动态代理类也不例外：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DynamicProxy</span> <span class="keyword">implements</span> <span class="title">InvocationHandler</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="comment">//　这个就是我们要代理的真实对象</span></div><div class="line">    <span class="keyword">private</span> Object subject;</div><div class="line">    </div><div class="line">    <span class="comment">//    构造方法，给我们要代理的真实对象赋初值</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DynamicProxy</span><span class="params">(Object subject)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">this</span>.subject = subject;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object object, Method method, Object[] args)</span></span></div><div class="line"><span class="function">            <span class="keyword">throws</span> Throwable</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//　　在代理真实对象前我们可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"before rent house"</span>);</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"Method:"</span> + method);</div><div class="line">        </div><div class="line">        <span class="comment">//    当代理对象调用真实对象的方法时，其会自动的跳转到代理对象关联的handler对象的invoke方法来进行调用</span></div><div class="line">        method.invoke(subject, args);</div><div class="line">        </div><div class="line">        <span class="comment">//　　在代理真实对象后我们也可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"after rent house"</span>);</div><div class="line">        </div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>最后，来看看我们的Client类：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//    我们要代理的真实对象</span></div><div class="line">        Subject realSubject = <span class="keyword">new</span> RealSubject();</div><div class="line"></div><div class="line">        <span class="comment">//    我们要代理哪个真实对象，就将该对象传进去，最后是通过该真实对象来调用其方法的</span></div><div class="line">        InvocationHandler handler = <span class="keyword">new</span> DynamicProxy(realSubject);</div><div class="line"></div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * 通过Proxy的newProxyInstance方法来创建我们的代理对象，我们来看看其三个参数</span></div><div class="line"><span class="comment">         * 第一个参数 handler.getClass().getClassLoader() ，我们这里使用handler这个类的ClassLoader对象来加载我们的代理对象</span></div><div class="line"><span class="comment">         * 第二个参数realSubject.getClass().getInterfaces()，我们这里为代理对象提供的接口是真实对象所实行的接口，表示我要代理的是该真实对象，这样我就能调用这组接口中的方法了</span></div><div class="line"><span class="comment">         * 第三个参数handler， 我们这里将这个代理对象关联到了上方的 InvocationHandler 这个对象上</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        Subject subject = (Subject)Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject.getClass().getInterfaces(), handler);</div><div class="line">        </div><div class="line">        System.out.println(subject.getClass().getName());</div><div class="line">        subject.rent();</div><div class="line">        subject.hello(<span class="string">"world"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>我们先来看看控制台的输出：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$Proxy0</div><div class="line"></div><div class="line">before rent house</div><div class="line">Method:<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.rent()</div><div class="line">I want to rent my house</div><div class="line">after rent house</div><div class="line"></div><div class="line">before rent house</div><div class="line">Method:<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.hello(java.lang.String)</div><div class="line">hello: world</div><div class="line">after rent house</div></pre></td></tr></table></figure>
-<p>我们首先来看看 $Proxy0 这东西，我们看到，这个东西是由 System.out.println(subject.getClass().getName()); 这条语句打印出来的，那么为什么我们返回的这个代理对象的类名是这样的呢？</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Subject subject = (Subject)Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject.getClass().getInterfaces(), handler);</div></pre></td></tr></table></figure>
-<p>可能我以为返回的这个代理对象会是Subject类型的对象，或者是InvocationHandler的对象，结果却不是，首先我们解释一下<strong>为什么我们这里可以将其转化为Subject类型的对象？</strong>原因就是在newProxyInstance这个方法的第二个参数上，我们给这个代理对象提供了一组什么接口，那么我这个代理对象就会实现了这组接口，这个时候我们当然可以将这个代理对象强制类型转化为这组接口中的任意一个，因为这里的接口是Subject类型，所以就可以将其转化为Subject类型了。</p>
-<p><strong>同时我们一定要记住，通过 Proxy.newProxyInstance 创建的代理对象是在jvm运行时动态生成的一个对象，它并不是我们的InvocationHandler类型，也不是我们定义的那组接口的类型，而是在运行是动态生成的一个对象，并且命名方式都是这样的形式，以$开头，proxy为中，最后一个数字表示对象的标号</strong>。</p>
-<p>这里是通过代理对象来调用实现的那种接口中的方法，这个时候程序就会跳转到由这个代理对象关联到的 handler 中的invoke方法去执行，而我们的这个 handler 对象又接受了一个 RealSubject类型的参数，表示我要代理的就是这个真实对象，所以此时就会调用 handler 中的invoke方法去执行：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object object, Method method, Object[] args)</span></span></div><div class="line"><span class="function">            <span class="keyword">throws</span> Throwable</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//　　在代理真实对象前我们可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"before rent house"</span>);</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"Method:"</span> + method);</div><div class="line">        </div><div class="line">        <span class="comment">//    当代理对象调用真实对象的方法时，其会自动的跳转到代理对象关联的handler对象的invoke方法来进行调用</span></div><div class="line">        method.invoke(subject, args);</div><div class="line">        </div><div class="line">        <span class="comment">//　　在代理真实对象后我们也可以添加一些自己的操作</span></div><div class="line">        System.out.println(<span class="string">"after rent house"</span>);</div><div class="line">        </div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>我们看到，在真正通过代理对象来调用真实对象的方法的时候，我们可以在该方法前后添加自己的一些操作，同时我们看到我们的这个 method 对象是这样的：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.rent()</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> com.xiaoluo.dynamicproxy.Subject.hello(java.lang.String)</div></pre></td></tr></table></figure>
-<p>正好就是我们的Subject接口中的两个方法，这也就证明了当我通过代理对象来调用方法的时候，起实际就是委托由其关联到的 handler 对象的invoke方法中来调用，并不是自己来真实调用，而是通过代理的方式来调用的。</p>
+        <h1 id="1010-Radix-25"><a href="#1010-Radix-25" class="headerlink" title="1010. Radix (25)"></a>1010. Radix (25)</h1><p>Given a pair of positive integers, for example, 6 and 110, can this equation 6 = 110 be true? The answer is “yes”, if 6 is a decimal number and 110 is a binary number.</p>
+<p>Now for any pair of positive integers N1 and N2, your task is to find the radix of one number while that of the other is given.</p>
+<p><strong>Input Specification:</strong></p>
+<p>Each input file contains one test case. Each case occupies a line which contains 4 positive integers:<br>N1 N2 tag radix<br>Here N1 and N2 each has no more than 10 digits. A digit is less than its radix and is chosen from the set {0-9, a-z} where 0-9 represent the decimal numbers 0-9, and a-z represent the decimal numbers 10-35. The last number “radix” is the radix of N1 if “tag” is 1, or of N2 if “tag” is 2.</p>
+<p><strong>Output Specification:</strong></p>
+<p>For each test case, print in one line the radix of the other number so that the equation N1 = N2 is true. If the equation is impossible, print “Impossible”. If the solution is not unique, output the smallest possible radix.</p>
+<p>Sample Input 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">6 110 1 10</div></pre></td></tr></table></figure>
+<p>Sample Output 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2</div></pre></td></tr></table></figure>
+<p>Sample Input 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1 ab 1 2</div></pre></td></tr></table></figure>
+<p>Sample Output 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Impossible</div></pre></td></tr></table></figure>
+<p>我感觉这是我目前接触到最难，最有挑战性的题了。首先第一遍看完题目，只看了大概，明白这道题讲的是什么，但是却没有什么思路，思来想去摸不着头脑，于是乎找解答，有了个大概的解题思路，只是我一直不明白为什么（未知进制的）那个数的上限是根据那个数本身的大小来定，即本身大小与下限取个最大值作为上限。</p>
+<p>解题思路是这样的：首先输入这四个数，将已知的那个数(m)转化为十进制，然后确定上下限，即找到未知进制的那个数(n)的最大一位，将其加1得到下限low，未知进制那个数(n)本身大小与下限取个最大值作为上限high。因为[low,high]是个单调区间，于是采用二分法进行查找。其中一个坑是数据的位数问题，之前采用int来存错一半，用long long 来存能多对几个，说明存在很大的数；其次，二分查找时的由mid进制转为10进制时会溢出，即long long 会溢出，直接导致num&lt;0，所以要加一个判断条件才行，最后就是我那个问题还是不懂。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> <span class="built_in">map</span>[<span class="number">256</span>];</div><div class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">convertToTen</span><span class="params">(<span class="keyword">char</span> a[], <span class="keyword">long</span> <span class="keyword">long</span> radix)</span> </span>&#123;</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> len=<span class="built_in">strlen</span>(a);</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ans=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++) &#123;</div><div class="line">        ans=ans*radix+<span class="built_in">map</span>[a[i]];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">findlowest</span><span class="params">(<span class="keyword">char</span> n[])</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> ans=<span class="number">0</span>;</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> len=<span class="built_in">strlen</span>(n);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (<span class="built_in">map</span>[n[i]]&gt;ans) &#123;</div><div class="line">            ans=<span class="built_in">map</span>[n[i]];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">binarySearch</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> left, <span class="keyword">long</span> <span class="keyword">long</span> right, <span class="keyword">char</span> n[], <span class="keyword">long</span> <span class="keyword">long</span> t)</span> </span>&#123;</div><div class="line">    <span class="keyword">while</span> (left&lt;=right) &#123;</div><div class="line">        <span class="keyword">long</span> <span class="keyword">long</span> mid=(left+right)/<span class="number">2</span>;</div><div class="line">        <span class="keyword">long</span> <span class="keyword">long</span> num=convertToTen(n, mid);</div><div class="line">        <span class="keyword">if</span> (num&gt;t||num&lt;<span class="number">0</span>) &#123;</div><div class="line">            right=mid<span class="number">-1</span>;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (num&lt;t) &#123;</div><div class="line">            left=mid+<span class="number">1</span>;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (num==t) &#123;</div><div class="line">            <span class="keyword">return</span> mid;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">char</span> m[<span class="number">20</span>],n[<span class="number">20</span>];</div><div class="line">    <span class="keyword">int</span> tag,radix;</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> result=<span class="number">-1</span>;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n&gt;&gt;tag&gt;&gt;radix;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="string">'0'</span>; i&lt;=<span class="string">'9'</span>; i++) &#123;</div><div class="line">        <span class="built_in">map</span>[i]=i-<span class="string">'0'</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="string">'a'</span>; j&lt;=<span class="string">'z'</span>; j++) &#123;</div><div class="line">        <span class="built_in">map</span>[j]=j-<span class="string">'a'</span>+<span class="number">10</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (tag==<span class="number">2</span>) &#123;</div><div class="line">        swap(m, n);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> t=convertToTen(m,radix);</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> low=findlowest(n);</div><div class="line">    <span class="keyword">long</span> <span class="keyword">long</span> high=max(t,low)+<span class="number">1</span>;</div><div class="line">    result=binarySearch(low,high,n,t);</div><div class="line">    <span class="keyword">if</span> (result==<span class="number">-1</span>) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"Impossible"</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;result;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -463,7 +454,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javaSE/" rel="tag"># javaSE</a>
+            <a href="/tags/pat/" rel="tag"># pat</a>
           
         </div>
       
@@ -476,8 +467,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/hexo-openPostQuick/" rel="next" title="在hexo new之后立即打开Markdown文稿">
-                <i class="fa fa-chevron-left"></i> 在hexo new之后立即打开Markdown文稿
+              <a href="/PAT-1009/" rel="next" title="PAT-1009">
+                <i class="fa fa-chevron-left"></i> PAT-1009
               </a>
             
           </div>
@@ -486,8 +477,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/PAT-1001/" rel="prev" title="PAT-1001">
-                PAT-1001 <i class="fa fa-chevron-right"></i>
+              <a href="/PAT-1013/" rel="prev" title="PAT-1013">
+                PAT-1013 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -540,8 +531,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -632,6 +632,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1010-Radix-25"><span class="nav-number">1.</span> <span class="nav-text">1010. Radix (25)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
