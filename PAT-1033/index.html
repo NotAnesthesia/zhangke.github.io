@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javaSE," />
+  <meta name="keywords" content="pat," />
 
 
 
@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="先插一句题外话： 继承与多态的区别 ​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。  ​    多态：就是父类引用可以持有子类对象。这时候只能调用父类中的方法，而子类中特有方法是无法访问的，因为这个时候（编译时）你把他看作父类">
-<meta name="keywords" content="javaSE">
+<meta name="description" content="1033. To Fill or Not to Fill (25)With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the wa">
+<meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java运行时多态性：继承和接口的实现">
-<meta property="og:url" content="http://zhangk.top/duotai-1/index.html">
+<meta property="og:title" content="PAT-1033">
+<meta property="og:url" content="http://zhangk.top/PAT-1033/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="先插一句题外话： 继承与多态的区别 ​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。  ​    多态：就是父类引用可以持有子类对象。这时候只能调用父类中的方法，而子类中特有方法是无法访问的，因为这个时候（编译时）你把他看作父类">
+<meta property="og:description" content="1033. To Fill or Not to Fill (25)With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the wa">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T08:29:08.193Z">
+<meta property="og:updated_time" content="2018-02-06T11:25:57.476Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java运行时多态性：继承和接口的实现">
-<meta name="twitter:description" content="先插一句题外话： 继承与多态的区别 ​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。  ​    多态：就是父类引用可以持有子类对象。这时候只能调用父类中的方法，而子类中特有方法是无法访问的，因为这个时候（编译时）你把他看作父类">
+<meta name="twitter:title" content="PAT-1033">
+<meta name="twitter:description" content="1033. To Fill or Not to Fill (25)With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the wa">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/duotai-1/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1033/"/>
 
 
 
 
 
-  <title>Java运行时多态性：继承和接口的实现 | Zhangke's blog</title>
+  <title>PAT-1033 | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/duotai-1/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1033/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Java运行时多态性：继承和接口的实现</h2>
+          <h2 class="post-title" itemprop="name headline">PAT-1033</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-04T09:50:44+08:00">
-                2017-11-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T19:20:49+08:00">
+                2018-02-06
               </time>
             
 
@@ -363,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javaSE/" itemprop="url" rel="index">
-                    <span itemprop="name">javaSE</span>
+                  <a href="/categories/pat/" itemprop="url" rel="index">
+                    <span itemprop="name">pat</span>
                   </a>
                 </span>
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/duotai-1/" class="leancloud_visitors" data-flag-title="Java运行时多态性：继承和接口的实现">
+             <span id="/PAT-1033/" class="leancloud_visitors" data-flag-title="PAT-1033">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,43 +408,23 @@
       
 
       
-        <p>先插一句题外话：</p>
-<h3 id="继承与多态的区别"><a href="#继承与多态的区别" class="headerlink" title="继承与多态的区别"></a>继承与多态的区别</h3><ul>
-<li><p>​    继承，子类继承父类中所以的属性和方法，但是对于private的属相和方法，由于这个是父类的隐私，所以子类虽然是继承了，但是没有可以访问这些属性和方法的引用，所以相当于没有继承到。很多时候，可以理解为，没有继承。</p>
-</li>
-<li><p>​    多态：就是父类引用可以持有子类对象。这时候只能调用父类中的方法，而子类中特有方法是无法访问的，因为这个时候（编译时）你把他看作父类对象的原因，但是到了运行的时候，编译器就会发现这个父类引用中原来是一个子类的对像，所以如果父类和子类中有相同的方法时，调用的会是子类中的方法，而不是父类的。可以这么说：编译时看父类，运行时看子类。</p>
+        <h1 id="1033-To-Fill-or-Not-to-Fill-25"><a href="#1033-To-Fill-or-Not-to-Fill-25" class="headerlink" title="1033. To Fill or Not to Fill (25)"></a>1033. To Fill or Not to Fill (25)</h1><p>With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the way from time to time. Different gas station may give different price. You are asked to carefully design the cheapest route to go.</p>
+<p><strong>Input Specification:</strong></p>
+<p>Each input file contains one test case. For each case, the first line contains 4 positive numbers: Cmax (&lt;= 100), the maximum capacity of the tank; D (&lt;=30000), the distance between Hangzhou and the destination city; Davg (&lt;=20), the average distance per unit gas that the car can run; and N (&lt;= 500), the total number of gas stations. Then N lines follow, each contains a pair of non-negative numbers: Pi, the unit gas price, and Di (&lt;=D), the distance between this station and Hangzhou, for i=1,…N. All the numbers in a line are separated by a space.</p>
+<p><strong>Output Specification:</strong></p>
+<p>For each test case, print the cheapest price in a line, accurate up to 2 decimal places. It is assumed that the tank is empty at the beginning. If it is impossible to reach the destination, print “The maximum travel distance = X” where X is the maximum possible distance the car can run, accurate up to 2 decimal places.</p>
+<p>Sample Input 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">50 1300 12 8</div><div class="line">6.00 1250</div><div class="line">7.00 600</div><div class="line">7.00 150</div><div class="line">7.10 0</div><div class="line">7.20 200</div><div class="line">7.50 400</div><div class="line">7.30 1000</div><div class="line">6.85 300</div></pre></td></tr></table></figure>
+<p>Sample Output 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">749.17</div></pre></td></tr></table></figure>
+<p>Sample Input 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">50 1300 12 2</div><div class="line">7.10 0</div><div class="line">7.00 600</div></pre></td></tr></table></figure>
+<p>Sample Output 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The maximum travel distance = 1200.00</div></pre></td></tr></table></figure>
 <hr>
-</li>
-</ul>
-<p>进入正题：</p>
-<h3 id="Java运行时多态性：继承和接口的实现"><a href="#Java运行时多态性：继承和接口的实现" class="headerlink" title="Java运行时多态性：继承和接口的实现"></a>Java运行时多态性：继承和接口的实现</h3><p>Java是面向对象的语言，而运行时多态性是面向对象程序设计代码重用的一个最强大机制，动态性的概念也可以被说成“一个接口，多个方法”。Java实现运行时多态性的基础是动态方法调度，它是一种在运行时而不是在编译期调用重载方法的机制，下面就继承和接口实现两方面谈谈java运行时多态性的实现。</p>
-<h4 id="一、通过继承中超类对象引用变量引用子类对象来实现"><a href="#一、通过继承中超类对象引用变量引用子类对象来实现" class="headerlink" title="一、通过继承中超类对象引用变量引用子类对象来实现"></a>一、通过继承中超类对象引用变量引用子类对象来实现</h4><p>举例说明：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义超类superA  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">superA</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> i = <span class="number">100</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(“This is superA”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//定义superA的子类subB  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">subB</span> <span class="keyword">extends</span> <span class="title">superA</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> m = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(“This is subB”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//定义superA的子类subC  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">subC</span> <span class="keyword">extends</span> <span class="title">superA</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> n = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(“This is subC”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        superA a;</div><div class="line">        subB b = <span class="keyword">new</span> subB();</div><div class="line">        subC c = <span class="keyword">new</span> subC();</div><div class="line">        a = b;</div><div class="line">        a.fun();</div><div class="line">        (<span class="number">1</span>)</div><div class="line">        a = c;</div><div class="line">        a.fun();</div><div class="line">        (<span class="number">2</span>)</div><div class="line">    &#125;</div><div class="line">&#125;    <span class="number">12345678910111213141516171819202122232425262728293031323334353637383940</span></div></pre></td></tr></table></figure>
-<p>运行结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">This is subB</div><div class="line"></div><div class="line">This is subC123</div></pre></td></tr></table></figure>
-<p>上述代码中subB和subC是超类superA的子类，我们在类Test中声明了3个引用变量a, b, c，通过将子类对象引用赋值给超类对象引用变量来实现动态方法调用。也许有人会问：“为什么(1)和(2)不输出：This is superA”。java 的这种机制遵循一个原则：当超类对象引用变量引用子类对象时，被引用对象的类型而不是引用变量的类型决定了调用谁的成员方法，但是这个被调用的方法必须是在超类中定义过的，也就是说被子类覆盖的方法。</p>
-<p>所以，不要被上例中(1)和(2)所迷惑，虽然写成a.fun()，但是由于(1)中的a被b赋值，指向了子类subB的一个实例，因而(1)所调用的fun()实际上是子类subB的成员方法fun()，它覆盖了超类superA的成员方法fun()；同样(2)调用的是子类subC的成员方法fun()。</p>
-<p>另外，如果子类继承的超类是一个抽象类，虽然抽象类不能通过new操作符实例化，但是可以创建抽象类的对象引用指向子类对象，以实现运行时多态性。具体的实现方法同上例。</p>
-<p>不过，抽象类的子类必须覆盖实现超类中的所有的抽象方法，否则子类必须被abstract修饰符修饰，当然也就不能被实例化了。</p>
-<h4 id="二、通过接口类型变量引用实现接口的类的对象来实现"><a href="#二、通过接口类型变量引用实现接口的类的对象来实现" class="headerlink" title="二、通过接口类型变量引用实现接口的类的对象来实现"></a>二、通过接口类型变量引用实现接口的类的对象来实现</h4><p>接口的灵活性就在于“规定一个类必须做什么，而不管你如何做”。我们可以定义一个接口类型的引用变量来引用实现接口的类的实例，当这个引用调用方法时，它会根据实际引用的类的实例来判断具体调用哪个方法，这和上述的超类对象引用访问子类对象的机制相似。</p>
-<p>举例说明：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义接口InterA  </span></div><div class="line"><span class="class"><span class="keyword">interface</span> <span class="title">InterA</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//实现接口InterA的类B  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">implements</span> <span class="title">InterA</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(“This is B”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//实现接口InterA的类C  </span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">C</span> <span class="keyword">implements</span> <span class="title">InterA</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        System.out.println(“This is C”);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        InterA  a;</div><div class="line">        a= <span class="keyword">new</span> B();</div><div class="line">        a.fun();</div><div class="line">        a = <span class="keyword">new</span> C();</div><div class="line">        a.fun();</div><div class="line">    &#125;</div><div class="line">&#125; <span class="number">1234567891011121314151617181920212223242526272829303132</span></div></pre></td></tr></table></figure>
-<p>输出结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">This is B</div><div class="line"></div><div class="line">This is C123</div></pre></td></tr></table></figure>
-<p>上例中类B和类C是实现接口InterA的两个类，分别实现了接口的方法fun()，通过将类B和类C的实例赋给接口引用a而实现了方法在运行时的动态绑定，充分利用了“一个接口，多个方法”展示了Java的动态多态性。</p>
-<p>需要注意的一点是：Java在利用接口变量调用其实现类的对象的方法时，该方法必须已经在接口中被声明，而且在接口的实现类中该实现方法的类型和参数必须与接口中所定义的精确匹配。</p>
-<p><strong>结束语：以上就是java运行时多态性的实现方法，大家在编程过程中可以灵活运用，但是在性能要求较高的代码中不提倡运用运行时多态，毕竟Java的运行时动态方法调用较之普通的方法调用的系统开销是比较大的。</strong></p>
-<hr>
-<h3 id="Java静态方法不具有多态性详解"><a href="#Java静态方法不具有多态性详解" class="headerlink" title="Java静态方法不具有多态性详解"></a>Java静态方法不具有多态性详解</h3><p>动态绑定机制使得基类的引用能够指向正确的子类对象，从而使得面向基类编程成为可能。<br>然而动态绑定在以下两种情况会失效。</p>
-<p>1、基类方法是private或final修饰的</p>
-<p>这个很好理解，因为private说明该方法对子类是不可见的，子类再写一个同名的方法并不是对父类方法进行复写(Override)，而是重新生成一个新的方法，也就不存在多态的问题了。同理也可以解释final，因为方法同样是不可覆盖的。</p>
-<p>2、方法是static修饰的</p>
-<p>代码如下所示.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticMethod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Base staticMehtod"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dynamicMehtod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Base dynamicMehtod"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sub</span> <span class="keyword">extends</span> <span class="title">Base</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticMethod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Sub staticMehtod"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dynamicMehtod</span><span class="params">()</span> </span>&#123;</div><div class="line">    System.out.println(<span class="string">"Sub dynamicMehtod"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TJ4</span> </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</div><div class="line">    Base c = <span class="keyword">new</span> Sub();</div><div class="line">    c.staticMethod();</div><div class="line">    c.dynamicMehtod();</div><div class="line">  &#125;</div><div class="line">&#125;<span class="number">123456789101112131415161718192021222324252627</span></div></pre></td></tr></table></figure>
-<p>输出结果如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> Base staticMehtod</div><div class="line"> Sub dynamicMehtod</div><div class="line">123</div></pre></td></tr></table></figure>
-<p>输出结果并不像设想的那样，输出 “Sub staticMehtod”。因为静态方法是与类而不是与某个对象相关联，c.staticMethod();等同于Car.staticMethod(); 所以尽量不要使用实例变量去调用静态方法，避免混淆。</p>
-<p>转载：<a href="http://blog.csdn.net/jdsjlzx/article/details/52518723" target="_blank" rel="external">http://blog.csdn.net/jdsjlzx/article/details/52518723</a></p>
+<p>此题采用贪心算法，每次在可到达的点中挑价格最小的加油站去。其中如果有比当前更便宜的点，就加油到刚好到达下个点用完，不然就加满油。</p>
+<p>感觉题目比较繁琐~</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">station</span> &#123;</span></div><div class="line">    <span class="keyword">double</span> price,dis;</div><div class="line">&#125;;</div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(station a,station b)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> a.dis&lt;b.dis;</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> inf = <span class="number">99999999</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">double</span> tank,fullDis,disPerFuel;</div><div class="line">    <span class="keyword">int</span> stationNum;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;tank&gt;&gt;fullDis&gt;&gt;disPerFuel&gt;&gt;stationNum;</div><div class="line">    <span class="built_in">vector</span>&lt;station&gt; <span class="built_in">list</span>(stationNum+<span class="number">1</span>);</div><div class="line">    <span class="built_in">list</span>[<span class="number">0</span>]=&#123;<span class="number">0.0</span>,fullDis&#125;;</div><div class="line">    <span class="keyword">double</span> tempPrice,tempDis;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=stationNum; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;tempPrice&gt;&gt;tempDis;</div><div class="line">        <span class="built_in">list</span>[i]=&#123;tempPrice,tempDis&#125;;</div><div class="line">    &#125;</div><div class="line">    sort(<span class="built_in">list</span>.begin(), <span class="built_in">list</span>.end(), cmp);</div><div class="line">    </div><div class="line">    </div><div class="line">    <span class="keyword">double</span> nowDis=<span class="number">0</span>,leftDis=<span class="number">0</span>,maxDis,nowPrice=<span class="built_in">list</span>[<span class="number">0</span>].price,totalPrice=<span class="number">0</span>;</div><div class="line">    <span class="keyword">if</span> (<span class="built_in">list</span>[<span class="number">0</span>].dis!=<span class="number">0</span>) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"The maximum travel distance = 0.00"</span>;</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">while</span> (nowDis&lt;fullDis) &#123;</div><div class="line">        <span class="keyword">int</span> flag=<span class="number">0</span>;</div><div class="line">        maxDis=disPerFuel*tank+nowDis; <span class="comment">//最远能到达的距离</span></div><div class="line">        <span class="keyword">double</span> minPrice=inf,minDis=inf;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;<span class="built_in">list</span>.size(); i++) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="built_in">list</span>[i].dis&lt;=maxDis&amp;&amp;<span class="built_in">list</span>[i].dis&gt;nowDis) &#123;</div><div class="line">                <span class="comment">//minDis=list[i].dis-nowDis;</span></div><div class="line">                <span class="keyword">if</span> (<span class="built_in">list</span>[i].price&lt;=nowPrice) &#123;</div><div class="line">                    totalPrice+=(<span class="built_in">list</span>[i].dis-nowDis-leftDis)/disPerFuel*nowPrice;</div><div class="line">                    nowPrice=<span class="built_in">list</span>[i].price;</div><div class="line">                    nowDis=<span class="built_in">list</span>[i].dis;</div><div class="line">                    leftDis=<span class="number">0</span>;</div><div class="line">                    flag=<span class="number">1</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (<span class="built_in">list</span>[i].price&lt;minPrice) &#123;</div><div class="line">                    minPrice=<span class="built_in">list</span>[i].price;</div><div class="line">                    minDis=<span class="built_in">list</span>[i].dis;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (flag==<span class="number">0</span>&amp;&amp;minDis!=inf) &#123;</div><div class="line">            totalPrice+=(tank-leftDis/disPerFuel)*nowPrice;</div><div class="line">            leftDis=tank*disPerFuel-(minDis-nowDis);</div><div class="line">            nowDis=minDis;</div><div class="line">            nowPrice=minPrice;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (flag==<span class="number">0</span>&amp;&amp;minDis==inf) &#123;</div><div class="line">            <span class="built_in">cout</span>&lt;&lt;<span class="string">"The maximum travel distance = "</span>;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"%.2lf"</span>,maxDis);</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%.2lf"</span>,totalPrice);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -474,7 +454,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javaSE/" rel="tag"># javaSE</a>
+            <a href="/tags/pat/" rel="tag"># pat</a>
           
         </div>
       
@@ -487,8 +467,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/thread-1/" rel="next" title="多线程之使用目的">
-                <i class="fa fa-chevron-left"></i> 多线程之使用目的
+              <a href="/PAT-1039/" rel="next" title="PAT-1039">
+                <i class="fa fa-chevron-left"></i> PAT-1039
               </a>
             
           </div>
@@ -496,10 +476,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/spring-1/" rel="prev" title="spring四种依赖注入方式">
-                spring四种依赖注入方式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -662,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#继承与多态的区别"><span class="nav-number">1.</span> <span class="nav-text">继承与多态的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java运行时多态性：继承和接口的实现"><span class="nav-number">2.</span> <span class="nav-text">Java运行时多态性：继承和接口的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、通过继承中超类对象引用变量引用子类对象来实现"><span class="nav-number">2.1.</span> <span class="nav-text">一、通过继承中超类对象引用变量引用子类对象来实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、通过接口类型变量引用实现接口的类的对象来实现"><span class="nav-number">2.2.</span> <span class="nav-text">二、通过接口类型变量引用实现接口的类的对象来实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java静态方法不具有多态性详解"><span class="nav-number">3.</span> <span class="nav-text">Java静态方法不具有多态性详解</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1033-To-Fill-or-Not-to-Fill-25"><span class="nav-number">1.</span> <span class="nav-text">1033. To Fill or Not to Fill (25)</span></a></li></ol></div>
             
 
           </div>
