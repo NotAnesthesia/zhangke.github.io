@@ -93,23 +93,18 @@
 
 
 
-<meta name="description" content="1066. Root of AVL Tree (25)An AVL tree is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by mo">
+<meta name="description" content="1034. Head of a Gang (30)One way that the police finds the head of a gang is to check people’s phone calls. If there is a phone call between A and B, we say that A and B is related. The weight of a re">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PAT-1066">
-<meta property="og:url" content="http://zhangk.top/PAT-1066/index.html">
+<meta property="og:title" content="PAT-1034 Head of a Gang">
+<meta property="og:url" content="http://zhangk.top/PAT-1034/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1066. Root of AVL Tree (25)An AVL tree is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by mo">
+<meta property="og:description" content="1034. Head of a Gang (30)One way that the police finds the head of a gang is to check people’s phone calls. If there is a phone call between A and B, we say that A and B is related. The weight of a re">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://nos.patest.cn/79_mtxjq1kj3gx.jpg">
-<meta property="og:image" content="http://nos.patest.cn/79_mtxjqnwja2o.jpg">
-<meta property="og:image" content="http://nos.patest.cn/79_mtxjr4gyzdg.jpg">
-<meta property="og:image" content="http://nos.patest.cn/79_mtxjrh51o9y.jpg">
-<meta property="og:updated_time" content="2018-02-05T08:58:03.664Z">
+<meta property="og:updated_time" content="2018-02-07T16:23:03.999Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PAT-1066">
-<meta name="twitter:description" content="1066. Root of AVL Tree (25)An AVL tree is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by mo">
-<meta name="twitter:image" content="http://nos.patest.cn/79_mtxjq1kj3gx.jpg">
+<meta name="twitter:title" content="PAT-1034 Head of a Gang">
+<meta name="twitter:description" content="1034. Head of a Gang (30)One way that the police finds the head of a gang is to check people’s phone calls. If there is a phone call between A and B, we say that A and B is related. The weight of a re">
 
 
 
@@ -137,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1066/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1034/"/>
 
 
 
 
 
-  <title>PAT-1066 | Zhangke's blog</title>
+  <title>PAT-1034 Head of a Gang | Zhangke's blog</title>
   
 
 
@@ -316,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1066/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1034/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -333,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">PAT-1066</h2>
+          <h2 class="post-title" itemprop="name headline">PAT-1034 Head of a Gang</h2>
         
 
         <div class="post-meta">
@@ -345,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T15:51:45+08:00">
-                2018-02-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T00:02:49+08:00">
+                2018-02-08
               </time>
             
 
@@ -385,7 +380,7 @@
 
           
           
-             <span id="/PAT-1066/" class="leancloud_visitors" data-flag-title="PAT-1066">
+             <span id="/PAT-1034/" class="leancloud_visitors" data-flag-title="PAT-1034 Head of a Gang">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -413,25 +408,23 @@
       
 
       
-        <h1 id="1066-Root-of-AVL-Tree-25"><a href="#1066-Root-of-AVL-Tree-25" class="headerlink" title="1066. Root of AVL Tree (25)"></a>1066. Root of AVL Tree (25)</h1><p>An AVL tree is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property. Figures 1-4 illustrate the rotation rules.</p>
-<p><img src="http://nos.patest.cn/79_mtxjq1kj3gx.jpg" alt="img">    <img src="http://nos.patest.cn/79_mtxjqnwja2o.jpg" alt="img"></p>
-<p><img src="http://nos.patest.cn/79_mtxjr4gyzdg.jpg" alt="img">    <img src="http://nos.patest.cn/79_mtxjrh51o9y.jpg" alt="img"></p>
-<p>Now given a sequence of insertions, you are supposed to tell the root of the resulting AVL tree.</p>
+        <h1 id="1034-Head-of-a-Gang-30"><a href="#1034-Head-of-a-Gang-30" class="headerlink" title="1034. Head of a Gang (30)"></a>1034. Head of a Gang (30)</h1><p>One way that the police finds the head of a gang is to check people’s phone calls. If there is a phone call between A and B, we say that A and B is related. The weight of a relation is defined to be the total time length of all the phone calls made between the two persons. A “Gang” is a cluster of more than 2 persons who are related to each other with total relation weight being greater than a given threshold K. In each gang, the one with maximum total weight is the head. Now given a list of phone calls, you are supposed to find the gangs and the heads.</p>
 <p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. For each case, the first line contains a positive integer N (&lt;=20) which is the total number of keys to be inserted. Then N distinct integer keys are given in the next line. All the numbers in a line are separated by a space.</p>
+<p>Each input file contains one test case. For each case, the first line contains two positive numbers N and K (both less than or equal to 1000), the number of phone calls and the weight threthold, respectively. Then N lines follow, each in the following format:</p>
+<p>Name1 Name2 Time</p>
+<p>where Name1 and Name2 are the names of people at the two ends of the call, and Time is the length of the call. A name is a string of three capital letters chosen from A-Z. A time length is a positive integer which is no more than 1000 minutes.</p>
 <p><strong>Output Specification:</strong></p>
-<p>For each test case, print ythe root of the resulting AVL tree in one line.</p>
+<p>For each test case, first print in a line the total number of gangs. Then for each gang, print in a line the name of the head and the total number of the members. It is guaranteed that the head is unique for each gang. The output must be sorted according to the alphabetical order of the names of the heads.</p>
 <p>Sample Input 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">5</div><div class="line">88 70 61 96 120</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">8 59</div><div class="line">AAA BBB 10</div><div class="line">BBB AAA 20</div><div class="line">AAA CCC 40</div><div class="line">DDD EEE 5</div><div class="line">EEE DDD 70</div><div class="line">FFF GGG 30</div><div class="line">GGG HHH 20</div><div class="line">HHH FFF 10</div></pre></td></tr></table></figure>
 <p>Sample Output 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">70</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">2</div><div class="line">AAA 3</div><div class="line">GGG 3</div></pre></td></tr></table></figure>
 <p>Sample Input 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">7</div><div class="line">88 70 61 96 120 90 65</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">8 70</div><div class="line">AAA BBB 10</div><div class="line">BBB AAA 20</div><div class="line">AAA CCC 40</div><div class="line">DDD EEE 5</div><div class="line">EEE DDD 70</div><div class="line">FFF GGG 30</div><div class="line">GGG HHH 20</div><div class="line">HHH FFF 10</div></pre></td></tr></table></figure>
 <p>Sample Output 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">88</div></pre></td></tr></table></figure>
-<p>突然兴起想研究AVL平衡树，结果就是花了两天代码还是参考网上的，不过总算是理解了。就是感觉自己对于递归的理解还是不够透彻~</p>
-<p>代码命名很清晰就不多加注释了。。。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> val;</div><div class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span>* <span class="title">left</span>;</span></div><div class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">right</span>;</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="comment">/* 左旋 */</span></div><div class="line"><span class="function">node* <span class="title">rotateLeft</span><span class="params">(node* root)</span> </span>&#123;</div><div class="line">    node* t=root-&gt;right;</div><div class="line">    root-&gt;right=t-&gt;left;</div><div class="line">    t-&gt;left=root;</div><div class="line">    <span class="keyword">return</span> t;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 右旋 */</span></div><div class="line"><span class="function">node* <span class="title">rotateRight</span><span class="params">(node* root)</span> </span>&#123;</div><div class="line">    node* t=root-&gt;left;</div><div class="line">    root-&gt;left=t-&gt;right;</div><div class="line">    t-&gt;right=root;</div><div class="line">    <span class="keyword">return</span> t;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 先左旋后右旋 */</span></div><div class="line"><span class="function">node* <span class="title">rotateLeftRight</span><span class="params">(node* root)</span> </span>&#123;</div><div class="line">    root-&gt;left=rotateLeft(root-&gt;left);</div><div class="line">    <span class="keyword">return</span> rotateRight(root);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 先右旋后左旋 */</span></div><div class="line"><span class="function">node* <span class="title">rotateRightLeft</span><span class="params">(node* root)</span> </span>&#123;</div><div class="line">    root-&gt;right=rotateRight(root-&gt;right);</div><div class="line">    <span class="keyword">return</span> rotateLeft(root);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">getHeight</span><span class="params">(node* root)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (root==<span class="literal">NULL</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> max(getHeight(root-&gt;left), getHeight(root-&gt;right))+<span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function">node* <span class="title">insert</span><span class="params">(node* root, <span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (root==<span class="literal">NULL</span>) &#123;</div><div class="line">        root=<span class="keyword">new</span> node();</div><div class="line">        root-&gt;val=val;</div><div class="line">        root-&gt;left=root-&gt;right=<span class="literal">NULL</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (val&lt;root-&gt;val) &#123;</div><div class="line">        root-&gt;left=insert(root-&gt;left, val);</div><div class="line">        <span class="keyword">if</span> (getHeight(root-&gt;left)-getHeight(root-&gt;right)==<span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">return</span> val&lt;root-&gt;left-&gt;val?rotateRight(root):rotateLeftRight(root);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">        root-&gt;right=insert(root-&gt;right, val);</div><div class="line">        <span class="keyword">if</span> (getHeight(root-&gt;left)-getHeight(root-&gt;right)==<span class="number">-2</span>) &#123;</div><div class="line">            <span class="keyword">return</span> val&gt;root-&gt;right-&gt;val?rotateLeft(root):rotateRightLeft(root);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> root;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> num;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    <span class="keyword">int</span> val;</div><div class="line">    node* root=<span class="literal">NULL</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;val;</div><div class="line">        root=insert(root,val);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;root-&gt;val;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">0</div></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="built_in">map</span>&lt;<span class="built_in">string</span>,<span class="keyword">int</span>&gt; a;  <span class="comment">//每个人的名字对应编号</span></div><div class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="built_in">string</span>&gt; b;  <span class="comment">//每个编号对应人名</span></div><div class="line"><span class="built_in">map</span>&lt;<span class="built_in">string</span>,<span class="keyword">int</span>&gt; result;  <span class="comment">//输出结果</span></div><div class="line"><span class="keyword">int</span> line[<span class="number">2001</span>][<span class="number">2001</span>] <span class="comment">/*边权*/</span>, point[<span class="number">2001</span>] <span class="comment">/*点权*/</span>,</div><div class="line">    visit[<span class="number">2001</span>] <span class="comment">/*是否已经遍历过*/</span>;</div><div class="line"><span class="keyword">int</span> n,k;         <span class="comment">//n为总电话数，k为判断阈值 </span></div><div class="line"><span class="keyword">int</span> digitNo=<span class="number">1</span>;   <span class="comment">//digitNo-1为总人数</span></div><div class="line"><span class="comment">/* 将人名转化为编号 */</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">stringToNum</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (a[s]==<span class="number">0</span>) &#123;</div><div class="line">        a[s]=digitNo;</div><div class="line">        b[digitNo]=s;</div><div class="line">        <span class="keyword">return</span> digitNo++;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> a[s];</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/* DFS统计当前连通分量 */</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> &amp;head,<span class="keyword">int</span> &amp;memberNum,<span class="keyword">int</span> &amp;totalWeight)</span> </span>&#123;</div><div class="line">    visit[now]=<span class="number">1</span>;</div><div class="line">    memberNum++;</div><div class="line">    <span class="keyword">if</span> (point[now]&gt;point[head]) &#123;</div><div class="line">        head=now;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;digitNo; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (line[now][i]&gt;<span class="number">0</span>) &#123;</div><div class="line">            totalWeight+=line[now][i];</div><div class="line">            line[now][i]=line[i][now]=<span class="number">0</span>;</div><div class="line">            <span class="keyword">if</span> (visit[i]==<span class="number">0</span>) &#123;</div><div class="line">                dfs(i, head, memberNum, totalWeight);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;digitNo; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (visit[i]==<span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">int</span> head=i,memberNum=<span class="number">0</span>,totalWeight=<span class="number">0</span>;</div><div class="line">            dfs(i,head,memberNum,totalWeight);</div><div class="line">            <span class="comment">/* 每当找到一个连通分量则判断是否为犯罪团伙 */</span></div><div class="line">            <span class="keyword">if</span> (memberNum&gt;<span class="number">2</span>&amp;&amp;totalWeight&gt;k) &#123;</div><div class="line">                result[b[head]]=memberNum;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k;</div><div class="line">    </div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">        <span class="built_in">string</span> x,y;</div><div class="line">        <span class="keyword">int</span> z;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y&gt;&gt;z;</div><div class="line">        <span class="keyword">int</span> id1=stringToNum(x);</div><div class="line">        <span class="keyword">int</span> id2=stringToNum(y);</div><div class="line">        point[id1]+=z;</div><div class="line">        point[id2]+=z;</div><div class="line">        line[id1][id2]+=z;</div><div class="line">        line[id2][id1]+=z;</div><div class="line">    &#125;</div><div class="line">    DFS();</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;result.size()&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="comment">/* auto为C++11新特性-动态类型，自动推导类型 */</span></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> it=result.begin(); it!=result.end(); it++) &#123;</div><div class="line">        <span class="comment">/* it迭代器指向的是一个个键值对（pair&lt;string,int&gt;），first相当于key，second相当于value */</span></div><div class="line">        <span class="built_in">cout</span>&lt;&lt;it-&gt;first&lt;&lt;<span class="string">" "</span>&lt;&lt;it-&gt;second&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -474,8 +467,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1014/" rel="next" title="PAT-1014">
-                <i class="fa fa-chevron-left"></i> PAT-1014
+              <a href="/PAT-1045/" rel="next" title="PAT-1045">
+                <i class="fa fa-chevron-left"></i> PAT-1045
               </a>
             
           </div>
@@ -483,10 +476,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1064/" rel="prev" title="PAT-1064">
-                PAT-1064 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -649,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1066-Root-of-AVL-Tree-25"><span class="nav-number">1.</span> <span class="nav-text">1066. Root of AVL Tree (25)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1034-Head-of-a-Gang-30"><span class="nav-number">1.</span> <span class="nav-text">1034. Head of a Gang (30)</span></a></li></ol></div>
             
 
           </div>
