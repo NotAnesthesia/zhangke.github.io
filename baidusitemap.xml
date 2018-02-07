@@ -4,211 +4,11 @@
 
     
   <url>
-    <loc>http://zhangk.top/PAT-1034/</loc>
-    <lastmod>2018-02-07T16:23:03.999Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1034 Head of a Gang</title>
-        <pubTime>2018-02-07T16:02:49.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1045/</loc>
-    <lastmod>2018-02-07T08:50:42.766Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1045</title>
-        <pubTime>2018-02-07T08:43:25.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1038/</loc>
-    <lastmod>2018-02-07T02:33:50.761Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1038</title>
-        <pubTime>2018-02-07T02:30:55.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1037/</loc>
-    <lastmod>2018-02-06T13:48:57.574Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1037</title>
-        <pubTime>2018-02-06T13:35:58.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1033/</loc>
-    <lastmod>2018-02-06T11:25:57.476Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1033</title>
-        <pubTime>2018-02-06T11:20:49.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1039/</loc>
-    <lastmod>2018-02-06T04:34:15.377Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1039</title>
-        <pubTime>2018-02-05T15:27:53.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1041/</loc>
-    <lastmod>2018-02-05T12:04:21.920Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1041</title>
-        <pubTime>2018-02-05T08:50:03.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1014/</loc>
-    <lastmod>2018-02-05T09:12:59.917Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1014</title>
-        <pubTime>2018-01-30T08:33:07.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1040/</loc>
-    <lastmod>2018-02-05T09:09:22.344Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1040</title>
-        <pubTime>2018-02-05T07:48:45.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zhangk.top/PAT-1066/</loc>
-    <lastmod>2018-02-05T08:58:03.664Z</lastmod>
-    <data>
-        <display>
-        <title>PAT-1066</title>
-        <pubTime>2018-02-02T07:51:45.000Z</pubTime>
-        
-        <tag>pat</tag>
-         
-         
-           
-             
-              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://zhangk.top/PAT-1065/</loc>
-    <lastmod>2018-02-05T08:57:57.664Z</lastmod>
+    <lastmod>2018-02-07T16:29:40.144Z</lastmod>
     <data>
         <display>
-        <title>PAT-1065</title>
+        <title>1065. A+B and C (64bit) (20)</title>
         <pubTime>2018-02-04T09:15:06.000Z</pubTime>
         
         <tag>pat</tag>
@@ -225,10 +25,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1064/</loc>
-    <lastmod>2018-02-05T08:57:50.584Z</lastmod>
+    <lastmod>2018-02-07T16:29:37.848Z</lastmod>
     <data>
         <display>
-        <title>PAT-1064</title>
+        <title>1064. Complete Binary Search Tree (30)</title>
         <pubTime>2018-02-03T03:51:00.000Z</pubTime>
         
         <tag>pat</tag>
@@ -244,11 +44,171 @@
 
     
   <url>
-    <loc>http://zhangk.top/PAT-1013/</loc>
-    <lastmod>2018-02-05T08:57:20.856Z</lastmod>
+    <loc>http://zhangk.top/PAT-1045/</loc>
+    <lastmod>2018-02-07T16:29:36.872Z</lastmod>
     <data>
         <display>
-        <title>PAT-1013</title>
+        <title>1045. Favorite Color Stripe (30)</title>
+        <pubTime>2018-02-07T08:43:25.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1040/</loc>
+    <lastmod>2018-02-07T16:29:36.241Z</lastmod>
+    <data>
+        <display>
+        <title>1040. Longest Symmetric String (25)</title>
+        <pubTime>2018-02-05T07:48:45.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1039/</loc>
+    <lastmod>2018-02-07T16:29:35.624Z</lastmod>
+    <data>
+        <display>
+        <title>1039. Course List for Student (25)</title>
+        <pubTime>2018-02-05T15:27:53.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1038/</loc>
+    <lastmod>2018-02-07T16:29:34.982Z</lastmod>
+    <data>
+        <display>
+        <title>1038. Recover the Smallest Number (30)</title>
+        <pubTime>2018-02-07T02:30:55.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1037/</loc>
+    <lastmod>2018-02-07T16:29:34.385Z</lastmod>
+    <data>
+        <display>
+        <title>1037. Magic Coupon (25)</title>
+        <pubTime>2018-02-06T13:35:58.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1034/</loc>
+    <lastmod>2018-02-07T16:29:33.720Z</lastmod>
+    <data>
+        <display>
+        <title>Head of a Gang (30)</title>
+        <pubTime>2018-02-07T16:02:49.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1033/</loc>
+    <lastmod>2018-02-07T16:29:33.059Z</lastmod>
+    <data>
+        <display>
+        <title>1033. To Fill or Not to Fill (25)</title>
+        <pubTime>2018-02-06T11:20:49.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1014/</loc>
+    <lastmod>2018-02-07T16:29:32.439Z</lastmod>
+    <data>
+        <display>
+        <title>1014. Waiting in Line (30)</title>
+        <pubTime>2018-01-30T08:33:07.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1013/</loc>
+    <lastmod>2018-02-07T16:29:31.787Z</lastmod>
+    <data>
+        <display>
+        <title>1013. Battle Over Cities (25)</title>
         <pubTime>2018-01-30T02:53:41.000Z</pubTime>
         
         <tag>pat</tag>
@@ -265,10 +225,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1010/</loc>
-    <lastmod>2018-02-05T08:57:14.841Z</lastmod>
+    <lastmod>2018-02-07T16:29:31.144Z</lastmod>
     <data>
         <display>
-        <title>PAT-1010</title>
+        <title>1010. Radix (25)</title>
         <pubTime>2018-01-29T08:40:33.000Z</pubTime>
         
         <tag>pat</tag>
@@ -285,10 +245,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1009/</loc>
-    <lastmod>2018-02-05T08:57:08.555Z</lastmod>
+    <lastmod>2018-02-07T16:29:30.536Z</lastmod>
     <data>
         <display>
-        <title>PAT-1009</title>
+        <title>1009. Product of Polynomials (25)</title>
         <pubTime>2018-01-28T05:31:17.000Z</pubTime>
         
         <tag>pat</tag>
@@ -305,10 +265,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1008/</loc>
-    <lastmod>2018-02-05T08:57:03.226Z</lastmod>
+    <lastmod>2018-02-07T16:29:29.872Z</lastmod>
     <data>
         <display>
-        <title>PAT-1008</title>
+        <title>1008. Elevator (20)</title>
         <pubTime>2018-01-28T03:34:37.000Z</pubTime>
         
         <tag>pat</tag>
@@ -325,10 +285,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1007/</loc>
-    <lastmod>2018-02-05T08:56:55.667Z</lastmod>
+    <lastmod>2018-02-07T16:29:29.187Z</lastmod>
     <data>
         <display>
-        <title>PAT-1007</title>
+        <title>1007. Maximum Subsequence Sum (25)</title>
         <pubTime>2018-01-26T08:24:06.000Z</pubTime>
         
         <tag>pat</tag>
@@ -345,10 +305,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1006/</loc>
-    <lastmod>2018-02-05T08:56:47.726Z</lastmod>
+    <lastmod>2018-02-07T16:29:28.556Z</lastmod>
     <data>
         <display>
-        <title>PAT-1006</title>
+        <title>1006. Sign In and Sign Out (25)</title>
         <pubTime>2018-01-26T06:24:10.000Z</pubTime>
         
         <tag>pat</tag>
@@ -365,10 +325,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1005/</loc>
-    <lastmod>2018-02-05T08:56:42.120Z</lastmod>
+    <lastmod>2018-02-07T16:29:27.916Z</lastmod>
     <data>
         <display>
-        <title>PAT-1005</title>
+        <title>1005. Spell It Right (20)</title>
         <pubTime>2018-01-26T06:18:34.000Z</pubTime>
         
         <tag>pat</tag>
@@ -385,10 +345,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1004/</loc>
-    <lastmod>2018-02-05T08:56:25.338Z</lastmod>
+    <lastmod>2018-02-07T16:29:27.209Z</lastmod>
     <data>
         <display>
-        <title>PAT-1004</title>
+        <title>1004. Counting Leaves (30)</title>
         <pubTime>2018-01-25T08:22:05.000Z</pubTime>
         
         <tag>pat</tag>
@@ -405,10 +365,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1003/</loc>
-    <lastmod>2018-02-05T08:56:16.448Z</lastmod>
+    <lastmod>2018-02-07T16:29:26.496Z</lastmod>
     <data>
         <display>
-        <title>PAT-1003</title>
+        <title>1003. Emergency (25)</title>
         <pubTime>2018-01-21T15:34:44.000Z</pubTime>
         
         <tag>pat</tag>
@@ -425,10 +385,10 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1002/</loc>
-    <lastmod>2018-02-05T08:56:06.557Z</lastmod>
+    <lastmod>2018-02-07T16:29:25.801Z</lastmod>
     <data>
         <display>
-        <title>PAT-1002</title>
+        <title>1002. A+B for Polynomials (25)</title>
         <pubTime>2018-01-21T15:28:22.000Z</pubTime>
         
         <tag>pat</tag>
@@ -445,11 +405,51 @@
     
   <url>
     <loc>http://zhangk.top/PAT-1001/</loc>
-    <lastmod>2018-02-05T08:55:53.086Z</lastmod>
+    <lastmod>2018-02-07T16:29:25.001Z</lastmod>
     <data>
         <display>
-        <title>PAT-1001</title>
+        <title>1001. A+B Format (20)</title>
         <pubTime>2018-01-19T04:33:14.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1066/</loc>
+    <lastmod>2018-02-07T16:29:23.733Z</lastmod>
+    <data>
+        <display>
+        <title>1066. Root of AVL Tree (25)</title>
+        <pubTime>2018-02-02T07:51:45.000Z</pubTime>
+        
+        <tag>pat</tag>
+         
+         
+           
+             
+              <breadCrumb title="pat" url="http://zhangk.top/categories/pat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangk.top/PAT-1041/</loc>
+    <lastmod>2018-02-07T16:28:48.922Z</lastmod>
+    <data>
+        <display>
+        <title>1041. Be Unique (20)</title>
+        <pubTime>2018-02-05T08:50:03.000Z</pubTime>
         
         <tag>pat</tag>
          
