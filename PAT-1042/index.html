@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="1005. Spell It Right (20)Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in English. Input Specification: Each input file cont">
+<meta name="description" content="1042. Shuffling Machine (20)Shuffling is a procedure used to randomize a deck of playing cards. Because standard shuffling techniques are seen as weak, and in order to avoid “inside jobs” where employ">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1005. Spell It Right (20)">
-<meta property="og:url" content="http://zhangk.top/PAT-1005/index.html">
+<meta property="og:title" content="1042. Shuffling Machine (20)">
+<meta property="og:url" content="http://zhangk.top/PAT-1042/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1005. Spell It Right (20)Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in English. Input Specification: Each input file cont">
+<meta property="og:description" content="1042. Shuffling Machine (20)Shuffling is a procedure used to randomize a deck of playing cards. Because standard shuffling techniques are seen as weak, and in order to avoid “inside jobs” where employ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T16:29:27.916Z">
+<meta property="og:updated_time" content="2018-02-08T14:44:39.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1005. Spell It Right (20)">
-<meta name="twitter:description" content="1005. Spell It Right (20)Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in English. Input Specification: Each input file cont">
+<meta name="twitter:title" content="1042. Shuffling Machine (20)">
+<meta name="twitter:description" content="1042. Shuffling Machine (20)Shuffling is a procedure used to randomize a deck of playing cards. Because standard shuffling techniques are seen as weak, and in order to avoid “inside jobs” where employ">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1005/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1042/"/>
 
 
 
 
 
-  <title>1005. Spell It Right (20) | Zhangke's blog</title>
+  <title>1042. Shuffling Machine (20) | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1005/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1042/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">1005. Spell It Right (20)</h2>
+          <h2 class="post-title" itemprop="name headline">1042. Shuffling Machine (20)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T14:18:34+08:00">
-                2018-01-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T22:42:55+08:00">
+                2018-02-08
               </time>
             
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/PAT-1005/" class="leancloud_visitors" data-flag-title="1005. Spell It Right (20)">
+             <span id="/PAT-1042/" class="leancloud_visitors" data-flag-title="1042. Shuffling Machine (20)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,17 +408,21 @@
       
 
       
-        <h1 id="1005-Spell-It-Right-20"><a href="#1005-Spell-It-Right-20" class="headerlink" title="1005. Spell It Right (20)"></a>1005. Spell It Right (20)</h1><p>Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in English.</p>
+        <h1 id="1042-Shuffling-Machine-20"><a href="#1042-Shuffling-Machine-20" class="headerlink" title="1042. Shuffling Machine (20)"></a>1042. Shuffling Machine (20)</h1><p>Shuffling is a procedure used to randomize a deck of playing cards. Because standard shuffling techniques are seen as weak, and in order to avoid “inside jobs” where employees collaborate with gamblers by performing inadequate shuffles, many casinos employ <strong>automatic shuffling machines</strong>. Your task is to simulate a shuffling machine.</p>
+<p>The machine shuffles a deck of 54 cards according to a given random order and repeats for a given number of times. It is assumed that the initial status of a card deck is in the following order:</p>
+<p>S1, S2, …, S13, H1, H2, …, H13, C1, C2, …, C13, D1, D2, …, D13, J1, J2</p>
+<p>where “S” stands for “Spade”, “H” for “Heart”, “C” for “Club”, “D” for “Diamond”, and “J” for “Joker”. A given order is a permutation of distinct integers in [1, 54]. If the number at the i-th position is j, it means to move the card from position i to position j. For example, suppose we only have 5 cards: S3, H5, C1, D13 and J2. Given a shuffling order {4, 2, 5, 3, 1}, the result will be: J2, H5, D13, S3, C1. If we are to repeat the shuffling again, the result will be: C1, H5, S3, J2, D13.</p>
 <p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. Each case occupies one line which contains an N (&lt;= 10100).</p>
+<p>Each input file contains one test case. For each case, the first line contains a positive integer K (&lt;= 20) which is the number of repeat times. Then the next line contains the given order. All the numbers in a line are separated by a space.</p>
 <p><strong>Output Specification:</strong></p>
-<p>For each test case, output in one line the digits of the sum in English words. There must be one space between two consecutive words, but no extra space at the end of a line.</p>
+<p>For each test case, print the shuffling results in one line. All the cards are separated by a space, and there must be no extra space at the end of the line.</p>
 <p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">12345</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">2</div><div class="line">36 52 37 38 3 39 40 53 54 41 11 12 13 42 43 44 2 4 23 24 25 26 27 6 7 8 48 49 50 51 9 10 14 15 16 5 17 18 19 1 20 21 22 28 29 30 31 32 33 34 35 45 46 47</div></pre></td></tr></table></figure>
 <p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">one five</div></pre></td></tr></table></figure>
-<p>简单题：字符串处理</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">string</span> a;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;a;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;a.length(); i++) &#123;</div><div class="line">    <span class="comment">/* 一个数字字符的ASCII码减去字符0的ASCII码等于该数字的数值 */</span></div><div class="line">        sum+=a[i]-<span class="string">'0'</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">string</span> s=to_string(sum);</div><div class="line">    <span class="built_in">string</span> chinese[<span class="number">10</span>]=&#123;<span class="string">"zero"</span>,<span class="string">"one"</span>,<span class="string">"two"</span>,<span class="string">"three"</span>,<span class="string">"four"</span>,<span class="string">"five"</span>,<span class="string">"six"</span>,<span class="string">"seven"</span>,<span class="string">"eight"</span>,<span class="string">"nine"</span>&#125;;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;s.length()<span class="number">-1</span>; j++) &#123;</div><div class="line">        <span class="keyword">int</span> temp=s[j]-<span class="string">'0'</span>;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;chinese[temp]&lt;&lt;<span class="string">" "</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;chinese[s[s.length()<span class="number">-1</span>]-<span class="string">'0'</span>];</div><div class="line">    </div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">S7 C11 C10 C12 S1 H7 H8 H9 D8 D9 S11 S12 S13 D10 D11 D12 S3 S4 S6 S10 H1 H2 C13 D2 D3 D4 H6 H3 D13 J1 J2 C1 C2 C3 C4 D1 S5 H5 H11 H1</div></pre></td></tr></table></figure>
+<hr>
+<p>简单模拟，题目还挺长。。🤣</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="built_in">string</span> a[<span class="number">55</span>];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">13</span>; i++) &#123;</div><div class="line">        a[i+<span class="number">1</span>]=<span class="string">"S"</span>+to_string(i+<span class="number">1</span>);</div><div class="line">        a[<span class="number">14</span>+i]=<span class="string">"H"</span>+to_string(i+<span class="number">1</span>);</div><div class="line">        a[<span class="number">27</span>+i]=<span class="string">"C"</span>+to_string(i+<span class="number">1</span>);</div><div class="line">        a[<span class="number">40</span>+i]=<span class="string">"D"</span>+to_string(i+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">    a[<span class="number">53</span>]=<span class="string">"J1"</span>;a[<span class="number">54</span>]=<span class="string">"J2"</span>;</div><div class="line">    </div><div class="line">    <span class="built_in">string</span> b[<span class="number">55</span>]; <span class="comment">//暂存</span></div><div class="line">    </div><div class="line">    <span class="keyword">int</span> num;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num;</div><div class="line">    <span class="keyword">int</span> order[<span class="number">55</span>];</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">54</span>; i++) &#123;</div><div class="line">        <span class="keyword">int</span> temp;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;temp;</div><div class="line">        order[i]=temp;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">while</span> (num-- &gt; <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">54</span>; i++) &#123;</div><div class="line">            b[order[i]]=a[i];</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">54</span>; i++) &#123;</div><div class="line">            a[i]=b[i];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">54</span>; i++) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;a[i];</div><div class="line">        <span class="keyword">if</span> (i!=<span class="number">54</span>) &#123;</div><div class="line">            <span class="built_in">cout</span>&lt;&lt;<span class="string">" "</span>;</div><div class="line">        &#125;</div><div class="line">    &#125; </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -461,8 +465,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1004/" rel="next" title="1004. Counting Leaves (30)">
-                <i class="fa fa-chevron-left"></i> 1004. Counting Leaves (30)
+              <a href="/PAT-1012/" rel="next" title="1012. The Best Rank (25)">
+                <i class="fa fa-chevron-left"></i> 1012. The Best Rank (25)
               </a>
             
           </div>
@@ -470,10 +474,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1006/" rel="prev" title="1006. Sign In and Sign Out (25)">
-                1006. Sign In and Sign Out (25) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -636,7 +636,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1005-Spell-It-Right-20"><span class="nav-number">1.</span> <span class="nav-text">1005. Spell It Right (20)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1042-Shuffling-Machine-20"><span class="nav-number">1.</span> <span class="nav-text">1042. Shuffling Machine (20)</span></a></li></ol></div>
             
 
           </div>
