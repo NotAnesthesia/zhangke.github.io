@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="1013. Battle Over Cities (25)It is vitally important to have all the cities connected by highways in a war. If a city is occupied by the enemy, all the highways from/toward that city are closed. We mu">
+<meta name="description" content="1036. Boys vs Girls (25)This time you are asked to tell the difference between the lowest grade of all the male students and the highest grade of all the female students. Input Specification: Each inp">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1013. Battle Over Cities (25)">
-<meta property="og:url" content="http://zhangk.top/PAT-1013/index.html">
+<meta property="og:title" content="1036. Boys vs Girls (25)">
+<meta property="og:url" content="http://zhangk.top/PAT-1036/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1013. Battle Over Cities (25)It is vitally important to have all the cities connected by highways in a war. If a city is occupied by the enemy, all the highways from/toward that city are closed. We mu">
+<meta property="og:description" content="1036. Boys vs Girls (25)This time you are asked to tell the difference between the lowest grade of all the male students and the highest grade of all the female students. Input Specification: Each inp">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T16:29:31.787Z">
+<meta property="og:updated_time" content="2018-02-09T03:42:48.475Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1013. Battle Over Cities (25)">
-<meta name="twitter:description" content="1013. Battle Over Cities (25)It is vitally important to have all the cities connected by highways in a war. If a city is occupied by the enemy, all the highways from/toward that city are closed. We mu">
+<meta name="twitter:title" content="1036. Boys vs Girls (25)">
+<meta name="twitter:description" content="1036. Boys vs Girls (25)This time you are asked to tell the difference between the lowest grade of all the male students and the highest grade of all the female students. Input Specification: Each inp">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1013/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1036/"/>
 
 
 
 
 
-  <title>1013. Battle Over Cities (25) | Zhangke's blog</title>
+  <title>1036. Boys vs Girls (25) | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1013/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1036/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">1013. Battle Over Cities (25)</h2>
+          <h2 class="post-title" itemprop="name headline">1036. Boys vs Girls (25)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-30T10:53:41+08:00">
-                2018-01-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-09T11:39:43+08:00">
+                2018-02-09
               </time>
             
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/PAT-1013/" class="leancloud_visitors" data-flag-title="1013. Battle Over Cities (25)">
+             <span id="/PAT-1036/" class="leancloud_visitors" data-flag-title="1036. Boys vs Girls (25)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,18 +408,24 @@
       
 
       
-        <h1 id="1013-Battle-Over-Cities-25"><a href="#1013-Battle-Over-Cities-25" class="headerlink" title="1013. Battle Over Cities (25)"></a>1013. Battle Over Cities (25)</h1><p>It is vitally important to have all the cities connected by highways in a war. If a city is occupied by the enemy, all the highways from/toward that city are closed. We must know immediately if we need to repair any other highways to keep the rest of the cities connected. Given the map of cities which have all the remaining highways marked, you are supposed to tell the number of highways need to be repaired, quickly.</p>
-<p>For example, if we have 3 cities and 2 highways connecting city1-city2 and city1-city3. Then if city1 is occupied by the enemy, we must have 1 highway repaired, that is the highway city2-city3.</p>
-<p><strong>Input</strong></p>
-<p>Each input file contains one test case. Each case starts with a line containing 3 numbers N (&lt;1000), M and K, which are the total number of cities, the number of remaining highways, and the number of cities to be checked, respectively. Then M lines follow, each describes a highway by 2 integers, which are the numbers of the cities the highway connects. The cities are numbered from 1 to N. Finally there is a line containing K numbers, which represent the cities we concern.</p>
-<p><strong>Output</strong></p>
-<p>For each of the K cities, output in a line the number of highways need to be repaired if that city is lost.</p>
-<p>Sample Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">3 2 3</div><div class="line">1 2</div><div class="line">1 3</div><div class="line">1 2 3</div></pre></td></tr></table></figure>
-<p>Sample Output</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1</div><div class="line">0</div><div class="line">0</div></pre></td></tr></table></figure>
-<p>DFS深度优先搜索计算连通分量的个数~</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> v[<span class="number">1001</span>][<span class="number">1001</span>];    <span class="comment">//两城市之间是否连通，1为连通，0不连通</span></div><div class="line"><span class="keyword">bool</span> visit[<span class="number">1001</span>];     <span class="comment">//是否被访问过</span></div><div class="line"><span class="keyword">int</span> n;                <span class="comment">//城市个数</span></div><div class="line"></div><div class="line"><span class="comment">/* DFS找到一个连通分量并返回 */</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> node)</span> </span>&#123;</div><div class="line">    visit[node]=<span class="literal">true</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (visit[i]==<span class="literal">false</span>&amp;&amp;v[i][node]==<span class="number">1</span>) &#123;</div><div class="line">            DFS(i);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> m,k;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;k;</div><div class="line">    <span class="keyword">int</span> a,b;</div><div class="line">    <span class="built_in">memset</span>(v, <span class="number">0</span>, <span class="keyword">sizeof</span>(v));</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;m; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</div><div class="line">        v[a][b]=v[b][a]=<span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> city;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;k; i++) &#123;</div><div class="line">        fill(visit, visit+<span class="number">1001</span>, <span class="literal">false</span>);</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;city;</div><div class="line">        visit[city]=<span class="literal">true</span>;</div><div class="line">        <span class="keyword">int</span> count=<span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=n; j++) &#123;</div><div class="line">            <span class="keyword">if</span> (visit[j]==<span class="literal">false</span>) &#123;</div><div class="line">                DFS(j);</div><div class="line">                count++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;count<span class="number">-1</span>&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h1 id="1036-Boys-vs-Girls-25"><a href="#1036-Boys-vs-Girls-25" class="headerlink" title="1036. Boys vs Girls (25)"></a>1036. Boys vs Girls (25)</h1><p>This time you are asked to tell the difference between the lowest grade of all the male students and the highest grade of all the female students.</p>
+<p><strong>Input Specification:</strong></p>
+<p>Each input file contains one test case. Each case contains a positive integer N, followed by N lines of student information. Each line contains a student’s name, gender, ID and grade, separated by a space, where name and ID are strings of no more than 10 characters with no space, gender is either F (female) or M (male), and grade is an integer between 0 and 100. It is guaranteed that all the grades are distinct.</p>
+<p><strong>Output Specification:</strong></p>
+<p>For each test case, output in 3 lines. The first line gives the name and ID of the female student with the highest grade, and the second line gives that of the male student with the lowest grade. The third line gives the difference gradeF-gradeM. If one such kind of student is missing, output “Absent” in the corresponding line, and output “NA” in the third line instead.</p>
+<p><strong>Sample Input 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">3</div><div class="line">Joe M Math990112 89</div><div class="line">Mike M CS991301 100</div><div class="line">Mary F EE990830 95</div></pre></td></tr></table></figure>
+<p>Sample Output 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Mary EE990830</div><div class="line">Joe Math990112</div><div class="line">6</div></pre></td></tr></table></figure>
+<p>Sample Input 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1</div><div class="line">Jean M AA980920 60</div></pre></td></tr></table></figure>
+<p>Sample Output 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Absent</div><div class="line">Jean AA980920</div><div class="line">NA</div></pre></td></tr></table></figure>
+<hr>
+<p>特别注意一个点：scanf里面的%c是可以接受空格字符的，所以”%c”前要加上一个空格即” %c”，如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">scanf</span>(<span class="string">"%s %c%s%d"</span>,stu[i].name,&amp;stu[i].sex,stu[i].id,&amp;stu[i].grade);</div></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span> &#123;</span></div><div class="line">    <span class="keyword">char</span> name[<span class="number">15</span>];</div><div class="line">    <span class="keyword">char</span> sex;</div><div class="line">    <span class="keyword">char</span> id[<span class="number">15</span>];</div><div class="line">    <span class="keyword">int</span> grade;</div><div class="line">&#125;stu[<span class="number">100</span>];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> n;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%s %c%s%d"</span>,stu[i].name,&amp;stu[i].sex,stu[i].id,&amp;stu[i].grade);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> female=<span class="number">-1</span>,male=<span class="number">-1</span>,femalescore=<span class="number">-1</span>,malescore=<span class="number">101</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (stu[i].sex==<span class="string">'F'</span>) &#123;</div><div class="line">            <span class="keyword">if</span> (stu[i].grade&gt;femalescore) &#123;</div><div class="line">                female=i;</div><div class="line">                femalescore=stu[i].grade;</div><div class="line">            &#125;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (stu[i].sex==<span class="string">'M'</span>) &#123;</div><div class="line">            <span class="keyword">if</span> (stu[i].grade&lt;malescore) &#123;</div><div class="line">                male=i;</div><div class="line">                malescore=stu[i].grade;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (female!=<span class="number">-1</span>) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%s %s\n"</span>,stu[female].name,stu[female].id);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"Absent\n"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (male!=<span class="number">-1</span>) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%s %s\n"</span>,stu[male].name,stu[male].id);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"Absent\n"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (femalescore!=<span class="number">-1</span>&amp;&amp;malescore!=<span class="number">101</span>) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>,femalescore-malescore);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"NA"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -462,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1010/" rel="next" title="1010. Radix (25)">
-                <i class="fa fa-chevron-left"></i> 1010. Radix (25)
+              <a href="/PAT-1046/" rel="next" title="1046. Shortest Distance (20)">
+                <i class="fa fa-chevron-left"></i> 1046. Shortest Distance (20)
               </a>
             
           </div>
@@ -471,10 +477,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1014/" rel="prev" title="1014. Waiting in Line (30)">
-                1014. Waiting in Line (30) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -637,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1013-Battle-Over-Cities-25"><span class="nav-number">1.</span> <span class="nav-text">1013. Battle Over Cities (25)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1036-Boys-vs-Girls-25"><span class="nav-number">1.</span> <span class="nav-text">1036. Boys vs Girls (25)</span></a></li></ol></div>
             
 
           </div>
