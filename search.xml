@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[1058. A+B in Hogwarts (20)]]></title>
+    <url>%2FPAT-1058%2F</url>
+    <content type="text"><![CDATA[1058. A+B in Hogwarts (20)If you are a fan of Harry Potter, you would know the world of magic has its own currency system – as Hagrid explained it to Harry, “Seventeen silver Sickles to a Galleon and twenty-nine Knuts to a Sickle, it’s easy enough.” Your job is to write a program to compute A+B where A and B are given in the standard form of “Galleon.Sickle.Knut” (Galleon is an integer in [0, 107], Sickle is an integer in [0, 17), and Knut is an integer in [0, 29)). Input Specification: Each input file contains one test case which occupies a line with A and B in the standard form, separated by one space. Output Specification: For each test case you should output the sum of A and B in one line, with the same format as the input. Sample Input: 13.2.1 10.16.27 Sample Output: 114.1.28 唔，这里a2不需要取余（10^7+1），题目没说会进位，一开始我给默认了… 1234567891011121314#include &lt;cstdio&gt;#include &lt;iostream&gt;using namespace std;int main() &#123; int a,b,c,a1,b1,c1,a2,b2,c2; scanf("%d.%d.%d",&amp;a,&amp;b,&amp;c); scanf("%d.%d.%d",&amp;a1,&amp;b1,&amp;c1); c2 = (c+c1)%29; b2 = (b+b1+(c+c1)/29)%17; a2 = a+a1+(b+b1+(c+c1)/29)/17; printf("%d.%d.%d",a2,b2,c2); return 0;&#125;]]></content>
+      <categories>
+        <category>pat</category>
+      </categories>
+      <tags>
+        <tag>pat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[1027. Colors in Mars (20)]]></title>
     <url>%2FPAT-1027%2F</url>
     <content type="text"><![CDATA[1027. Colors in Mars (20)People in Mars represent the colors in their computers in a similar way as the Earth people. That is, a color is represented by a 6-digit number, where the first 2 digits are for Red, the middle 2 digits for Green, and the last 2 digits for Blue. The only difference is that they use radix 13 (0-9 and A-C) instead of 16. Now given a color in three decimal numbers (each between 0 and 168), you are supposed to output their Mars RGB values. Input Each input file contains one test case which occupies a line containing the three decimal color values. Output For each test case you should output the Mars RGB value in the following format: first output “#”, then followed by a 6-digit number where all the English characters must be upper-cased. If a single color is only 1-digit long, you must print a “0” to the left. Sample Input 115 43 71 Sample Output 1#123456 12345678910111213141516171819202122232425262728#include &lt;cstdio&gt;#include &lt;iostream&gt;using namespace std;int main() &#123; int a,b,c; cin&gt;&gt;a&gt;&gt;b&gt;&gt;c; char x[13]=&#123;'0','1','2','3','4','5','6','7','8','9','A','B','C'&#125;; cout&lt;&lt;"#"; char m,n; m=x[a%13]; a/=13; n=x[a%13]; printf("%c%c",n,m); m=x[b%13]; b/=13; n=x[b%13]; printf("%c%c",n,m); m=x[c%13]; c/=13; n=x[c%13]; printf("%c%c",n,m); return 0;&#125;]]></content>
