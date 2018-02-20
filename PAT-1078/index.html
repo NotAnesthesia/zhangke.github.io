@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="1046. Shortest Distance (20)The task is really simple: given N exits on a highway which forms a simple cycle, you are supposed to tell the shortest distance between any pair of exits. Input Specificat">
+<meta name="description" content="1078. Hashing (25)The task of this problem is simple: insert a sequence of distinct positive integers into a hash table, and output the positions of the input numbers. The hash function is defined to">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1046. Shortest Distance (20)">
-<meta property="og:url" content="http://zhangk.top/PAT-1046/index.html">
+<meta property="og:title" content="1078. Hashing (25)">
+<meta property="og:url" content="http://zhangk.top/PAT-1078/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1046. Shortest Distance (20)The task is really simple: given N exits on a highway which forms a simple cycle, you are supposed to tell the shortest distance between any pair of exits. Input Specificat">
+<meta property="og:description" content="1078. Hashing (25)The task of this problem is simple: insert a sequence of distinct positive integers into a hash table, and output the positions of the input numbers. The hash function is defined to">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-08T15:40:50.287Z">
+<meta property="og:updated_time" content="2018-02-20T07:07:29.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1046. Shortest Distance (20)">
-<meta name="twitter:description" content="1046. Shortest Distance (20)The task is really simple: given N exits on a highway which forms a simple cycle, you are supposed to tell the shortest distance between any pair of exits. Input Specificat">
+<meta name="twitter:title" content="1078. Hashing (25)">
+<meta name="twitter:description" content="1078. Hashing (25)The task of this problem is simple: insert a sequence of distinct positive integers into a hash table, and output the positions of the input numbers. The hash function is defined to">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1046/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1078/"/>
 
 
 
 
 
-  <title>1046. Shortest Distance (20) | Zhangke's blog</title>
+  <title>1078. Hashing (25) | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1046/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1078/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">1046. Shortest Distance (20)</h2>
+          <h2 class="post-title" itemprop="name headline">1078. Hashing (25)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T23:32:09+08:00">
-                2018-02-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-20T14:57:31+08:00">
+                2018-02-20
               </time>
             
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/PAT-1046/" class="leancloud_visitors" data-flag-title="1046. Shortest Distance (20)">
+             <span id="/PAT-1078/" class="leancloud_visitors" data-flag-title="1078. Hashing (25)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,19 +408,19 @@
       
 
       
-        <h1 id="1046-Shortest-Distance-20"><a href="#1046-Shortest-Distance-20" class="headerlink" title="1046. Shortest Distance (20)"></a>1046. Shortest Distance (20)</h1><p>The task is really simple: given N exits on a highway which forms a simple cycle, you are supposed to tell the shortest distance between any pair of exits.</p>
+        <h1 id="1078-Hashing-25"><a href="#1078-Hashing-25" class="headerlink" title="1078. Hashing (25)"></a>1078. Hashing (25)</h1><p>The task of this problem is simple: insert a sequence of distinct positive integers into a hash table, and output the positions of the input numbers. The hash function is defined to be “H(key) = key % TSize” where TSize is the maximum size of the hash table. Quadratic probing (with positive increments only) is used to solve the collisions.</p>
+<p>Note that the table size is better to be prime. If the maximum size given by the user is not prime, you must re-define the table size to be the smallest prime number which is larger than the size given by the user.</p>
 <p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. For each case, the first line contains an integer N (in [3, 105]), followed by N integer distances D1 D2 … DN, where Di is the distance between the i-th and the (i+1)-st exits, and DN is between the N-th and the 1st exits. All the numbers in a line are separated by a space. The second line gives a positive integer M (&lt;=104), with M lines follow, each contains a pair of exit numbers, provided that the exits are numbered from 1 to N. It is guaranteed that the total round trip distance is no more than 107.</p>
+<p>Each input file contains one test case. For each case, the first line contains two positive numbers: MSize (&lt;=104) and N (&lt;=MSize) which are the user-defined table size and the number of input numbers, respectively. Then N distinct positive integers are given in the next line. All the numbers in a line are separated by a space.</p>
 <p><strong>Output Specification:</strong></p>
-<p>For each test case, print your results in M lines, each contains the shortest distance between the corresponding given pair of exits.</p>
+<p>For each test case, print the corresponding positions (index starts from 0) of the input numbers in one line. All the numbers in a line are separated by a space, and there must be no extra space at the end of the line. In case it is impossible to insert the number, print “-“ instead.</p>
 <p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">5 1 2 4 14 9</div><div class="line">3</div><div class="line">1 3</div><div class="line">2 5</div><div class="line">4 1</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">4 4</div><div class="line">10 6 4 15</div></pre></td></tr></table></figure>
 <p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">3</div><div class="line">10</div><div class="line">7</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">0 1 4 -</div></pre></td></tr></table></figure>
 <hr>
-<p>简单模拟，数据量比较大，容易超时。所以选择采用dis[i]保存从i节点到1的距离，这样两点间的一个距离就是abs(dis[x]-dis[y])，另一个用sum一减就出来了，时间复杂度o(n).</p>
-<p>然后不知道是玄学还是什么，刚开始直接输入一个就直接输出一个结果答案是可以，但是oj却wrong answer，那我不得不用vector保存了结果再输出，可是当我又用刚才直接输出的代码跑一遍却过了，真是玄学~</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> dis[<span class="number">100002</span>];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> num,sum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;num);</div><div class="line">    dis[<span class="number">1</span>]=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>; i&lt;=num; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;dis[i]);</div><div class="line">        dis[i]+=dis[i<span class="number">-1</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> end;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;end);</div><div class="line">    sum=dis[num]+end;</div><div class="line">    <span class="keyword">int</span> num1;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;num1;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; result;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=num1; i++) &#123;</div><div class="line">        <span class="keyword">int</span> x,y;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;x,&amp;y);</div><div class="line">        <span class="keyword">int</span> l1=<span class="number">0</span>,l2=<span class="number">0</span>;</div><div class="line">        l1=<span class="built_in">abs</span>(dis[y]-dis[x]);</div><div class="line">        l2=sum-l1;</div><div class="line">        result.push_back(min(l1, l2));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> it=result.begin(); it!=result.end(); it++) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,*it);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>没想到啊没想到，排查了好久的运行超时，我总觉得自己循环写得完全没问题啊，都可以正常结束，真是棋差一著。原来问题出在bool数组的长度设定上。一开始题目里说哈希表大小不超过10^4，然后我毫不犹豫写了10001的大小。没有考虑到极端情况，当TSize正好是10^4，那就越界了，因为TSize要扩大到素数，10001是素数，10003也是素数，要直到10007才不是素数😂，所以我的数组大小至少为10008.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> m,n;</div><div class="line"><span class="keyword">bool</span> hasWrite[<span class="number">10010</span>];</div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (n==<span class="number">1</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>; i&lt;=<span class="built_in">sqrt</span>(n); i++) &#123;</div><div class="line">        <span class="keyword">if</span> (n%i==<span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">/* 二次探查法解决hash冲突 */</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">twiceCheck</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> p=<span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> step=<span class="number">1</span>; step&lt;m; step++) &#123;</div><div class="line">        p=(a+step*step)%m;</div><div class="line">        <span class="keyword">if</span> (!hasWrite[p]) &#123;</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        &#125;</div><div class="line">        p=<span class="number">-1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> p;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n;</div><div class="line"></div><div class="line">    <span class="keyword">while</span> (!isPrime(m)) &#123;</div><div class="line">        m++;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">int</span> a;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a);</div><div class="line">        <span class="keyword">int</span> x=a%m;</div><div class="line">        <span class="keyword">if</span> (hasWrite[x]) &#123;</div><div class="line">            x=twiceCheck(a);</div><div class="line">            <span class="keyword">if</span> (x==<span class="number">-1</span>) &#123;</div><div class="line">                <span class="built_in">printf</span>(<span class="string">"-"</span>);</div><div class="line">                <span class="keyword">if</span> (i!=n<span class="number">-1</span>) &#123;</div><div class="line">                    <span class="built_in">printf</span>(<span class="string">" "</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>,x);</div><div class="line">        <span class="keyword">if</span> (i!=n<span class="number">-1</span>) &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">" "</span>);</div><div class="line">        &#125;</div><div class="line">        hasWrite[x]=<span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -463,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1042/" rel="next" title="1042. Shuffling Machine (20)">
-                <i class="fa fa-chevron-left"></i> 1042. Shuffling Machine (20)
+              <a href="/PAT-1015/" rel="next" title="1015. Reversible Primes (20)">
+                <i class="fa fa-chevron-left"></i> 1015. Reversible Primes (20)
               </a>
             
           </div>
@@ -472,10 +472,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1036/" rel="prev" title="1036. Boys vs Girls (25)">
-                1036. Boys vs Girls (25) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -638,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1046-Shortest-Distance-20"><span class="nav-number">1.</span> <span class="nav-text">1046. Shortest Distance (20)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1078-Hashing-25"><span class="nav-number">1.</span> <span class="nav-text">1078. Hashing (25)</span></a></li></ol></div>
             
 
           </div>
