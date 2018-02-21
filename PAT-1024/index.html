@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="1064. Complete Binary Search Tree (30)A Binary Search Tree (BST) is recursively defined as a binary tree which has the following properties:  The left subtree of a node contains only nodes with keys l">
+<meta name="description" content="1024. Palindromic Number (25)A number that will be the same when it is written forwards or backwards is known as a Palindromic Number. For example, 1234321 is a palindromic number. All single digit nu">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1064. Complete Binary Search Tree (30)">
-<meta property="og:url" content="http://zhangk.top/PAT-1064/index.html">
+<meta property="og:title" content="1024. Palindromic Number (25)">
+<meta property="og:url" content="http://zhangk.top/PAT-1024/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1064. Complete Binary Search Tree (30)A Binary Search Tree (BST) is recursively defined as a binary tree which has the following properties:  The left subtree of a node contains only nodes with keys l">
+<meta property="og:description" content="1024. Palindromic Number (25)A number that will be the same when it is written forwards or backwards is known as a Palindromic Number. For example, 1234321 is a palindromic number. All single digit nu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T16:29:37.848Z">
+<meta property="og:updated_time" content="2018-02-21T12:59:07.610Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1064. Complete Binary Search Tree (30)">
-<meta name="twitter:description" content="1064. Complete Binary Search Tree (30)A Binary Search Tree (BST) is recursively defined as a binary tree which has the following properties:  The left subtree of a node contains only nodes with keys l">
+<meta name="twitter:title" content="1024. Palindromic Number (25)">
+<meta name="twitter:description" content="1024. Palindromic Number (25)A number that will be the same when it is written forwards or backwards is known as a Palindromic Number. For example, 1234321 is a palindromic number. All single digit nu">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1064/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1024/"/>
 
 
 
 
 
-  <title>1064. Complete Binary Search Tree (30) | Zhangke's blog</title>
+  <title>1024. Palindromic Number (25) | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1064/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1024/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">1064. Complete Binary Search Tree (30)</h2>
+          <h2 class="post-title" itemprop="name headline">1024. Palindromic Number (25)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-03T11:51:00+08:00">
-                2018-02-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-21T20:52:59+08:00">
+                2018-02-21
               </time>
             
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/PAT-1064/" class="leancloud_visitors" data-flag-title="1064. Complete Binary Search Tree (30)">
+             <span id="/PAT-1024/" class="leancloud_visitors" data-flag-title="1024. Palindromic Number (25)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,24 +408,25 @@
       
 
       
-        <h1 id="1064-Complete-Binary-Search-Tree-30"><a href="#1064-Complete-Binary-Search-Tree-30" class="headerlink" title="1064. Complete Binary Search Tree (30)"></a>1064. Complete Binary Search Tree (30)</h1><p>A Binary Search Tree (BST) is recursively defined as a binary tree which has the following properties:</p>
-<ul>
-<li>The left subtree of a node contains only nodes with keys less than the node’s key.</li>
-<li>The right subtree of a node contains only nodes with keys greater than or equal to the node’s key.</li>
-<li>Both the left and right subtrees must also be binary search trees.</li>
-</ul>
-<p>A Complete Binary Tree (CBT) is a tree that is completely filled, with the possible exception of the bottom level, which is filled from left to right.</p>
-<p>Now given a sequence of distinct non-negative integer keys, a unique BST can be constructed if it is required that the tree must also be a CBT. You are supposed to output the level order traversal sequence of this BST.</p>
+        <h1 id="1024-Palindromic-Number-25"><a href="#1024-Palindromic-Number-25" class="headerlink" title="1024. Palindromic Number (25)"></a>1024. Palindromic Number (25)</h1><p>A number that will be the same when it is written forwards or backwards is known as a Palindromic Number. For example, 1234321 is a palindromic number. All single digit numbers are palindromic numbers.</p>
+<p>Non-palindromic numbers can be paired with palindromic ones via a series of operations. First, the non-palindromic number is reversed and the result is added to the original number. If the result is not a palindromic number, this is repeated until it gives a palindromic number. For example, if we start from 67, we can obtain a palindromic number in 2 steps: 67 + 76 = 143, and 143 + 341 = 484.</p>
+<p>Given any positive integer N, you are supposed to find its paired palindromic number and the number of steps taken to find it.</p>
 <p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. For each case, the first line contains a positive integer N (&lt;=1000). Then N distinct non-negative integer keys are given in the next line. All the numbers in a line are separated by a space and are no greater than 2000.</p>
+<p>Each input file contains one test case. Each case consists of two positive numbers N and K, where N (&lt;= 1010) is the initial numer and K (&lt;= 100) is the maximum number of steps. The numbers are separated by a space.</p>
 <p><strong>Output Specification:</strong></p>
-<p>For each test case, print in one line the level order traversal sequence of the corresponding complete binary search tree. All the numbers in a line must be separated by a space, and there must be no extra space at the end of the line.</p>
-<p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">10</div><div class="line">1 2 3 4 5 6 7 8 9 0</div></pre></td></tr></table></figure>
-<p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">6 3 8 1 5 7 9 0 2 4</div></pre></td></tr></table></figure>
-<p>中序遍历完全二叉搜索树（CBT+BST）的结果顺序为所有节点递增排序</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,num[<span class="number">1001</span>],level[<span class="number">1001</span>],coun=<span class="number">0</span>;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">inOrder</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</div><div class="line">  <span class="keyword">if</span> (i&gt;n) &#123;</div><div class="line">    <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="comment">/* 中序遍历 完全二叉树 */</span></div><div class="line">  inOrder(<span class="number">2</span>*i);</div><div class="line">  level[i]=num[coun++];</div><div class="line">  inOrder(<span class="number">2</span>*i+<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">  <span class="keyword">int</span> x;</div><div class="line">  <span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;x;</div><div class="line">    num[i]=x;    </div><div class="line">  &#125;</div><div class="line">  sort(num,num+n);</div><div class="line">  inOrder(<span class="number">1</span>);</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) &#123;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;level[i];</div><div class="line">    <span class="keyword">if</span>(i&lt;n) &#123;</div><div class="line">      <span class="built_in">cout</span>&lt;&lt;<span class="string">" "</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>For each test case, output two numbers, one in each line. The first number is the paired palindromic number of N, and the second number is the number of steps taken to find the palindromic number. If the palindromic number is not found after K steps, just output the number obtained at the Kth step and K instead.</p>
+<p>Sample Input 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">67 3</div></pre></td></tr></table></figure>
+<p>Sample Output 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">484</div><div class="line">2</div></pre></td></tr></table></figure>
+<p>Sample Input 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">69 3</div></pre></td></tr></table></figure>
+<p>Sample Output 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1353</div><div class="line">3</div></pre></td></tr></table></figure>
+<hr>
+<p>一开始最后一个点没过，想来还是没往最极端的情况考虑，最极端的是啥，就是当刚开始的10^10，每一次叠加都增加一位数，一百次运算后增加一百位，这是最极端的，也就是说不超过110位。</p>
+<p>经过我多次测试以后确信，最后一个测试点的结果有56位，可我刚开始的数组偏偏就开了50（之前觉得肯定够，因为直觉告诉我100个10^10最多也就12位数。。。）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">bign</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> b[<span class="number">56</span>],len;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="function">bign <span class="title">revers</span><span class="params">(bign a)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> len=a.len;</div><div class="line">    bign b;</div><div class="line">    b.len=len;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++) &#123;</div><div class="line">        b.b[len<span class="number">-1</span>-i]=a.b[i];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> b;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPalind</span><span class="params">(bign a)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> len=a.len,left=<span class="number">0</span>,right=len<span class="number">-1</span>;</div><div class="line">    <span class="keyword">while</span> (left&lt;=right) &#123;</div><div class="line">        <span class="keyword">if</span> (a.b[left]!=a.b[right]) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">        left++;</div><div class="line">        right--;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line"><span class="function">bign <span class="title">add</span><span class="params">(bign a,bign b)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> carry=<span class="number">0</span>,cnt=<span class="number">0</span>;</div><div class="line">    bign c;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;a.len; i++) &#123;</div><div class="line">        <span class="keyword">int</span> temp=a.b[i]+b.b[i]+carry;</div><div class="line">        c.b[cnt++]=temp%<span class="number">10</span>;</div><div class="line">        carry=temp/<span class="number">10</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (carry!=<span class="number">0</span>) &#123;</div><div class="line">        c.b[cnt++]=carry;</div><div class="line">    &#125;</div><div class="line">    c.len=cnt;</div><div class="line">    <span class="keyword">return</span> c;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">char</span> str[<span class="number">20</span>];</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,str);</div><div class="line">    <span class="keyword">int</span> k;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;k);</div><div class="line">    bign a;</div><div class="line">    a.len=(<span class="keyword">int</span>)<span class="built_in">strlen</span>(str);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;a.len; i++) &#123;</div><div class="line">        a.b[i]=str[a.len-i<span class="number">-1</span>]-<span class="string">'0'</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> i=k;</div><div class="line">    <span class="keyword">while</span> (i-- &gt; <span class="number">0</span> &amp;&amp; !isPalind(a)) &#123;</div><div class="line">        bign b=revers(a);</div><div class="line">        a=add(a, b);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=a.len<span class="number">-1</span>; j&gt;=<span class="number">0</span>; j--) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>,a.b[j]);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"\n%d\n"</span>,k-i<span class="number">-1</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -468,8 +469,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1066/" rel="next" title="1066. Root of AVL Tree (25)">
-                <i class="fa fa-chevron-left"></i> 1066. Root of AVL Tree (25)
+              <a href="/PAT-1023/" rel="next" title="1023. Have Fun with Numbers (20)">
+                <i class="fa fa-chevron-left"></i> 1023. Have Fun with Numbers (20)
               </a>
             
           </div>
@@ -477,10 +478,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1065/" rel="prev" title="1065. A+B and C (64bit) (20)">
-                1065. A+B and C (64bit) (20) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -643,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1064-Complete-Binary-Search-Tree-30"><span class="nav-number">1.</span> <span class="nav-text">1064. Complete Binary Search Tree (30)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1024-Palindromic-Number-25"><span class="nav-number">1.</span> <span class="nav-text">1024. Palindromic Number (25)</span></a></li></ol></div>
             
 
           </div>
