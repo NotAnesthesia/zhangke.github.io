@@ -93,18 +93,20 @@
 
 
 
-<meta name="description" content="1033. To Fill or Not to Fill (25)With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the wa">
+<meta name="description" content="1053. Path of Equal Weight (30)Given a non-empty tree with root R, and with weight Wi assigned to each tree node Ti. The weight of a path from R to Lis defined to be the sum of the weights of all the">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1033. To Fill or Not to Fill (25)">
-<meta property="og:url" content="http://zhangk.top/PAT-1033/index.html">
+<meta property="og:title" content="1053. Path of Equal Weight (30)">
+<meta property="og:url" content="http://zhangk.top/PAT-1053/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1033. To Fill or Not to Fill (25)With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the wa">
+<meta property="og:description" content="1053. Path of Equal Weight (30)Given a non-empty tree with root R, and with weight Wi assigned to each tree node Ti. The weight of a path from R to Lis defined to be the sum of the weights of all the">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T16:29:33.059Z">
+<meta property="og:image" content="http://nos.patest.cn/5b_mj58f84v11w.jpg">
+<meta property="og:updated_time" content="2018-03-01T15:25:52.655Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1033. To Fill or Not to Fill (25)">
-<meta name="twitter:description" content="1033. To Fill or Not to Fill (25)With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the wa">
+<meta name="twitter:title" content="1053. Path of Equal Weight (30)">
+<meta name="twitter:description" content="1053. Path of Equal Weight (30)Given a non-empty tree with root R, and with weight Wi assigned to each tree node Ti. The weight of a path from R to Lis defined to be the sum of the weights of all the">
+<meta name="twitter:image" content="http://nos.patest.cn/5b_mj58f84v11w.jpg">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1033/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1053/"/>
 
 
 
 
 
-  <title>1033. To Fill or Not to Fill (25) | Zhangke's blog</title>
+  <title>1053. Path of Equal Weight (30) | Zhangke's blog</title>
   
 
 
@@ -311,7 +313,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1033/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1053/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +330,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">1033. To Fill or Not to Fill (25)</h2>
+          <h2 class="post-title" itemprop="name headline">1053. Path of Equal Weight (30)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T19:20:49+08:00">
-                2018-02-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-01T23:17:23+08:00">
+                2018-03-01
               </time>
             
 
@@ -380,7 +382,7 @@
 
           
           
-             <span id="/PAT-1033/" class="leancloud_visitors" data-flag-title="1033. To Fill or Not to Fill (25)">
+             <span id="/PAT-1053/" class="leancloud_visitors" data-flag-title="1053. Path of Equal Weight (30)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,23 +410,22 @@
       
 
       
-        <h1 id="1033-To-Fill-or-Not-to-Fill-25"><a href="#1033-To-Fill-or-Not-to-Fill-25" class="headerlink" title="1033. To Fill or Not to Fill (25)"></a>1033. To Fill or Not to Fill (25)</h1><p>With highways available, driving a car from Hangzhou to any other city is easy. But since the tank capacity of a car is limited, we have to find gas stations on the way from time to time. Different gas station may give different price. You are asked to carefully design the cheapest route to go.</p>
+        <h1 id="1053-Path-of-Equal-Weight-30"><a href="#1053-Path-of-Equal-Weight-30" class="headerlink" title="1053. Path of Equal Weight (30)"></a>1053. Path of Equal Weight (30)</h1><p>Given a non-empty tree with root R, and with weight Wi assigned to each tree node Ti. The <strong>weight of a path from R to L</strong>is defined to be the sum of the weights of all the nodes along the path from R to any leaf node L.</p>
+<p>Now given any weighted tree, you are supposed to find all the paths with their weights equal to a given number. For example, let’s consider the tree showed in Figure 1: for each node, the upper number is the node ID which is a two-digit number, and the lower number is the weight of that node. Suppose that the given number is 24, then there exists 4 different paths which have the same given weight: {10 5 2 7}, {10 4 10}, {10 3 3 6 2} and {10 3 3 6 2}, which correspond to the red edges in Figure 1.</p>
+<p><img src="http://nos.patest.cn/5b_mj58f84v11w.jpg" alt="img"><br>Figure 1</p>
 <p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. For each case, the first line contains 4 positive numbers: Cmax (&lt;= 100), the maximum capacity of the tank; D (&lt;=30000), the distance between Hangzhou and the destination city; Davg (&lt;=20), the average distance per unit gas that the car can run; and N (&lt;= 500), the total number of gas stations. Then N lines follow, each contains a pair of non-negative numbers: Pi, the unit gas price, and Di (&lt;=D), the distance between this station and Hangzhou, for i=1,…N. All the numbers in a line are separated by a space.</p>
+<p>Each input file contains one test case. Each case starts with a line containing 0 &lt; N &lt;= 100, the number of nodes in a tree, M (&lt; N), the number of non-leaf nodes, and 0 &lt; S &lt; 230, the given weight number. The next line contains N positive numbers where Wi (&lt;1000) corresponds to the tree node Ti. Then M lines follow, each in the format:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ID K ID[1] ID[2] ... ID[K]</div></pre></td></tr></table></figure>
+<p>where ID is a two-digit number representing a given non-leaf node, K is the number of its children, followed by a sequence of two-digit ID’s of its children. For the sake of simplicity, let us fix the root ID to be 00.</p>
 <p><strong>Output Specification:</strong></p>
-<p>For each test case, print the cheapest price in a line, accurate up to 2 decimal places. It is assumed that the tank is empty at the beginning. If it is impossible to reach the destination, print “The maximum travel distance = X” where X is the maximum possible distance the car can run, accurate up to 2 decimal places.</p>
-<p>Sample Input 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">50 1300 12 8</div><div class="line">6.00 1250</div><div class="line">7.00 600</div><div class="line">7.00 150</div><div class="line">7.10 0</div><div class="line">7.20 200</div><div class="line">7.50 400</div><div class="line">7.30 1000</div><div class="line">6.85 300</div></pre></td></tr></table></figure>
-<p>Sample Output 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">749.17</div></pre></td></tr></table></figure>
-<p>Sample Input 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">50 1300 12 2</div><div class="line">7.10 0</div><div class="line">7.00 600</div></pre></td></tr></table></figure>
-<p>Sample Output 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The maximum travel distance = 1200.00</div></pre></td></tr></table></figure>
+<p>For each test case, print all the paths with weight S in <strong>non-increasing</strong> order. Each path occupies a line with printed weights from the root to the leaf in order. All the numbers must be separated by a space with no extra space at the end of the line.</p>
+<p>Note: sequence {A1, A2, …, An} is said to be <strong>greater than</strong> sequence {B1, B2, …, Bm} if there exists 1 &lt;= k &lt; min{n, m} such that Ai = Bifor i=1, … k, and Ak+1 &gt; Bk+1.</p>
+<p>Sample Input:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">20 9 24</div><div class="line">10 2 4 3 5 10 2 18 9 7 2 2 1 3 12 1 8 6 2 2</div><div class="line">00 4 01 02 03 04</div><div class="line">02 1 05</div><div class="line">04 2 06 07</div><div class="line">03 3 11 12 13</div><div class="line">06 1 09</div><div class="line">07 2 08 10</div><div class="line">16 1 15</div><div class="line">13 3 14 16 17</div><div class="line">17 2 18 19</div></pre></td></tr></table></figure>
+<p>Sample Output:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">10 5 2 7</div><div class="line">10 4 10</div><div class="line">10 3 3 6 2</div><div class="line">10 3 3 6 2</div></pre></td></tr></table></figure>
 <hr>
-<p>此题采用贪心算法，每次在可到达的点中挑价格最小的加油站去。其中如果有比当前更便宜的点，就加油到刚好到达下个点用完，不然就加满油。</p>
-<p>感觉题目比较繁琐~</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">station</span> &#123;</span></div><div class="line">    <span class="keyword">double</span> price,dis;</div><div class="line">&#125;;</div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(station a,station b)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> a.dis&lt;b.dis;</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> inf = <span class="number">99999999</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">double</span> tank,fullDis,disPerFuel;</div><div class="line">    <span class="keyword">int</span> stationNum;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;tank&gt;&gt;fullDis&gt;&gt;disPerFuel&gt;&gt;stationNum;</div><div class="line">    <span class="built_in">vector</span>&lt;station&gt; <span class="built_in">list</span>(stationNum+<span class="number">1</span>);</div><div class="line">    <span class="built_in">list</span>[<span class="number">0</span>]=&#123;<span class="number">0.0</span>,fullDis&#125;;</div><div class="line">    <span class="keyword">double</span> tempPrice,tempDis;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=stationNum; i++) &#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;tempPrice&gt;&gt;tempDis;</div><div class="line">        <span class="built_in">list</span>[i]=&#123;tempPrice,tempDis&#125;;</div><div class="line">    &#125;</div><div class="line">    sort(<span class="built_in">list</span>.begin(), <span class="built_in">list</span>.end(), cmp);</div><div class="line">    </div><div class="line">    </div><div class="line">    <span class="keyword">double</span> nowDis=<span class="number">0</span>,leftDis=<span class="number">0</span>,maxDis,nowPrice=<span class="built_in">list</span>[<span class="number">0</span>].price,totalPrice=<span class="number">0</span>;</div><div class="line">    <span class="keyword">if</span> (<span class="built_in">list</span>[<span class="number">0</span>].dis!=<span class="number">0</span>) &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"The maximum travel distance = 0.00"</span>;</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">while</span> (nowDis&lt;fullDis) &#123;</div><div class="line">        <span class="keyword">int</span> flag=<span class="number">0</span>;</div><div class="line">        maxDis=disPerFuel*tank+nowDis; <span class="comment">//最远能到达的距离</span></div><div class="line">        <span class="keyword">double</span> minPrice=inf,minDis=inf;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;<span class="built_in">list</span>.size(); i++) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="built_in">list</span>[i].dis&lt;=maxDis&amp;&amp;<span class="built_in">list</span>[i].dis&gt;nowDis) &#123;</div><div class="line">                <span class="comment">//minDis=list[i].dis-nowDis;</span></div><div class="line">                <span class="keyword">if</span> (<span class="built_in">list</span>[i].price&lt;=nowPrice) &#123;</div><div class="line">                    totalPrice+=(<span class="built_in">list</span>[i].dis-nowDis-leftDis)/disPerFuel*nowPrice;</div><div class="line">                    nowPrice=<span class="built_in">list</span>[i].price;</div><div class="line">                    nowDis=<span class="built_in">list</span>[i].dis;</div><div class="line">                    leftDis=<span class="number">0</span>;</div><div class="line">                    flag=<span class="number">1</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (<span class="built_in">list</span>[i].price&lt;minPrice) &#123;</div><div class="line">                    minPrice=<span class="built_in">list</span>[i].price;</div><div class="line">                    minDis=<span class="built_in">list</span>[i].dis;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (flag==<span class="number">0</span>&amp;&amp;minDis!=inf) &#123;</div><div class="line">            totalPrice+=(tank-leftDis/disPerFuel)*nowPrice;</div><div class="line">            leftDis=tank*disPerFuel-(minDis-nowDis);</div><div class="line">            nowDis=minDis;</div><div class="line">            nowPrice=minPrice;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (flag==<span class="number">0</span>&amp;&amp;minDis==inf) &#123;</div><div class="line">            <span class="built_in">cout</span>&lt;&lt;<span class="string">"The maximum travel distance = "</span>;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"%.2lf"</span>,maxDis);</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%.2lf"</span>,totalPrice);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,m,s;</div><div class="line"><span class="keyword">int</span> path[<span class="number">110</span>];</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> weight;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; child;</div><div class="line">&#125;Node[<span class="number">110</span>];</div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> Node[a].weight&gt;Node[b].weight;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> index,<span class="keyword">int</span> sum,<span class="keyword">int</span> count)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (sum&gt;s) &#123;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (sum==s) &#123;</div><div class="line">        <span class="keyword">if</span> (Node[index].child.size()!=<span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;count; i++) &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"%d"</span>,Node[path[i]].weight);</div><div class="line">            <span class="keyword">if</span> (i!=count<span class="number">-1</span>) &#123;</div><div class="line">                <span class="built_in">printf</span>(<span class="string">" "</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;Node[index].child.size(); i++) &#123;</div><div class="line">        <span class="keyword">int</span> child=Node[index].child[i];</div><div class="line">        path[count]=child;</div><div class="line">        DFS(child, sum+Node[child].weight, count+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;s;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;Node[i].weight);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> id,k,c;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;m; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;id,&amp;k);</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;k; j++) &#123;</div><div class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;c);</div><div class="line">            Node[id].child.push_back(c);</div><div class="line">        &#125;</div><div class="line">        sort(Node[id].child.begin(), Node[id].child.end(), cmp);</div><div class="line">    &#125;</div><div class="line">    path[<span class="number">0</span>]=<span class="number">0</span>;</div><div class="line">    DFS(<span class="number">0</span>, Node[<span class="number">0</span>].weight, <span class="number">1</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -467,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1039/" rel="next" title="1039. Course List for Student (25)">
-                <i class="fa fa-chevron-left"></i> 1039. Course List for Student (25)
+              <a href="/PAT-1086/" rel="next" title="PAT-1086">
+                <i class="fa fa-chevron-left"></i> PAT-1086
               </a>
             
           </div>
@@ -476,10 +477,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1037/" rel="prev" title="1037. Magic Coupon (25)">
-                1037. Magic Coupon (25) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -642,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1033-To-Fill-or-Not-to-Fill-25"><span class="nav-number">1.</span> <span class="nav-text">1033. To Fill or Not to Fill (25)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1053-Path-of-Equal-Weight-30"><span class="nav-number">1.</span> <span class="nav-text">1053. Path of Equal Weight (30)</span></a></li></ol></div>
             
 
           </div>
