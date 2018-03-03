@@ -1,3 +1,5 @@
+http://zhangk.top/PAT-1030/
+http://zhangk.top/PAT-1098/
 http://zhangk.top/PAT-1107/
 http://zhangk.top/PAT-1053/
 http://zhangk.top/PAT-1086/
@@ -96,5 +98,3 @@ http://zhangk.top/WebEncoding/
 http://zhangk.top/mysql-question-1/
 http://zhangk.top/ssm1/
 http://zhangk.top/deeplearning/
-http://zhangk.top/hunying/
-http://zhangk.top/jiaofu/
