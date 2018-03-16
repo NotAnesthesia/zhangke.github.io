@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="1051. Pop Sequence (25)Given a stack which can keep M numbers at most. Push N numbers in the order of 1, 2, 3, …, N and pop randomly. You are supposed to tell if a given sequence of numbers is a possi">
+<meta name="description" content="1079. Total Sales of Supply Chain (25)A supply chain is a network of retailers（零售商）, distributors（经销商）, and suppliers（供应商）– everyone involved in moving a product from supplier to customer. Starting fr">
 <meta name="keywords" content="pat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1051. Pop Sequence (25)">
-<meta property="og:url" content="http://zhangk.top/PAT-1051/index.html">
+<meta property="og:title" content="1079. Total Sales of Supply Chain (25)">
+<meta property="og:url" content="http://zhangk.top/PAT-1079/index.html">
 <meta property="og:site_name" content="Zhangke&#39;s blog">
-<meta property="og:description" content="1051. Pop Sequence (25)Given a stack which can keep M numbers at most. Push N numbers in the order of 1, 2, 3, …, N and pop randomly. You are supposed to tell if a given sequence of numbers is a possi">
+<meta property="og:description" content="1079. Total Sales of Supply Chain (25)A supply chain is a network of retailers（零售商）, distributors（经销商）, and suppliers（供应商）– everyone involved in moving a product from supplier to customer. Starting fr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-26T15:50:25.605Z">
+<meta property="og:updated_time" content="2018-03-16T03:23:36.027Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1051. Pop Sequence (25)">
-<meta name="twitter:description" content="1051. Pop Sequence (25)Given a stack which can keep M numbers at most. Push N numbers in the order of 1, 2, 3, …, N and pop randomly. You are supposed to tell if a given sequence of numbers is a possi">
+<meta name="twitter:title" content="1079. Total Sales of Supply Chain (25)">
+<meta name="twitter:description" content="1079. Total Sales of Supply Chain (25)A supply chain is a network of retailers（零售商）, distributors（经销商）, and suppliers（供应商）– everyone involved in moving a product from supplier to customer. Starting fr">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangk.top/PAT-1051/"/>
+  <link rel="canonical" href="http://zhangk.top/PAT-1079/"/>
 
 
 
 
 
-  <title>1051. Pop Sequence (25) | Zhangke's blog</title>
+  <title>1079. Total Sales of Supply Chain (25) | Zhangke's blog</title>
   
 
 
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1051/">
+    <link itemprop="mainEntityOfPage" href="http://zhangk.top/PAT-1079/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangke">
@@ -328,7 +328,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">1051. Pop Sequence (25)</h2>
+          <h2 class="post-title" itemprop="name headline">1079. Total Sales of Supply Chain (25)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T23:48:59+08:00">
-                2018-02-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-16T11:22:55+08:00">
+                2018-03-16
               </time>
             
 
@@ -380,7 +380,7 @@
 
           
           
-             <span id="/PAT-1051/" class="leancloud_visitors" data-flag-title="1051. Pop Sequence (25)">
+             <span id="/PAT-1079/" class="leancloud_visitors" data-flag-title="1079. Total Sales of Supply Chain (25)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,18 +408,21 @@
       
 
       
-        <h1 id="1051-Pop-Sequence-25"><a href="#1051-Pop-Sequence-25" class="headerlink" title="1051. Pop Sequence (25)"></a>1051. Pop Sequence (25)</h1><p>Given a stack which can keep M numbers at most. Push N numbers in the order of 1, 2, 3, …, N and pop randomly. You are supposed to tell if a given sequence of numbers is a possible pop sequence of the stack. For example, if M is 5 and N is 7, we can obtain 1, 2, 3, 4, 5, 6, 7 from the stack, but not 3, 2, 1, 7, 5, 6, 4.</p>
+        <h1 id="1079-Total-Sales-of-Supply-Chain-25"><a href="#1079-Total-Sales-of-Supply-Chain-25" class="headerlink" title="1079. Total Sales of Supply Chain (25)"></a>1079. Total Sales of Supply Chain (25)</h1><p>A supply chain is a network of retailers（零售商）, distributors（经销商）, and suppliers（供应商）– everyone involved in moving a product from supplier to customer.</p>
+<p>Starting from one root supplier, everyone on the chain buys products from one’s supplier in a price P and sell or distribute them in a price that is r% higher than P. Only the retailers will face the customers. It is assumed that each member in the supply chain has exactly one supplier except the root supplier, and there is no supply cycle.</p>
+<p>Now given a supply chain, you are supposed to tell the total sales from all the retailers.</p>
 <p><strong>Input Specification:</strong></p>
-<p>Each input file contains one test case. For each case, the first line contains 3 numbers (all no more than 1000): M (the maximum capacity of the stack), N (the length of push sequence), and K (the number of pop sequences to be checked). Then K lines follow, each contains a pop sequence of N numbers. All the numbers in a line are separated by a space.</p>
+<p>Each input file contains one test case. For each case, the first line contains three positive numbers: N (&lt;=105), the total number of the members in the supply chain (and hence their ID’s are numbered from 0 to N-1, and the root supplier’s ID is 0); P, the unit price given by the root supplier; and r, the percentage rate of price increment for each distributor or retailer. Then N lines follow, each describes a distributor or retailer in the following format:</p>
+<p>Ki ID[1] ID[2] … ID[Ki]</p>
+<p>where in the i-th line, Ki is the total number of distributors or retailers who receive products from supplier i, and is then followed by the ID’s of these distributors or retailers. Kj being 0 means that the j-th member is a retailer, then instead the total amount of the product will be given after Kj. All the numbers in a line are separated by a space.</p>
 <p><strong>Output Specification:</strong></p>
-<p>For each pop sequence, print in one line “YES” if it is indeed a possible pop sequence of the stack, or “NO” if not.</p>
+<p>For each test case, print in one line the total sales we can expect from all the retailers, accurate up to 1 decimal place. It is guaranteed that the number will not exceed 1010.</p>
 <p>Sample Input:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">5 7 5</div><div class="line">1 2 3 4 5 6 7</div><div class="line">3 2 1 7 5 6 4</div><div class="line">7 6 5 4 3 2 1</div><div class="line">5 6 4 3 7 2 1</div><div class="line">1 7 6 5 4 3 2</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">10 1.80 1.00</div><div class="line">3 2 3 5</div><div class="line">1 9</div><div class="line">1 4</div><div class="line">1 7</div><div class="line">0 7</div><div class="line">2 6 1</div><div class="line">1 8</div><div class="line">0 9</div><div class="line">0 4</div><div class="line">0 3</div></pre></td></tr></table></figure>
 <p>Sample Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">YES</div><div class="line">NO</div><div class="line">NO</div><div class="line">YES</div><div class="line">NO</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">42.4</div></pre></td></tr></table></figure>
 <hr>
-<p>模拟出栈</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; s;</div><div class="line"><span class="keyword">int</span> ans[<span class="number">1010</span>];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> m,n,k;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n&gt;&gt;k;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;k; j++) &#123;</div><div class="line">        <span class="keyword">while</span> (!s.empty()) &#123;</div><div class="line">            s.pop();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) &#123;</div><div class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;ans[i]);</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="keyword">int</span> current=<span class="number">1</span>,flag=<span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) &#123;</div><div class="line">            s.push(i);</div><div class="line">            <span class="keyword">if</span> (s.size()&gt;m) &#123;</div><div class="line">                flag=<span class="number">0</span>;</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">while</span> (!s.empty()&amp;&amp;ans[current]==s.top()) &#123;</div><div class="line">                s.pop();</div><div class="line">                current++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (flag==<span class="number">1</span>&amp;&amp;s.empty()) &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"YES\n"</span>);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"NO\n"</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;set&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n;</div><div class="line"><span class="keyword">double</span> p,r,sum=<span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; child;</div><div class="line">    <span class="keyword">int</span> amount;</div><div class="line">&#125;Node[<span class="number">100010</span>];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> index,<span class="keyword">int</span> depth)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (Node[index].child.size()==<span class="number">0</span>) &#123;</div><div class="line">        sum+=Node[index].amount*<span class="built_in">pow</span>(<span class="number">1</span>+r, depth);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;Node[index].child.size(); i++) &#123;</div><div class="line">        DFS(Node[index].child[i], depth+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;p&gt;&gt;r;</div><div class="line">    r/=<span class="number">100</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</div><div class="line">        <span class="keyword">int</span> num,child;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;num);</div><div class="line">        <span class="keyword">if</span> (num!=<span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;num; j++) &#123;</div><div class="line">                <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;child);</div><div class="line">                Node[i].child.push_back(child);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;Node[i].amount);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    DFS(<span class="number">0</span>, <span class="number">0</span>);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%.1lf"</span>,p*sum);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -462,8 +465,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/PAT-1071/" rel="next" title="1071. Speech Patterns (25)">
-                <i class="fa fa-chevron-left"></i> 1071. Speech Patterns (25)
+              <a href="/PAT-1102/" rel="next" title="1102. Invert a Binary Tree (25)">
+                <i class="fa fa-chevron-left"></i> 1102. Invert a Binary Tree (25)
               </a>
             
           </div>
@@ -471,10 +474,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/PAT-1056/" rel="prev" title="1056. Mice and Rice (25)">
-                1056. Mice and Rice (25) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -637,7 +636,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1051-Pop-Sequence-25"><span class="nav-number">1.</span> <span class="nav-text">1051. Pop Sequence (25)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1079-Total-Sales-of-Supply-Chain-25"><span class="nav-number">1.</span> <span class="nav-text">1079. Total Sales of Supply Chain (25)</span></a></li></ol></div>
             
 
           </div>
